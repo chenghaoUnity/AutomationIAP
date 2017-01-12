@@ -287,6 +287,9 @@ public class framework : MonoBehaviour {
 		string key = reference.Child("qaReport").Push().Key;
 		Dictionary<string, object> childUpdates = new Dictionary<string, object>();
 		childUpdates ["/qaReport/" + testCase.getDescitpion() + "/" + testCase.getDate() + "/Result/"] = testCase.getResult () == true ? "Pass" : "Fail";
+		childUpdates ["/qaReport/" + testCase.getDescitpion () + "/" + testCase.getDate () + "/DeviceInfo/DeviceType"] = UnityEngine.SystemInfo.deviceType.ToString();
+		childUpdates ["/qaReport/" + testCase.getDescitpion () + "/" + testCase.getDate () + "/DeviceInfo/DeviceModel"] = UnityEngine.SystemInfo.deviceModel.ToString();;
+		childUpdates ["/qaReport/" + testCase.getDescitpion () + "/" + testCase.getDate () + "/DeviceInfo/OperatingSystem"] = UnityEngine.SystemInfo.operatingSystem.ToString();;
 
 		reference.UpdateChildrenAsync(childUpdates);
 	}
