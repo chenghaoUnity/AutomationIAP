@@ -1,0 +1,7 @@
+Product ID,Published State,Purchase Type,Auto Translate,Locale; Title; Description,Auto Fill Prices,Price,Pricing Template ID
+gold.100,published,managed_by_android,false,en_US;asdasd;asdasd,true,990000,
+power.jump,published,managed_by_android,false,en_US;asdasd;asdasd,true,990000,
+power.vip,published,managed_by_android,false,en_US;asdasd;asdasd,true,990000,
+gold.100f,published,managed_by_android,false,en_US;asdasd;asdasd,true,990000,
+power.jumpf,published,managed_by_android,false,en_US;asdasd;asdasd,true,990000,
+power.vipf,published,managed_by_android,false,en_US;asdasd;asdasd,true,990000,

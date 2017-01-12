@@ -1,0 +1,7 @@
+SKU	Product ID	Reference Name	Type	Cleared For Sale	Wholesale Price Tier	Displayed Name	Description	Screenshot Path	Effective Date	End Date	Review Notes	Hosted Content Path
+sadsad	gold.100	gold.100	Consumable	yes	0	asdasd	asdasd					
+sadsad	power.jump	power.jump	Non-Consumable	yes	0	asdasd	asdasd					
+sadsad	power.vip	power.vip	Non-Renewing Subscription	yes	0	asdasd	asdasd					
+sadsad	gold.100f	gold.100f	Consumable	yes	0	asdasd	asdasd					
+sadsad	power.jumpf	power.jumpf	Non-Consumable	yes	0	asdasd	asdasd					
+sadsad	power.vipf	power.vipf	Non-Renewing Subscription	yes	0	asdasd	asdasd					

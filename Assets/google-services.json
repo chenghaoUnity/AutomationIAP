@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "423155811631",
+    "firebase_url": "https://robot-jump.firebaseio.com",
+    "project_id": "robot-jump",
+    "storage_bucket": "robot-jump.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423155811631:android:63dc7d2d4f2abb0d",
+        "android_client_info": {
+          "package_name": "com.turnalan.IAPTESTING"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423155811631-aq9h1pqnoni5muaojh0mcrsoegd41c0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHxZ3X_SLL2ayS7nTSs1jTzs6DiIOUcRc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

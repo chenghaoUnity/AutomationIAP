@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="firebase_database_url" translatable="false">https://robot-jump.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">423155811631</string>
+  <string name="google_storage_bucket" translatable="false">robot-jump.appspot.com</string>
+  <string name="google_api_key" translatable="false">AIzaSyDHxZ3X_SLL2ayS7nTSs1jTzs6DiIOUcRc</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDHxZ3X_SLL2ayS7nTSs1jTzs6DiIOUcRc</string>
+  <string name="google_app_id" translatable="false">1:423155811631:android:63dc7d2d4f2abb0d</string>
+  <string name="default_web_client_id" translatable="false">423155811631-aq9h1pqnoni5muaojh0mcrsoegd41c0k.apps.googleusercontent.com</string>
+</resources>
