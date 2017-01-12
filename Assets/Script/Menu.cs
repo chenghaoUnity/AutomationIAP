@@ -48,7 +48,6 @@ public class Menu : MonoBehaviour {
 
 
 	void Awake () {
-
 		Application.targetFrameRate = 30;
 
 		if (logo == null) {
