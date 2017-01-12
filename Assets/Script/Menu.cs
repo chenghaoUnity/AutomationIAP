@@ -262,7 +262,7 @@ public class Menu : MonoBehaviour {
 		if (QAstatus == true) {
 			PlayerPrefs.SetString ("QAstatus", "True");
 			PlayerPrefs.Save ();
-			StartGame ();
+			SceneManager.LoadScene (2);
 		} else {
 			PlayerPrefs.SetString ("QAstatus", "False");
 			PlayerPrefs.Save ();

@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5F12A4A3-B194-C78C-450F-4185CEC745CE}</ProjectGuid>
+    <ProjectGuid>{BFB12FB5-4CC6-F493-9C3B-F62EE6FE3A79}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -122,61 +122,61 @@
  <HintPath>/Applications/Unity 5.5.0f3/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Editor">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.App">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Auth">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Database">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Database.Unity">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Firebase/Plugins/Firebase.Database.Unity.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Firebase/Plugins/Firebase.Database.Unity.dll</HintPath>
  </Reference>
  <Reference Include="Google.MiniJson">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
  </Reference>
  <Reference Include="Google.Sharpen">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Compat">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Firebase/Plugins/Unity.Compat.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Firebase/Plugins/Unity.Compat.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Tasks">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Firebase/Plugins/Unity.Tasks.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Firebase/Plugins/Unity.Tasks.dll</HintPath>
  </Reference>
  <Reference Include="Google.IOSResolver">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
  </Reference>
  <Reference Include="Google.JarResolver">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll</HintPath>
  </Reference>
  <Reference Include="Google.VersionHandler">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
  </Reference>
  <Reference Include="Common">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Plugins/UnityPurchasing/Bin/Common.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Plugins/UnityPurchasing/Bin/Common.dll</HintPath>
  </Reference>
  <Reference Include="Editor">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
  </Reference>
  <Reference Include="Security">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Plugins/UnityPurchasing/Bin/Security.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Plugins/UnityPurchasing/Bin/Security.dll</HintPath>
  </Reference>
  <Reference Include="Stores">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
  </Reference>
  <Reference Include="Apple">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
  </Reference>
  <Reference Include="Tizen">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
  </Reference>
  <Reference Include="winrt">
- <HintPath>/Users/Shared/Unity/Codeless IAP TEST 2/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity 5.5.0f3/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -217,11 +217,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{BBD669B4-D1C9-EA2E-56F0-93863FF725CC}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{F2571152-3EA5-A1D4-685D-689877D348F6}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{21E3C62D-2102-775B-68C2-B3DE0A333275}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{1995832A-ADDB-FB96-59F6-CAC7DF6F179E}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{31CBF541-F473-513C-3305-A9F27F4A9AFC}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
+      <Project>{03720006-3457-407D-800F-4D51A4360EC1}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
