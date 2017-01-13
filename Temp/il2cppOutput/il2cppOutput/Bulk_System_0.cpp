@@ -10546,7 +10546,7 @@ IL_0018:
 IL_0028:
 		{
 			IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-			DateTime_t693205669  L_6 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+			DateTime_t693205669  L_6 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 			DateTime_t693205669  L_7 = L_6;
 			Il2CppObject * L_8 = Box(DateTime_t693205669_il2cpp_TypeInfo_var, &L_7);
 			V_2 = L_8;
@@ -10701,7 +10701,7 @@ IL_0030:
 	{
 		DateTime_t693205669  L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_7 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_7 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		bool L_8 = DateTime_op_Equality_m1867073872(NULL /*static, unused*/, L_6, L_7, /*hidden argument*/NULL);
 		if (!L_8)
 		{

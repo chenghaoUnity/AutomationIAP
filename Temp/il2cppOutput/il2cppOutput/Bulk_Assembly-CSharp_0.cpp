@@ -401,7 +401,9 @@ struct Vertex_t2714087479;
 #include "AssemblyU2DCSharp_TestCase820417420.h"
 #include "mscorlib_System_Collections_Generic_List_1_Enumera4019235522.h"
 #include "mscorlib_System_Collections_Generic_List_1_Enumera4019235522MethodDeclarations.h"
+#include "mscorlib_System_DateTime693205669MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SystemInfo2353426895MethodDeclarations.h"
+#include "mscorlib_System_DateTime693205669.h"
 #include "UnityEngine_UnityEngine_DeviceType2044541946.h"
 #include "AssemblyU2DCSharp_WebCamTextureToCloudVision280254998.h"
 #include "UnityEngine_UI_UnityEngine_UI_Button2872111280MethodDeclarations.h"
@@ -414,8 +416,6 @@ struct Vertex_t2714087479;
 #include "mscorlib_System_NotSupportedException1793819818.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds3839502067MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds3839502067.h"
-#include "mscorlib_System_DateTime693205669MethodDeclarations.h"
-#include "mscorlib_System_DateTime693205669.h"
 #include "AssemblyU2DCSharp_HurtFX2260489167.h"
 #include "AssemblyU2DCSharp_HurtFX2260489167MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color2020392075.h"
@@ -4906,13 +4906,16 @@ IL_0050:
 // System.Void framework::pushResultToServer(TestCase)
 extern Il2CppClass* Dictionary_2_t309261261_il2cpp_TypeInfo_var;
 extern Il2CppClass* StringU5BU5D_t1642385972_il2cpp_TypeInfo_var;
+extern Il2CppClass* DateTime_t693205669_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* DeviceType_t2044541946_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m3598753405_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_set_Item_m4093634448_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral310793414;
 extern Il2CppCodeGenString* _stringLiteral138400140;
+extern Il2CppCodeGenString* _stringLiteral1426876117;
 extern Il2CppCodeGenString* _stringLiteral372029315;
+extern Il2CppCodeGenString* _stringLiteral1633127466;
 extern Il2CppCodeGenString* _stringLiteral3677662193;
 extern Il2CppCodeGenString* _stringLiteral2422328729;
 extern Il2CppCodeGenString* _stringLiteral405905394;
@@ -4930,7 +4933,23 @@ extern "C"  void framework_pushResultToServer_m1712129844 (framework_t4204615976
 	}
 	String_t* V_0 = NULL;
 	Dictionary_2_t309261261 * V_1 = NULL;
-	int32_t V_2 = 0;
+	DateTime_t693205669  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	DateTime_t693205669  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	DateTime_t693205669  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	DateTime_t693205669  V_5;
+	memset(&V_5, 0, sizeof(V_5));
+	int32_t V_6 = 0;
+	DateTime_t693205669  V_7;
+	memset(&V_7, 0, sizeof(V_7));
+	DateTime_t693205669  V_8;
+	memset(&V_8, 0, sizeof(V_8));
+	DateTime_t693205669  V_9;
+	memset(&V_9, 0, sizeof(V_9));
+	DateTime_t693205669  V_10;
+	memset(&V_10, 0, sizeof(V_10));
 	String_t* G_B2_0 = NULL;
 	Dictionary_2_t309261261 * G_B2_1 = NULL;
 	String_t* G_B1_0 = NULL;
@@ -4951,14 +4970,15 @@ extern "C"  void framework_pushResultToServer_m1712129844 (framework_t4204615976
 		Dictionary_2__ctor_m3598753405(L_4, /*hidden argument*/Dictionary_2__ctor_m3598753405_MethodInfo_var);
 		V_1 = L_4;
 		Dictionary_2_t309261261 * L_5 = V_1;
-		StringU5BU5D_t1642385972* L_6 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)5));
+		StringU5BU5D_t1642385972* L_6 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)7));
 		NullCheck(L_6);
 		ArrayElementTypeCheck (L_6, _stringLiteral138400140);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral138400140);
 		StringU5BU5D_t1642385972* L_7 = L_6;
-		TestCase_t820417420 * L_8 = ___testCase0;
-		NullCheck(L_8);
-		String_t* L_9 = TestCase_getDescitpion_m1321403330(L_8, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
+		DateTime_t693205669  L_8 = DateTime_get_Now_m24136300(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_2 = L_8;
+		String_t* L_9 = DateTime_ToString_m1473013667((&V_2), _stringLiteral1426876117, /*hidden argument*/NULL);
 		NullCheck(L_7);
 		ArrayElementTypeCheck (L_7, L_9);
 		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_9);
@@ -4969,152 +4989,205 @@ extern "C"  void framework_pushResultToServer_m1712129844 (framework_t4204615976
 		StringU5BU5D_t1642385972* L_11 = L_10;
 		TestCase_t820417420 * L_12 = ___testCase0;
 		NullCheck(L_12);
-		String_t* L_13 = TestCase_getDate_m445749224(L_12, /*hidden argument*/NULL);
+		String_t* L_13 = TestCase_getDescitpion_m1321403330(L_12, /*hidden argument*/NULL);
 		NullCheck(L_11);
 		ArrayElementTypeCheck (L_11, L_13);
 		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_13);
 		StringU5BU5D_t1642385972* L_14 = L_11;
 		NullCheck(L_14);
-		ArrayElementTypeCheck (L_14, _stringLiteral3677662193);
-		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral3677662193);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_15 = String_Concat_m626692867(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
+		ArrayElementTypeCheck (L_14, _stringLiteral372029315);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral372029315);
+		StringU5BU5D_t1642385972* L_15 = L_14;
 		TestCase_t820417420 * L_16 = ___testCase0;
 		NullCheck(L_16);
-		bool L_17 = TestCase_getResult_m918254964(L_16, /*hidden argument*/NULL);
-		G_B1_0 = L_15;
+		DateTime_t693205669  L_17 = TestCase_getDate_m3475179060(L_16, /*hidden argument*/NULL);
+		V_3 = L_17;
+		String_t* L_18 = DateTime_ToString_m1473013667((&V_3), _stringLiteral1633127466, /*hidden argument*/NULL);
+		NullCheck(L_15);
+		ArrayElementTypeCheck (L_15, L_18);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_18);
+		StringU5BU5D_t1642385972* L_19 = L_15;
+		NullCheck(L_19);
+		ArrayElementTypeCheck (L_19, _stringLiteral3677662193);
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral3677662193);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_20 = String_Concat_m626692867(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
+		TestCase_t820417420 * L_21 = ___testCase0;
+		NullCheck(L_21);
+		bool L_22 = TestCase_getResult_m918254964(L_21, /*hidden argument*/NULL);
+		G_B1_0 = L_20;
 		G_B1_1 = L_5;
-		if (!L_17)
+		if (!L_22)
 		{
-			G_B2_0 = L_15;
+			G_B2_0 = L_20;
 			G_B2_1 = L_5;
-			goto IL_006c;
+			goto IL_0096;
 		}
 	}
 	{
 		G_B3_0 = _stringLiteral2422328729;
 		G_B3_1 = G_B1_0;
 		G_B3_2 = G_B1_1;
-		goto IL_0071;
+		goto IL_009b;
 	}
 
-IL_006c:
+IL_0096:
 	{
 		G_B3_0 = _stringLiteral405905394;
 		G_B3_1 = G_B2_0;
 		G_B3_2 = G_B2_1;
 	}
 
-IL_0071:
+IL_009b:
 	{
 		NullCheck(G_B3_2);
 		Dictionary_2_set_Item_m4093634448(G_B3_2, G_B3_1, G_B3_0, /*hidden argument*/Dictionary_2_set_Item_m4093634448_MethodInfo_var);
-		Dictionary_2_t309261261 * L_18 = V_1;
-		StringU5BU5D_t1642385972* L_19 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)5));
-		NullCheck(L_19);
-		ArrayElementTypeCheck (L_19, _stringLiteral138400140);
-		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral138400140);
-		StringU5BU5D_t1642385972* L_20 = L_19;
-		TestCase_t820417420 * L_21 = ___testCase0;
-		NullCheck(L_21);
-		String_t* L_22 = TestCase_getDescitpion_m1321403330(L_21, /*hidden argument*/NULL);
-		NullCheck(L_20);
-		ArrayElementTypeCheck (L_20, L_22);
-		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_22);
-		StringU5BU5D_t1642385972* L_23 = L_20;
-		NullCheck(L_23);
-		ArrayElementTypeCheck (L_23, _stringLiteral372029315);
-		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral372029315);
-		StringU5BU5D_t1642385972* L_24 = L_23;
-		TestCase_t820417420 * L_25 = ___testCase0;
-		NullCheck(L_25);
-		String_t* L_26 = TestCase_getDate_m445749224(L_25, /*hidden argument*/NULL);
+		Dictionary_2_t309261261 * L_23 = V_1;
+		StringU5BU5D_t1642385972* L_24 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)7));
 		NullCheck(L_24);
-		ArrayElementTypeCheck (L_24, L_26);
-		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_26);
-		StringU5BU5D_t1642385972* L_27 = L_24;
-		NullCheck(L_27);
-		ArrayElementTypeCheck (L_27, _stringLiteral2836305628);
-		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral2836305628);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_28 = String_Concat_m626692867(NULL /*static, unused*/, L_27, /*hidden argument*/NULL);
-		int32_t L_29 = SystemInfo_get_deviceType_m3581258207(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_2 = L_29;
-		Il2CppObject * L_30 = Box(DeviceType_t2044541946_il2cpp_TypeInfo_var, (&V_2));
+		ArrayElementTypeCheck (L_24, _stringLiteral138400140);
+		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral138400140);
+		StringU5BU5D_t1642385972* L_25 = L_24;
+		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
+		DateTime_t693205669  L_26 = DateTime_get_Now_m24136300(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_4 = L_26;
+		String_t* L_27 = DateTime_ToString_m1473013667((&V_4), _stringLiteral1426876117, /*hidden argument*/NULL);
+		NullCheck(L_25);
+		ArrayElementTypeCheck (L_25, L_27);
+		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_27);
+		StringU5BU5D_t1642385972* L_28 = L_25;
+		NullCheck(L_28);
+		ArrayElementTypeCheck (L_28, _stringLiteral372029315);
+		(L_28)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral372029315);
+		StringU5BU5D_t1642385972* L_29 = L_28;
+		TestCase_t820417420 * L_30 = ___testCase0;
 		NullCheck(L_30);
-		String_t* L_31 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_30);
-		NullCheck(L_18);
-		Dictionary_2_set_Item_m4093634448(L_18, L_28, L_31, /*hidden argument*/Dictionary_2_set_Item_m4093634448_MethodInfo_var);
-		Dictionary_2_t309261261 * L_32 = V_1;
-		StringU5BU5D_t1642385972* L_33 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)5));
-		NullCheck(L_33);
-		ArrayElementTypeCheck (L_33, _stringLiteral138400140);
-		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral138400140);
-		StringU5BU5D_t1642385972* L_34 = L_33;
-		TestCase_t820417420 * L_35 = ___testCase0;
-		NullCheck(L_35);
-		String_t* L_36 = TestCase_getDescitpion_m1321403330(L_35, /*hidden argument*/NULL);
-		NullCheck(L_34);
-		ArrayElementTypeCheck (L_34, L_36);
-		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_36);
-		StringU5BU5D_t1642385972* L_37 = L_34;
-		NullCheck(L_37);
-		ArrayElementTypeCheck (L_37, _stringLiteral372029315);
-		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral372029315);
-		StringU5BU5D_t1642385972* L_38 = L_37;
-		TestCase_t820417420 * L_39 = ___testCase0;
-		NullCheck(L_39);
-		String_t* L_40 = TestCase_getDate_m445749224(L_39, /*hidden argument*/NULL);
-		NullCheck(L_38);
-		ArrayElementTypeCheck (L_38, L_40);
-		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_40);
-		StringU5BU5D_t1642385972* L_41 = L_38;
-		NullCheck(L_41);
-		ArrayElementTypeCheck (L_41, _stringLiteral2878238345);
-		(L_41)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral2878238345);
-		String_t* L_42 = String_Concat_m626692867(NULL /*static, unused*/, L_41, /*hidden argument*/NULL);
-		String_t* L_43 = SystemInfo_get_deviceModel_m3856615649(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_43);
-		String_t* L_44 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_43);
+		String_t* L_31 = TestCase_getDescitpion_m1321403330(L_30, /*hidden argument*/NULL);
+		NullCheck(L_29);
+		ArrayElementTypeCheck (L_29, L_31);
+		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_31);
+		StringU5BU5D_t1642385972* L_32 = L_29;
 		NullCheck(L_32);
-		Dictionary_2_set_Item_m4093634448(L_32, L_42, L_44, /*hidden argument*/Dictionary_2_set_Item_m4093634448_MethodInfo_var);
-		Dictionary_2_t309261261 * L_45 = V_1;
-		StringU5BU5D_t1642385972* L_46 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)5));
-		NullCheck(L_46);
-		ArrayElementTypeCheck (L_46, _stringLiteral138400140);
-		(L_46)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral138400140);
-		StringU5BU5D_t1642385972* L_47 = L_46;
-		TestCase_t820417420 * L_48 = ___testCase0;
-		NullCheck(L_48);
-		String_t* L_49 = TestCase_getDescitpion_m1321403330(L_48, /*hidden argument*/NULL);
+		ArrayElementTypeCheck (L_32, _stringLiteral372029315);
+		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral372029315);
+		StringU5BU5D_t1642385972* L_33 = L_32;
+		TestCase_t820417420 * L_34 = ___testCase0;
+		NullCheck(L_34);
+		DateTime_t693205669  L_35 = TestCase_getDate_m3475179060(L_34, /*hidden argument*/NULL);
+		V_5 = L_35;
+		String_t* L_36 = DateTime_ToString_m1473013667((&V_5), _stringLiteral1633127466, /*hidden argument*/NULL);
+		NullCheck(L_33);
+		ArrayElementTypeCheck (L_33, L_36);
+		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_36);
+		StringU5BU5D_t1642385972* L_37 = L_33;
+		NullCheck(L_37);
+		ArrayElementTypeCheck (L_37, _stringLiteral2836305628);
+		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral2836305628);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_38 = String_Concat_m626692867(NULL /*static, unused*/, L_37, /*hidden argument*/NULL);
+		int32_t L_39 = SystemInfo_get_deviceType_m3581258207(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_6 = L_39;
+		Il2CppObject * L_40 = Box(DeviceType_t2044541946_il2cpp_TypeInfo_var, (&V_6));
+		NullCheck(L_40);
+		String_t* L_41 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_40);
+		NullCheck(L_23);
+		Dictionary_2_set_Item_m4093634448(L_23, L_38, L_41, /*hidden argument*/Dictionary_2_set_Item_m4093634448_MethodInfo_var);
+		Dictionary_2_t309261261 * L_42 = V_1;
+		StringU5BU5D_t1642385972* L_43 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)7));
+		NullCheck(L_43);
+		ArrayElementTypeCheck (L_43, _stringLiteral138400140);
+		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral138400140);
+		StringU5BU5D_t1642385972* L_44 = L_43;
+		DateTime_t693205669  L_45 = DateTime_get_Now_m24136300(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_7 = L_45;
+		String_t* L_46 = DateTime_ToString_m1473013667((&V_7), _stringLiteral1426876117, /*hidden argument*/NULL);
+		NullCheck(L_44);
+		ArrayElementTypeCheck (L_44, L_46);
+		(L_44)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_46);
+		StringU5BU5D_t1642385972* L_47 = L_44;
 		NullCheck(L_47);
-		ArrayElementTypeCheck (L_47, L_49);
-		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_49);
-		StringU5BU5D_t1642385972* L_50 = L_47;
-		NullCheck(L_50);
-		ArrayElementTypeCheck (L_50, _stringLiteral372029315);
-		(L_50)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral372029315);
-		StringU5BU5D_t1642385972* L_51 = L_50;
-		TestCase_t820417420 * L_52 = ___testCase0;
-		NullCheck(L_52);
-		String_t* L_53 = TestCase_getDate_m445749224(L_52, /*hidden argument*/NULL);
+		ArrayElementTypeCheck (L_47, _stringLiteral372029315);
+		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral372029315);
+		StringU5BU5D_t1642385972* L_48 = L_47;
+		TestCase_t820417420 * L_49 = ___testCase0;
+		NullCheck(L_49);
+		String_t* L_50 = TestCase_getDescitpion_m1321403330(L_49, /*hidden argument*/NULL);
+		NullCheck(L_48);
+		ArrayElementTypeCheck (L_48, L_50);
+		(L_48)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_50);
+		StringU5BU5D_t1642385972* L_51 = L_48;
 		NullCheck(L_51);
-		ArrayElementTypeCheck (L_51, L_53);
-		(L_51)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_53);
-		StringU5BU5D_t1642385972* L_54 = L_51;
-		NullCheck(L_54);
-		ArrayElementTypeCheck (L_54, _stringLiteral184482516);
-		(L_54)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral184482516);
-		String_t* L_55 = String_Concat_m626692867(NULL /*static, unused*/, L_54, /*hidden argument*/NULL);
-		String_t* L_56 = SystemInfo_get_operatingSystem_m2575097876(NULL /*static, unused*/, /*hidden argument*/NULL);
+		ArrayElementTypeCheck (L_51, _stringLiteral372029315);
+		(L_51)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral372029315);
+		StringU5BU5D_t1642385972* L_52 = L_51;
+		TestCase_t820417420 * L_53 = ___testCase0;
+		NullCheck(L_53);
+		DateTime_t693205669  L_54 = TestCase_getDate_m3475179060(L_53, /*hidden argument*/NULL);
+		V_8 = L_54;
+		String_t* L_55 = DateTime_ToString_m1473013667((&V_8), _stringLiteral1633127466, /*hidden argument*/NULL);
+		NullCheck(L_52);
+		ArrayElementTypeCheck (L_52, L_55);
+		(L_52)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_55);
+		StringU5BU5D_t1642385972* L_56 = L_52;
 		NullCheck(L_56);
-		String_t* L_57 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_56);
-		NullCheck(L_45);
-		Dictionary_2_set_Item_m4093634448(L_45, L_55, L_57, /*hidden argument*/Dictionary_2_set_Item_m4093634448_MethodInfo_var);
-		DatabaseReference_t1167676104 * L_58 = __this->get_reference_10();
-		Dictionary_2_t309261261 * L_59 = V_1;
+		ArrayElementTypeCheck (L_56, _stringLiteral2878238345);
+		(L_56)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral2878238345);
+		String_t* L_57 = String_Concat_m626692867(NULL /*static, unused*/, L_56, /*hidden argument*/NULL);
+		String_t* L_58 = SystemInfo_get_deviceModel_m3856615649(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_58);
-		DatabaseReference_UpdateChildrenAsync_m440977882(L_58, L_59, /*hidden argument*/NULL);
+		String_t* L_59 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_58);
+		NullCheck(L_42);
+		Dictionary_2_set_Item_m4093634448(L_42, L_57, L_59, /*hidden argument*/Dictionary_2_set_Item_m4093634448_MethodInfo_var);
+		Dictionary_2_t309261261 * L_60 = V_1;
+		StringU5BU5D_t1642385972* L_61 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)7));
+		NullCheck(L_61);
+		ArrayElementTypeCheck (L_61, _stringLiteral138400140);
+		(L_61)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral138400140);
+		StringU5BU5D_t1642385972* L_62 = L_61;
+		DateTime_t693205669  L_63 = DateTime_get_Now_m24136300(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_9 = L_63;
+		String_t* L_64 = DateTime_ToString_m1473013667((&V_9), _stringLiteral1426876117, /*hidden argument*/NULL);
+		NullCheck(L_62);
+		ArrayElementTypeCheck (L_62, L_64);
+		(L_62)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_64);
+		StringU5BU5D_t1642385972* L_65 = L_62;
+		NullCheck(L_65);
+		ArrayElementTypeCheck (L_65, _stringLiteral372029315);
+		(L_65)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral372029315);
+		StringU5BU5D_t1642385972* L_66 = L_65;
+		TestCase_t820417420 * L_67 = ___testCase0;
+		NullCheck(L_67);
+		String_t* L_68 = TestCase_getDescitpion_m1321403330(L_67, /*hidden argument*/NULL);
+		NullCheck(L_66);
+		ArrayElementTypeCheck (L_66, L_68);
+		(L_66)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_68);
+		StringU5BU5D_t1642385972* L_69 = L_66;
+		NullCheck(L_69);
+		ArrayElementTypeCheck (L_69, _stringLiteral372029315);
+		(L_69)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral372029315);
+		StringU5BU5D_t1642385972* L_70 = L_69;
+		TestCase_t820417420 * L_71 = ___testCase0;
+		NullCheck(L_71);
+		DateTime_t693205669  L_72 = TestCase_getDate_m3475179060(L_71, /*hidden argument*/NULL);
+		V_10 = L_72;
+		String_t* L_73 = DateTime_ToString_m1473013667((&V_10), _stringLiteral1633127466, /*hidden argument*/NULL);
+		NullCheck(L_70);
+		ArrayElementTypeCheck (L_70, L_73);
+		(L_70)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_73);
+		StringU5BU5D_t1642385972* L_74 = L_70;
+		NullCheck(L_74);
+		ArrayElementTypeCheck (L_74, _stringLiteral184482516);
+		(L_74)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral184482516);
+		String_t* L_75 = String_Concat_m626692867(NULL /*static, unused*/, L_74, /*hidden argument*/NULL);
+		String_t* L_76 = SystemInfo_get_operatingSystem_m2575097876(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_76);
+		String_t* L_77 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_76);
+		NullCheck(L_60);
+		Dictionary_2_set_Item_m4093634448(L_60, L_75, L_77, /*hidden argument*/Dictionary_2_set_Item_m4093634448_MethodInfo_var);
+		DatabaseReference_t1167676104 * L_78 = __this->get_reference_10();
+		Dictionary_2_t309261261 * L_79 = V_1;
+		NullCheck(L_78);
+		DatabaseReference_UpdateChildrenAsync_m440977882(L_78, L_79, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -5437,7 +5510,6 @@ extern Il2CppCodeGenString* _stringLiteral1175314296;
 extern Il2CppCodeGenString* _stringLiteral1033150532;
 extern Il2CppCodeGenString* _stringLiteral4173599282;
 extern Il2CppCodeGenString* _stringLiteral165860315;
-extern Il2CppCodeGenString* _stringLiteral2284121507;
 extern Il2CppCodeGenString* _stringLiteral1496915101;
 extern const uint32_t U3Ctest01U3Ec__Iterator0_MoveNext_m994605600_MetadataUsageId;
 extern "C"  bool U3Ctest01U3Ec__Iterator0_MoveNext_m994605600 (U3Ctest01U3Ec__Iterator0_t4045478193 * __this, const MethodInfo* method)
@@ -5449,8 +5521,6 @@ extern "C"  bool U3Ctest01U3Ec__Iterator0_MoveNext_m994605600 (U3Ctest01U3Ec__It
 		s_Il2CppMethodInitialized = true;
 	}
 	uint32_t V_0 = 0;
-	DateTime_t693205669  V_1;
-	memset(&V_1, 0, sizeof(V_1));
 	{
 		int32_t L_0 = __this->get_U24PC_3();
 		V_0 = L_0;
@@ -5478,15 +5548,15 @@ extern "C"  bool U3Ctest01U3Ec__Iterator0_MoveNext_m994605600 (U3Ctest01U3Ec__It
 		}
 		if (L_1 == 5)
 		{
-			goto IL_0199;
+			goto IL_018c;
 		}
 		if (L_1 == 6)
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
-		goto IL_0210;
+		goto IL_0203;
 	}
 
 IL_0035:
@@ -5518,7 +5588,7 @@ IL_0035:
 
 IL_007d:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_0082:
@@ -5542,7 +5612,7 @@ IL_0082:
 
 IL_00bc:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00c1:
@@ -5565,7 +5635,7 @@ IL_00c1:
 
 IL_00f5:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00fa:
@@ -5588,7 +5658,7 @@ IL_00fa:
 
 IL_012a:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_012f:
@@ -5601,85 +5671,83 @@ IL_012f:
 		bool L_22 = framework_compareInfo_m1268539376(L_21, _stringLiteral1033150532, _stringLiteral4173599282, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
 		DateTime_t693205669  L_23 = DateTime_get_Now_m24136300(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_1 = L_23;
-		String_t* L_24 = DateTime_ToString_m1473013667((&V_1), _stringLiteral2284121507, /*hidden argument*/NULL);
-		TestCase_t820417420 * L_25 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
-		TestCase__ctor_m4045008822(L_25, _stringLiteral1175314296, L_22, _stringLiteral165860315, L_24, /*hidden argument*/NULL);
+		TestCase_t820417420 * L_24 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
+		TestCase__ctor_m386280814(L_24, _stringLiteral1175314296, L_22, _stringLiteral165860315, L_23, /*hidden argument*/NULL);
 		NullCheck(L_20);
-		List_1_Add_m3265222623(L_20, L_25, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
-		WaitForSeconds_t3839502067 * L_26 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_26, (0.3f), /*hidden argument*/NULL);
-		__this->set_U24current_1(L_26);
-		bool L_27 = __this->get_U24disposing_2();
-		if (L_27)
+		List_1_Add_m3265222623(L_20, L_24, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
+		WaitForSeconds_t3839502067 * L_25 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_25, (0.3f), /*hidden argument*/NULL);
+		__this->set_U24current_1(L_25);
+		bool L_26 = __this->get_U24disposing_2();
+		if (L_26)
 		{
-			goto IL_0194;
+			goto IL_0187;
 		}
 	}
 	{
 		__this->set_U24PC_3(5);
 	}
 
-IL_0194:
+IL_0187:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0199:
+IL_018c:
 	{
+		framework_t4204615976 * L_27 = __this->get_U24this_0();
+		NullCheck(L_27);
+		framework_click_m558075337(L_27, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
 		framework_t4204615976 * L_28 = __this->get_U24this_0();
 		NullCheck(L_28);
-		framework_click_m558075337(L_28, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
-		framework_t4204615976 * L_29 = __this->get_U24this_0();
-		NullCheck(L_29);
-		int32_t L_30 = L_29->get_runOrder_8();
-		framework_t4204615976 * L_31 = __this->get_U24this_0();
-		NullCheck(L_31);
-		int32_t L_32 = L_31->get_maxTest_7();
-		if ((((int32_t)L_30) >= ((int32_t)L_32)))
+		int32_t L_29 = L_28->get_runOrder_8();
+		framework_t4204615976 * L_30 = __this->get_U24this_0();
+		NullCheck(L_30);
+		int32_t L_31 = L_30->get_maxTest_7();
+		if ((((int32_t)L_29) >= ((int32_t)L_31)))
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
+		framework_t4204615976 * L_32 = __this->get_U24this_0();
 		framework_t4204615976 * L_33 = __this->get_U24this_0();
-		framework_t4204615976 * L_34 = __this->get_U24this_0();
-		NullCheck(L_34);
-		List_1_t835147881 * L_35 = L_34->get_testSuite_3();
-		framework_t4204615976 * L_36 = __this->get_U24this_0();
-		NullCheck(L_36);
-		int32_t L_37 = L_36->get_runOrder_8();
-		NullCheck(L_35);
-		Il2CppObject * L_38 = List_1_get_Item_m561137211(L_35, L_37, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
 		NullCheck(L_33);
-		Coroutine_t2299508840 * L_39 = MonoBehaviour_StartCoroutine_m2470621050(L_33, L_38, /*hidden argument*/NULL);
-		__this->set_U24current_1(L_39);
-		bool L_40 = __this->get_U24disposing_2();
-		if (L_40)
+		List_1_t835147881 * L_34 = L_33->get_testSuite_3();
+		framework_t4204615976 * L_35 = __this->get_U24this_0();
+		NullCheck(L_35);
+		int32_t L_36 = L_35->get_runOrder_8();
+		NullCheck(L_34);
+		Il2CppObject * L_37 = List_1_get_Item_m561137211(L_34, L_36, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
+		NullCheck(L_32);
+		Coroutine_t2299508840 * L_38 = MonoBehaviour_StartCoroutine_m2470621050(L_32, L_37, /*hidden argument*/NULL);
+		__this->set_U24current_1(L_38);
+		bool L_39 = __this->get_U24disposing_2();
+		if (L_39)
 		{
-			goto IL_0204;
+			goto IL_01f7;
 		}
 	}
 	{
 		__this->set_U24PC_3(6);
 	}
 
-IL_0204:
+IL_01f7:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0209:
+IL_01fc:
 	{
 		__this->set_U24PC_3((-1));
 	}
 
-IL_0210:
+IL_0203:
 	{
 		return (bool)0;
 	}
 
-IL_0212:
+IL_0205:
 	{
 		return (bool)1;
 	}
@@ -5747,7 +5815,6 @@ extern Il2CppCodeGenString* _stringLiteral1175314293;
 extern Il2CppCodeGenString* _stringLiteral1033150532;
 extern Il2CppCodeGenString* _stringLiteral1620256649;
 extern Il2CppCodeGenString* _stringLiteral2204087226;
-extern Il2CppCodeGenString* _stringLiteral2284121507;
 extern Il2CppCodeGenString* _stringLiteral1496915101;
 extern const uint32_t U3Ctest02U3Ec__Iterator1_MoveNext_m2563039216_MetadataUsageId;
 extern "C"  bool U3Ctest02U3Ec__Iterator1_MoveNext_m2563039216 (U3Ctest02U3Ec__Iterator1_t3909401043 * __this, const MethodInfo* method)
@@ -5759,8 +5826,6 @@ extern "C"  bool U3Ctest02U3Ec__Iterator1_MoveNext_m2563039216 (U3Ctest02U3Ec__I
 		s_Il2CppMethodInitialized = true;
 	}
 	uint32_t V_0 = 0;
-	DateTime_t693205669  V_1;
-	memset(&V_1, 0, sizeof(V_1));
 	{
 		int32_t L_0 = __this->get_U24PC_3();
 		V_0 = L_0;
@@ -5788,15 +5853,15 @@ extern "C"  bool U3Ctest02U3Ec__Iterator1_MoveNext_m2563039216 (U3Ctest02U3Ec__I
 		}
 		if (L_1 == 5)
 		{
-			goto IL_0199;
+			goto IL_018c;
 		}
 		if (L_1 == 6)
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
-		goto IL_0210;
+		goto IL_0203;
 	}
 
 IL_0035:
@@ -5828,7 +5893,7 @@ IL_0035:
 
 IL_007d:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_0082:
@@ -5852,7 +5917,7 @@ IL_0082:
 
 IL_00bc:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00c1:
@@ -5875,7 +5940,7 @@ IL_00c1:
 
 IL_00f5:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00fa:
@@ -5898,7 +5963,7 @@ IL_00fa:
 
 IL_012a:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_012f:
@@ -5911,85 +5976,83 @@ IL_012f:
 		bool L_22 = framework_compareInfo_m1268539376(L_21, _stringLiteral1033150532, _stringLiteral1620256649, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
 		DateTime_t693205669  L_23 = DateTime_get_Now_m24136300(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_1 = L_23;
-		String_t* L_24 = DateTime_ToString_m1473013667((&V_1), _stringLiteral2284121507, /*hidden argument*/NULL);
-		TestCase_t820417420 * L_25 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
-		TestCase__ctor_m4045008822(L_25, _stringLiteral1175314293, L_22, _stringLiteral2204087226, L_24, /*hidden argument*/NULL);
+		TestCase_t820417420 * L_24 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
+		TestCase__ctor_m386280814(L_24, _stringLiteral1175314293, L_22, _stringLiteral2204087226, L_23, /*hidden argument*/NULL);
 		NullCheck(L_20);
-		List_1_Add_m3265222623(L_20, L_25, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
-		WaitForSeconds_t3839502067 * L_26 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_26, (0.3f), /*hidden argument*/NULL);
-		__this->set_U24current_1(L_26);
-		bool L_27 = __this->get_U24disposing_2();
-		if (L_27)
+		List_1_Add_m3265222623(L_20, L_24, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
+		WaitForSeconds_t3839502067 * L_25 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_25, (0.3f), /*hidden argument*/NULL);
+		__this->set_U24current_1(L_25);
+		bool L_26 = __this->get_U24disposing_2();
+		if (L_26)
 		{
-			goto IL_0194;
+			goto IL_0187;
 		}
 	}
 	{
 		__this->set_U24PC_3(5);
 	}
 
-IL_0194:
+IL_0187:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0199:
+IL_018c:
 	{
+		framework_t4204615976 * L_27 = __this->get_U24this_0();
+		NullCheck(L_27);
+		framework_click_m558075337(L_27, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
 		framework_t4204615976 * L_28 = __this->get_U24this_0();
 		NullCheck(L_28);
-		framework_click_m558075337(L_28, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
-		framework_t4204615976 * L_29 = __this->get_U24this_0();
-		NullCheck(L_29);
-		int32_t L_30 = L_29->get_runOrder_8();
-		framework_t4204615976 * L_31 = __this->get_U24this_0();
-		NullCheck(L_31);
-		int32_t L_32 = L_31->get_maxTest_7();
-		if ((((int32_t)L_30) >= ((int32_t)L_32)))
+		int32_t L_29 = L_28->get_runOrder_8();
+		framework_t4204615976 * L_30 = __this->get_U24this_0();
+		NullCheck(L_30);
+		int32_t L_31 = L_30->get_maxTest_7();
+		if ((((int32_t)L_29) >= ((int32_t)L_31)))
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
+		framework_t4204615976 * L_32 = __this->get_U24this_0();
 		framework_t4204615976 * L_33 = __this->get_U24this_0();
-		framework_t4204615976 * L_34 = __this->get_U24this_0();
-		NullCheck(L_34);
-		List_1_t835147881 * L_35 = L_34->get_testSuite_3();
-		framework_t4204615976 * L_36 = __this->get_U24this_0();
-		NullCheck(L_36);
-		int32_t L_37 = L_36->get_runOrder_8();
-		NullCheck(L_35);
-		Il2CppObject * L_38 = List_1_get_Item_m561137211(L_35, L_37, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
 		NullCheck(L_33);
-		Coroutine_t2299508840 * L_39 = MonoBehaviour_StartCoroutine_m2470621050(L_33, L_38, /*hidden argument*/NULL);
-		__this->set_U24current_1(L_39);
-		bool L_40 = __this->get_U24disposing_2();
-		if (L_40)
+		List_1_t835147881 * L_34 = L_33->get_testSuite_3();
+		framework_t4204615976 * L_35 = __this->get_U24this_0();
+		NullCheck(L_35);
+		int32_t L_36 = L_35->get_runOrder_8();
+		NullCheck(L_34);
+		Il2CppObject * L_37 = List_1_get_Item_m561137211(L_34, L_36, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
+		NullCheck(L_32);
+		Coroutine_t2299508840 * L_38 = MonoBehaviour_StartCoroutine_m2470621050(L_32, L_37, /*hidden argument*/NULL);
+		__this->set_U24current_1(L_38);
+		bool L_39 = __this->get_U24disposing_2();
+		if (L_39)
 		{
-			goto IL_0204;
+			goto IL_01f7;
 		}
 	}
 	{
 		__this->set_U24PC_3(6);
 	}
 
-IL_0204:
+IL_01f7:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0209:
+IL_01fc:
 	{
 		__this->set_U24PC_3((-1));
 	}
 
-IL_0210:
+IL_0203:
 	{
 		return (bool)0;
 	}
 
-IL_0212:
+IL_0205:
 	{
 		return (bool)1;
 	}
@@ -6057,7 +6120,6 @@ extern Il2CppCodeGenString* _stringLiteral1175314329;
 extern Il2CppCodeGenString* _stringLiteral1033150532;
 extern Il2CppCodeGenString* _stringLiteral4173599282;
 extern Il2CppCodeGenString* _stringLiteral2429923633;
-extern Il2CppCodeGenString* _stringLiteral2284121507;
 extern Il2CppCodeGenString* _stringLiteral1496915101;
 extern const uint32_t U3Ctest03U3Ec__Iterator2_MoveNext_m3376546392_MetadataUsageId;
 extern "C"  bool U3Ctest03U3Ec__Iterator2_MoveNext_m3376546392 (U3Ctest03U3Ec__Iterator2_t4036745081 * __this, const MethodInfo* method)
@@ -6069,8 +6131,6 @@ extern "C"  bool U3Ctest03U3Ec__Iterator2_MoveNext_m3376546392 (U3Ctest03U3Ec__I
 		s_Il2CppMethodInitialized = true;
 	}
 	uint32_t V_0 = 0;
-	DateTime_t693205669  V_1;
-	memset(&V_1, 0, sizeof(V_1));
 	{
 		int32_t L_0 = __this->get_U24PC_3();
 		V_0 = L_0;
@@ -6098,15 +6158,15 @@ extern "C"  bool U3Ctest03U3Ec__Iterator2_MoveNext_m3376546392 (U3Ctest03U3Ec__I
 		}
 		if (L_1 == 5)
 		{
-			goto IL_0199;
+			goto IL_018c;
 		}
 		if (L_1 == 6)
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
-		goto IL_0210;
+		goto IL_0203;
 	}
 
 IL_0035:
@@ -6138,7 +6198,7 @@ IL_0035:
 
 IL_007d:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_0082:
@@ -6162,7 +6222,7 @@ IL_0082:
 
 IL_00bc:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00c1:
@@ -6185,7 +6245,7 @@ IL_00c1:
 
 IL_00f5:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00fa:
@@ -6208,7 +6268,7 @@ IL_00fa:
 
 IL_012a:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_012f:
@@ -6221,85 +6281,83 @@ IL_012f:
 		bool L_22 = framework_compareInfo_m1268539376(L_21, _stringLiteral1033150532, _stringLiteral4173599282, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
 		DateTime_t693205669  L_23 = DateTime_get_Now_m24136300(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_1 = L_23;
-		String_t* L_24 = DateTime_ToString_m1473013667((&V_1), _stringLiteral2284121507, /*hidden argument*/NULL);
-		TestCase_t820417420 * L_25 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
-		TestCase__ctor_m4045008822(L_25, _stringLiteral1175314329, L_22, _stringLiteral2429923633, L_24, /*hidden argument*/NULL);
+		TestCase_t820417420 * L_24 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
+		TestCase__ctor_m386280814(L_24, _stringLiteral1175314329, L_22, _stringLiteral2429923633, L_23, /*hidden argument*/NULL);
 		NullCheck(L_20);
-		List_1_Add_m3265222623(L_20, L_25, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
-		WaitForSeconds_t3839502067 * L_26 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_26, (0.3f), /*hidden argument*/NULL);
-		__this->set_U24current_1(L_26);
-		bool L_27 = __this->get_U24disposing_2();
-		if (L_27)
+		List_1_Add_m3265222623(L_20, L_24, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
+		WaitForSeconds_t3839502067 * L_25 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_25, (0.3f), /*hidden argument*/NULL);
+		__this->set_U24current_1(L_25);
+		bool L_26 = __this->get_U24disposing_2();
+		if (L_26)
 		{
-			goto IL_0194;
+			goto IL_0187;
 		}
 	}
 	{
 		__this->set_U24PC_3(5);
 	}
 
-IL_0194:
+IL_0187:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0199:
+IL_018c:
 	{
+		framework_t4204615976 * L_27 = __this->get_U24this_0();
+		NullCheck(L_27);
+		framework_click_m558075337(L_27, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
 		framework_t4204615976 * L_28 = __this->get_U24this_0();
 		NullCheck(L_28);
-		framework_click_m558075337(L_28, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
-		framework_t4204615976 * L_29 = __this->get_U24this_0();
-		NullCheck(L_29);
-		int32_t L_30 = L_29->get_runOrder_8();
-		framework_t4204615976 * L_31 = __this->get_U24this_0();
-		NullCheck(L_31);
-		int32_t L_32 = L_31->get_maxTest_7();
-		if ((((int32_t)L_30) >= ((int32_t)L_32)))
+		int32_t L_29 = L_28->get_runOrder_8();
+		framework_t4204615976 * L_30 = __this->get_U24this_0();
+		NullCheck(L_30);
+		int32_t L_31 = L_30->get_maxTest_7();
+		if ((((int32_t)L_29) >= ((int32_t)L_31)))
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
+		framework_t4204615976 * L_32 = __this->get_U24this_0();
 		framework_t4204615976 * L_33 = __this->get_U24this_0();
-		framework_t4204615976 * L_34 = __this->get_U24this_0();
-		NullCheck(L_34);
-		List_1_t835147881 * L_35 = L_34->get_testSuite_3();
-		framework_t4204615976 * L_36 = __this->get_U24this_0();
-		NullCheck(L_36);
-		int32_t L_37 = L_36->get_runOrder_8();
-		NullCheck(L_35);
-		Il2CppObject * L_38 = List_1_get_Item_m561137211(L_35, L_37, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
 		NullCheck(L_33);
-		Coroutine_t2299508840 * L_39 = MonoBehaviour_StartCoroutine_m2470621050(L_33, L_38, /*hidden argument*/NULL);
-		__this->set_U24current_1(L_39);
-		bool L_40 = __this->get_U24disposing_2();
-		if (L_40)
+		List_1_t835147881 * L_34 = L_33->get_testSuite_3();
+		framework_t4204615976 * L_35 = __this->get_U24this_0();
+		NullCheck(L_35);
+		int32_t L_36 = L_35->get_runOrder_8();
+		NullCheck(L_34);
+		Il2CppObject * L_37 = List_1_get_Item_m561137211(L_34, L_36, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
+		NullCheck(L_32);
+		Coroutine_t2299508840 * L_38 = MonoBehaviour_StartCoroutine_m2470621050(L_32, L_37, /*hidden argument*/NULL);
+		__this->set_U24current_1(L_38);
+		bool L_39 = __this->get_U24disposing_2();
+		if (L_39)
 		{
-			goto IL_0204;
+			goto IL_01f7;
 		}
 	}
 	{
 		__this->set_U24PC_3(6);
 	}
 
-IL_0204:
+IL_01f7:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0209:
+IL_01fc:
 	{
 		__this->set_U24PC_3((-1));
 	}
 
-IL_0210:
+IL_0203:
 	{
 		return (bool)0;
 	}
 
-IL_0212:
+IL_0205:
 	{
 		return (bool)1;
 	}
@@ -6367,7 +6425,6 @@ extern Il2CppCodeGenString* _stringLiteral1175314332;
 extern Il2CppCodeGenString* _stringLiteral1033150532;
 extern Il2CppCodeGenString* _stringLiteral1620256649;
 extern Il2CppCodeGenString* _stringLiteral3476371984;
-extern Il2CppCodeGenString* _stringLiteral2284121507;
 extern Il2CppCodeGenString* _stringLiteral1496915101;
 extern const uint32_t U3Ctest04U3Ec__Iterator3_MoveNext_m3070244688_MetadataUsageId;
 extern "C"  bool U3Ctest04U3Ec__Iterator3_MoveNext_m3070244688 (U3Ctest04U3Ec__Iterator3_t740022307 * __this, const MethodInfo* method)
@@ -6379,8 +6436,6 @@ extern "C"  bool U3Ctest04U3Ec__Iterator3_MoveNext_m3070244688 (U3Ctest04U3Ec__I
 		s_Il2CppMethodInitialized = true;
 	}
 	uint32_t V_0 = 0;
-	DateTime_t693205669  V_1;
-	memset(&V_1, 0, sizeof(V_1));
 	{
 		int32_t L_0 = __this->get_U24PC_3();
 		V_0 = L_0;
@@ -6408,15 +6463,15 @@ extern "C"  bool U3Ctest04U3Ec__Iterator3_MoveNext_m3070244688 (U3Ctest04U3Ec__I
 		}
 		if (L_1 == 5)
 		{
-			goto IL_0199;
+			goto IL_018c;
 		}
 		if (L_1 == 6)
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
-		goto IL_0210;
+		goto IL_0203;
 	}
 
 IL_0035:
@@ -6448,7 +6503,7 @@ IL_0035:
 
 IL_007d:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_0082:
@@ -6472,7 +6527,7 @@ IL_0082:
 
 IL_00bc:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00c1:
@@ -6495,7 +6550,7 @@ IL_00c1:
 
 IL_00f5:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00fa:
@@ -6518,7 +6573,7 @@ IL_00fa:
 
 IL_012a:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_012f:
@@ -6531,85 +6586,83 @@ IL_012f:
 		bool L_22 = framework_compareInfo_m1268539376(L_21, _stringLiteral1033150532, _stringLiteral1620256649, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
 		DateTime_t693205669  L_23 = DateTime_get_Now_m24136300(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_1 = L_23;
-		String_t* L_24 = DateTime_ToString_m1473013667((&V_1), _stringLiteral2284121507, /*hidden argument*/NULL);
-		TestCase_t820417420 * L_25 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
-		TestCase__ctor_m4045008822(L_25, _stringLiteral1175314332, L_22, _stringLiteral3476371984, L_24, /*hidden argument*/NULL);
+		TestCase_t820417420 * L_24 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
+		TestCase__ctor_m386280814(L_24, _stringLiteral1175314332, L_22, _stringLiteral3476371984, L_23, /*hidden argument*/NULL);
 		NullCheck(L_20);
-		List_1_Add_m3265222623(L_20, L_25, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
-		WaitForSeconds_t3839502067 * L_26 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_26, (0.3f), /*hidden argument*/NULL);
-		__this->set_U24current_1(L_26);
-		bool L_27 = __this->get_U24disposing_2();
-		if (L_27)
+		List_1_Add_m3265222623(L_20, L_24, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
+		WaitForSeconds_t3839502067 * L_25 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_25, (0.3f), /*hidden argument*/NULL);
+		__this->set_U24current_1(L_25);
+		bool L_26 = __this->get_U24disposing_2();
+		if (L_26)
 		{
-			goto IL_0194;
+			goto IL_0187;
 		}
 	}
 	{
 		__this->set_U24PC_3(5);
 	}
 
-IL_0194:
+IL_0187:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0199:
+IL_018c:
 	{
+		framework_t4204615976 * L_27 = __this->get_U24this_0();
+		NullCheck(L_27);
+		framework_click_m558075337(L_27, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
 		framework_t4204615976 * L_28 = __this->get_U24this_0();
 		NullCheck(L_28);
-		framework_click_m558075337(L_28, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
-		framework_t4204615976 * L_29 = __this->get_U24this_0();
-		NullCheck(L_29);
-		int32_t L_30 = L_29->get_runOrder_8();
-		framework_t4204615976 * L_31 = __this->get_U24this_0();
-		NullCheck(L_31);
-		int32_t L_32 = L_31->get_maxTest_7();
-		if ((((int32_t)L_30) >= ((int32_t)L_32)))
+		int32_t L_29 = L_28->get_runOrder_8();
+		framework_t4204615976 * L_30 = __this->get_U24this_0();
+		NullCheck(L_30);
+		int32_t L_31 = L_30->get_maxTest_7();
+		if ((((int32_t)L_29) >= ((int32_t)L_31)))
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
+		framework_t4204615976 * L_32 = __this->get_U24this_0();
 		framework_t4204615976 * L_33 = __this->get_U24this_0();
-		framework_t4204615976 * L_34 = __this->get_U24this_0();
-		NullCheck(L_34);
-		List_1_t835147881 * L_35 = L_34->get_testSuite_3();
-		framework_t4204615976 * L_36 = __this->get_U24this_0();
-		NullCheck(L_36);
-		int32_t L_37 = L_36->get_runOrder_8();
-		NullCheck(L_35);
-		Il2CppObject * L_38 = List_1_get_Item_m561137211(L_35, L_37, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
 		NullCheck(L_33);
-		Coroutine_t2299508840 * L_39 = MonoBehaviour_StartCoroutine_m2470621050(L_33, L_38, /*hidden argument*/NULL);
-		__this->set_U24current_1(L_39);
-		bool L_40 = __this->get_U24disposing_2();
-		if (L_40)
+		List_1_t835147881 * L_34 = L_33->get_testSuite_3();
+		framework_t4204615976 * L_35 = __this->get_U24this_0();
+		NullCheck(L_35);
+		int32_t L_36 = L_35->get_runOrder_8();
+		NullCheck(L_34);
+		Il2CppObject * L_37 = List_1_get_Item_m561137211(L_34, L_36, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
+		NullCheck(L_32);
+		Coroutine_t2299508840 * L_38 = MonoBehaviour_StartCoroutine_m2470621050(L_32, L_37, /*hidden argument*/NULL);
+		__this->set_U24current_1(L_38);
+		bool L_39 = __this->get_U24disposing_2();
+		if (L_39)
 		{
-			goto IL_0204;
+			goto IL_01f7;
 		}
 	}
 	{
 		__this->set_U24PC_3(6);
 	}
 
-IL_0204:
+IL_01f7:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0209:
+IL_01fc:
 	{
 		__this->set_U24PC_3((-1));
 	}
 
-IL_0210:
+IL_0203:
 	{
 		return (bool)0;
 	}
 
-IL_0212:
+IL_0205:
 	{
 		return (bool)1;
 	}
@@ -6677,7 +6730,6 @@ extern Il2CppCodeGenString* _stringLiteral1175314362;
 extern Il2CppCodeGenString* _stringLiteral1033150532;
 extern Il2CppCodeGenString* _stringLiteral4173599282;
 extern Il2CppCodeGenString* _stringLiteral2469135991;
-extern Il2CppCodeGenString* _stringLiteral2284121507;
 extern Il2CppCodeGenString* _stringLiteral1496915101;
 extern const uint32_t U3Ctest05U3Ec__Iterator4_MoveNext_m3432177080_MetadataUsageId;
 extern "C"  bool U3Ctest05U3Ec__Iterator4_MoveNext_m3432177080 (U3Ctest05U3Ec__Iterator4_t1214405281 * __this, const MethodInfo* method)
@@ -6689,8 +6741,6 @@ extern "C"  bool U3Ctest05U3Ec__Iterator4_MoveNext_m3432177080 (U3Ctest05U3Ec__I
 		s_Il2CppMethodInitialized = true;
 	}
 	uint32_t V_0 = 0;
-	DateTime_t693205669  V_1;
-	memset(&V_1, 0, sizeof(V_1));
 	{
 		int32_t L_0 = __this->get_U24PC_3();
 		V_0 = L_0;
@@ -6718,15 +6768,15 @@ extern "C"  bool U3Ctest05U3Ec__Iterator4_MoveNext_m3432177080 (U3Ctest05U3Ec__I
 		}
 		if (L_1 == 5)
 		{
-			goto IL_0199;
+			goto IL_018c;
 		}
 		if (L_1 == 6)
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
-		goto IL_0210;
+		goto IL_0203;
 	}
 
 IL_0035:
@@ -6758,7 +6808,7 @@ IL_0035:
 
 IL_007d:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_0082:
@@ -6782,7 +6832,7 @@ IL_0082:
 
 IL_00bc:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00c1:
@@ -6805,7 +6855,7 @@ IL_00c1:
 
 IL_00f5:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00fa:
@@ -6828,7 +6878,7 @@ IL_00fa:
 
 IL_012a:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_012f:
@@ -6841,85 +6891,83 @@ IL_012f:
 		bool L_22 = framework_compareInfo_m1268539376(L_21, _stringLiteral1033150532, _stringLiteral4173599282, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
 		DateTime_t693205669  L_23 = DateTime_get_Now_m24136300(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_1 = L_23;
-		String_t* L_24 = DateTime_ToString_m1473013667((&V_1), _stringLiteral2284121507, /*hidden argument*/NULL);
-		TestCase_t820417420 * L_25 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
-		TestCase__ctor_m4045008822(L_25, _stringLiteral1175314362, L_22, _stringLiteral2469135991, L_24, /*hidden argument*/NULL);
+		TestCase_t820417420 * L_24 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
+		TestCase__ctor_m386280814(L_24, _stringLiteral1175314362, L_22, _stringLiteral2469135991, L_23, /*hidden argument*/NULL);
 		NullCheck(L_20);
-		List_1_Add_m3265222623(L_20, L_25, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
-		WaitForSeconds_t3839502067 * L_26 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_26, (0.3f), /*hidden argument*/NULL);
-		__this->set_U24current_1(L_26);
-		bool L_27 = __this->get_U24disposing_2();
-		if (L_27)
+		List_1_Add_m3265222623(L_20, L_24, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
+		WaitForSeconds_t3839502067 * L_25 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_25, (0.3f), /*hidden argument*/NULL);
+		__this->set_U24current_1(L_25);
+		bool L_26 = __this->get_U24disposing_2();
+		if (L_26)
 		{
-			goto IL_0194;
+			goto IL_0187;
 		}
 	}
 	{
 		__this->set_U24PC_3(5);
 	}
 
-IL_0194:
+IL_0187:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0199:
+IL_018c:
 	{
+		framework_t4204615976 * L_27 = __this->get_U24this_0();
+		NullCheck(L_27);
+		framework_click_m558075337(L_27, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
 		framework_t4204615976 * L_28 = __this->get_U24this_0();
 		NullCheck(L_28);
-		framework_click_m558075337(L_28, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
-		framework_t4204615976 * L_29 = __this->get_U24this_0();
-		NullCheck(L_29);
-		int32_t L_30 = L_29->get_runOrder_8();
-		framework_t4204615976 * L_31 = __this->get_U24this_0();
-		NullCheck(L_31);
-		int32_t L_32 = L_31->get_maxTest_7();
-		if ((((int32_t)L_30) >= ((int32_t)L_32)))
+		int32_t L_29 = L_28->get_runOrder_8();
+		framework_t4204615976 * L_30 = __this->get_U24this_0();
+		NullCheck(L_30);
+		int32_t L_31 = L_30->get_maxTest_7();
+		if ((((int32_t)L_29) >= ((int32_t)L_31)))
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
+		framework_t4204615976 * L_32 = __this->get_U24this_0();
 		framework_t4204615976 * L_33 = __this->get_U24this_0();
-		framework_t4204615976 * L_34 = __this->get_U24this_0();
-		NullCheck(L_34);
-		List_1_t835147881 * L_35 = L_34->get_testSuite_3();
-		framework_t4204615976 * L_36 = __this->get_U24this_0();
-		NullCheck(L_36);
-		int32_t L_37 = L_36->get_runOrder_8();
-		NullCheck(L_35);
-		Il2CppObject * L_38 = List_1_get_Item_m561137211(L_35, L_37, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
 		NullCheck(L_33);
-		Coroutine_t2299508840 * L_39 = MonoBehaviour_StartCoroutine_m2470621050(L_33, L_38, /*hidden argument*/NULL);
-		__this->set_U24current_1(L_39);
-		bool L_40 = __this->get_U24disposing_2();
-		if (L_40)
+		List_1_t835147881 * L_34 = L_33->get_testSuite_3();
+		framework_t4204615976 * L_35 = __this->get_U24this_0();
+		NullCheck(L_35);
+		int32_t L_36 = L_35->get_runOrder_8();
+		NullCheck(L_34);
+		Il2CppObject * L_37 = List_1_get_Item_m561137211(L_34, L_36, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
+		NullCheck(L_32);
+		Coroutine_t2299508840 * L_38 = MonoBehaviour_StartCoroutine_m2470621050(L_32, L_37, /*hidden argument*/NULL);
+		__this->set_U24current_1(L_38);
+		bool L_39 = __this->get_U24disposing_2();
+		if (L_39)
 		{
-			goto IL_0204;
+			goto IL_01f7;
 		}
 	}
 	{
 		__this->set_U24PC_3(6);
 	}
 
-IL_0204:
+IL_01f7:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0209:
+IL_01fc:
 	{
 		__this->set_U24PC_3((-1));
 	}
 
-IL_0210:
+IL_0203:
 	{
 		return (bool)0;
 	}
 
-IL_0212:
+IL_0205:
 	{
 		return (bool)1;
 	}
@@ -6987,7 +7035,6 @@ extern Il2CppCodeGenString* _stringLiteral1175314363;
 extern Il2CppCodeGenString* _stringLiteral1033150532;
 extern Il2CppCodeGenString* _stringLiteral1620256649;
 extern Il2CppCodeGenString* _stringLiteral633216824;
-extern Il2CppCodeGenString* _stringLiteral2284121507;
 extern Il2CppCodeGenString* _stringLiteral1496915101;
 extern const uint32_t U3Ctest06U3Ec__Iterator5_MoveNext_m705643400_MetadataUsageId;
 extern "C"  bool U3Ctest06U3Ec__Iterator5_MoveNext_m705643400 (U3Ctest06U3Ec__Iterator5_t1078328131 * __this, const MethodInfo* method)
@@ -6999,8 +7046,6 @@ extern "C"  bool U3Ctest06U3Ec__Iterator5_MoveNext_m705643400 (U3Ctest06U3Ec__It
 		s_Il2CppMethodInitialized = true;
 	}
 	uint32_t V_0 = 0;
-	DateTime_t693205669  V_1;
-	memset(&V_1, 0, sizeof(V_1));
 	{
 		int32_t L_0 = __this->get_U24PC_3();
 		V_0 = L_0;
@@ -7028,15 +7073,15 @@ extern "C"  bool U3Ctest06U3Ec__Iterator5_MoveNext_m705643400 (U3Ctest06U3Ec__It
 		}
 		if (L_1 == 5)
 		{
-			goto IL_0199;
+			goto IL_018c;
 		}
 		if (L_1 == 6)
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
-		goto IL_0210;
+		goto IL_0203;
 	}
 
 IL_0035:
@@ -7068,7 +7113,7 @@ IL_0035:
 
 IL_007d:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_0082:
@@ -7092,7 +7137,7 @@ IL_0082:
 
 IL_00bc:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00c1:
@@ -7115,7 +7160,7 @@ IL_00c1:
 
 IL_00f5:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_00fa:
@@ -7138,7 +7183,7 @@ IL_00fa:
 
 IL_012a:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
 IL_012f:
@@ -7151,85 +7196,83 @@ IL_012f:
 		bool L_22 = framework_compareInfo_m1268539376(L_21, _stringLiteral1033150532, _stringLiteral1620256649, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
 		DateTime_t693205669  L_23 = DateTime_get_Now_m24136300(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_1 = L_23;
-		String_t* L_24 = DateTime_ToString_m1473013667((&V_1), _stringLiteral2284121507, /*hidden argument*/NULL);
-		TestCase_t820417420 * L_25 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
-		TestCase__ctor_m4045008822(L_25, _stringLiteral1175314363, L_22, _stringLiteral633216824, L_24, /*hidden argument*/NULL);
+		TestCase_t820417420 * L_24 = (TestCase_t820417420 *)il2cpp_codegen_object_new(TestCase_t820417420_il2cpp_TypeInfo_var);
+		TestCase__ctor_m386280814(L_24, _stringLiteral1175314363, L_22, _stringLiteral633216824, L_23, /*hidden argument*/NULL);
 		NullCheck(L_20);
-		List_1_Add_m3265222623(L_20, L_25, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
-		WaitForSeconds_t3839502067 * L_26 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_26, (0.3f), /*hidden argument*/NULL);
-		__this->set_U24current_1(L_26);
-		bool L_27 = __this->get_U24disposing_2();
-		if (L_27)
+		List_1_Add_m3265222623(L_20, L_24, /*hidden argument*/List_1_Add_m3265222623_MethodInfo_var);
+		WaitForSeconds_t3839502067 * L_25 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_25, (0.3f), /*hidden argument*/NULL);
+		__this->set_U24current_1(L_25);
+		bool L_26 = __this->get_U24disposing_2();
+		if (L_26)
 		{
-			goto IL_0194;
+			goto IL_0187;
 		}
 	}
 	{
 		__this->set_U24PC_3(5);
 	}
 
-IL_0194:
+IL_0187:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0199:
+IL_018c:
 	{
+		framework_t4204615976 * L_27 = __this->get_U24this_0();
+		NullCheck(L_27);
+		framework_click_m558075337(L_27, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
 		framework_t4204615976 * L_28 = __this->get_U24this_0();
 		NullCheck(L_28);
-		framework_click_m558075337(L_28, _stringLiteral1496915101, _stringLiteral3566076464, /*hidden argument*/NULL);
-		framework_t4204615976 * L_29 = __this->get_U24this_0();
-		NullCheck(L_29);
-		int32_t L_30 = L_29->get_runOrder_8();
-		framework_t4204615976 * L_31 = __this->get_U24this_0();
-		NullCheck(L_31);
-		int32_t L_32 = L_31->get_maxTest_7();
-		if ((((int32_t)L_30) >= ((int32_t)L_32)))
+		int32_t L_29 = L_28->get_runOrder_8();
+		framework_t4204615976 * L_30 = __this->get_U24this_0();
+		NullCheck(L_30);
+		int32_t L_31 = L_30->get_maxTest_7();
+		if ((((int32_t)L_29) >= ((int32_t)L_31)))
 		{
-			goto IL_0209;
+			goto IL_01fc;
 		}
 	}
 	{
+		framework_t4204615976 * L_32 = __this->get_U24this_0();
 		framework_t4204615976 * L_33 = __this->get_U24this_0();
-		framework_t4204615976 * L_34 = __this->get_U24this_0();
-		NullCheck(L_34);
-		List_1_t835147881 * L_35 = L_34->get_testSuite_3();
-		framework_t4204615976 * L_36 = __this->get_U24this_0();
-		NullCheck(L_36);
-		int32_t L_37 = L_36->get_runOrder_8();
-		NullCheck(L_35);
-		Il2CppObject * L_38 = List_1_get_Item_m561137211(L_35, L_37, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
 		NullCheck(L_33);
-		Coroutine_t2299508840 * L_39 = MonoBehaviour_StartCoroutine_m2470621050(L_33, L_38, /*hidden argument*/NULL);
-		__this->set_U24current_1(L_39);
-		bool L_40 = __this->get_U24disposing_2();
-		if (L_40)
+		List_1_t835147881 * L_34 = L_33->get_testSuite_3();
+		framework_t4204615976 * L_35 = __this->get_U24this_0();
+		NullCheck(L_35);
+		int32_t L_36 = L_35->get_runOrder_8();
+		NullCheck(L_34);
+		Il2CppObject * L_37 = List_1_get_Item_m561137211(L_34, L_36, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
+		NullCheck(L_32);
+		Coroutine_t2299508840 * L_38 = MonoBehaviour_StartCoroutine_m2470621050(L_32, L_37, /*hidden argument*/NULL);
+		__this->set_U24current_1(L_38);
+		bool L_39 = __this->get_U24disposing_2();
+		if (L_39)
 		{
-			goto IL_0204;
+			goto IL_01f7;
 		}
 	}
 	{
 		__this->set_U24PC_3(6);
 	}
 
-IL_0204:
+IL_01f7:
 	{
-		goto IL_0212;
+		goto IL_0205;
 	}
 
-IL_0209:
+IL_01fc:
 	{
 		__this->set_U24PC_3((-1));
 	}
 
-IL_0210:
+IL_0203:
 	{
 		return (bool)0;
 	}
 
-IL_0212:
+IL_0205:
 	{
 		return (bool)1;
 	}
@@ -9592,8 +9635,8 @@ extern "C"  void TestCase__ctor_m2718246901 (TestCase_t820417420 * __this, const
 		return;
 	}
 }
-// System.Void TestCase::.ctor(System.String,System.Boolean,System.String,System.String)
-extern "C"  void TestCase__ctor_m4045008822 (TestCase_t820417420 * __this, String_t* ___ID0, bool ___result1, String_t* ___descitpion2, String_t* ___date3, const MethodInfo* method)
+// System.Void TestCase::.ctor(System.String,System.Boolean,System.String,System.DateTime)
+extern "C"  void TestCase__ctor_m386280814 (TestCase_t820417420 * __this, String_t* ___ID0, bool ___result1, String_t* ___descitpion2, DateTime_t693205669  ___date3, const MethodInfo* method)
 {
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
@@ -9603,7 +9646,7 @@ extern "C"  void TestCase__ctor_m4045008822 (TestCase_t820417420 * __this, Strin
 		__this->set_result_1(L_1);
 		String_t* L_2 = ___descitpion2;
 		__this->set_descitpion_2(L_2);
-		String_t* L_3 = ___date3;
+		DateTime_t693205669  L_3 = ___date3;
 		__this->set_date_3(L_3);
 		return;
 	}
@@ -9632,11 +9675,11 @@ extern "C"  String_t* TestCase_getDescitpion_m1321403330 (TestCase_t820417420 * 
 		return L_0;
 	}
 }
-// System.String TestCase::getDate()
-extern "C"  String_t* TestCase_getDate_m445749224 (TestCase_t820417420 * __this, const MethodInfo* method)
+// System.DateTime TestCase::getDate()
+extern "C"  DateTime_t693205669  TestCase_getDate_m3475179060 (TestCase_t820417420 * __this, const MethodInfo* method)
 {
 	{
-		String_t* L_0 = __this->get_date_3();
+		DateTime_t693205669  L_0 = __this->get_date_3();
 		return L_0;
 	}
 }
@@ -9667,11 +9710,11 @@ extern "C"  void TestCase_setDescitpion_m2629033453 (TestCase_t820417420 * __thi
 		return;
 	}
 }
-// System.Void TestCase::setdate(System.String)
-extern "C"  void TestCase_setdate_m3005172721 (TestCase_t820417420 * __this, String_t* ___date0, const MethodInfo* method)
+// System.Void TestCase::setdate(System.DateTime)
+extern "C"  void TestCase_setdate_m4274576833 (TestCase_t820417420 * __this, DateTime_t693205669  ___date0, const MethodInfo* method)
 {
 	{
-		String_t* L_0 = ___date0;
+		DateTime_t693205669  L_0 = ___date0;
 		__this->set_date_3(L_0);
 		return;
 	}

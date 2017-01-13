@@ -41,7 +41,7 @@ const Il2CppCodeRegistration g_CodeRegistration =
 	g_CcwMarshalingFunctions,
 	7825,
 	g_Il2CppGenericMethodPointers,
-	2383,
+	2384,
 	g_Il2CppInvokerPointers,
 	3809,
 	g_AttributeGenerators,

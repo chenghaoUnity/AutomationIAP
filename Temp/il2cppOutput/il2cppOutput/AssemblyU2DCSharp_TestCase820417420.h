@@ -14,6 +14,7 @@
 struct String_t;
 
 #include "mscorlib_System_Object2689449295.h"
+#include "mscorlib_System_DateTime693205669.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -31,8 +32,8 @@ public:
 	bool ___result_1;
 	// System.String TestCase::descitpion
 	String_t* ___descitpion_2;
-	// System.String TestCase::date
-	String_t* ___date_3;
+	// System.DateTime TestCase::date
+	DateTime_t693205669  ___date_3;
 
 public:
 	inline static int32_t get_offset_of_ID_0() { return static_cast<int32_t>(offsetof(TestCase_t820417420, ___ID_0)); }
@@ -62,12 +63,11 @@ public:
 	}
 
 	inline static int32_t get_offset_of_date_3() { return static_cast<int32_t>(offsetof(TestCase_t820417420, ___date_3)); }
-	inline String_t* get_date_3() const { return ___date_3; }
-	inline String_t** get_address_of_date_3() { return &___date_3; }
-	inline void set_date_3(String_t* value)
+	inline DateTime_t693205669  get_date_3() const { return ___date_3; }
+	inline DateTime_t693205669 * get_address_of_date_3() { return &___date_3; }
+	inline void set_date_3(DateTime_t693205669  value)
 	{
 		___date_3 = value;
-		Il2CppCodeGenWriteBarrier(&___date_3, value);
 	}
 };
 

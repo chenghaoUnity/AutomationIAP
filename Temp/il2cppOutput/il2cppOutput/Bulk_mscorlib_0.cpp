@@ -29740,7 +29740,7 @@ extern "C"  void AuthenticodeDeformatter_Reset_m4180233591 (AuthenticodeDeformat
 		NullCheck(L_1);
 		X509Chain_Reset_m2833056363(L_1, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_2 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_2 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		__this->set_timestamp_12(L_2);
 		return;
 	}

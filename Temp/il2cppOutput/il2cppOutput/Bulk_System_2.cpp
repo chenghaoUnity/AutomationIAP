@@ -35253,7 +35253,7 @@ IL_0011:
 		V_1 = L_3;
 		V_2 = 0;
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_4 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_4 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		V_3 = L_4;
 		int32_t L_5 = ___findType0;
 		V_23 = L_5;
@@ -40807,7 +40807,7 @@ extern "C"  void X509ChainPolicy_Reset_m430244129 (X509ChainPolicy_t3452126517 *
 		__this->set_rflag_3(2);
 		__this->set_mode_4(1);
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_3 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+		TimeSpan_t3430258949  L_3 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 		__this->set_timeout_5(L_3);
 		__this->set_vflags_6(0);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);

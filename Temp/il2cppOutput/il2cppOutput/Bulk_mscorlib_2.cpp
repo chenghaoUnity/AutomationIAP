@@ -571,7 +571,7 @@ extern "C"  void DateTimeOffset__ctor_m428942261 (DateTimeOffset_t1362988906 * _
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_2 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+		TimeSpan_t3430258949  L_2 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 		__this->set_utc_offset_3(L_2);
 		goto IL_0035;
 	}
@@ -590,7 +590,7 @@ IL_0035:
 	{
 		DateTime_t693205669  L_6 = DateTimeOffset_get_UtcDateTime_m3162550774(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_7 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_7 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		bool L_8 = DateTime_op_LessThan_m3944619870(NULL /*static, unused*/, L_6, L_7, /*hidden argument*/NULL);
 		if (L_8)
 		{
@@ -600,7 +600,7 @@ IL_0035:
 	{
 		DateTime_t693205669  L_9 = DateTimeOffset_get_UtcDateTime_m3162550774(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_10 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_2();
+		DateTime_t693205669  L_10 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_12();
 		bool L_11 = DateTime_op_GreaterThan_m2730200039(NULL /*static, unused*/, L_9, L_10, /*hidden argument*/NULL);
 		if (!L_11)
 		{
@@ -655,7 +655,7 @@ extern "C"  void DateTimeOffset__ctor_m2870721395 (DateTimeOffset_t1362988906 * 
 	{
 		TimeSpan_t3430258949  L_1 = ___offset1;
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_2 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+		TimeSpan_t3430258949  L_2 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 		bool L_3 = TimeSpan_op_Inequality_m257547441(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
 		if (!L_3)
 		{
@@ -751,7 +751,7 @@ IL_00a7:
 		__this->set_utc_offset_3(L_22);
 		DateTime_t693205669  L_23 = DateTimeOffset_get_UtcDateTime_m3162550774(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_24 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_24 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		bool L_25 = DateTime_op_LessThan_m3944619870(NULL /*static, unused*/, L_23, L_24, /*hidden argument*/NULL);
 		if (L_25)
 		{
@@ -761,7 +761,7 @@ IL_00a7:
 	{
 		DateTime_t693205669  L_26 = DateTimeOffset_get_UtcDateTime_m3162550774(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_27 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_2();
+		DateTime_t693205669  L_27 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_12();
 		bool L_28 = DateTime_op_GreaterThan_m2730200039(NULL /*static, unused*/, L_26, L_27, /*hidden argument*/NULL);
 		if (!L_28)
 		{
@@ -864,15 +864,15 @@ extern "C"  void DateTimeOffset__cctor_m2475500670 (Il2CppObject * __this /* sta
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_0 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_2();
+		DateTime_t693205669  L_0 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_12();
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_1 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+		TimeSpan_t3430258949  L_1 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 		DateTimeOffset_t1362988906  L_2;
 		memset(&L_2, 0, sizeof(L_2));
 		DateTimeOffset__ctor_m2870721395(&L_2, L_0, L_1, /*hidden argument*/NULL);
 		((DateTimeOffset_t1362988906_StaticFields*)DateTimeOffset_t1362988906_il2cpp_TypeInfo_var->static_fields)->set_MaxValue_0(L_2);
-		DateTime_t693205669  L_3 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
-		TimeSpan_t3430258949  L_4 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+		DateTime_t693205669  L_3 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
+		TimeSpan_t3430258949  L_4 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 		DateTimeOffset_t1362988906  L_5;
 		memset(&L_5, 0, sizeof(L_5));
 		DateTimeOffset__ctor_m2870721395(&L_5, L_3, L_4, /*hidden argument*/NULL);
@@ -1214,7 +1214,7 @@ IL_007f:
 	{
 		DateTime_t693205669  L_21 = DateTimeOffset_get_UtcDateTime_m3162550774(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_22 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+		TimeSpan_t3430258949  L_22 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 		Nullable_1_t1693325264  L_23;
 		memset(&L_23, 0, sizeof(L_23));
 		Nullable_1__ctor_m796575255(&L_23, L_22, /*hidden argument*/Nullable_1__ctor_m796575255_MethodInfo_var);
@@ -1262,7 +1262,7 @@ extern "C"  DateTimeOffset_t1362988906  DateTimeOffset_ToUniversalTime_m38360570
 	{
 		DateTime_t693205669  L_0 = DateTimeOffset_get_UtcDateTime_m3162550774(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_1 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+		TimeSpan_t3430258949  L_1 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 		DateTimeOffset_t1362988906  L_2;
 		memset(&L_2, 0, sizeof(L_2));
 		DateTimeOffset__ctor_m2870721395(&L_2, L_0, L_1, /*hidden argument*/NULL);

@@ -150,23 +150,33 @@ extern const int32_t g_FieldOffsetTable204[2] =
 	Convert_t2607082565_StaticFields::get_offset_of_conversionTable_1(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize205 = { sizeof (DateTime_t693205669)+ sizeof (Il2CppObject), -1, sizeof(DateTime_t693205669_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable205[15] = 
+extern const int32_t g_FieldOffsetTable205[25] = 
 {
-	DateTime_t693205669::get_offset_of_ticks_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	DateTime_t693205669::get_offset_of_kind_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	DateTime_t693205669_StaticFields::get_offset_of_MaxValue_2(),
-	DateTime_t693205669_StaticFields::get_offset_of_MinValue_3(),
-	DateTime_t693205669_StaticFields::get_offset_of_ParseTimeFormats_4(),
-	DateTime_t693205669_StaticFields::get_offset_of_ParseYearDayMonthFormats_5(),
-	DateTime_t693205669_StaticFields::get_offset_of_ParseYearMonthDayFormats_6(),
-	DateTime_t693205669_StaticFields::get_offset_of_ParseDayMonthYearFormats_7(),
-	DateTime_t693205669_StaticFields::get_offset_of_ParseMonthDayYearFormats_8(),
-	DateTime_t693205669_StaticFields::get_offset_of_MonthDayShortFormats_9(),
-	DateTime_t693205669_StaticFields::get_offset_of_DayMonthShortFormats_10(),
-	DateTime_t693205669_StaticFields::get_offset_of_daysmonth_11(),
-	DateTime_t693205669_StaticFields::get_offset_of_daysmonthleap_12(),
-	DateTime_t693205669_StaticFields::get_offset_of_to_local_time_span_object_13(),
-	DateTime_t693205669_StaticFields::get_offset_of_last_now_14(),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	DateTime_t693205669::get_offset_of_ticks_10() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	DateTime_t693205669::get_offset_of_kind_11() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	DateTime_t693205669_StaticFields::get_offset_of_MaxValue_12(),
+	DateTime_t693205669_StaticFields::get_offset_of_MinValue_13(),
+	DateTime_t693205669_StaticFields::get_offset_of_ParseTimeFormats_14(),
+	DateTime_t693205669_StaticFields::get_offset_of_ParseYearDayMonthFormats_15(),
+	DateTime_t693205669_StaticFields::get_offset_of_ParseYearMonthDayFormats_16(),
+	DateTime_t693205669_StaticFields::get_offset_of_ParseDayMonthYearFormats_17(),
+	DateTime_t693205669_StaticFields::get_offset_of_ParseMonthDayYearFormats_18(),
+	DateTime_t693205669_StaticFields::get_offset_of_MonthDayShortFormats_19(),
+	DateTime_t693205669_StaticFields::get_offset_of_DayMonthShortFormats_20(),
+	DateTime_t693205669_StaticFields::get_offset_of_daysmonth_21(),
+	DateTime_t693205669_StaticFields::get_offset_of_daysmonthleap_22(),
+	DateTime_t693205669_StaticFields::get_offset_of_to_local_time_span_object_23(),
+	DateTime_t693205669_StaticFields::get_offset_of_last_now_24(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize206 = { sizeof (Which_t4078252770)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
 extern const int32_t g_FieldOffsetTable206[5] = 
@@ -1102,12 +1112,17 @@ extern const int32_t g_FieldOffsetTable284[396] =
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize285 = { sizeof (ThreadStaticAttribute_t1787731584), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize286 = { sizeof (TimeSpan_t3430258949)+ sizeof (Il2CppObject), sizeof(TimeSpan_t3430258949 ), sizeof(TimeSpan_t3430258949_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable286[4] = 
+extern const int32_t g_FieldOffsetTable286[9] = 
 {
-	TimeSpan_t3430258949_StaticFields::get_offset_of_MaxValue_0(),
-	TimeSpan_t3430258949_StaticFields::get_offset_of_MinValue_1(),
-	TimeSpan_t3430258949_StaticFields::get_offset_of_Zero_2(),
-	TimeSpan_t3430258949::get_offset_of__ticks_3() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	TimeSpan_t3430258949_StaticFields::get_offset_of_MaxValue_5(),
+	TimeSpan_t3430258949_StaticFields::get_offset_of_MinValue_6(),
+	TimeSpan_t3430258949_StaticFields::get_offset_of_Zero_7(),
+	TimeSpan_t3430258949::get_offset_of__ticks_8() + static_cast<int32_t>(sizeof(Il2CppObject)),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize287 = { sizeof (Parser_t2154441450), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable287[4] = 

@@ -210,6 +210,8 @@ extern const Il2CppType Int64_t909078037_1_0_0 = { (void*)14, 0, IL2CPP_TYPE_I8,
 extern const Il2CppType Int64_t909078037_1_0_2 = { (void*)14, 2, IL2CPP_TYPE_I8, 0, 1, 0 };
 extern const Il2CppType Int64_t909078037_0_0_32854 = { (void*)14, 32854, IL2CPP_TYPE_I8, 0, 0, 0 };
 extern const Il2CppType Int64_t909078037_0_0_3 = { (void*)14, 3, IL2CPP_TYPE_I8, 0, 0, 0 };
+extern const Il2CppType Int64_t909078037_0_0_32849 = { (void*)14, 32849, IL2CPP_TYPE_I8, 0, 0, 0 };
+extern const Il2CppType Int64_t909078037_0_0_32851 = { (void*)14, 32851, IL2CPP_TYPE_I8, 0, 0, 0 };
 extern const Il2CppType Int64_t909078037_0_0_17 = { (void*)14, 17, IL2CPP_TYPE_I8, 0, 0, 0 };
 extern const Il2CppType Int64_t909078037_0_0_1 = { (void*)14, 1, IL2CPP_TYPE_I8, 0, 0, 0 };
 extern const Il2CppType Int64_t909078037_0_0_145 = { (void*)14, 145, IL2CPP_TYPE_I8, 0, 0, 0 };
@@ -218,7 +220,6 @@ extern const Il2CppType Int64_t909078037_0_0_38 = { (void*)14, 38, IL2CPP_TYPE_I
 extern const Il2CppType Int64_t909078037_0_0_33 = { (void*)14, 33, IL2CPP_TYPE_I8, 0, 0, 0 };
 extern const Il2CppType Int64_t909078037_0_0_1542 = { (void*)14, 1542, IL2CPP_TYPE_I8, 0, 0, 0 };
 extern const Il2CppType Int64_t909078037_0_0_49 = { (void*)14, 49, IL2CPP_TYPE_I8, 0, 0, 0 };
-extern const Il2CppType Int64_t909078037_0_0_32849 = { (void*)14, 32849, IL2CPP_TYPE_I8, 0, 0, 0 };
 
 Il2CppGenericClass IEquatable_1_t3113060206_GenericClass = { 13, { &GenInst_Int64_t909078037_0_0_0, NULL }, NULL };
 extern const Il2CppType IEquatable_1_t3113060206_0_0_0 = { &IEquatable_1_t3113060206_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -342,8 +343,8 @@ extern const Il2CppType String_t_0_0_38 = { (void*)27, 38, IL2CPP_TYPE_STRING, 0
 extern const Il2CppType String_t_0_0_49 = { (void*)27, 49, IL2CPP_TYPE_STRING, 0, 0, 0 };
 extern const Il2CppType String_t_0_0_17 = { (void*)27, 17, IL2CPP_TYPE_STRING, 0, 0, 0 };
 extern const Il2CppType String_t_0_0_4 = { (void*)27, 4, IL2CPP_TYPE_STRING, 0, 0, 0 };
-extern const Il2CppType String_t_0_0_129 = { (void*)27, 129, IL2CPP_TYPE_STRING, 0, 0, 0 };
 extern const Il2CppType String_t_0_0_32849 = { (void*)27, 32849, IL2CPP_TYPE_STRING, 0, 0, 0 };
+extern const Il2CppType String_t_0_0_129 = { (void*)27, 129, IL2CPP_TYPE_STRING, 0, 0, 0 };
 extern const Il2CppType String_t_0_0_51 = { (void*)27, 51, IL2CPP_TYPE_STRING, 0, 0, 0 };
 extern const Il2CppType String_t_0_0_19 = { (void*)27, 19, IL2CPP_TYPE_STRING, 0, 0, 0 };
 extern const Il2CppType String_t_0_0_4102 = { (void*)27, 4102, IL2CPP_TYPE_STRING, 0, 0, 0 };
@@ -28426,7 +28427,7 @@ extern const Il2CppType ActionU5BU5D_t87223449_0_0_0 = { (void*)&Action_t3226471
 
 extern const Il2CppType EventRegistration_t4222917807_0_0_0;
 extern const Il2CppType EventRegistrationU5BU5D_t3314468790_0_0_0 = { (void*)&EventRegistration_t4222917807_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[14701] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[14702] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -33247,6 +33248,9 @@ extern const Il2CppType* const  g_Il2CppTypeTable[14701] =
 	&DateTime_t693205669_1_0_2,
 	&DateTimeOffset_t1362988906_1_0_2,
 	&DateTimeFormatInfo_t2187473504_0_0_0,
+	&Int64_t909078037_0_0_32849,
+	&Int64_t909078037_0_0_32851,
+	&String_t_0_0_32849,
 	&TimeSpan_t3430258949_0_0_1,
 	&DateTimeKind_t2186819611_0_0_1,
 	&DateTime_t693205669_0_0_54,
@@ -33718,7 +33722,6 @@ extern const Il2CppType* const  g_Il2CppTypeTable[14701] =
 	&DateTimeFormatFlags_t3140910561_1_0_0,
 	&DateTimeFormatFlags_t3140910561_0_0_32854,
 	&DateTimeFormatInfo_t2187473504_1_0_0,
-	&String_t_0_0_32849,
 	&DateTimeFormatInfo_t2187473504_0_0_17,
 	&DateTimeFormatFlags_t3140910561_0_0_1,
 	&DateTimeStyles_t370343085_1_0_0,
@@ -41538,7 +41541,6 @@ extern const Il2CppType* const  g_Il2CppTypeTable[14701] =
 	&IEventTarget_t170421798_0_0_0,
 	&IRunLoop_t1947166426_0_0_0,
 	&AuthTokenProvider_t3681374264_0_0_0,
-	&Int64_t909078037_0_0_32849,
 	&IPersistenceManager_t636124941_0_0_1,
 	&Platform_t739508161_0_0_1,
 	&AuthTokenProvider_t3681374264_0_0_3,

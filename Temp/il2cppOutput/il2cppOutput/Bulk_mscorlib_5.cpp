@@ -12258,7 +12258,7 @@ IL_002c:
 		__this->set__leaseExpireTime_1(L_9);
 		TimeSpan_t3430258949  L_10 = ___value0;
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_11 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+		TimeSpan_t3430258949  L_11 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 		bool L_12 = TimeSpan_op_Equality_m3565136304(NULL /*static, unused*/, L_10, L_11, /*hidden argument*/NULL);
 		if (!L_12)
 		{
@@ -12534,7 +12534,7 @@ IL_000d:
 	{
 		TimeSpan_t3430258949  L_1 = Lease_get_CurrentLeaseTime_m3991965175(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_2 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+		TimeSpan_t3430258949  L_2 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 		bool L_3 = TimeSpan_op_GreaterThan_m2202243191(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
 		if (!L_3)
 		{
@@ -12709,7 +12709,7 @@ IL_0006:
 			V_1 = L_4;
 			TimeSpan_t3430258949  L_5 = V_1;
 			IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-			TimeSpan_t3430258949  L_6 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+			TimeSpan_t3430258949  L_6 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 			bool L_7 = TimeSpan_op_Inequality_m257547441(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
 			if (!L_7)
 			{

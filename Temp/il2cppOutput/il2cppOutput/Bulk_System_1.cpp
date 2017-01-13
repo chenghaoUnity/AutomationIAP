@@ -4674,21 +4674,21 @@ extern "C"  void HttpCachePolicyElement__cctor_m3370385835 (Il2CppObject * __thi
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_0 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(TimeSpan_t3430258949_0_0_0_var), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_1 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_0();
+		TimeSpan_t3430258949  L_1 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_5();
 		TimeSpan_t3430258949  L_2 = L_1;
 		Il2CppObject * L_3 = Box(TimeSpan_t3430258949_il2cpp_TypeInfo_var, &L_2);
 		ConfigurationProperty_t2048066811 * L_4 = (ConfigurationProperty_t2048066811 *)il2cpp_codegen_object_new(ConfigurationProperty_t2048066811_il2cpp_TypeInfo_var);
 		ConfigurationProperty__ctor_m1536343945(L_4, _stringLiteral3079690595, L_0, L_3, /*hidden argument*/NULL);
 		((HttpCachePolicyElement_t129882946_StaticFields*)HttpCachePolicyElement_t129882946_il2cpp_TypeInfo_var->static_fields)->set_maximumAgeProp_13(L_4);
 		Type_t * L_5 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(TimeSpan_t3430258949_0_0_0_var), /*hidden argument*/NULL);
-		TimeSpan_t3430258949  L_6 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MinValue_1();
+		TimeSpan_t3430258949  L_6 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MinValue_6();
 		TimeSpan_t3430258949  L_7 = L_6;
 		Il2CppObject * L_8 = Box(TimeSpan_t3430258949_il2cpp_TypeInfo_var, &L_7);
 		ConfigurationProperty_t2048066811 * L_9 = (ConfigurationProperty_t2048066811 *)il2cpp_codegen_object_new(ConfigurationProperty_t2048066811_il2cpp_TypeInfo_var);
 		ConfigurationProperty__ctor_m1536343945(L_9, _stringLiteral4114643571, L_5, L_8, /*hidden argument*/NULL);
 		((HttpCachePolicyElement_t129882946_StaticFields*)HttpCachePolicyElement_t129882946_il2cpp_TypeInfo_var->static_fields)->set_maximumStaleProp_14(L_9);
 		Type_t * L_10 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(TimeSpan_t3430258949_0_0_0_var), /*hidden argument*/NULL);
-		TimeSpan_t3430258949  L_11 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MinValue_1();
+		TimeSpan_t3430258949  L_11 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MinValue_6();
 		TimeSpan_t3430258949  L_12 = L_11;
 		Il2CppObject * L_13 = Box(TimeSpan_t3430258949_il2cpp_TypeInfo_var, &L_12);
 		ConfigurationProperty_t2048066811 * L_14 = (ConfigurationProperty_t2048066811 *)il2cpp_codegen_object_new(ConfigurationProperty_t2048066811_il2cpp_TypeInfo_var);
@@ -8004,7 +8004,7 @@ extern "C"  void Cookie__ctor_m1446200832 (Cookie_t3154017544 * __this, const Me
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_0 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_0 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		__this->set_expires_4(L_0);
 		DateTime_t693205669  L_1 = DateTime_get_Now_m24136300(NULL /*static, unused*/, /*hidden argument*/NULL);
 		__this->set_timestamp_11(L_1);
@@ -8245,7 +8245,7 @@ extern "C"  bool Cookie_get_Expired_m1519158270 (Cookie_t3154017544 * __this, co
 	{
 		DateTime_t693205669  L_3 = __this->get_expires_4();
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_4 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_4 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		bool L_5 = DateTime_op_Inequality_m1607380213(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
 		G_B3_0 = ((int32_t)(L_5));
 		goto IL_0028;
@@ -9959,7 +9959,7 @@ extern "C"  void CookieContainer_RemoveOldest_m2278733834 (CookieContainer_t2808
 	{
 		V_0 = 0;
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_0 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_2();
+		DateTime_t693205669  L_0 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_12();
 		V_1 = L_0;
 		V_2 = 0;
 		goto IL_0051;
@@ -19052,7 +19052,7 @@ extern "C"  void FtpWebResponse__ctor_m3415597482 (FtpWebResponse_t2609078769 * 
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_0 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_0 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		__this->set_lastModified_4(L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_1 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
@@ -19086,7 +19086,7 @@ extern "C"  void FtpWebResponse__ctor_m4120357874 (FtpWebResponse_t2609078769 * 
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_0 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_0 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		__this->set_lastModified_4(L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_1 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
@@ -25078,7 +25078,7 @@ IL_01bb:
 		NullCheck(L_51);
 		DateTime_t693205669  L_52 = Cookie_get_Expires_m522897886(L_51, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_53 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_53 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		bool L_54 = DateTime_op_Equality_m1867073872(NULL /*static, unused*/, L_52, L_53, /*hidden argument*/NULL);
 		if (!L_54)
 		{
@@ -25125,7 +25125,7 @@ IL_01fd:
 		NullCheck(L_61);
 		DateTime_t693205669  L_62 = Cookie_get_Expires_m522897886(L_61, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_63 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_63 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		bool L_64 = DateTime_op_Inequality_m1607380213(NULL /*static, unused*/, L_62, L_63, /*hidden argument*/NULL);
 		if (!L_64)
 		{
@@ -25397,7 +25397,7 @@ extern "C"  DateTime_t693205669  HttpWebResponse_TryParseCookieExpires_m18633734
 IL_0011:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_3 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_3 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		return L_3;
 	}
 
@@ -25470,7 +25470,7 @@ IL_005a:
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_19 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_19 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		return L_19;
 	}
 

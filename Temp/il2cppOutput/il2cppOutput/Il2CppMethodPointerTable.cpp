@@ -20860,15 +20860,15 @@ extern "C" void NewBehaviourScript__ctor_m3327632941 ();
 extern "C" void NewBehaviourScript_onPurchaseComplete_m203632208 ();
 extern "C" void NewBehaviourScript_onPurchaseFail_m3859199457 ();
 extern "C" void TestCase__ctor_m2718246901 ();
-extern "C" void TestCase__ctor_m4045008822 ();
+extern "C" void TestCase__ctor_m386280814 ();
 extern "C" void TestCase_getID_m3860871323 ();
 extern "C" void TestCase_getResult_m918254964 ();
 extern "C" void TestCase_getDescitpion_m1321403330 ();
-extern "C" void TestCase_getDate_m445749224 ();
+extern "C" void TestCase_getDate_m3475179060 ();
 extern "C" void TestCase_setID_m2495176612 ();
 extern "C" void TestCase_setResult_m1840081537 ();
 extern "C" void TestCase_setDescitpion_m2629033453 ();
-extern "C" void TestCase_setdate_m3005172721 ();
+extern "C" void TestCase_setdate_m4274576833 ();
 extern "C" void TripRandomer__ctor_m1526052970 ();
 extern "C" void TripRandomer_Start_m368472202 ();
 extern "C" void TripRandomer_random_m140090699 ();
@@ -41911,15 +41911,15 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	NewBehaviourScript_onPurchaseComplete_m203632208,
 	NewBehaviourScript_onPurchaseFail_m3859199457,
 	TestCase__ctor_m2718246901,
-	TestCase__ctor_m4045008822,
+	TestCase__ctor_m386280814,
 	TestCase_getID_m3860871323,
 	TestCase_getResult_m918254964,
 	TestCase_getDescitpion_m1321403330,
-	TestCase_getDate_m445749224,
+	TestCase_getDate_m3475179060,
 	TestCase_setID_m2495176612,
 	TestCase_setResult_m1840081537,
 	TestCase_setDescitpion_m2629033453,
-	TestCase_setdate_m3005172721,
+	TestCase_setdate_m4274576833,
 	TripRandomer__ctor_m1526052970,
 	TripRandomer_Start_m368472202,
 	TripRandomer_random_m140090699,

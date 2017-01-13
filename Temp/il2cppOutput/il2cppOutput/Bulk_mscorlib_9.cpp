@@ -1062,7 +1062,7 @@ extern "C"  void TimeSpan__ctor_m96381766 (TimeSpan_t3430258949 * __this, int64_
 {
 	{
 		int64_t L_0 = ___ticks0;
-		__this->set__ticks_3(L_0);
+		__this->set__ticks_8(L_0);
 		return;
 	}
 }
@@ -1088,7 +1088,7 @@ extern "C"  void TimeSpan__ctor_m1888018443 (TimeSpan_t3430258949 * __this, int3
 		int32_t L_2 = ___seconds2;
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
 		int64_t L_3 = TimeSpan_CalculateTicks_m2706497924(NULL /*static, unused*/, 0, L_0, L_1, L_2, 0, /*hidden argument*/NULL);
-		__this->set__ticks_3(L_3);
+		__this->set__ticks_8(L_3);
 		return;
 	}
 }
@@ -1115,7 +1115,7 @@ extern "C"  void TimeSpan__ctor_m423866652 (TimeSpan_t3430258949 * __this, int32
 		int32_t L_3 = ___seconds3;
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
 		int64_t L_4 = TimeSpan_CalculateTicks_m2706497924(NULL /*static, unused*/, L_0, L_1, L_2, L_3, 0, /*hidden argument*/NULL);
-		__this->set__ticks_3(L_4);
+		__this->set__ticks_8(L_4);
 		return;
 	}
 }
@@ -1143,7 +1143,7 @@ extern "C"  void TimeSpan__ctor_m1560702407 (TimeSpan_t3430258949 * __this, int3
 		int32_t L_4 = ___milliseconds4;
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
 		int64_t L_5 = TimeSpan_CalculateTicks_m2706497924(NULL /*static, unused*/, L_0, L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
-		__this->set__ticks_3(L_5);
+		__this->set__ticks_8(L_5);
 		return;
 	}
 }
@@ -1167,15 +1167,15 @@ extern "C"  void TimeSpan__cctor_m2744495097 (Il2CppObject * __this /* static, u
 		TimeSpan_t3430258949  L_0;
 		memset(&L_0, 0, sizeof(L_0));
 		TimeSpan__ctor_m96381766(&L_0, ((int64_t)std::numeric_limits<int64_t>::max()), /*hidden argument*/NULL);
-		((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->set_MaxValue_0(L_0);
+		((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->set_MaxValue_5(L_0);
 		TimeSpan_t3430258949  L_1;
 		memset(&L_1, 0, sizeof(L_1));
 		TimeSpan__ctor_m96381766(&L_1, ((int64_t)std::numeric_limits<int64_t>::min()), /*hidden argument*/NULL);
-		((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->set_MinValue_1(L_1);
+		((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->set_MinValue_6(L_1);
 		TimeSpan_t3430258949  L_2;
 		memset(&L_2, 0, sizeof(L_2));
 		TimeSpan__ctor_m96381766(&L_2, (((int64_t)((int64_t)0))), /*hidden argument*/NULL);
-		((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->set_Zero_2(L_2);
+		((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->set_Zero_7(L_2);
 		return;
 	}
 }
@@ -1316,7 +1316,7 @@ IL_00bb:
 extern "C"  int32_t TimeSpan_get_Days_m1002111510 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		return (((int32_t)((int32_t)((int64_t)((int64_t)L_0/(int64_t)((int64_t)864000000000LL))))));
 	}
 }
@@ -1329,7 +1329,7 @@ extern "C"  int32_t TimeSpan_get_Days_m1002111510_AdjustorThunk (Il2CppObject * 
 extern "C"  int32_t TimeSpan_get_Hours_m3804628138 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		return (((int32_t)((int32_t)((int64_t)((int64_t)((int64_t)((int64_t)L_0%(int64_t)((int64_t)864000000000LL)))/(int64_t)((int64_t)36000000000LL))))));
 	}
 }
@@ -1342,7 +1342,7 @@ extern "C"  int32_t TimeSpan_get_Hours_m3804628138_AdjustorThunk (Il2CppObject *
 extern "C"  int32_t TimeSpan_get_Milliseconds_m4029737139 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		return (((int32_t)((int32_t)((int64_t)((int64_t)((int64_t)((int64_t)L_0%(int64_t)(((int64_t)((int64_t)((int32_t)10000000))))))/(int64_t)(((int64_t)((int64_t)((int32_t)10000)))))))));
 	}
 }
@@ -1355,7 +1355,7 @@ extern "C"  int32_t TimeSpan_get_Milliseconds_m4029737139_AdjustorThunk (Il2CppO
 extern "C"  int32_t TimeSpan_get_Minutes_m2575030536 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		return (((int32_t)((int32_t)((int64_t)((int64_t)((int64_t)((int64_t)L_0%(int64_t)((int64_t)36000000000LL)))/(int64_t)(((int64_t)((int64_t)((int32_t)600000000)))))))));
 	}
 }
@@ -1368,7 +1368,7 @@ extern "C"  int32_t TimeSpan_get_Minutes_m2575030536_AdjustorThunk (Il2CppObject
 extern "C"  int32_t TimeSpan_get_Seconds_m3108432552 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		return (((int32_t)((int32_t)((int64_t)((int64_t)((int64_t)((int64_t)L_0%(int64_t)(((int64_t)((int64_t)((int32_t)600000000))))))/(int64_t)(((int64_t)((int64_t)((int32_t)10000000)))))))));
 	}
 }
@@ -1381,7 +1381,7 @@ extern "C"  int32_t TimeSpan_get_Seconds_m3108432552_AdjustorThunk (Il2CppObject
 extern "C"  int64_t TimeSpan_get_Ticks_m2285358246 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		return L_0;
 	}
 }
@@ -1394,7 +1394,7 @@ extern "C"  int64_t TimeSpan_get_Ticks_m2285358246_AdjustorThunk (Il2CppObject *
 extern "C"  double TimeSpan_get_TotalDays_m3496775483 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		return ((double)((double)(((double)((double)L_0)))/(double)(864000000000.0)));
 	}
 }
@@ -1407,7 +1407,7 @@ extern "C"  double TimeSpan_get_TotalDays_m3496775483_AdjustorThunk (Il2CppObjec
 extern "C"  double TimeSpan_get_TotalHours_m2301166279 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		return ((double)((double)(((double)((double)L_0)))/(double)(36000000000.0)));
 	}
 }
@@ -1420,7 +1420,7 @@ extern "C"  double TimeSpan_get_TotalHours_m2301166279_AdjustorThunk (Il2CppObje
 extern "C"  double TimeSpan_get_TotalMilliseconds_m51604504 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		return ((double)((double)(((double)((double)L_0)))/(double)(10000.0)));
 	}
 }
@@ -1433,7 +1433,7 @@ extern "C"  double TimeSpan_get_TotalMilliseconds_m51604504_AdjustorThunk (Il2Cp
 extern "C"  double TimeSpan_get_TotalMinutes_m1645177229 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		return ((double)((double)(((double)((double)L_0)))/(double)(600000000.0)));
 	}
 }
@@ -1446,7 +1446,7 @@ extern "C"  double TimeSpan_get_TotalMinutes_m1645177229_AdjustorThunk (Il2CppOb
 extern "C"  double TimeSpan_get_TotalSeconds_m1295026915 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		return ((double)((double)(((double)((double)L_0)))/(double)(10000000.0)));
 	}
 }
@@ -1480,7 +1480,7 @@ IL_0000:
 	try
 	{ // begin try (depth: 1)
 		{
-			int64_t L_0 = __this->get__ticks_3();
+			int64_t L_0 = __this->get__ticks_8();
 			int64_t L_1 = TimeSpan_get_Ticks_m2285358246((&___ts0), /*hidden argument*/NULL);
 			if (((int64_t)L_1 >= 0 && (int64_t)L_0 > kIl2CppInt64Max - (int64_t)L_1) || ((int64_t)L_1 < 0 && (int64_t)L_0 < (int64_t)kIl2CppInt64Min - (int64_t)L_1))
 				IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception());
@@ -1534,8 +1534,8 @@ extern "C"  TimeSpan_t3430258949  TimeSpan_Add_m3228293154_AdjustorThunk (Il2Cpp
 extern "C"  int32_t TimeSpan_Compare_m127140955 (Il2CppObject * __this /* static, unused */, TimeSpan_t3430258949  ___t10, TimeSpan_t3430258949  ___t21, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = (&___t10)->get__ticks_3();
-		int64_t L_1 = (&___t21)->get__ticks_3();
+		int64_t L_0 = (&___t10)->get__ticks_8();
+		int64_t L_1 = (&___t21)->get__ticks_8();
 		if ((((int64_t)L_0) >= ((int64_t)L_1)))
 		{
 			goto IL_0015;
@@ -1547,8 +1547,8 @@ extern "C"  int32_t TimeSpan_Compare_m127140955 (Il2CppObject * __this /* static
 
 IL_0015:
 	{
-		int64_t L_2 = (&___t10)->get__ticks_3();
-		int64_t L_3 = (&___t21)->get__ticks_3();
+		int64_t L_2 = (&___t10)->get__ticks_8();
+		int64_t L_3 = (&___t21)->get__ticks_8();
 		if ((((int64_t)L_2) <= ((int64_t)L_3)))
 		{
 			goto IL_002a;
@@ -1643,8 +1643,8 @@ extern "C"  int32_t TimeSpan_CompareTo_m4183101766_AdjustorThunk (Il2CppObject *
 extern "C"  bool TimeSpan_Equals_m2029123271 (TimeSpan_t3430258949 * __this, TimeSpan_t3430258949  ___obj0, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = (&___obj0)->get__ticks_3();
-		int64_t L_1 = __this->get__ticks_3();
+		int64_t L_0 = (&___obj0)->get__ticks_8();
+		int64_t L_1 = __this->get__ticks_8();
 		return (bool)((((int64_t)L_0) == ((int64_t)L_1))? 1 : 0);
 	}
 }
@@ -1678,7 +1678,7 @@ IL_0000:
 	try
 	{ // begin try (depth: 1)
 		{
-			int64_t L_0 = __this->get__ticks_3();
+			int64_t L_0 = __this->get__ticks_8();
 			int64_t L_1 = il2cpp_codegen_abs(L_0);
 			TimeSpan_t3430258949  L_2;
 			memset(&L_2, 0, sizeof(L_2));
@@ -1752,10 +1752,10 @@ extern "C"  bool TimeSpan_Equals_m4102942751 (TimeSpan_t3430258949 * __this, Il2
 
 IL_000d:
 	{
-		int64_t L_1 = __this->get__ticks_3();
+		int64_t L_1 = __this->get__ticks_8();
 		Il2CppObject * L_2 = ___value0;
 		V_0 = ((*(TimeSpan_t3430258949 *)((TimeSpan_t3430258949 *)UnBox (L_2, TimeSpan_t3430258949_il2cpp_TypeInfo_var))));
-		int64_t L_3 = (&V_0)->get__ticks_3();
+		int64_t L_3 = (&V_0)->get__ticks_8();
 		return (bool)((((int64_t)L_1) == ((int64_t)L_3))? 1 : 0);
 	}
 }
@@ -1919,7 +1919,7 @@ IL_0020:
 	{
 		double L_8 = ___value0;
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_9 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MinValue_1();
+		TimeSpan_t3430258949  L_9 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MinValue_6();
 		V_1 = L_9;
 		int64_t L_10 = TimeSpan_get_Ticks_m2285358246((&V_1), /*hidden argument*/NULL);
 		if ((((double)L_8) < ((double)(((double)((double)L_10))))))
@@ -1930,7 +1930,7 @@ IL_0020:
 	{
 		double L_11 = ___value0;
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_12 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_0();
+		TimeSpan_t3430258949  L_12 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_5();
 		V_2 = L_12;
 		int64_t L_13 = TimeSpan_get_Ticks_m2285358246((&V_2), /*hidden argument*/NULL);
 		if ((!(((double)L_11) > ((double)(((double)((double)L_13)))))))
@@ -2017,7 +2017,7 @@ extern "C"  TimeSpan_t3430258949  TimeSpan_FromTicks_m827965597 (Il2CppObject * 
 extern "C"  int32_t TimeSpan_GetHashCode_m550404245 (TimeSpan_t3430258949 * __this, const MethodInfo* method)
 {
 	{
-		int64_t* L_0 = __this->get_address_of__ticks_3();
+		int64_t* L_0 = __this->get_address_of__ticks_8();
 		int32_t L_1 = Int64_GetHashCode_m4047499913(L_0, /*hidden argument*/NULL);
 		return L_1;
 	}
@@ -2043,11 +2043,11 @@ extern "C"  TimeSpan_t3430258949  TimeSpan_Negate_m4198463235 (TimeSpan_t3430258
 	TimeSpan_t3430258949  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		int64_t L_0 = __this->get__ticks_3();
+		int64_t L_0 = __this->get__ticks_8();
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_1 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MinValue_1();
+		TimeSpan_t3430258949  L_1 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_MinValue_6();
 		V_0 = L_1;
-		int64_t L_2 = (&V_0)->get__ticks_3();
+		int64_t L_2 = (&V_0)->get__ticks_8();
 		if ((!(((uint64_t)L_0) == ((uint64_t)L_2))))
 		{
 			goto IL_0028;
@@ -2062,7 +2062,7 @@ extern "C"  TimeSpan_t3430258949  TimeSpan_Negate_m4198463235 (TimeSpan_t3430258
 
 IL_0028:
 	{
-		int64_t L_5 = __this->get__ticks_3();
+		int64_t L_5 = __this->get__ticks_8();
 		TimeSpan_t3430258949  L_6;
 		memset(&L_6, 0, sizeof(L_6));
 		TimeSpan__ctor_m96381766(&L_6, ((-L_5)), /*hidden argument*/NULL);
@@ -2138,7 +2138,7 @@ IL_0000:
 	try
 	{ // begin try (depth: 1)
 		{
-			int64_t L_0 = __this->get__ticks_3();
+			int64_t L_0 = __this->get__ticks_8();
 			int64_t L_1 = TimeSpan_get_Ticks_m2285358246((&___ts0), /*hidden argument*/NULL);
 			if (((int64_t)L_1 >= 0 && (int64_t)L_0 < kIl2CppInt64Min + (int64_t)L_1) || ((int64_t)L_1 < 0 && (int64_t)L_0 > kIl2CppInt64Max + (int64_t)L_1))
 				IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception());
@@ -2210,7 +2210,7 @@ extern "C"  String_t* TimeSpan_ToString_m2947282901 (TimeSpan_t3430258949 * __th
 		StringBuilder_t1221177846 * L_0 = (StringBuilder_t1221177846 *)il2cpp_codegen_object_new(StringBuilder_t1221177846_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m536337337(L_0, ((int32_t)14), /*hidden argument*/NULL);
 		V_0 = L_0;
-		int64_t L_1 = __this->get__ticks_3();
+		int64_t L_1 = __this->get__ticks_8();
 		if ((((int64_t)L_1) >= ((int64_t)(((int64_t)((int64_t)0))))))
 		{
 			goto IL_001e;
@@ -2270,7 +2270,7 @@ IL_0044:
 		String_t* L_21 = Int32_ToString_m1064459878((&V_4), _stringLiteral3231012724, /*hidden argument*/NULL);
 		NullCheck(L_18);
 		StringBuilder_Append_m3636508479(L_18, L_21, /*hidden argument*/NULL);
-		int64_t L_22 = __this->get__ticks_3();
+		int64_t L_22 = __this->get__ticks_8();
 		int64_t L_23 = il2cpp_codegen_abs(((int64_t)((int64_t)L_22%(int64_t)(((int64_t)((int64_t)((int32_t)10000000)))))));
 		V_1 = (((int32_t)((int32_t)L_23)));
 		int32_t L_24 = V_1;
@@ -2315,8 +2315,8 @@ extern "C"  TimeSpan_t3430258949  TimeSpan_op_Addition_m3421801803 (Il2CppObject
 extern "C"  bool TimeSpan_op_Equality_m3565136304 (Il2CppObject * __this /* static, unused */, TimeSpan_t3430258949  ___t10, TimeSpan_t3430258949  ___t21, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = (&___t10)->get__ticks_3();
-		int64_t L_1 = (&___t21)->get__ticks_3();
+		int64_t L_0 = (&___t10)->get__ticks_8();
+		int64_t L_1 = (&___t21)->get__ticks_8();
 		return (bool)((((int64_t)L_0) == ((int64_t)L_1))? 1 : 0);
 	}
 }
@@ -2324,8 +2324,8 @@ extern "C"  bool TimeSpan_op_Equality_m3565136304 (Il2CppObject * __this /* stat
 extern "C"  bool TimeSpan_op_GreaterThan_m2202243191 (Il2CppObject * __this /* static, unused */, TimeSpan_t3430258949  ___t10, TimeSpan_t3430258949  ___t21, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = (&___t10)->get__ticks_3();
-		int64_t L_1 = (&___t21)->get__ticks_3();
+		int64_t L_0 = (&___t10)->get__ticks_8();
+		int64_t L_1 = (&___t21)->get__ticks_8();
 		return (bool)((((int64_t)L_0) > ((int64_t)L_1))? 1 : 0);
 	}
 }
@@ -2333,8 +2333,8 @@ extern "C"  bool TimeSpan_op_GreaterThan_m2202243191 (Il2CppObject * __this /* s
 extern "C"  bool TimeSpan_op_GreaterThanOrEqual_m3997050520 (Il2CppObject * __this /* static, unused */, TimeSpan_t3430258949  ___t10, TimeSpan_t3430258949  ___t21, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = (&___t10)->get__ticks_3();
-		int64_t L_1 = (&___t21)->get__ticks_3();
+		int64_t L_0 = (&___t10)->get__ticks_8();
+		int64_t L_1 = (&___t21)->get__ticks_8();
 		return (bool)((((int32_t)((((int64_t)L_0) < ((int64_t)L_1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
@@ -2342,8 +2342,8 @@ extern "C"  bool TimeSpan_op_GreaterThanOrEqual_m3997050520 (Il2CppObject * __th
 extern "C"  bool TimeSpan_op_Inequality_m257547441 (Il2CppObject * __this /* static, unused */, TimeSpan_t3430258949  ___t10, TimeSpan_t3430258949  ___t21, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = (&___t10)->get__ticks_3();
-		int64_t L_1 = (&___t21)->get__ticks_3();
+		int64_t L_0 = (&___t10)->get__ticks_8();
+		int64_t L_1 = (&___t21)->get__ticks_8();
 		return (bool)((((int32_t)((((int64_t)L_0) == ((int64_t)L_1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
@@ -2351,8 +2351,8 @@ extern "C"  bool TimeSpan_op_Inequality_m257547441 (Il2CppObject * __this /* sta
 extern "C"  bool TimeSpan_op_LessThan_m3463318786 (Il2CppObject * __this /* static, unused */, TimeSpan_t3430258949  ___t10, TimeSpan_t3430258949  ___t21, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = (&___t10)->get__ticks_3();
-		int64_t L_1 = (&___t21)->get__ticks_3();
+		int64_t L_0 = (&___t10)->get__ticks_8();
+		int64_t L_1 = (&___t21)->get__ticks_8();
 		return (bool)((((int64_t)L_0) < ((int64_t)L_1))? 1 : 0);
 	}
 }
@@ -2360,8 +2360,8 @@ extern "C"  bool TimeSpan_op_LessThan_m3463318786 (Il2CppObject * __this /* stat
 extern "C"  bool TimeSpan_op_LessThanOrEqual_m3258610889 (Il2CppObject * __this /* static, unused */, TimeSpan_t3430258949  ___t10, TimeSpan_t3430258949  ___t21, const MethodInfo* method)
 {
 	{
-		int64_t L_0 = (&___t10)->get__ticks_3();
-		int64_t L_1 = (&___t21)->get__ticks_3();
+		int64_t L_0 = (&___t10)->get__ticks_8();
+		int64_t L_1 = (&___t21)->get__ticks_8();
 		return (bool)((((int32_t)((((int64_t)L_0) > ((int64_t)L_1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
@@ -3287,7 +3287,7 @@ IL_000f:
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_5 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_2();
+		DateTime_t693205669  L_5 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_12();
 		TimeSpan_t3430258949  L_6 = V_0;
 		DateTime_t693205669  L_7 = DateTime_op_Subtraction_m813614715(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
 		DateTime_t693205669  L_8 = ___time0;
@@ -3299,7 +3299,7 @@ IL_000f:
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_10 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_2();
+		DateTime_t693205669  L_10 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_12();
 		DateTime_t693205669  L_11 = DateTime_SpecifyKind_m1282445794(NULL /*static, unused*/, L_10, 2, /*hidden argument*/NULL);
 		return L_11;
 	}
@@ -3321,7 +3321,7 @@ IL_004c:
 		int64_t L_13 = DateTime_get_Ticks_m310281298((&___time0), /*hidden argument*/NULL);
 		int64_t L_14 = TimeSpan_get_Ticks_m2285358246((&V_0), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_15 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_15 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		V_4 = L_15;
 		int64_t L_16 = DateTime_get_Ticks_m310281298((&V_4), /*hidden argument*/NULL);
 		if ((((int64_t)((int64_t)((int64_t)L_13+(int64_t)L_14))) >= ((int64_t)L_16)))
@@ -3331,7 +3331,7 @@ IL_004c:
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_17 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_17 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		DateTime_t693205669  L_18 = DateTime_SpecifyKind_m1282445794(NULL /*static, unused*/, L_17, 2, /*hidden argument*/NULL);
 		return L_18;
 	}
@@ -3448,7 +3448,7 @@ IL_000f:
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_5 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_2();
+		DateTime_t693205669  L_5 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_12();
 		TimeSpan_t3430258949  L_6 = V_0;
 		DateTime_t693205669  L_7 = DateTime_op_Addition_m1268923147(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
 		DateTime_t693205669  L_8 = ___time0;
@@ -3460,7 +3460,7 @@ IL_000f:
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_10 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_2();
+		DateTime_t693205669  L_10 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MaxValue_12();
 		DateTime_t693205669  L_11 = DateTime_SpecifyKind_m1282445794(NULL /*static, unused*/, L_10, 1, /*hidden argument*/NULL);
 		return L_11;
 	}
@@ -3480,7 +3480,7 @@ IL_004c:
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_13 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_13 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		TimeSpan_t3430258949  L_14 = V_0;
 		DateTime_t693205669  L_15 = DateTime_op_Addition_m1268923147(NULL /*static, unused*/, L_13, L_14, /*hidden argument*/NULL);
 		DateTime_t693205669  L_16 = ___time0;
@@ -3492,7 +3492,7 @@ IL_004c:
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_18 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_18 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		DateTime_t693205669  L_19 = DateTime_SpecifyKind_m1282445794(NULL /*static, unused*/, L_18, 1, /*hidden argument*/NULL);
 		return L_19;
 	}

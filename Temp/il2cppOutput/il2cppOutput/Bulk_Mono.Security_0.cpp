@@ -19578,7 +19578,7 @@ extern "C"  void ClientSessionInfo_Dispose_m2571428025 (ClientSessionInfo_t34680
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_1 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_1 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		__this->set_validuntil_2(L_1);
 		__this->set_host_3((String_t*)NULL);
 		__this->set_sid_4((ByteU5BU5D_t3397334013*)NULL);

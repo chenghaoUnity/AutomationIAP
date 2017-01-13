@@ -14790,7 +14790,7 @@ extern "C"  void Achievement__ctor_m622897477 (Achievement_t1333316625 * __this,
 		__this->set_m_Hidden_1((bool)0);
 		__this->set_m_Completed_0((bool)0);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
-		DateTime_t693205669  L_2 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t693205669  L_2 = ((DateTime_t693205669_StaticFields*)DateTime_t693205669_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		__this->set_m_LastReportedDate_2(L_2);
 		return;
 	}

@@ -1033,7 +1033,7 @@ IL_001d:
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t693205669_il2cpp_TypeInfo_var);
 		DateTime_t693205669  L_3 = DateTime_SpecifyKind_m1282445794(NULL /*static, unused*/, L_2, 1, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
-		TimeSpan_t3430258949  L_4 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+		TimeSpan_t3430258949  L_4 = ((TimeSpan_t3430258949_StaticFields*)TimeSpan_t3430258949_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 		DateTimeOffset_t1362988906  L_5;
 		memset(&L_5, 0, sizeof(L_5));
 		DateTimeOffset__ctor_m2870721395(&L_5, L_3, L_4, /*hidden argument*/NULL);
