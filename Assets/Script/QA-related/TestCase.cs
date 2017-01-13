@@ -7,12 +7,12 @@ public class TestCase {
 	private string ID;
 	private bool result;
 	private string descitpion;
-	private string date;
+	private System.DateTime date;
 
 	public TestCase() {
 	}
 
-	public TestCase(string ID, bool result, string descitpion, string date) {
+	public TestCase(string ID, bool result, string descitpion, System.DateTime date) {
 		this.ID = ID;
 		this.result = result;
 		this.descitpion = descitpion;
@@ -31,7 +31,7 @@ public class TestCase {
 		return descitpion;
 	}
 
-	public string getDate() {
+	public System.DateTime getDate() {
 		return date;
 	}
 
@@ -47,7 +47,7 @@ public class TestCase {
 		this.descitpion = descitpion;
 	}
 
-	public void setdate(string date) {
+	public void setdate(System.DateTime date) {
 		this.date = date;
 	}
 }

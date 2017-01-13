@@ -77,7 +77,7 @@ public class framework : MonoBehaviour {
 			"C2777-1",
 			compareInfo ("Attention", "Purchase Compelte"), 
 			"Buy a consumable product, succeed event test",
-			System.DateTime.Now.ToString("MMM d, yyyy HH:mm")));
+			System.DateTime.Now));
 
 		yield return new WaitForSeconds (0.3f);
 		click ("No", "IAP");
@@ -107,7 +107,7 @@ public class framework : MonoBehaviour {
 			"C2777-2",
 			compareInfo ("Attention", "Purchase Fail"), 
 			"Buy a consumable product, failed event test",
-			System.DateTime.Now.ToString("MMM d, yyyy HH:mm")));
+			System.DateTime.Now));
 
 		yield return new WaitForSeconds (0.3f);
 		click ("No", "IAP");
@@ -136,7 +136,7 @@ public class framework : MonoBehaviour {
 			"C2778-1",
 			compareInfo ("Attention", "Purchase Compelte"), 
 			"Buy a non-consumable product, succeed event test",
-			System.DateTime.Now.ToString("MMM d, yyyy HH:mm")));
+			System.DateTime.Now));
 
 		yield return new WaitForSeconds (0.3f);
 		click ("No", "IAP");
@@ -165,7 +165,7 @@ public class framework : MonoBehaviour {
 			"C2778-2",
 			compareInfo ("Attention", "Purchase Fail"), 
 			"Buy a non-consumable product, failed event test",
-			System.DateTime.Now.ToString("MMM d, yyyy HH:mm")));
+			System.DateTime.Now));
 
 		yield return new WaitForSeconds (0.3f);
 		click ("No", "IAP");
@@ -194,7 +194,7 @@ public class framework : MonoBehaviour {
 			"C2779-1",
 			compareInfo ("Attention", "Purchase Compelte"), 
 			"Buy a subscription product, succeed event test",
-			System.DateTime.Now.ToString("MMM d, yyyy HH:mm")));
+			System.DateTime.Now));
 
 		yield return new WaitForSeconds (0.3f);
 		click ("No", "IAP");
@@ -223,7 +223,7 @@ public class framework : MonoBehaviour {
 			"C2779-2",
 			compareInfo ("Attention", "Purchase Fail"), 
 			"Buy a subscription product, failed event test",
-			System.DateTime.Now.ToString("MMM d, yyyy HH:mm")));
+			System.DateTime.Now));
 
 		yield return new WaitForSeconds (0.3f);
 		click ("No", "IAP");
@@ -286,10 +286,10 @@ public class framework : MonoBehaviour {
 	private void pushResultToServer(TestCase testCase) {
 		string key = reference.Child("qaReport").Push().Key;
 		Dictionary<string, object> childUpdates = new Dictionary<string, object>();
-		childUpdates ["/qaReport/" + testCase.getDescitpion() + "/" + testCase.getDate() + "/Result/"] = testCase.getResult () == true ? "Pass" : "Fail";
-		childUpdates ["/qaReport/" + testCase.getDescitpion () + "/" + testCase.getDate () + "/DeviceInfo/DeviceType"] = UnityEngine.SystemInfo.deviceType.ToString();
-		childUpdates ["/qaReport/" + testCase.getDescitpion () + "/" + testCase.getDate () + "/DeviceInfo/DeviceModel"] = UnityEngine.SystemInfo.deviceModel.ToString();;
-		childUpdates ["/qaReport/" + testCase.getDescitpion () + "/" + testCase.getDate () + "/DeviceInfo/OperatingSystem"] = UnityEngine.SystemInfo.operatingSystem.ToString();;
+		childUpdates ["/qaReport/" + System.DateTime.Now.ToString("MMM d, yyyy") + "/" + testCase.getDescitpion()  + "/" + testCase.getDate().ToString("HH:mm:ss tt zz") + "/Result/"] = testCase.getResult () == true ? "Pass" : "Fail";
+		childUpdates ["/qaReport/" + System.DateTime.Now.ToString("MMM d, yyyy") + "/" + testCase.getDescitpion()  + "/" + testCase.getDate().ToString("HH:mm:ss tt zz") + "/DeviceInfo/DeviceType"] = UnityEngine.SystemInfo.deviceType.ToString();
+		childUpdates ["/qaReport/" + System.DateTime.Now.ToString("MMM d, yyyy") + "/" + testCase.getDescitpion()  + "/" + testCase.getDate().ToString("HH:mm:ss tt zz") + "/DeviceInfo/DeviceModel"] = UnityEngine.SystemInfo.deviceModel.ToString();;
+		childUpdates ["/qaReport/" + System.DateTime.Now.ToString("MMM d, yyyy") + "/" + testCase.getDescitpion()  + "/" + testCase.getDate().ToString("HH:mm:ss tt zz") + "/DeviceInfo/OperatingSystem"] = UnityEngine.SystemInfo.operatingSystem.ToString();;
 
 		reference.UpdateChildrenAsync(childUpdates);
 	}
