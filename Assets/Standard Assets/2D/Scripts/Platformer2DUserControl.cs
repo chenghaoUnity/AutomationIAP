@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.SceneManagement;
 
 namespace UnityStandardAssets._2D
 {
@@ -9,7 +10,7 @@ namespace UnityStandardAssets._2D
     {
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
-
+		private float h;
 
         private void Awake()
         {
@@ -29,9 +30,22 @@ namespace UnityStandardAssets._2D
 
         private void FixedUpdate()
         {
+
+			if (SceneManager.GetActiveScene ().buildIndex == 1) {
+				m_Character.Move(0, false, false);
+			}
+
             // Read the inputs.
             bool crouch = Input.GetKey(KeyCode.LeftControl);
-			float h = Input.GetAxis ("Horizontal");
+
+			if (PlayerPrefs.GetString ("PreferController").Equals ("Vistual")) {
+				h = UltimateJoystick.GetPosition ("Movement").x;
+			} else if (PlayerPrefs.GetString ("PreferController").Equals ("Gravity")) {
+				h = Input.acceleration.x * 3;
+			} else {
+				h = UltimateJoystick.GetPosition( "Movement" ).x;                                                                                              
+			}
+
             // Pass all parameters to the character control script.
             m_Character.Move(h, crouch, m_Jump);
             m_Jump = false;
