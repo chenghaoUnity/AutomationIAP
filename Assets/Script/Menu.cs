@@ -111,7 +111,7 @@ public class Menu : MonoBehaviour {
 			logo.GetComponent<Image> ().color = new Color (255f, 255f, 255f, logo.GetComponent<Image>().color.a - 0.015f);
 		}
 
-		if (GameObject.Find ("CharacterRobotBoy").transform.position.y < -5.6f) {
+		if (GameObject.Find ("Human").transform.position.y < -5.6f) {
 			SceneManager.LoadScene (2);
 		}
 

@@ -101,7 +101,7 @@ public class Inventory : MonoBehaviour
 		// Zoom in animation
 		if (zoomInTimer <= 1) {
 			zoomInTimer += Time.deltaTime * 0.7f;
-			GameObject.Find ("Main Camera").GetComponent<Camera> ().orthographicSize = Mathf.Lerp (5, 10, zoomInTimer);
+			GameObject.Find ("Main Camera").GetComponent<Camera> ().orthographicSize = Mathf.Lerp (5, 7, zoomInTimer);
 		}
 
 	}
@@ -143,7 +143,7 @@ public class Inventory : MonoBehaviour
 	public void onVIP() 
 	{
 		AddGold (100);
-		GameObject player = GameObject.Find ("CharacterRobotBoy");
+		GameObject player = GameObject.FindGameObjectWithTag ("Player");
 		player.GetComponent<PlatformerCharacter2D> ().AddPower ();
 		PlayerPrefs.SetInt ("ifVipSelected", 1);
 		PlayerPrefs.Save ();
@@ -151,7 +151,7 @@ public class Inventory : MonoBehaviour
 
 	public void onJump() 
 	{
-		GameObject player = GameObject.Find ("CharacterRobotBoy");
+		GameObject player = GameObject.FindGameObjectWithTag ("Player");
 		player.GetComponent<PlatformerCharacter2D> ().AddPower ();
 		PlayerPrefs.SetInt ("ifJumpSelected", 1);
 		PlayerPrefs.Save ();
@@ -160,7 +160,7 @@ public class Inventory : MonoBehaviour
 	public void onVIPf() 
 	{
 		AddGold (100);
-		GameObject player = GameObject.Find ("CharacterRobotBoy");
+		GameObject player = GameObject.FindGameObjectWithTag ("Player");
 		player.GetComponent<PlatformerCharacter2D> ().AddPower ();
 		PlayerPrefs.SetInt ("ifVipfSelected", 1);
 		PlayerPrefs.Save ();
@@ -168,7 +168,7 @@ public class Inventory : MonoBehaviour
 
 	public void onJumpf() 
 	{
-		GameObject player = GameObject.Find ("CharacterRobotBoy");
+		GameObject player = GameObject.FindGameObjectWithTag ("Player");
 		player.GetComponent<PlatformerCharacter2D> ().AddPower ();
 		PlayerPrefs.SetInt ("ifJumpfSelected", 1);
 		PlayerPrefs.Save ();
