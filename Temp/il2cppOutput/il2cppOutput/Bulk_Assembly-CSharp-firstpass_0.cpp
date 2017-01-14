@@ -9285,7 +9285,7 @@ extern "C"  void PlatformerCharacter2D_AddPower_m2651738866 (PlatformerCharacter
 extern "C"  int32_t PlatformerCharacter2D_RandomFace_m2104126430 (PlatformerCharacter2D_t607923855 * __this, const MethodInfo* method)
 {
 	{
-		int32_t L_0 = Random_Range_m694320887(NULL /*static, unused*/, 0, ((int32_t)12), /*hidden argument*/NULL);
+		int32_t L_0 = Random_Range_m694320887(NULL /*static, unused*/, 0, ((int32_t)24), /*hidden argument*/NULL);
 		return L_0;
 	}
 }

@@ -102,7 +102,7 @@ namespace UnityStandardAssets._2D
 		}
 
 		private int RandomFace() {
-			return (int)UnityEngine.Random.Range (0, 12);
+			return (int)UnityEngine.Random.Range (0, 24);
 		}
     }
 }
