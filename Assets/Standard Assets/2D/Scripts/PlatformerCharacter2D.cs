@@ -76,7 +76,6 @@ namespace UnityStandardAssets._2D
             // If the player should jump...
 			if (m_Grounded && m_Rigidbody2D.velocity.y == 0 && m_Anim.GetBool("Ground"))
             {
-				print ("jump");
                 // Add a vertical force to the player.
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);

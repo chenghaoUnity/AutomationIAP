@@ -13,7 +13,7 @@ public class FloorMoving : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-		downSpeed += 0.0005f;
+		downSpeed += 0.0001f;
 
 		this.gameObject.transform.position = new Vector3 (this.gameObject.transform.position.x, this.gameObject.transform.position.y - downSpeed * Time.deltaTime, this.gameObject.transform.position.z);
 
