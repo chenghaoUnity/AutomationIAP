@@ -1,0 +1,199 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:'Temp/Assembly-CSharp.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/Managed/UnityEngine.dll'
+-r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll'
+-r:'Assets/Firebase/Plugins/Firebase.App.dll'
+-r:'Assets/Firebase/Plugins/Firebase.Auth.dll'
+-r:'Assets/Firebase/Plugins/Firebase.Database.dll'
+-r:'Assets/Firebase/Plugins/Firebase.Database.Unity.dll'
+-r:'Assets/Firebase/Plugins/Google.MiniJson.dll'
+-r:'Assets/Firebase/Plugins/Google.Sharpen.dll'
+-r:'Assets/Firebase/Plugins/Unity.Compat.dll'
+-r:'Assets/Firebase/Plugins/Unity.Tasks.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Common.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Editor.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Security.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Stores.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll'
+-r:'Assets/Plugins/UnityPurchasing/winrt/winrt.dll'
+-r:'Assets/GUI Animator/Common/Plugins/GETween.dll'
+-r:'Assets/GUI Animator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/Managed/UnityEditor.dll'
+-r:'/Applications/Unity 5.5.0f3/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll'
+-r:'/Applications/Unity 5.5.0f3/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll'
+-r:'/Applications/Unity 5.5.0f3/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll'
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_5_0
+-define:UNITY_5_5
+-define:UNITY_5
+-define:UNITY_PURCHASING
+-define:UNITY_ANALYTICS
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_GENERICS
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:PLATFORM_SUPPORTS_MONO
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_SCRIPTING_NEW_CSHARP_COMPILER
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GAMECENTER
+-define:ENABLE_NETWORK
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_VIDEO
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:PLAYERCONNECTION_LISTENS_FIXED_PORT
+-define:DEBUGGER_LISTENS_FIXED_PORT
+-define:PLATFORM_SUPPORTS_ADS_ID
+-define:SUPPORT_ENVIRONMENT_VARIABLES
+-define:PLATFORM_SUPPORTS_PROFILER
+-define:PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR
+-define:STRICTCPP_NEW_DELETE_SIGNATURES
+-define:HAS_NEON_SKINNIG
+-define:UNITY_GFX_USE_PLATFORM_VSYNC
+-define:UNITY_INPUT_SIMULATE_EVENTS
+-define:PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG
+-define:ENABLE_VR
+-define:ENABLE_UNITYADS_RUNTIME
+-define:UNITY_UNITYADS_API
+-define:UNITY_IOS
+-define:UNITY_IPHONE
+-define:UNITY_IPHONE_API
+-define:SUPPORT_MULTIPLE_DISPLAYS
+-define:ENABLE_IL2CPP
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_OSX
+-define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
+-define:CROSS_PLATFORM_INPUT
+-define:MOBILE_INPUT
+-define:ENABLE_IOS_ON_DEMAND_RESOURCES
+-define:ENABLE_IOS_APP_SLICING
+'Assets/3rdParty/RainMaker/Demo/DemoScript.cs'
+'Assets/3rdParty/RainMaker/Demo/DemoScript2D.cs'
+'Assets/3rdParty/RainMaker/Demo/Standard Assets/Environment/Water (Basic)/Scripts/WaterBasic.cs'
+'Assets/3rdParty/RainMaker/Demo/Standard Assets/Environment/Water/Water/Scripts/Displace.cs'
+'Assets/3rdParty/RainMaker/Demo/Standard Assets/Environment/Water/Water/Scripts/GerstnerDisplace.cs'
+'Assets/3rdParty/RainMaker/Demo/Standard Assets/Environment/Water/Water/Scripts/MeshContainer.cs'
+'Assets/3rdParty/RainMaker/Demo/Standard Assets/Environment/Water/Water/Scripts/PlanarReflection.cs'
+'Assets/3rdParty/RainMaker/Demo/Standard Assets/Environment/Water/Water/Scripts/SpecularLighting.cs'
+'Assets/3rdParty/RainMaker/Demo/Standard Assets/Environment/Water/Water/Scripts/Water.cs'
+'Assets/3rdParty/RainMaker/Demo/Standard Assets/Environment/Water/Water/Scripts/WaterBase.cs'
+'Assets/3rdParty/RainMaker/Demo/Standard Assets/Environment/Water/Water/Scripts/WaterTile.cs'
+'Assets/3rdParty/RainMaker/Prefab/BaseRainScript.cs'
+'Assets/3rdParty/RainMaker/Prefab/RainCollision.cs'
+'Assets/3rdParty/RainMaker/Prefab/RainScript.cs'
+'Assets/3rdParty/RainMaker/Prefab/RainScript2D.cs'
+'Assets/3rdParty/Ultimate Joystick Examples/Spaceship Example/Scripts/AsteroidController.cs'
+'Assets/3rdParty/Ultimate Joystick Examples/Spaceship Example/Scripts/GameManager.cs'
+'Assets/3rdParty/Ultimate Joystick Examples/Spaceship Example/Scripts/PlayerController.cs'
+'Assets/3rdParty/Ultimate Joystick Examples/Third Person Example/Scripts/AbstractTargetFollower.cs'
+'Assets/3rdParty/Ultimate Joystick Examples/Third Person Example/Scripts/FreeLookCam.cs'
+'Assets/3rdParty/Ultimate Joystick Examples/Third Person Example/Scripts/PivotBasedCameraRig.cs'
+'Assets/3rdParty/Ultimate Joystick Examples/Third Person Example/Scripts/ThirdPersonCharacter.cs'
+'Assets/3rdParty/Ultimate Joystick Examples/Third Person Example/Scripts/ThirdPersonUserControl.cs'
+'Assets/3rdParty/Water/Scripts/Clickspawn.cs'
+'Assets/3rdParty/Water/Scripts/Water.cs'
+'Assets/3rdParty/Water/Scripts/WaterDetector.cs'
+'Assets/GE Common Assets/GE Orbit Camera/Scripts/GE_OrbitCamera.cs'
+'Assets/GE Common Assets/GE Orbit Camera/Scripts/GE_OrbitCameraUI.cs'
+'Assets/GE Common Assets/GE Toggle Full Screen/Scripts/GE_ToggleFullScreenUI.cs'
+'Assets/GE Common Assets/GE Touch Joystick/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs'
+'Assets/GE Common Assets/GE Touch Joystick/Characters/FirstPersonCharacter/Scripts/HeadBob.cs'
+'Assets/GE Common Assets/GE Touch Joystick/Characters/FirstPersonCharacter/Scripts/MouseLook.cs'
+'Assets/GE Common Assets/GE Touch Joystick/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/AxisTouchButton.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/ButtonHandler.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/CameraSwitch.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/InputAxisScrollbar.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/Joystick.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/LevelReset.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/MobileControlRig.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/PlatformSpecific/MobileInput.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/PlatformSpecific/StandaloneInput.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/TiltInput.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/TouchPad.cs'
+'Assets/GE Common Assets/GE Touch Joystick/CrossPlatformInput/Scripts/VirtualInput.cs'
+'Assets/GE Common Assets/GE Touch Joystick/Utility/CameraRefocus.cs'
+'Assets/GE Common Assets/GE Touch Joystick/Utility/CurveControlledBob.cs'
+'Assets/GE Common Assets/GE Touch Joystick/Utility/FOVKick.cs'
+'Assets/GE Common Assets/GE Touch Joystick/Utility/LerpControlledBob.cs'
+'Assets/GE Common Assets/Scripts/GE_UIResponder.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo (CSharp)/Scripts/GA_FREE_Demo00.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo (CSharp)/Scripts/GA_FREE_Demo01.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo (CSharp)/Scripts/GA_FREE_Demo02.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo (CSharp)/Scripts/GA_FREE_Demo03.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo (CSharp)/Scripts/GA_FREE_Demo04.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo (CSharp)/Scripts/GA_FREE_Demo05.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo (CSharp)/Scripts/GA_FREE_Demo06.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo (CSharp)/Scripts/GA_FREE_Demo07.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo (CSharp)/Scripts/GA_FREE_Demo08.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo (CSharp)/Scripts/GA_FREE_DemoPlaySound.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo (CSharp)/Scripts/GA_FREE_OpenOtherScene.cs'
+'Assets/GUI Animator/GUI Animator FREE/Demo Basic (CSharp)/Scripts/GUIAnimatorFREEDemo.cs'
+'Assets/NewBehaviourScript.cs'
+'Assets/Script/DatabaseConnection.cs'
+'Assets/Script/EndGame.cs'
+'Assets/Script/FloorMoving.cs'
+'Assets/Script/HurtFX.cs'
+'Assets/Script/Inventory.cs'
+'Assets/Script/Loading.cs'
+'Assets/Script/Menu.cs'
+'Assets/Script/QA-related/TestCase.cs'
+'Assets/Script/QA-related/framework.cs'
+'Assets/Script/TripRandomer.cs'
+'Assets/Script/UIupdater.cs'
+'Assets/Script/User.cs'
+'Assets/WebCamTextureToCloudVision.cs'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api/System.Xml.Linq.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.Lang.dll'
+-r:'/Applications/Unity 5.5.0f3/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api/Boo.Lang.dll'
+-sdk:2.0
