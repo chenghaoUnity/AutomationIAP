@@ -123,6 +123,8 @@ struct TypeInferenceRuleAttribute_t1390152093;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_UserState455716270.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_UserState455716270MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SortingLayer221838959.h"
 #include "UnityEngine_UnityEngine_SortingLayer221838959MethodDeclarations.h"
 #include "mscorlib_System_Int322071877448.h"
@@ -3742,6 +3744,15 @@ extern "C"  float Time_get_unscaledDeltaTime_m4281640537 (Il2CppObject * __this 
 	_il2cpp_icall_func = (Time_get_unscaledDeltaTime_m4281640537_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_unscaledDeltaTime()");
 	return _il2cpp_icall_func();
 }
+// System.Single UnityEngine.Time::get_fixedDeltaTime()
+extern "C"  float Time_get_fixedDeltaTime_m2734072926 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef float (*Time_get_fixedDeltaTime_m2734072926_ftn) ();
+	static Time_get_fixedDeltaTime_m2734072926_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Time_get_fixedDeltaTime_m2734072926_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_fixedDeltaTime()");
+	return _il2cpp_icall_func();
+}
 // System.Single UnityEngine.Time::get_timeScale()
 extern "C"  float Time_get_timeScale_m3151482970 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -5999,6 +6010,28 @@ extern "C"  float Vector2_get_sqrMagnitude_m1226294581_AdjustorThunk (Il2CppObje
 	Vector2_t2243707579 * _thisAdjusted = reinterpret_cast<Vector2_t2243707579 *>(__this + 1);
 	return Vector2_get_sqrMagnitude_m1226294581(_thisAdjusted, method);
 }
+// System.Single UnityEngine.Vector2::Distance(UnityEngine.Vector2,UnityEngine.Vector2)
+extern "C"  float Vector2_Distance_m280750759 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  ___a0, Vector2_t2243707579  ___b1, const MethodInfo* method)
+{
+	Vector2_t2243707579  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	{
+		Vector2_t2243707579  L_0 = ___a0;
+		Vector2_t2243707579  L_1 = ___b1;
+		Vector2_t2243707579  L_2 = Vector2_op_Subtraction_m1984215297(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		float L_3 = Vector2_get_magnitude_m33802565((&V_0), /*hidden argument*/NULL);
+		V_1 = L_3;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		float L_4 = V_1;
+		return L_4;
+	}
+}
 // UnityEngine.Vector2 UnityEngine.Vector2::ClampMagnitude(UnityEngine.Vector2,System.Single)
 extern "C"  Vector2_t2243707579  Vector2_ClampMagnitude_m951527075 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  ___vector0, float ___maxLength1, const MethodInfo* method)
 {
@@ -6090,6 +6123,29 @@ extern "C"  Vector2_t2243707579  Vector2_op_Multiply_m4236139442 (Il2CppObject *
 		float L_1 = ___d1;
 		float L_2 = (&___a0)->get_y_1();
 		float L_3 = ___d1;
+		Vector2_t2243707579  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		Vector2__ctor_m3067419446(&L_4, ((float)((float)L_0*(float)L_1)), ((float)((float)L_2*(float)L_3)), /*hidden argument*/NULL);
+		V_0 = L_4;
+		goto IL_001e;
+	}
+
+IL_001e:
+	{
+		Vector2_t2243707579  L_5 = V_0;
+		return L_5;
+	}
+}
+// UnityEngine.Vector2 UnityEngine.Vector2::op_Multiply(System.Single,UnityEngine.Vector2)
+extern "C"  Vector2_t2243707579  Vector2_op_Multiply_m3393065202 (Il2CppObject * __this /* static, unused */, float ___d0, Vector2_t2243707579  ___a1, const MethodInfo* method)
+{
+	Vector2_t2243707579  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		float L_0 = (&___a1)->get_x_0();
+		float L_1 = ___d0;
+		float L_2 = (&___a1)->get_y_1();
+		float L_3 = ___d0;
 		Vector2_t2243707579  L_4;
 		memset(&L_4, 0, sizeof(L_4));
 		Vector2__ctor_m3067419446(&L_4, ((float)((float)L_0*(float)L_1)), ((float)((float)L_2*(float)L_3)), /*hidden argument*/NULL);

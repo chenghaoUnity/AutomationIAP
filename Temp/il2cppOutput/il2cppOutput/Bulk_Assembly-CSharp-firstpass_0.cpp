@@ -491,6 +491,7 @@ struct WaypointProgressTracker_t2206407592;
 #include "UnityEngine_UnityEngine_Collider2D646061738.h"
 #include "UnityEngine_UnityEngine_LayerMask3188175821.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D502193897MethodDeclarations.h"
+#include "mscorlib_System_Math2022911894MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Random1170710517MethodDeclarations.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityStandardAssets_1041372534.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityStandardAssets_1041372534MethodDeclarations.h"
@@ -8975,7 +8976,7 @@ extern "C"  void PlatformerCharacter2D__ctor_m3582181352 (PlatformerCharacter2D_
 	{
 		__this->set_m_MaxSpeed_2((10.0f));
 		__this->set_m_JumpForce_3((400.0f));
-		__this->set_m_CrouchSpeed_4((0.36f));
+		__this->set_m_CrouchSpeed_4((0.2f));
 		__this->set_m_FacingRight_14((bool)1);
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
@@ -9093,7 +9094,6 @@ IL_0057:
 }
 // System.Void UnityStandardAssets._2D.PlatformerCharacter2D::Move(System.Single,System.Boolean,System.Boolean)
 extern Il2CppCodeGenString* _stringLiteral2024493761;
-extern Il2CppCodeGenString* _stringLiteral842947042;
 extern Il2CppCodeGenString* _stringLiteral3888849755;
 extern const uint32_t PlatformerCharacter2D_Move_m711102930_MetadataUsageId;
 extern "C"  void PlatformerCharacter2D_Move_m711102930 (PlatformerCharacter2D_t607923855 * __this, float ___move0, bool ___crouch1, bool ___jump2, const MethodInfo* method)
@@ -9120,7 +9120,7 @@ extern "C"  void PlatformerCharacter2D_Move_m711102930 (PlatformerCharacter2D_t6
 		bool L_1 = __this->get_m_AirControl_5();
 		if (!L_1)
 		{
-			goto IL_0094;
+			goto IL_0057;
 		}
 	}
 
@@ -9161,91 +9161,56 @@ IL_002a:
 		Vector2__ctor_m3067419446(&L_12, ((float)((float)L_7*(float)L_8)), L_11, /*hidden argument*/NULL);
 		NullCheck(L_6);
 		Rigidbody2D_set_velocity_m3592751374(L_6, L_12, /*hidden argument*/NULL);
-		float L_13 = ___move0;
-		if ((!(((float)L_13) > ((float)(0.0f)))))
-		{
-			goto IL_0078;
-		}
-	}
-	{
-		bool L_14 = __this->get_m_FacingRight_14();
-		if (L_14)
-		{
-			goto IL_0078;
-		}
-	}
-	{
-		PlatformerCharacter2D_Flip_m4006074903(__this, /*hidden argument*/NULL);
-		goto IL_0094;
 	}
 
-IL_0078:
+IL_0057:
 	{
-		float L_15 = ___move0;
-		if ((!(((float)L_15) < ((float)(0.0f)))))
+		bool L_13 = __this->get_m_Grounded_9();
+		if (!L_13)
 		{
-			goto IL_0094;
+			goto IL_00e2;
 		}
 	}
 	{
-		bool L_16 = __this->get_m_FacingRight_14();
-		if (!L_16)
+		Rigidbody2D_t502193897 * L_14 = __this->get_m_Rigidbody2D_13();
+		NullCheck(L_14);
+		Vector2_t2243707579  L_15 = Rigidbody2D_get_velocity_m3310151195(L_14, /*hidden argument*/NULL);
+		V_1 = L_15;
+		float L_16 = (&V_1)->get_y_1();
+		float L_17 = fabsf(L_16);
+		if ((!(((float)L_17) <= ((float)(0.01f)))))
 		{
-			goto IL_0094;
+			goto IL_00e2;
 		}
 	}
 	{
-		PlatformerCharacter2D_Flip_m4006074903(__this, /*hidden argument*/NULL);
-	}
-
-IL_0094:
-	{
-		bool L_17 = __this->get_m_Grounded_9();
-		if (!L_17)
-		{
-			goto IL_0124;
-		}
-	}
-	{
-		Rigidbody2D_t502193897 * L_18 = __this->get_m_Rigidbody2D_13();
+		Animator_t69676727 * L_18 = __this->get_m_Anim_12();
 		NullCheck(L_18);
-		Vector2_t2243707579  L_19 = Rigidbody2D_get_velocity_m3310151195(L_18, /*hidden argument*/NULL);
-		V_1 = L_19;
-		float L_20 = (&V_1)->get_y_1();
-		if ((!(((float)L_20) == ((float)(0.0f)))))
+		bool L_19 = Animator_GetBool_m998609148(L_18, _stringLiteral2024493761, /*hidden argument*/NULL);
+		if (!L_19)
 		{
-			goto IL_0124;
+			goto IL_00e2;
 		}
 	}
 	{
-		Animator_t69676727 * L_21 = __this->get_m_Anim_12();
-		NullCheck(L_21);
-		bool L_22 = Animator_GetBool_m998609148(L_21, _stringLiteral2024493761, /*hidden argument*/NULL);
-		if (!L_22)
-		{
-			goto IL_0124;
-		}
-	}
-	{
-		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, _stringLiteral842947042, /*hidden argument*/NULL);
 		__this->set_m_Grounded_9((bool)0);
-		Animator_t69676727 * L_23 = __this->get_m_Anim_12();
-		NullCheck(L_23);
-		Animator_SetBool_m2305662531(L_23, _stringLiteral2024493761, (bool)0, /*hidden argument*/NULL);
-		Rigidbody2D_t502193897 * L_24 = __this->get_m_Rigidbody2D_13();
-		float L_25 = __this->get_m_JumpForce_3();
-		Vector2_t2243707579  L_26;
-		memset(&L_26, 0, sizeof(L_26));
-		Vector2__ctor_m3067419446(&L_26, (0.0f), L_25, /*hidden argument*/NULL);
+		Animator_t69676727 * L_20 = __this->get_m_Anim_12();
+		NullCheck(L_20);
+		Animator_SetBool_m2305662531(L_20, _stringLiteral2024493761, (bool)0, /*hidden argument*/NULL);
+		Rigidbody2D_t502193897 * L_21 = __this->get_m_Rigidbody2D_13();
+		float L_22 = __this->get_m_JumpForce_3();
+		Vector2_t2243707579  L_23;
+		memset(&L_23, 0, sizeof(L_23));
+		Vector2__ctor_m3067419446(&L_23, (0.0f), L_22, /*hidden argument*/NULL);
+		NullCheck(L_21);
+		Rigidbody2D_AddForce_m3200488178(L_21, L_23, /*hidden argument*/NULL);
+		Animator_t69676727 * L_24 = __this->get_m_Anim_12();
+		int32_t L_25 = PlatformerCharacter2D_RandomFace_m2104126430(__this, /*hidden argument*/NULL);
 		NullCheck(L_24);
-		Rigidbody2D_AddForce_m3200488178(L_24, L_26, /*hidden argument*/NULL);
-		Animator_t69676727 * L_27 = __this->get_m_Anim_12();
-		int32_t L_28 = PlatformerCharacter2D_RandomFace_m2104126430(__this, /*hidden argument*/NULL);
-		NullCheck(L_27);
-		Animator_SetInteger_m528582597(L_27, _stringLiteral3888849755, L_28, /*hidden argument*/NULL);
+		Animator_SetInteger_m528582597(L_24, _stringLiteral3888849755, L_25, /*hidden argument*/NULL);
 	}
 
-IL_0124:
+IL_00e2:
 	{
 		return;
 	}
@@ -9277,7 +9242,8 @@ extern "C"  void PlatformerCharacter2D_AddPower_m2651738866 (PlatformerCharacter
 {
 	{
 		float L_0 = __this->get_m_JumpForce_3();
-		__this->set_m_JumpForce_3(((float)((float)L_0+(float)(40.0f))));
+		float L_1 = __this->get_m_JumpForce_3();
+		__this->set_m_JumpForce_3(((float)((float)L_0+(float)((float)((float)L_1*(float)(0.05f))))));
 		return;
 	}
 }
@@ -9285,7 +9251,7 @@ extern "C"  void PlatformerCharacter2D_AddPower_m2651738866 (PlatformerCharacter
 extern "C"  int32_t PlatformerCharacter2D_RandomFace_m2104126430 (PlatformerCharacter2D_t607923855 * __this, const MethodInfo* method)
 {
 	{
-		int32_t L_0 = Random_Range_m694320887(NULL /*static, unused*/, 0, ((int32_t)24), /*hidden argument*/NULL);
+		int32_t L_0 = Random_Range_m694320887(NULL /*static, unused*/, 0, ((int32_t)48), /*hidden argument*/NULL);
 		return L_0;
 	}
 }

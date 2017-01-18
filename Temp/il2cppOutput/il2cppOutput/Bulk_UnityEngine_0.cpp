@@ -15044,6 +15044,42 @@ extern "C"  void Animator_set_speed_m3511108817 (Animator_t69676727 * __this, fl
 	_il2cpp_icall_func = (Animator_set_speed_m3511108817_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::set_speed(System.Single)");
 	_il2cpp_icall_func(__this, ___value0);
 }
+// System.Void UnityEngine.Animator::Play(System.String)
+extern "C"  void Animator_Play_m1123842248 (Animator_t69676727 * __this, String_t* ___stateName0, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	int32_t V_1 = 0;
+	{
+		V_0 = (-std::numeric_limits<float>::infinity());
+		V_1 = (-1);
+		String_t* L_0 = ___stateName0;
+		int32_t L_1 = V_1;
+		float L_2 = V_0;
+		Animator_Play_m2181614708(__this, L_0, L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Animator::Play(System.String,System.Int32,System.Single)
+extern "C"  void Animator_Play_m2181614708 (Animator_t69676727 * __this, String_t* ___stateName0, int32_t ___layer1, float ___normalizedTime2, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___stateName0;
+		int32_t L_1 = Animator_StringToHash_m3313850714(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		int32_t L_2 = ___layer1;
+		float L_3 = ___normalizedTime2;
+		Animator_Play_m3632052371(__this, L_1, L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Animator::Play(System.Int32,System.Int32,System.Single)
+extern "C"  void Animator_Play_m3632052371 (Animator_t69676727 * __this, int32_t ___stateNameHash0, int32_t ___layer1, float ___normalizedTime2, const MethodInfo* method)
+{
+	typedef void (*Animator_Play_m3632052371_ftn) (Animator_t69676727 *, int32_t, int32_t, float);
+	static Animator_Play_m3632052371_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animator_Play_m3632052371_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::Play(System.Int32,System.Int32,System.Single)");
+	_il2cpp_icall_func(__this, ___stateNameHash0, ___layer1, ___normalizedTime2);
+}
 // UnityEngine.RuntimeAnimatorController UnityEngine.Animator::get_runtimeAnimatorController()
 extern "C"  RuntimeAnimatorController_t670468573 * Animator_get_runtimeAnimatorController_m652575931 (Animator_t69676727 * __this, const MethodInfo* method)
 {
@@ -17004,6 +17040,15 @@ extern "C"  bool AudioSource_get_isPlaying_m3677592677 (AudioSource_t1135106623 
 	_il2cpp_icall_func = (AudioSource_get_isPlaying_m3677592677_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::get_isPlaying()");
 	return _il2cpp_icall_func(__this);
 }
+// System.Void UnityEngine.AudioSource::PlayOneShot(UnityEngine.AudioClip,System.Single)
+extern "C"  void AudioSource_PlayOneShot_m4118899740 (AudioSource_t1135106623 * __this, AudioClip_t1932558630 * ___clip0, float ___volumeScale1, const MethodInfo* method)
+{
+	typedef void (*AudioSource_PlayOneShot_m4118899740_ftn) (AudioSource_t1135106623 *, AudioClip_t1932558630 *, float);
+	static AudioSource_PlayOneShot_m4118899740_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioSource_PlayOneShot_m4118899740_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::PlayOneShot(UnityEngine.AudioClip,System.Single)");
+	_il2cpp_icall_func(__this, ___clip0, ___volumeScale1);
+}
 // System.Void UnityEngine.AudioSource::set_loop(System.Boolean)
 extern "C"  void AudioSource_set_loop_m313035616 (AudioSource_t1135106623 * __this, bool ___value0, const MethodInfo* method)
 {
@@ -18205,6 +18250,35 @@ extern "C"  void Camera_set_clearFlags_m4142614199 (Camera_t189460977 * __this, 
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Camera_set_clearFlags_m4142614199_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::set_clearFlags(UnityEngine.CameraClearFlags)");
 	_il2cpp_icall_func(__this, ___value0);
+}
+// UnityEngine.Vector3 UnityEngine.Camera::WorldToViewportPoint(UnityEngine.Vector3)
+extern "C"  Vector3_t2243707580  Camera_WorldToViewportPoint_m1897251752 (Camera_t189460977 * __this, Vector3_t2243707580  ___position0, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772(NULL /*static, unused*/, __this, (&___position0), (&V_0), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_0 = V_0;
+		V_1 = L_0;
+		goto IL_0012;
+	}
+
+IL_0012:
+	{
+		Vector3_t2243707580  L_1 = V_1;
+		return L_1;
+	}
+}
+// System.Void UnityEngine.Camera::INTERNAL_CALL_WorldToViewportPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
+extern "C"  void Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772 (Il2CppObject * __this /* static, unused */, Camera_t189460977 * ___self0, Vector3_t2243707580 * ___position1, Vector3_t2243707580 * ___value2, const MethodInfo* method)
+{
+	typedef void (*Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772_ftn) (Camera_t189460977 *, Vector3_t2243707580 *, Vector3_t2243707580 *);
+	static Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::INTERNAL_CALL_WorldToViewportPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)");
+	_il2cpp_icall_func(___self0, ___position1, ___value2);
 }
 // UnityEngine.Vector3 UnityEngine.Camera::ViewportToWorldPoint(UnityEngine.Vector3)
 extern "C"  Vector3_t2243707580  Camera_ViewportToWorldPoint_m3841010930 (Camera_t189460977 * __this, Vector3_t2243707580  ___position0, const MethodInfo* method)
@@ -20301,6 +20375,25 @@ extern "C"  Color_t2020392075  Color_get_green_m2671273823 (Il2CppObject * __thi
 		Color_t2020392075  L_0;
 		memset(&L_0, 0, sizeof(L_0));
 		Color__ctor_m1909920690(&L_0, (0.0f), (1.0f), (0.0f), (1.0f), /*hidden argument*/NULL);
+		V_0 = L_0;
+		goto IL_0020;
+	}
+
+IL_0020:
+	{
+		Color_t2020392075  L_1 = V_0;
+		return L_1;
+	}
+}
+// UnityEngine.Color UnityEngine.Color::get_blue()
+extern "C"  Color_t2020392075  Color_get_blue_m4180825090 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	Color_t2020392075  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Color_t2020392075  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Color__ctor_m1909920690(&L_0, (0.0f), (0.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
 		V_0 = L_0;
 		goto IL_0020;
 	}

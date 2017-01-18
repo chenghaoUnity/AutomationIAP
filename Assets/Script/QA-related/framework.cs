@@ -37,8 +37,6 @@ public class framework : MonoBehaviour {
 	public void testRun() {
 		// Set environment for QA
 		GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody2D> ().simulated = false;
-		GameObject.Find ("WaterManager").SetActive (false);
-		GameObject.Find ("RainPrefab2D").SetActive (false);
 		QAModeUI.SetActive (true);
 
 

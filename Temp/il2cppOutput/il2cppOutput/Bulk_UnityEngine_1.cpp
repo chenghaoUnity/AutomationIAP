@@ -515,6 +515,7 @@ struct UploadHandler_t3552561393;
 #include "UnityEngine_UnityEngineInternal_MathfInternal715669973MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Matrix4x42933234003.h"
 #include "UnityEngine_UnityEngine_Matrix4x42933234003MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Quaternion4030073918.h"
 #include "UnityEngine_UnityEngine_Mesh1356156583.h"
 #include "UnityEngine_UnityEngine_Mesh1356156583MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Mesh_InternalShaderChannel3331827198.h"
@@ -20592,6 +20593,35 @@ extern "C"  Matrix4x4_t2933234003  Matrix4x4_get_inverse_m2479387736_AdjustorThu
 {
 	Matrix4x4_t2933234003 * _thisAdjusted = reinterpret_cast<Matrix4x4_t2933234003 *>(__this + 1);
 	return Matrix4x4_get_inverse_m2479387736(_thisAdjusted, method);
+}
+// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::TRS(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3)
+extern "C"  Matrix4x4_t2933234003  Matrix4x4_TRS_m1913765359 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___pos0, Quaternion_t4030073918  ___q1, Vector3_t2243707580  ___s2, const MethodInfo* method)
+{
+	Matrix4x4_t2933234003  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Matrix4x4_t2933234003  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Matrix4x4_INTERNAL_CALL_TRS_m2077933669(NULL /*static, unused*/, (&___pos0), (&___q1), (&___s2), (&V_0), /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_0 = V_0;
+		V_1 = L_0;
+		goto IL_0015;
+	}
+
+IL_0015:
+	{
+		Matrix4x4_t2933234003  L_1 = V_1;
+		return L_1;
+	}
+}
+// System.Void UnityEngine.Matrix4x4::INTERNAL_CALL_TRS(UnityEngine.Vector3&,UnityEngine.Quaternion&,UnityEngine.Vector3&,UnityEngine.Matrix4x4&)
+extern "C"  void Matrix4x4_INTERNAL_CALL_TRS_m2077933669 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580 * ___pos0, Quaternion_t4030073918 * ___q1, Vector3_t2243707580 * ___s2, Matrix4x4_t2933234003 * ___value3, const MethodInfo* method)
+{
+	typedef void (*Matrix4x4_INTERNAL_CALL_TRS_m2077933669_ftn) (Vector3_t2243707580 *, Quaternion_t4030073918 *, Vector3_t2243707580 *, Matrix4x4_t2933234003 *);
+	static Matrix4x4_INTERNAL_CALL_TRS_m2077933669_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Matrix4x4_INTERNAL_CALL_TRS_m2077933669_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Matrix4x4::INTERNAL_CALL_TRS(UnityEngine.Vector3&,UnityEngine.Quaternion&,UnityEngine.Vector3&,UnityEngine.Matrix4x4&)");
+	_il2cpp_icall_func(___pos0, ___q1, ___s2, ___value3);
 }
 // System.Single UnityEngine.Matrix4x4::get_Item(System.Int32,System.Int32)
 extern "C"  float Matrix4x4_get_Item_m312280350 (Matrix4x4_t2933234003 * __this, int32_t ___row0, int32_t ___column1, const MethodInfo* method)

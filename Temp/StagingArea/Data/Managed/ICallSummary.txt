@@ -85,6 +85,7 @@ UnityEngine.AnimationCurve::Init
 UnityEngine.Animator::GetBoolString
 UnityEngine.Animator::StringToHash
 UnityEngine.Animator::INTERNAL_get_deltaPosition
+UnityEngine.Animator::Play
 UnityEngine.Animator::ResetTriggerString
 UnityEngine.Animator::SetBoolID
 UnityEngine.Animator::SetBoolString
@@ -119,6 +120,7 @@ UnityEngine.AsyncOperation::set_priority
 UnityEngine.AudioSource::get_isPlaying
 UnityEngine.AudioSource::get_volume
 UnityEngine.AudioSource::Play
+UnityEngine.AudioSource::PlayOneShot
 UnityEngine.AudioSource::Stop
 UnityEngine.AudioSource::set_clip
 UnityEngine.AudioSource::set_loop
@@ -156,6 +158,7 @@ UnityEngine.Camera::INTERNAL_CALL_ScreenPointToRay
 UnityEngine.Camera::INTERNAL_CALL_ScreenToViewportPoint
 UnityEngine.Camera::INTERNAL_CALL_ScreenToWorldPoint
 UnityEngine.Camera::INTERNAL_CALL_ViewportToWorldPoint
+UnityEngine.Camera::INTERNAL_CALL_WorldToViewportPoint
 UnityEngine.Camera::INTERNAL_get_backgroundColor
 UnityEngine.Camera::INTERNAL_get_pixelRect
 UnityEngine.Camera::INTERNAL_get_projectionMatrix
@@ -470,6 +473,7 @@ UnityEngine.Material::set_shader
 UnityEngine.Material::get_shader
 UnityEngine.Material::GetTexture
 UnityEngine.Matrix4x4::INTERNAL_CALL_Inverse
+UnityEngine.Matrix4x4::INTERNAL_CALL_TRS
 UnityEngine.Mesh::ExtractArrayFromList
 UnityEngine.Mesh::GetAllocArrayFromChannelImpl
 UnityEngine.Mesh::HasChannel
@@ -576,6 +580,7 @@ UnityEngine.Physics::INTERNAL_CALL_Internal_Raycast
 UnityEngine.Physics::INTERNAL_CALL_Internal_RaycastTest
 UnityEngine.Physics::INTERNAL_get_gravity
 UnityEngine.Physics::INTERNAL_CALL_RaycastAll
+UnityEngine.Physics2D::INTERNAL_CALL_Internal_Linecast
 UnityEngine.Physics2D::INTERNAL_CALL_Internal_Raycast
 UnityEngine.Physics2D::INTERNAL_CALL_OverlapCircleAll
 UnityEngine.Physics2D::INTERNAL_CALL_GetRayIntersectionAll
@@ -629,11 +634,13 @@ UnityEngine.RectTransformUtility::INTERNAL_CALL_RectangleContainsScreenPoint
 UnityEngine.RectTransformUtility::INTERNAL_CALL_PixelAdjustPoint
 UnityEngine.RectTransformUtility::INTERNAL_CALL_PixelAdjustRect
 UnityEngine.Renderer::get_enabled
+UnityEngine.Renderer::get_isVisible
 UnityEngine.Renderer::get_sortingLayerID
 UnityEngine.Renderer::get_sortingOrder
 UnityEngine.Renderer::set_enabled
 UnityEngine.Renderer::set_material
 UnityEngine.Renderer::set_materials
+UnityEngine.Renderer::set_sortingOrder
 UnityEngine.Renderer::get_material
 UnityEngine.Renderer::get_sharedMaterial
 UnityEngine.Renderer::get_materials
@@ -664,10 +671,13 @@ UnityEngine.Rigidbody::set_angularDrag
 UnityEngine.Rigidbody::set_constraints
 UnityEngine.Rigidbody::set_drag
 UnityEngine.Rigidbody::set_isKinematic
+UnityEngine.Rigidbody2D::get_gravityScale
 UnityEngine.Rigidbody2D::get_mass
 UnityEngine.Rigidbody2D::INTERNAL_CALL_AddForce
 UnityEngine.Rigidbody2D::INTERNAL_get_velocity
 UnityEngine.Rigidbody2D::INTERNAL_set_velocity
+UnityEngine.Rigidbody2D::set_bodyType
+UnityEngine.Rigidbody2D::set_gravityScale
 UnityEngine.Rigidbody2D::set_mass
 UnityEngine.Rigidbody2D::set_simulated
 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal
@@ -749,6 +759,7 @@ UnityEngine.Texture2D::GetPixels32
 UnityEngine.Texture2D::get_whiteTexture
 UnityEngine.Time::get_frameCount
 UnityEngine.Time::get_deltaTime
+UnityEngine.Time::get_fixedDeltaTime
 UnityEngine.Time::get_realtimeSinceStartup
 UnityEngine.Time::get_time
 UnityEngine.Time::get_timeScale

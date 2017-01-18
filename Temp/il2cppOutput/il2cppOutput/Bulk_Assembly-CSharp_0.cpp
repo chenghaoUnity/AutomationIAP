@@ -149,6 +149,58 @@ struct Animator_t69676727;
 struct CapsuleCollider_t720607407;
 // UltimateJoystickExample.ThirdPerson.ThirdPersonUserControl
 struct ThirdPersonUserControl_t4175179334;
+// UniArt.PixelScifiLandscape.Sample.Animal
+struct Animal_t255569526;
+// UniArt.PixelScifiLandscape.Sample.Bird
+struct Bird_t849110471;
+// UniArt.PixelScifiLandscape.Sample.Bird_SoundPlayer
+struct Bird_SoundPlayer_t2668586460;
+// UniArt.PixelScifiLandscape.Sample.Bird_SoundPlayer/Sound
+struct Sound_t4109981400;
+// UniArt.PixelScifiLandscape.Sample.CameraFollowTarget
+struct CameraFollowTarget_t3624343055;
+// UniArt.PixelScifiLandscape.Sample.CameraRestrictToSafeZone
+struct CameraRestrictToSafeZone_t4029757151;
+// UniArt.PixelScifiLandscape.Sample.Character_AnimationController
+struct Character_AnimationController_t2390840408;
+// UniArt.PixelScifiLandscape.Sample.Character_CrouchController
+struct Character_CrouchController_t3969958068;
+// UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer
+struct Character_FeetSoundPlayer_t199279460;
+// UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer/Sound
+struct Sound_t1426305660;
+// UniArt.PixelScifiLandscape.Sample.Character_FlipController
+struct Character_FlipController_t3240646899;
+// UniArt.PixelScifiLandscape.Sample.Character_GroundedTester
+struct Character_GroundedTester_t1329240161;
+// UniArt.PixelScifiLandscape.Sample.Character_Input
+struct Character_Input_t2061814878;
+// UniArt.PixelScifiLandscape.Sample.Character_LadderClimbAnimation
+struct Character_LadderClimbAnimation_t2755847465;
+// UniArt.PixelScifiLandscape.Sample.Character_LadderClimber
+struct Character_LadderClimber_t734778460;
+// UniArt.PixelScifiLandscape.Sample.Object_Ladder
+struct Object_Ladder_t2797598778;
+// UniArt.PixelScifiLandscape.Sample.Character_LadderTester
+struct Character_LadderTester_t2692161659;
+// UniArt.PixelScifiLandscape.Sample.Object_Ladder_Collider
+struct Object_Ladder_Collider_t2250306207;
+// UniArt.PixelScifiLandscape.Sample.Character_LadderTesterListener
+struct Character_LadderTesterListener_t4009816349;
+// UniArt.PixelScifiLandscape.Sample.Character_LookController
+struct Character_LookController_t3242335943;
+// UniArt.PixelScifiLandscape.Sample.Character_LookUpController
+struct Character_LookUpController_t1896595172;
+// UniArt.PixelScifiLandscape.Sample.Character_MovementController
+struct Character_MovementController_t180692203;
+// UniArt.PixelScifiLandscape.Sample.ParallaxLayer
+struct ParallaxLayer_t2928357686;
+// UniArt.PixelScifiLandscape.Sample.ParallaxLayer/FreezeAxes
+struct FreezeAxes_t2653407965;
+// UniArt.PixelScifiLandscape.Sample.ParallaxLayer/ParallaxByAxis
+struct ParallaxByAxis_t1678954032;
+// UniArt.PixelScifiLandscape.Sample.SetOrderInLayer
+struct SetOrderInLayer_t1065420130;
 // UnityStandardAssets.Water.Displace
 struct Displace_t357053105;
 // UnityStandardAssets.Water.GerstnerDisplace
@@ -203,28 +255,6 @@ struct AnnotateImageResponses_t1647677944;
 struct BoundingPoly_t202383367;
 // WebCamTextureToCloudVision/EntityAnnotation
 struct EntityAnnotation_t3728473491;
-// WebCamTextureToCloudVision/FaceAnnotation
-struct FaceAnnotation_t2061169673;
-// WebCamTextureToCloudVision/Feature
-struct Feature_t1423281007;
-// WebCamTextureToCloudVision/Image
-struct Image_t618653592;
-// WebCamTextureToCloudVision/ImageContext
-struct ImageContext_t361977959;
-// WebCamTextureToCloudVision/Landmark
-struct Landmark_t3119732773;
-// WebCamTextureToCloudVision/LatLng
-struct LatLng_t31298955;
-// WebCamTextureToCloudVision/LatLongRect
-struct LatLongRect_t4029533484;
-// WebCamTextureToCloudVision/LocationInfo
-struct LocationInfo_t2573743508;
-// WebCamTextureToCloudVision/Position
-struct Position_t381495948;
-// WebCamTextureToCloudVision/Property
-struct Property_t4059421526;
-// WebCamTextureToCloudVision/Vertex
-struct Vertex_t2714087479;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -493,6 +523,83 @@ struct Vertex_t2714087479;
 #include "UnityEngine_UnityEngine_RaycastHit87180320MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UltimateJoystickExample_ThirdPer4175179334.h"
 #include "AssemblyU2DCSharp_UltimateJoystickExample_ThirdPer4175179334MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample255569526.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample255569526MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1114264637.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen483385769MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen483385769.h"
+#include "UnityEngine_UnityEngine_Gizmos2256232573MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1114264637MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample849110471.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample849110471MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Matrix4x42933234003MethodDeclarations.h"
+#include "System_Core_System_Action3226471752MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Matrix4x42933234003.h"
+#include "System_Core_System_Action3226471752.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2668586460.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2668586460MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl4109981400.h"
+#include "mscorlib_System_Delegate3022476291MethodDeclarations.h"
+#include "mscorlib_System_Delegate3022476291.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl4109981400MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl3624343055.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl3624343055MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl4029757151.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl4029757151MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2390840408.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2390840408MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1329240161MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample180692203MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2061814878MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1329240161.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample180692203.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2061814878.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl3969958068.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl3969958068MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl3242335943MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl3242335943.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample199279460.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample199279460MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1426305660.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1426305660MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl3240646899.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl3240646899MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2644239190MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera2178968864.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2644239190.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera2178968864MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2755847465.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2755847465MethodDeclarations.h"
+#include "mscorlib_System_Action_1_gen1878309314MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample734778460.h"
+#include "mscorlib_System_Action_1_gen1878309314.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample734778460MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2692161659MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2797598778.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2692161659.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2797598778MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2166719910MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2166719910.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera1701449584.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera1701449584MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2250306207.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl4009816349.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl4009816349MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1896595172.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1896595172MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2250306207MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2928357686.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2928357686MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl3647644570.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2653407965.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1678954032.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample_99966352.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sample_99966352MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl3647644570MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2653407965MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1678954032MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1065420130.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1065420130MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UnityStandardAssets_Water_Displac357053105.h"
 #include "AssemblyU2DCSharp_UnityStandardAssets_Water_Displac357053105MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Shader2430389951MethodDeclarations.h"
@@ -517,10 +624,8 @@ struct Vertex_t2714087479;
 #include "UnityEngine_UnityEngine_Texture2243626319.h"
 #include "UnityEngine_UnityEngine_Skybox2033495038MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GL1765937205MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Matrix4x42933234003MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Skybox2033495038.h"
 #include "UnityEngine_UnityEngine_Vector42243707581.h"
-#include "UnityEngine_UnityEngine_Matrix4x42933234003.h"
 #include "UnityEngine_UnityEngine_Vector42243707581MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_DepthTextureMode1156392273.h"
 #include "UnityEngine_UnityEngine_RenderingPath1538007819.h"
@@ -597,29 +702,6 @@ struct Vertex_t2714087479;
 #include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Boundi202383367MethodDeclarations.h"
 #include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Entit3728473491.h"
 #include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Entit3728473491MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_FaceA2061169673.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_FaceA2061169673MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Featur927396839MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_ImageC361977959.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_ImageC361977959MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Landm3119732773.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Landm3119732773MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Landma205589941.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Landma205589941MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_LatLng31298955.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_LatLng31298955MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_LatLo4029533484.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_LatLo4029533484MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Likel1194790649.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Likel1194790649MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Locat2573743508.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Locat2573743508MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Positi381495948.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Positi381495948MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Prope4059421526.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Prope4059421526MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Verte2714087479.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Verte2714087479MethodDeclarations.h"
 
 // !!0 UnityEngine.Object::Instantiate<System.Object>(!!0,UnityEngine.Vector3,UnityEngine.Quaternion)
 extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m3692334404_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Vector3_t2243707580  p1, Quaternion_t4030073918  p2, const MethodInfo* method);
@@ -703,6 +785,10 @@ extern "C"  Il2CppObject * Component_GetComponentInChildren_TisIl2CppObject_m246
 #define Component_GetComponent_TisCapsuleCollider_t720607407_m1210329947(__this, method) ((  CapsuleCollider_t720607407 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UltimateJoystickExample.ThirdPerson.ThirdPersonCharacter>()
 #define Component_GetComponent_TisThirdPersonCharacter_t1725062811_m1256164373(__this, method) ((  ThirdPersonCharacter_t1725062811 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<UniArt.PixelScifiLandscape.Sample.Animal>()
+#define Component_GetComponent_TisAnimal_t255569526_m3046082457(__this, method) ((  Animal_t255569526 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<UniArt.PixelScifiLandscape.Sample.Object_Ladder_Collider>()
+#define Component_GetComponent_TisObject_Ladder_Collider_t2250306207_m778367548(__this, method) ((  Object_Ladder_Collider_t2250306207 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Skybox>()
 #define Component_GetComponent_TisSkybox_t2033495038_m3670937650(__this, method) ((  Skybox_t2033495038 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.FlareLayer>()
@@ -3987,8 +4073,11 @@ IL_0046:
 }
 // System.Void EndGame::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1875862075;
 extern Il2CppCodeGenString* _stringLiteral4006083699;
+extern Il2CppCodeGenString* _stringLiteral1251759944;
+extern Il2CppCodeGenString* _stringLiteral3611345420;
 extern const uint32_t EndGame_OnTriggerEnter2D_m1183808002_MetadataUsageId;
 extern "C"  void EndGame_OnTriggerEnter2D_m1183808002 (EndGame_t101703823 * __this, Collider2D_t646061738 * ___other0, const MethodInfo* method)
 {
@@ -4006,7 +4095,7 @@ extern "C"  void EndGame_OnTriggerEnter2D_m1183808002 (EndGame_t101703823 * __th
 		bool L_2 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_1, _stringLiteral1875862075, /*hidden argument*/NULL);
 		if (!L_2)
 		{
-			goto IL_0037;
+			goto IL_006c;
 		}
 	}
 	{
@@ -4025,6 +4114,27 @@ extern "C"  void EndGame_OnTriggerEnter2D_m1183808002 (EndGame_t101703823 * __th
 	}
 
 IL_0037:
+	{
+		GameObject_t1756533147 * L_6 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		String_t* L_7 = Object_get_name_m2079638459(L_6, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_8 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_7, _stringLiteral1251759944, /*hidden argument*/NULL);
+		if (!L_8)
+		{
+			goto IL_006c;
+		}
+	}
+	{
+		EndGame_sentEvent_m2347584432(__this, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_9 = __this->get_UI_2();
+		NullCheck(L_9);
+		UIupdater_t4158074345 * L_10 = GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094(L_9, /*hidden argument*/GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094_MethodInfo_var);
+		NullCheck(L_10);
+		UIupdater_openWindow_m2829570234(L_10, _stringLiteral3611345420, /*hidden argument*/NULL);
+	}
+
+IL_006c:
 	{
 		return;
 	}
@@ -4162,7 +4272,7 @@ extern "C"  void EndGame_OnApplicationQuit_m3079728920 (EndGame_t101703823 * __t
 extern "C"  void FloorMoving__ctor_m3886038027 (FloorMoving_t2589891496 * __this, const MethodInfo* method)
 {
 	{
-		__this->set_downSpeed_2((2.5f));
+		__this->set_downSpeed_2((1.5f));
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -4203,7 +4313,7 @@ extern "C"  void FloorMoving_FixedUpdate_m1068448488 (FloorMoving_t2589891496 * 
 	memset(&V_7, 0, sizeof(V_7));
 	{
 		float L_0 = __this->get_downSpeed_2();
-		__this->set_downSpeed_2(((float)((float)L_0+(float)(0.0005f))));
+		__this->set_downSpeed_2(((float)((float)L_0+(float)(0.0001f))));
 		GameObject_t1756533147 * L_1 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		Transform_t3275118058 * L_2 = GameObject_get_transform_m909382139(L_1, /*hidden argument*/NULL);
@@ -4242,7 +4352,7 @@ extern "C"  void FloorMoving_FixedUpdate_m1068448488 (FloorMoving_t2589891496 * 
 		Vector3_t2243707580  L_20 = Transform_get_position_m1104419803(L_19, /*hidden argument*/NULL);
 		V_3 = L_20;
 		float L_21 = (&V_3)->get_y_2();
-		if ((!(((float)L_21) <= ((float)(0.0f)))))
+		if ((!(((float)L_21) <= ((float)(-1.46f)))))
 		{
 			goto IL_016c;
 		}
@@ -4255,7 +4365,7 @@ extern "C"  void FloorMoving_FixedUpdate_m1068448488 (FloorMoving_t2589891496 * 
 		Vector3_t2243707580  L_24 = Transform_get_position_m1104419803(L_23, /*hidden argument*/NULL);
 		V_5 = L_24;
 		float L_25 = (&V_5)->get_x_1();
-		float L_26 = Random_Range_m2884721203(NULL /*static, unused*/, (-3.0f), (3.0f), /*hidden argument*/NULL);
+		float L_26 = Random_Range_m2884721203(NULL /*static, unused*/, (-1.1f), (1.1f), /*hidden argument*/NULL);
 		V_4 = ((float)((float)L_25+(float)L_26));
 		goto IL_00f9;
 	}
@@ -4269,7 +4379,7 @@ IL_00ce:
 		Vector3_t2243707580  L_29 = Transform_get_position_m1104419803(L_28, /*hidden argument*/NULL);
 		V_6 = L_29;
 		float L_30 = (&V_6)->get_x_1();
-		float L_31 = Random_Range_m2884721203(NULL /*static, unused*/, (-3.0f), (3.0f), /*hidden argument*/NULL);
+		float L_31 = Random_Range_m2884721203(NULL /*static, unused*/, (-1.1f), (1.1f), /*hidden argument*/NULL);
 		V_4 = ((float)((float)L_30+(float)L_31));
 	}
 
@@ -4302,7 +4412,7 @@ IL_00f9:
 		float L_40 = (&V_7)->get_z_3();
 		Vector3_t2243707580  L_41;
 		memset(&L_41, 0, sizeof(L_41));
-		Vector3__ctor_m2638739322(&L_41, L_36, (93.0f), L_40, /*hidden argument*/NULL);
+		Vector3__ctor_m2638739322(&L_41, L_36, (85.0f), L_40, /*hidden argument*/NULL);
 		NullCheck(L_35);
 		Transform_set_position_m2469242620(L_35, L_41, /*hidden argument*/NULL);
 		GameObject_t1756533147 * L_42 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
@@ -4417,8 +4527,6 @@ extern const MethodInfo* List_1_Add_m3041437182_MethodInfo_var;
 extern const MethodInfo* List_1_get_Count_m3230367508_MethodInfo_var;
 extern const MethodInfo* List_1_get_Item_m561137211_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1875862075;
-extern Il2CppCodeGenString* _stringLiteral1136785732;
-extern Il2CppCodeGenString* _stringLiteral1798712560;
 extern const uint32_t framework_testRun_m1209294150_MetadataUsageId;
 extern "C"  void framework_testRun_m1209294150 (framework_t4204615976 * __this, const MethodInfo* method)
 {
@@ -4434,52 +4542,46 @@ extern "C"  void framework_testRun_m1209294150 (framework_t4204615976 * __this, 
 		Rigidbody2D_t502193897 * L_1 = GameObject_GetComponent_TisRigidbody2D_t502193897_m812242143(L_0, /*hidden argument*/GameObject_GetComponent_TisRigidbody2D_t502193897_m812242143_MethodInfo_var);
 		NullCheck(L_1);
 		Rigidbody2D_set_simulated_m2089192866(L_1, (bool)0, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_2 = GameObject_Find_m836511350(NULL /*static, unused*/, _stringLiteral1136785732, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_2 = __this->get_QAModeUI_4();
 		NullCheck(L_2);
-		GameObject_SetActive_m2887581199(L_2, (bool)0, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_3 = GameObject_Find_m836511350(NULL /*static, unused*/, _stringLiteral1798712560, /*hidden argument*/NULL);
+		GameObject_SetActive_m2887581199(L_2, (bool)1, /*hidden argument*/NULL);
+		List_1_t835147881 * L_3 = __this->get_testSuite_3();
+		Il2CppObject * L_4 = framework_test01_m2267968880(__this, /*hidden argument*/NULL);
 		NullCheck(L_3);
-		GameObject_SetActive_m2887581199(L_3, (bool)0, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_4 = __this->get_QAModeUI_4();
-		NullCheck(L_4);
-		GameObject_SetActive_m2887581199(L_4, (bool)1, /*hidden argument*/NULL);
+		List_1_Add_m3041437182(L_3, L_4, /*hidden argument*/List_1_Add_m3041437182_MethodInfo_var);
 		List_1_t835147881 * L_5 = __this->get_testSuite_3();
-		Il2CppObject * L_6 = framework_test01_m2267968880(__this, /*hidden argument*/NULL);
+		Il2CppObject * L_6 = framework_test02_m1004412917(__this, /*hidden argument*/NULL);
 		NullCheck(L_5);
 		List_1_Add_m3041437182(L_5, L_6, /*hidden argument*/List_1_Add_m3041437182_MethodInfo_var);
 		List_1_t835147881 * L_7 = __this->get_testSuite_3();
-		Il2CppObject * L_8 = framework_test02_m1004412917(__this, /*hidden argument*/NULL);
+		Il2CppObject * L_8 = framework_test03_m2550293882(__this, /*hidden argument*/NULL);
 		NullCheck(L_7);
 		List_1_Add_m3041437182(L_7, L_8, /*hidden argument*/List_1_Add_m3041437182_MethodInfo_var);
 		List_1_t835147881 * L_9 = __this->get_testSuite_3();
-		Il2CppObject * L_10 = framework_test03_m2550293882(__this, /*hidden argument*/NULL);
+		Il2CppObject * L_10 = framework_test04_m157437911(__this, /*hidden argument*/NULL);
 		NullCheck(L_9);
 		List_1_Add_m3041437182(L_9, L_10, /*hidden argument*/List_1_Add_m3041437182_MethodInfo_var);
 		List_1_t835147881 * L_11 = __this->get_testSuite_3();
-		Il2CppObject * L_12 = framework_test04_m157437911(__this, /*hidden argument*/NULL);
+		Il2CppObject * L_12 = framework_test05_m1703318876(__this, /*hidden argument*/NULL);
 		NullCheck(L_11);
 		List_1_Add_m3041437182(L_11, L_12, /*hidden argument*/List_1_Add_m3041437182_MethodInfo_var);
 		List_1_t835147881 * L_13 = __this->get_testSuite_3();
-		Il2CppObject * L_14 = framework_test05_m1703318876(__this, /*hidden argument*/NULL);
+		Il2CppObject * L_14 = framework_test06_m439762913(__this, /*hidden argument*/NULL);
 		NullCheck(L_13);
 		List_1_Add_m3041437182(L_13, L_14, /*hidden argument*/List_1_Add_m3041437182_MethodInfo_var);
 		List_1_t835147881 * L_15 = __this->get_testSuite_3();
-		Il2CppObject * L_16 = framework_test06_m439762913(__this, /*hidden argument*/NULL);
+		Il2CppObject * L_16 = framework_finalization_m3562771151(__this, /*hidden argument*/NULL);
 		NullCheck(L_15);
 		List_1_Add_m3041437182(L_15, L_16, /*hidden argument*/List_1_Add_m3041437182_MethodInfo_var);
 		List_1_t835147881 * L_17 = __this->get_testSuite_3();
-		Il2CppObject * L_18 = framework_finalization_m3562771151(__this, /*hidden argument*/NULL);
 		NullCheck(L_17);
-		List_1_Add_m3041437182(L_17, L_18, /*hidden argument*/List_1_Add_m3041437182_MethodInfo_var);
+		int32_t L_18 = List_1_get_Count_m3230367508(L_17, /*hidden argument*/List_1_get_Count_m3230367508_MethodInfo_var);
+		__this->set_maxTest_7(L_18);
 		List_1_t835147881 * L_19 = __this->get_testSuite_3();
+		int32_t L_20 = __this->get_runOrder_8();
 		NullCheck(L_19);
-		int32_t L_20 = List_1_get_Count_m3230367508(L_19, /*hidden argument*/List_1_get_Count_m3230367508_MethodInfo_var);
-		__this->set_maxTest_7(L_20);
-		List_1_t835147881 * L_21 = __this->get_testSuite_3();
-		int32_t L_22 = __this->get_runOrder_8();
-		NullCheck(L_21);
-		Il2CppObject * L_23 = List_1_get_Item_m561137211(L_21, L_22, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
-		MonoBehaviour_StartCoroutine_m2470621050(__this, L_23, /*hidden argument*/NULL);
+		Il2CppObject * L_21 = List_1_get_Item_m561137211(L_19, L_20, /*hidden argument*/List_1_get_Item_m561137211_MethodInfo_var);
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_21, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -9768,7 +9870,7 @@ extern "C"  void TripRandomer_random_m140090699 (TripRandomer_t2052529705 * __th
 		GameObject_t1756533147 * L_0 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
 		NullCheck(L_0);
 		Transform_t3275118058 * L_1 = GameObject_get_transform_m909382139(L_0, /*hidden argument*/NULL);
-		float L_2 = Random_Range_m2884721203(NULL /*static, unused*/, (0.3f), (1.6f), /*hidden argument*/NULL);
+		float L_2 = Random_Range_m2884721203(NULL /*static, unused*/, (-3.48f), (2.26f), /*hidden argument*/NULL);
 		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		Transform_t3275118058 * L_4 = GameObject_get_transform_m909382139(L_3, /*hidden argument*/NULL);
@@ -13725,6 +13827,5058 @@ extern "C"  void ThirdPersonUserControl_PlayerJump_m1870760939 (ThirdPersonUserC
 {
 	{
 		__this->set_m_Jump_6((bool)1);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::.ctor()
+extern Il2CppCodeGenString* _stringLiteral3759402606;
+extern Il2CppCodeGenString* _stringLiteral696029192;
+extern Il2CppCodeGenString* _stringLiteral2778557961;
+extern const uint32_t Animal__ctor_m2369283589_MetadataUsageId;
+extern "C"  void Animal__ctor_m2369283589 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Animal__ctor_m2369283589_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		__this->set_standAnimationStateName_2(_stringLiteral3759402606);
+		__this->set_standDurationMin_3((2.0f));
+		__this->set_standDurationMax_4((6.0f));
+		__this->set_eatAnimationStateName_5(_stringLiteral696029192);
+		__this->set_eatDurationMin_6((2.0f));
+		__this->set_eatDurationMax_7((6.0f));
+		__this->set_canEat_8((bool)1);
+		__this->set_walkingAnimationStateName_9(_stringLiteral2778557961);
+		__this->set_walkingDurationMin_10((4.0f));
+		__this->set_walkingDurationMax_11((8.0f));
+		__this->set_walkingSpeed_12((0.07f));
+		__this->set_walkingZoneLeft_13((-0.46f));
+		__this->set_walkingZoneRight_14((0.97f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::Awake()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisAnimator_t69676727_m475627522_MethodInfo_var;
+extern const uint32_t Animal_Awake_m4258901154_MetadataUsageId;
+extern "C"  void Animal_Awake_m4258901154 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Animal_Awake_m4258901154_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		bool L_0 = Application_get_isPlaying_m4091950718(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000b:
+	{
+		Animator_t69676727 * L_1 = Component_GetComponent_TisAnimator_t69676727_m475627522(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t69676727_m475627522_MethodInfo_var);
+		__this->set_m_rAnimator_19(L_1);
+		Animal_StartStand_m2760683425(__this, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		float L_4 = (&V_0)->get_x_1();
+		__this->set_m_fZoneCenter_16(L_4);
+		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Vector3_t2243707580  L_6 = Transform_get_localScale_m3074381503(L_5, /*hidden argument*/NULL);
+		V_1 = L_6;
+		float L_7 = (&V_1)->get_x_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_8 = Mathf_Sign_m2039143327(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		__this->set_m_fWalkingDirection_17(((-L_8)));
+		Animal_UpdateFlip_m760285751(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::Update()
+extern "C"  void Animal_Update_m1305126788 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		Animal_EnsureWalkingZoneCoherence_m3457960398(__this, /*hidden argument*/NULL);
+		bool L_0 = Application_get_isPlaying_m4091950718(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0011:
+	{
+		int32_t L_1 = __this->get_m_eState_15();
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		int32_t L_4 = V_0;
+		if ((((int32_t)L_4) == ((int32_t)2)))
+		{
+			goto IL_0047;
+		}
+	}
+	{
+		goto IL_0052;
+	}
+
+IL_0031:
+	{
+		Animal_UpdateStand_m1648008170(__this, /*hidden argument*/NULL);
+		goto IL_0052;
+	}
+
+IL_003c:
+	{
+		Animal_UpdateEat_m581115892(__this, /*hidden argument*/NULL);
+		goto IL_0052;
+	}
+
+IL_0047:
+	{
+		Animal_UpdateWalk_m1514882513(__this, /*hidden argument*/NULL);
+		goto IL_0052;
+	}
+
+IL_0052:
+	{
+		Animal_UpdateAnimation_m932208904(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::UpdateAnimation()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t Animal_UpdateAnimation_m932208904_MetadataUsageId;
+extern "C"  void Animal_UpdateAnimation_m932208904 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Animal_UpdateAnimation_m932208904_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Animator_t69676727 * L_0 = __this->get_m_rAnimator_19();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		Animator_t69676727 * L_2 = __this->get_m_rAnimator_19();
+		String_t* L_3 = Animal_GetAnimationStateName_m2463861226(__this, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Animator_Play_m1123842248(L_2, L_3, /*hidden argument*/NULL);
+	}
+
+IL_0022:
+	{
+		return;
+	}
+}
+// System.String UniArt.PixelScifiLandscape.Sample.Animal::GetAnimationStateName()
+extern "C"  String_t* Animal_GetAnimationStateName_m2463861226 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get_m_eState_15();
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		if (L_1 == 0)
+		{
+			goto IL_002c;
+		}
+		if (L_1 == 1)
+		{
+			goto IL_001e;
+		}
+		if (L_1 == 2)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		goto IL_002c;
+	}
+
+IL_001e:
+	{
+		String_t* L_2 = __this->get_eatAnimationStateName_5();
+		return L_2;
+	}
+
+IL_0025:
+	{
+		String_t* L_3 = __this->get_walkingAnimationStateName_9();
+		return L_3;
+	}
+
+IL_002c:
+	{
+		String_t* L_4 = __this->get_standAnimationStateName_2();
+		return L_4;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::SelectDirection()
+extern "C"  void Animal_SelectDirection_m1834850252 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = Random_Range_m694320887(NULL /*static, unused*/, 0, 1, /*hidden argument*/NULL);
+		if (((int32_t)((int32_t)L_0%(int32_t)2)))
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		__this->set_m_fWalkingDirection_17((1.0f));
+		goto IL_0029;
+	}
+
+IL_001e:
+	{
+		__this->set_m_fWalkingDirection_17((-1.0f));
+	}
+
+IL_0029:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::UpdateFlip()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t Animal_UpdateFlip_m760285751_MetadataUsageId;
+extern "C"  void Animal_UpdateFlip_m760285751 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Animal_UpdateFlip_m760285751_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_localScale_m3074381503(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		float L_2 = (&V_0)->get_x_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_3 = fabsf(L_2);
+		float L_4 = __this->get_m_fWalkingDirection_17();
+		(&V_0)->set_x_1(((float)((float)((-L_3))*(float)L_4)));
+		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_6 = V_0;
+		NullCheck(L_5);
+		Transform_set_localScale_m2325460848(L_5, L_6, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::EnsureWalkingZoneCoherence()
+extern "C"  void Animal_EnsureWalkingZoneCoherence_m3457960398 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->get_walkingZoneLeft_13();
+		float L_1 = __this->get_walkingZoneRight_14();
+		if ((!(((float)L_0) > ((float)L_1))))
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		float L_2 = __this->get_walkingZoneLeft_13();
+		V_0 = L_2;
+		float L_3 = __this->get_walkingZoneRight_14();
+		__this->set_walkingZoneLeft_13(L_3);
+		float L_4 = V_0;
+		__this->set_walkingZoneRight_14(L_4);
+	}
+
+IL_002b:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::StartRandomState()
+extern Il2CppClass* List_1_t483385769_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1__ctor_m2628433248_MethodInfo_var;
+extern const MethodInfo* List_1_Add_m1313377028_MethodInfo_var;
+extern const MethodInfo* List_1_get_Count_m913976226_MethodInfo_var;
+extern const MethodInfo* List_1_get_Item_m1901224529_MethodInfo_var;
+extern const uint32_t Animal_StartRandomState_m1805367053_MetadataUsageId;
+extern "C"  void Animal_StartRandomState_m1805367053 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Animal_StartRandomState_m1805367053_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t483385769 * V_0 = NULL;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	{
+		List_1_t483385769 * L_0 = (List_1_t483385769 *)il2cpp_codegen_object_new(List_1_t483385769_il2cpp_TypeInfo_var);
+		List_1__ctor_m2628433248(L_0, /*hidden argument*/List_1__ctor_m2628433248_MethodInfo_var);
+		V_0 = L_0;
+		V_1 = 0;
+		goto IL_003d;
+	}
+
+IL_000d:
+	{
+		int32_t L_1 = V_1;
+		V_2 = L_1;
+		bool L_2 = __this->get_canEat_8();
+		if (L_2)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		int32_t L_3 = V_2;
+		if ((!(((uint32_t)L_3) == ((uint32_t)1))))
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		goto IL_0039;
+	}
+
+IL_0026:
+	{
+		int32_t L_4 = V_2;
+		int32_t L_5 = __this->get_m_eState_15();
+		if ((((int32_t)L_4) == ((int32_t)L_5)))
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		List_1_t483385769 * L_6 = V_0;
+		int32_t L_7 = V_2;
+		NullCheck(L_6);
+		List_1_Add_m1313377028(L_6, L_7, /*hidden argument*/List_1_Add_m1313377028_MethodInfo_var);
+	}
+
+IL_0039:
+	{
+		int32_t L_8 = V_1;
+		V_1 = ((int32_t)((int32_t)L_8+(int32_t)1));
+	}
+
+IL_003d:
+	{
+		int32_t L_9 = V_1;
+		if ((((int32_t)L_9) < ((int32_t)3)))
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		List_1_t483385769 * L_10 = V_0;
+		List_1_t483385769 * L_11 = V_0;
+		NullCheck(L_11);
+		int32_t L_12 = List_1_get_Count_m913976226(L_11, /*hidden argument*/List_1_get_Count_m913976226_MethodInfo_var);
+		int32_t L_13 = Random_Range_m694320887(NULL /*static, unused*/, 0, L_12, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		int32_t L_14 = List_1_get_Item_m1901224529(L_10, L_13, /*hidden argument*/List_1_get_Item_m1901224529_MethodInfo_var);
+		V_3 = L_14;
+		int32_t L_15 = V_3;
+		Animal_StartState_m4273053325(__this, L_15, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::StartState(UniArt.PixelScifiLandscape.Sample.Animal/EState)
+extern "C"  void Animal_StartState_m4273053325 (Animal_t255569526 * __this, int32_t ___a_eState0, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = ___a_eState0;
+		if (!L_0)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		int32_t L_1 = ___a_eState0;
+		if ((((int32_t)L_1) == ((int32_t)1)))
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		int32_t L_2 = ___a_eState0;
+		if ((((int32_t)L_2) == ((int32_t)2)))
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		goto IL_003a;
+	}
+
+IL_0019:
+	{
+		Animal_StartStand_m2760683425(__this, /*hidden argument*/NULL);
+		goto IL_003a;
+	}
+
+IL_0024:
+	{
+		Animal_StartEat_m1978182357(__this, /*hidden argument*/NULL);
+		goto IL_003a;
+	}
+
+IL_002f:
+	{
+		Animal_StartWalk_m1862795380(__this, /*hidden argument*/NULL);
+		goto IL_003a;
+	}
+
+IL_003a:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::StartStand()
+extern "C"  void Animal_StartStand_m2760683425 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_m_eState_15(0);
+		float L_0 = __this->get_standDurationMin_3();
+		float L_1 = __this->get_standDurationMax_4();
+		float L_2 = Random_Range_m2884721203(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_m_fStateTimeRemaining_18(L_2);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::StopStand()
+extern "C"  void Animal_StopStand_m193034593 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_m_fStateTimeRemaining_18((0.0f));
+		Animal_StartRandomState_m1805367053(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::UpdateStand()
+extern "C"  void Animal_UpdateStand_m1648008170 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	{
+		float L_0 = __this->get_m_fStateTimeRemaining_18();
+		float L_1 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_fStateTimeRemaining_18(((float)((float)L_0-(float)L_1)));
+		float L_2 = __this->get_m_fStateTimeRemaining_18();
+		if ((!(((float)L_2) <= ((float)(0.0f)))))
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		Animal_StopStand_m193034593(__this, /*hidden argument*/NULL);
+	}
+
+IL_0028:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::StartEat()
+extern "C"  void Animal_StartEat_m1978182357 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_m_eState_15(1);
+		float L_0 = __this->get_eatDurationMin_6();
+		float L_1 = __this->get_eatDurationMax_7();
+		float L_2 = Random_Range_m2884721203(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_m_fStateTimeRemaining_18(L_2);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::StopEat()
+extern "C"  void Animal_StopEat_m3394727981 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_m_bWaitForEatEnd_20((bool)0);
+		__this->set_m_fStateTimeRemaining_18((0.0f));
+		Animal_StartRandomState_m1805367053(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::UpdateEat()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t Animal_UpdateEat_m581115892_MetadataUsageId;
+extern "C"  void Animal_UpdateEat_m581115892 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Animal_UpdateEat_m581115892_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		bool L_0 = __this->get_m_bWaitForEatEnd_20();
+		if (!L_0)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		Animator_t69676727 * L_1 = __this->get_m_rAnimator_19();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_2 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		Animal_StopEat_m3394727981(__this, /*hidden argument*/NULL);
+		goto IL_003e;
+	}
+
+IL_0027:
+	{
+		int32_t L_3 = Animal_GetCurrentCycle_m3505784258(__this, /*hidden argument*/NULL);
+		int32_t L_4 = __this->get_m_iWaitForEatEndCycle_21();
+		if ((((int32_t)L_3) < ((int32_t)L_4)))
+		{
+			goto IL_003e;
+		}
+	}
+	{
+		Animal_StopEat_m3394727981(__this, /*hidden argument*/NULL);
+	}
+
+IL_003e:
+	{
+		goto IL_0096;
+	}
+
+IL_0043:
+	{
+		float L_5 = __this->get_m_fStateTimeRemaining_18();
+		float L_6 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_fStateTimeRemaining_18(((float)((float)L_5-(float)L_6)));
+		float L_7 = __this->get_m_fStateTimeRemaining_18();
+		if ((!(((float)L_7) <= ((float)(0.0f)))))
+		{
+			goto IL_0096;
+		}
+	}
+	{
+		Animator_t69676727 * L_8 = __this->get_m_rAnimator_19();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_9 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_8, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_9)
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		Animal_StopEat_m3394727981(__this, /*hidden argument*/NULL);
+		goto IL_0096;
+	}
+
+IL_0081:
+	{
+		int32_t L_10 = Animal_GetCurrentCycle_m3505784258(__this, /*hidden argument*/NULL);
+		__this->set_m_iWaitForEatEndCycle_21(((int32_t)((int32_t)L_10+(int32_t)1)));
+		__this->set_m_bWaitForEatEnd_20((bool)1);
+	}
+
+IL_0096:
+	{
+		return;
+	}
+}
+// System.Int32 UniArt.PixelScifiLandscape.Sample.Animal::GetCurrentCycle()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t Animal_GetCurrentCycle_m3505784258_MetadataUsageId;
+extern "C"  int32_t Animal_GetCurrentCycle_m3505784258 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Animal_GetCurrentCycle_m3505784258_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	AnimatorStateInfo_t2577870592  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Animator_t69676727 * L_0 = __this->get_m_rAnimator_19();
+		NullCheck(L_0);
+		AnimatorStateInfo_t2577870592  L_1 = Animator_GetCurrentAnimatorStateInfo_m1931338898(L_0, 0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		float L_2 = AnimatorStateInfo_get_normalizedTime_m1330221276((&V_0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		int32_t L_3 = Mathf_FloorToInt_m4005035722(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::StartWalk()
+extern "C"  void Animal_StartWalk_m1862795380 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_m_eState_15(2);
+		float L_0 = __this->get_walkingDurationMin_10();
+		float L_1 = __this->get_walkingDurationMax_11();
+		float L_2 = Random_Range_m2884721203(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_m_fStateTimeRemaining_18(L_2);
+		Animal_SelectDirection_m1834850252(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::StopWalk()
+extern "C"  void Animal_StopWalk_m1836123096 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_m_fStateTimeRemaining_18((0.0f));
+		Animal_StartStand_m2760683425(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::UpdateWalk()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t Animal_UpdateWalk_m1514882513_MetadataUsageId;
+extern "C"  void Animal_UpdateWalk_m1514882513 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Animal_UpdateWalk_m1514882513_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	{
+		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_position_m1104419803(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Vector3_t2243707580 * L_2 = (&V_0);
+		float L_3 = L_2->get_x_1();
+		float L_4 = __this->get_walkingSpeed_12();
+		float L_5 = __this->get_m_fWalkingDirection_17();
+		float L_6 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		L_2->set_x_1(((float)((float)L_3+(float)((float)((float)((float)((float)L_4*(float)L_5))*(float)L_6)))));
+		float L_7 = __this->get_m_fZoneCenter_16();
+		float L_8 = __this->get_walkingZoneLeft_13();
+		V_1 = ((float)((float)L_7+(float)L_8));
+		float L_9 = __this->get_m_fZoneCenter_16();
+		float L_10 = __this->get_walkingZoneRight_14();
+		V_2 = ((float)((float)L_9+(float)L_10));
+		float L_11 = (&V_0)->get_x_1();
+		float L_12 = V_1;
+		if ((!(((float)L_11) < ((float)L_12))))
+		{
+			goto IL_0073;
+		}
+	}
+	{
+		float L_13 = V_1;
+		float L_14 = V_1;
+		float L_15 = (&V_0)->get_x_1();
+		(&V_0)->set_x_1(((float)((float)L_13+(float)((float)((float)L_14-(float)L_15)))));
+		__this->set_m_fWalkingDirection_17((1.0f));
+	}
+
+IL_0073:
+	{
+		float L_16 = (&V_0)->get_x_1();
+		float L_17 = V_2;
+		if ((!(((float)L_16) > ((float)L_17))))
+		{
+			goto IL_009d;
+		}
+	}
+	{
+		float L_18 = V_2;
+		float L_19 = V_2;
+		float L_20 = (&V_0)->get_x_1();
+		(&V_0)->set_x_1(((float)((float)L_18+(float)((float)((float)L_19-(float)L_20)))));
+		__this->set_m_fWalkingDirection_17((-1.0f));
+	}
+
+IL_009d:
+	{
+		float L_21 = (&V_0)->get_x_1();
+		float L_22 = V_1;
+		float L_23 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_24 = Mathf_Clamp_m2354025655(NULL /*static, unused*/, L_21, L_22, L_23, /*hidden argument*/NULL);
+		(&V_0)->set_x_1(L_24);
+		Transform_t3275118058 * L_25 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_26 = V_0;
+		NullCheck(L_25);
+		Transform_set_position_m2469242620(L_25, L_26, /*hidden argument*/NULL);
+		Animal_UpdateFlip_m760285751(__this, /*hidden argument*/NULL);
+		float L_27 = __this->get_m_fStateTimeRemaining_18();
+		float L_28 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_fStateTimeRemaining_18(((float)((float)L_27-(float)L_28)));
+		float L_29 = __this->get_m_fStateTimeRemaining_18();
+		if ((!(((float)L_29) <= ((float)(0.0f)))))
+		{
+			goto IL_00ec;
+		}
+	}
+	{
+		Animal_StopWalk_m1836123096(__this, /*hidden argument*/NULL);
+	}
+
+IL_00ec:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Animal::OnDrawGizmos()
+extern "C"  void Animal_OnDrawGizmos_m1292515393 (Animal_t255569526 * __this, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vector3_t2243707580  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector3_t2243707580  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		Animal_EnsureWalkingZoneCoherence_m3457960398(__this, /*hidden argument*/NULL);
+		bool L_0 = Application_get_isPlaying_m4091950718(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		float L_1 = __this->get_m_fZoneCenter_16();
+		V_0 = L_1;
+		goto IL_0030;
+	}
+
+IL_001c:
+	{
+		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		float L_4 = (&V_1)->get_x_1();
+		V_0 = L_4;
+	}
+
+IL_0030:
+	{
+		Color_t2020392075  L_5 = Color_get_blue_m4180825090(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Gizmos_set_color_m494992840(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_6 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		Vector3_t2243707580  L_7 = Transform_get_position_m1104419803(L_6, /*hidden argument*/NULL);
+		V_2 = L_7;
+		float L_8 = V_0;
+		float L_9 = __this->get_walkingZoneLeft_13();
+		(&V_2)->set_x_1(((float)((float)L_8+(float)L_9)));
+		Transform_t3275118058 * L_10 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Vector3_t2243707580  L_11 = Transform_get_position_m1104419803(L_10, /*hidden argument*/NULL);
+		V_3 = L_11;
+		float L_12 = V_0;
+		float L_13 = __this->get_walkingZoneRight_14();
+		(&V_3)->set_x_1(((float)((float)L_12+(float)L_13)));
+		Vector3_t2243707580  L_14 = V_2;
+		Vector3_t2243707580  L_15 = V_3;
+		Gizmos_DrawLine_m1315654064(NULL /*static, unused*/, L_14, L_15, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird::.ctor()
+extern Il2CppCodeGenString* _stringLiteral4231481767;
+extern const uint32_t Bird__ctor_m728820168_MetadataUsageId;
+extern "C"  void Bird__ctor_m728820168 (Bird_t849110471 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Bird__ctor_m728820168_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		__this->set_flyingAnimationStateName_3(_stringLiteral4231481767);
+		__this->set_flyingSpeed_4((1.0f));
+		__this->set_flyDirectionAngle_5((25.0f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird::Awake()
+extern const MethodInfo* Component_GetComponent_TisAnimal_t255569526_m3046082457_MethodInfo_var;
+extern const MethodInfo* Component_GetComponent_TisAnimator_t69676727_m475627522_MethodInfo_var;
+extern const uint32_t Bird_Awake_m2619183699_MetadataUsageId;
+extern "C"  void Bird_Awake_m2619183699 (Bird_t849110471 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Bird_Awake_m2619183699_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Animal_t255569526 * L_0 = Component_GetComponent_TisAnimal_t255569526_m3046082457(__this, /*hidden argument*/Component_GetComponent_TisAnimal_t255569526_m3046082457_MethodInfo_var);
+		__this->set_m_rAnimal_6(L_0);
+		Animator_t69676727 * L_1 = Component_GetComponent_TisAnimator_t69676727_m475627522(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t69676727_m475627522_MethodInfo_var);
+		__this->set_m_rAnimator_9(L_1);
+		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
+		__this->set_m_f3SpawnPoint_10(L_3);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird::Update()
+extern "C"  void Bird_Update_m2457678327 (Bird_t849110471 * __this, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		bool L_0 = __this->get_m_bFlying_8();
+		if (!L_0)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Vector3_t2243707580  L_2 = Transform_get_position_m1104419803(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Vector3_t2243707580  L_3 = V_0;
+		Vector3_t2243707580  L_4 = __this->get_m_f3FlyingDirection_7();
+		float L_5 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_6 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_4, L_5, /*hidden argument*/NULL);
+		float L_7 = __this->get_flyingSpeed_4();
+		Vector3_t2243707580  L_8 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_6, L_7, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_9 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_3, L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
+		Transform_t3275118058 * L_10 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_11 = V_0;
+		NullCheck(L_10);
+		Transform_set_position_m2469242620(L_10, L_11, /*hidden argument*/NULL);
+		Animator_t69676727 * L_12 = __this->get_m_rAnimator_9();
+		String_t* L_13 = __this->get_flyingAnimationStateName_3();
+		NullCheck(L_12);
+		Animator_Play_m1123842248(L_12, L_13, /*hidden argument*/NULL);
+		Bird_UpdateFlip_m972155576(__this, /*hidden argument*/NULL);
+		bool L_14 = Bird_CanRespawn_m2483894974(__this, /*hidden argument*/NULL);
+		if (!L_14)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		Bird_StopFlying_m273302373(__this, /*hidden argument*/NULL);
+	}
+
+IL_006d:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird::OnTriggerEnter2D()
+extern "C"  void Bird_OnTriggerEnter2D_m3861319457 (Bird_t849110471 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get_m_bFlying_8();
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		Bird_StartFlying_m1534357805(__this, /*hidden argument*/NULL);
+	}
+
+IL_0011:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird::UpdateFlip()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t Bird_UpdateFlip_m972155576_MetadataUsageId;
+extern "C"  void Bird_UpdateFlip_m972155576 (Bird_t849110471 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Bird_UpdateFlip_m972155576_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_localScale_m3074381503(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		float L_2 = (&V_0)->get_x_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_3 = fabsf(L_2);
+		Vector3_t2243707580 * L_4 = __this->get_address_of_m_f3FlyingDirection_7();
+		float L_5 = L_4->get_x_1();
+		float L_6 = Mathf_Sign_m2039143327(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		(&V_0)->set_x_1(((float)((float)((-L_3))*(float)L_6)));
+		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_8 = V_0;
+		NullCheck(L_7);
+		Transform_set_localScale_m2325460848(L_7, L_8, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird::StartFlying()
+extern "C"  void Bird_StartFlying_m1534357805 (Bird_t849110471 * __this, const MethodInfo* method)
+{
+	Matrix4x4_t2933234003  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Animal_t255569526 * L_0 = __this->get_m_rAnimal_6();
+		NullCheck(L_0);
+		Behaviour_set_enabled_m1796096907(L_0, (bool)0, /*hidden argument*/NULL);
+		__this->set_m_bFlying_8((bool)1);
+		Vector3_t2243707580  L_1 = Vector3_get_zero_m1527993324(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_2 = __this->get_flyDirectionAngle_5();
+		float L_3 = __this->get_flyDirectionAngle_5();
+		float L_4 = Random_Range_m2884721203(NULL /*static, unused*/, ((-L_2)), L_3, /*hidden argument*/NULL);
+		Quaternion_t4030073918  L_5 = Quaternion_Euler_m2887458175(NULL /*static, unused*/, (0.0f), (0.0f), L_4, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_6 = Vector3_get_one_m627547232(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_7 = Matrix4x4_TRS_m1913765359(NULL /*static, unused*/, L_1, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		Vector3_t2243707580  L_8 = Vector3_get_up_m2725403797(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_9 = Matrix4x4_MultiplyVector_m3396751884((&V_0), L_8, /*hidden argument*/NULL);
+		__this->set_m_f3FlyingDirection_7(L_9);
+		Action_t3226471752 * L_10 = __this->get_onStartFlying_2();
+		if (!L_10)
+		{
+			goto IL_006c;
+		}
+	}
+	{
+		Action_t3226471752 * L_11 = __this->get_onStartFlying_2();
+		NullCheck(L_11);
+		Action_Invoke_m3801112262(L_11, /*hidden argument*/NULL);
+	}
+
+IL_006c:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird::StopFlying()
+extern "C"  void Bird_StopFlying_m273302373 (Bird_t849110471 * __this, const MethodInfo* method)
+{
+	{
+		Animal_t255569526 * L_0 = __this->get_m_rAnimal_6();
+		NullCheck(L_0);
+		Behaviour_set_enabled_m1796096907(L_0, (bool)1, /*hidden argument*/NULL);
+		__this->set_m_bFlying_8((bool)0);
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_2 = __this->get_m_f3SpawnPoint_10();
+		NullCheck(L_1);
+		Transform_set_position_m2469242620(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean UniArt.PixelScifiLandscape.Sample.Bird::CanRespawn()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var;
+extern const uint32_t Bird_CanRespawn_m2483894974_MetadataUsageId;
+extern "C"  bool Bird_CanRespawn_m2483894974 (Bird_t849110471 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Bird_CanRespawn_m2483894974_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Camera_t189460977 * V_0 = NULL;
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Renderer_t257310565 * L_0 = Component_GetComponent_TisRenderer_t257310565_m772028041(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var);
+		NullCheck(L_0);
+		bool L_1 = Renderer_get_isVisible_m3612355717(L_0, /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_0077;
+		}
+	}
+	{
+		Camera_t189460977 * L_2 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Camera_t189460977 * L_3 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_4 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_3, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		return (bool)1;
+	}
+
+IL_0024:
+	{
+		Camera_t189460977 * L_5 = V_0;
+		Vector3_t2243707580  L_6 = __this->get_m_f3SpawnPoint_10();
+		NullCheck(L_5);
+		Vector3_t2243707580  L_7 = Camera_WorldToViewportPoint_m1897251752(L_5, L_6, /*hidden argument*/NULL);
+		V_1 = L_7;
+		float L_8 = (&V_1)->get_x_1();
+		if ((((float)L_8) < ((float)(0.0f))))
+		{
+			goto IL_0075;
+		}
+	}
+	{
+		float L_9 = (&V_1)->get_x_1();
+		if ((((float)L_9) > ((float)(1.0f))))
+		{
+			goto IL_0075;
+		}
+	}
+	{
+		float L_10 = (&V_1)->get_y_2();
+		if ((((float)L_10) < ((float)(0.0f))))
+		{
+			goto IL_0075;
+		}
+	}
+	{
+		float L_11 = (&V_1)->get_y_2();
+		if ((!(((float)L_11) > ((float)(1.0f)))))
+		{
+			goto IL_0077;
+		}
+	}
+
+IL_0075:
+	{
+		return (bool)1;
+	}
+
+IL_0077:
+	{
+		return (bool)0;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird_SoundPlayer::.ctor()
+extern "C"  void Bird_SoundPlayer__ctor_m2773012177 (Bird_SoundPlayer_t2668586460 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird_SoundPlayer::FlySound()
+extern "C"  void Bird_SoundPlayer_FlySound_m857588349 (Bird_SoundPlayer_t2668586460 * __this, const MethodInfo* method)
+{
+	{
+		Sound_t4109981400 * L_0 = __this->get_fly_4();
+		Bird_SoundPlayer_PlaySound_m644100114(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird_SoundPlayer::Awake()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* Action_t3226471752_il2cpp_TypeInfo_var;
+extern const MethodInfo* Bird_SoundPlayer_OnStartFlying_m1283640943_MethodInfo_var;
+extern const uint32_t Bird_SoundPlayer_Awake_m2145560172_MetadataUsageId;
+extern "C"  void Bird_SoundPlayer_Awake_m2145560172 (Bird_SoundPlayer_t2668586460 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Bird_SoundPlayer_Awake_m2145560172_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Bird_t849110471 * L_0 = __this->get_bird_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		Bird_t849110471 * L_2 = __this->get_bird_2();
+		Bird_t849110471 * L_3 = L_2;
+		NullCheck(L_3);
+		Action_t3226471752 * L_4 = L_3->get_onStartFlying_2();
+		IntPtr_t L_5;
+		L_5.set_m_value_0((void*)(void*)Bird_SoundPlayer_OnStartFlying_m1283640943_MethodInfo_var);
+		Action_t3226471752 * L_6 = (Action_t3226471752 *)il2cpp_codegen_object_new(Action_t3226471752_il2cpp_TypeInfo_var);
+		Action__ctor_m2606471964(L_6, __this, L_5, /*hidden argument*/NULL);
+		Delegate_t3022476291 * L_7 = Delegate_Combine_m3791207084(NULL /*static, unused*/, L_4, L_6, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		L_3->set_onStartFlying_2(((Action_t3226471752 *)CastclassSealed(L_7, Action_t3226471752_il2cpp_TypeInfo_var)));
+	}
+
+IL_0038:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird_SoundPlayer::OnDestroy()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* Action_t3226471752_il2cpp_TypeInfo_var;
+extern const MethodInfo* Bird_SoundPlayer_OnStartFlying_m1283640943_MethodInfo_var;
+extern const uint32_t Bird_SoundPlayer_OnDestroy_m242858986_MetadataUsageId;
+extern "C"  void Bird_SoundPlayer_OnDestroy_m242858986 (Bird_SoundPlayer_t2668586460 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Bird_SoundPlayer_OnDestroy_m242858986_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Bird_t849110471 * L_0 = __this->get_bird_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		Bird_t849110471 * L_2 = __this->get_bird_2();
+		Bird_t849110471 * L_3 = L_2;
+		NullCheck(L_3);
+		Action_t3226471752 * L_4 = L_3->get_onStartFlying_2();
+		IntPtr_t L_5;
+		L_5.set_m_value_0((void*)(void*)Bird_SoundPlayer_OnStartFlying_m1283640943_MethodInfo_var);
+		Action_t3226471752 * L_6 = (Action_t3226471752 *)il2cpp_codegen_object_new(Action_t3226471752_il2cpp_TypeInfo_var);
+		Action__ctor_m2606471964(L_6, __this, L_5, /*hidden argument*/NULL);
+		Delegate_t3022476291 * L_7 = Delegate_Remove_m2626518725(NULL /*static, unused*/, L_4, L_6, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		L_3->set_onStartFlying_2(((Action_t3226471752 *)CastclassSealed(L_7, Action_t3226471752_il2cpp_TypeInfo_var)));
+	}
+
+IL_0038:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird_SoundPlayer::PlaySound(UniArt.PixelScifiLandscape.Sample.Bird_SoundPlayer/Sound)
+extern "C"  void Bird_SoundPlayer_PlaySound_m644100114 (Bird_SoundPlayer_t2668586460 * __this, Sound_t4109981400 * ___a_rSound0, const MethodInfo* method)
+{
+	{
+		AudioSource_t1135106623 * L_0 = __this->get_audioSource_3();
+		Sound_t4109981400 * L_1 = ___a_rSound0;
+		NullCheck(L_1);
+		AudioClip_t1932558630 * L_2 = L_1->get_clip_0();
+		Sound_t4109981400 * L_3 = ___a_rSound0;
+		NullCheck(L_3);
+		float L_4 = L_3->get_volume_1();
+		NullCheck(L_0);
+		AudioSource_PlayOneShot_m4118899740(L_0, L_2, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird_SoundPlayer::OnStartFlying()
+extern "C"  void Bird_SoundPlayer_OnStartFlying_m1283640943 (Bird_SoundPlayer_t2668586460 * __this, const MethodInfo* method)
+{
+	{
+		Bird_SoundPlayer_FlySound_m857588349(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Bird_SoundPlayer/Sound::.ctor()
+extern "C"  void Sound__ctor_m2627329201 (Sound_t4109981400 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_volume_1((1.0f));
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.CameraFollowTarget::.ctor()
+extern "C"  void CameraFollowTarget__ctor_m4150716052 (CameraFollowTarget_t3624343055 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_smoothTime_3((0.5f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.CameraFollowTarget::FixedUpdate()
+extern "C"  void CameraFollowTarget_FixedUpdate_m839975165 (CameraFollowTarget_t3624343055 * __this, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector2_t2243707579  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vector2_t2243707579  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector3_t2243707580  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_position_m1104419803(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Transform_t3275118058 * L_2 = __this->get_target_2();
+		NullCheck(L_2);
+		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_4 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		V_1 = L_4;
+		Vector3_t2243707580  L_5 = V_0;
+		Vector2_t2243707579  L_6 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		V_2 = L_6;
+		Vector2_t2243707579  L_7 = V_2;
+		Vector3_t2243707580  L_8 = Vector2_op_Implicit_m176791411(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_9 = V_1;
+		Vector3_t2243707580  L_10 = Vector2_op_Implicit_m176791411(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
+		Vector3_t2243707580 * L_11 = __this->get_address_of_m_f3FollowVelocity_4();
+		float L_12 = __this->get_smoothTime_3();
+		Vector3_t2243707580  L_13 = Vector3_SmoothDamp_m3087890513(NULL /*static, unused*/, L_8, L_10, L_11, L_12, /*hidden argument*/NULL);
+		V_3 = L_13;
+		float L_14 = (&V_0)->get_z_3();
+		(&V_3)->set_z_3(L_14);
+		Transform_t3275118058 * L_15 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_16 = V_3;
+		NullCheck(L_15);
+		Transform_set_position_m2469242620(L_15, L_16, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.CameraRestrictToSafeZone::.ctor()
+extern "C"  void CameraRestrictToSafeZone__ctor_m2023980398 (CameraRestrictToSafeZone_t4029757151 * __this, const MethodInfo* method)
+{
+	{
+		Vector2_t2243707579  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Vector2__ctor_m3067419446(&L_0, (1.5f), (1.5f), /*hidden argument*/NULL);
+		__this->set_safeZoneSize_3(L_0);
+		Vector2_t2243707579  L_1;
+		memset(&L_1, 0, sizeof(L_1));
+		Vector2__ctor_m3067419446(&L_1, (0.0f), (0.0f), /*hidden argument*/NULL);
+		__this->set_safeZoneOffsetFromTarget_4(L_1);
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.CameraRestrictToSafeZone::FixedUpdate()
+extern "C"  void CameraRestrictToSafeZone_FixedUpdate_m945181925 (CameraRestrictToSafeZone_t4029757151 * __this, const MethodInfo* method)
+{
+	{
+		CameraRestrictToSafeZone_ConstraintInSafeZone_m3418482335(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.CameraRestrictToSafeZone::LateUpdate()
+extern "C"  void CameraRestrictToSafeZone_LateUpdate_m1692085387 (CameraRestrictToSafeZone_t4029757151 * __this, const MethodInfo* method)
+{
+	{
+		CameraRestrictToSafeZone_ConstraintInSafeZone_m3418482335(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.CameraRestrictToSafeZone::ConstraintInSafeZone()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t CameraRestrictToSafeZone_ConstraintInSafeZone_m3418482335_MetadataUsageId;
+extern "C"  void CameraRestrictToSafeZone_ConstraintInSafeZone_m3418482335 (CameraRestrictToSafeZone_t4029757151 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CameraRestrictToSafeZone_ConstraintInSafeZone_m3418482335_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector2_t2243707579  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_position_m1104419803(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Transform_t3275118058 * L_2 = __this->get_safeZoneCenter_2();
+		NullCheck(L_2);
+		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_4 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		V_1 = L_4;
+		float L_5 = (&V_0)->get_x_1();
+		float L_6 = (&V_1)->get_x_0();
+		Vector2_t2243707579 * L_7 = __this->get_address_of_safeZoneOffsetFromTarget_4();
+		float L_8 = L_7->get_x_0();
+		Vector2_t2243707579 * L_9 = __this->get_address_of_safeZoneSize_3();
+		float L_10 = L_9->get_x_0();
+		float L_11 = (&V_1)->get_x_0();
+		Vector2_t2243707579 * L_12 = __this->get_address_of_safeZoneOffsetFromTarget_4();
+		float L_13 = L_12->get_x_0();
+		Vector2_t2243707579 * L_14 = __this->get_address_of_safeZoneSize_3();
+		float L_15 = L_14->get_x_0();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_16 = Mathf_Clamp_m2354025655(NULL /*static, unused*/, L_5, ((float)((float)((float)((float)L_6-(float)L_8))-(float)L_10)), ((float)((float)((float)((float)L_11-(float)L_13))+(float)L_15)), /*hidden argument*/NULL);
+		(&V_0)->set_x_1(L_16);
+		float L_17 = (&V_0)->get_y_2();
+		float L_18 = (&V_1)->get_y_1();
+		Vector2_t2243707579 * L_19 = __this->get_address_of_safeZoneOffsetFromTarget_4();
+		float L_20 = L_19->get_y_1();
+		Vector2_t2243707579 * L_21 = __this->get_address_of_safeZoneSize_3();
+		float L_22 = L_21->get_y_1();
+		float L_23 = (&V_1)->get_y_1();
+		Vector2_t2243707579 * L_24 = __this->get_address_of_safeZoneOffsetFromTarget_4();
+		float L_25 = L_24->get_y_1();
+		Vector2_t2243707579 * L_26 = __this->get_address_of_safeZoneSize_3();
+		float L_27 = L_26->get_y_1();
+		float L_28 = Mathf_Clamp_m2354025655(NULL /*static, unused*/, L_17, ((float)((float)((float)((float)L_18-(float)L_20))-(float)L_22)), ((float)((float)((float)((float)L_23-(float)L_25))+(float)L_27)), /*hidden argument*/NULL);
+		(&V_0)->set_y_2(L_28);
+		Transform_t3275118058 * L_29 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_30 = V_0;
+		NullCheck(L_29);
+		Transform_set_position_m2469242620(L_29, L_30, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.CameraRestrictToSafeZone::OnDrawGizmos()
+extern "C"  void CameraRestrictToSafeZone_OnDrawGizmos_m2874025940 (CameraRestrictToSafeZone_t4029757151 * __this, const MethodInfo* method)
+{
+	Vector2_t2243707579  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vector3_t2243707580  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector3_t2243707580  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Vector3_t2243707580  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	Vector3_t2243707580  V_5;
+	memset(&V_5, 0, sizeof(V_5));
+	{
+		Vector2_t2243707579  L_0 = __this->get_safeZoneSize_3();
+		V_0 = L_0;
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Vector3_t2243707580  L_2 = Transform_get_position_m1104419803(L_1, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_3 = __this->get_safeZoneOffsetFromTarget_4();
+		Vector3_t2243707580  L_4 = Vector2_op_Implicit_m176791411(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_5 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_2, L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		(&V_1)->set_z_3((0.0f));
+		float L_6 = (&V_0)->get_x_0();
+		float L_7 = (&V_0)->get_y_1();
+		Vector3_t2243707580  L_8;
+		memset(&L_8, 0, sizeof(L_8));
+		Vector3__ctor_m2638739322(&L_8, ((-L_6)), L_7, (0.0f), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_9 = V_1;
+		Vector3_t2243707580  L_10 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_8, L_9, /*hidden argument*/NULL);
+		V_2 = L_10;
+		float L_11 = (&V_0)->get_x_0();
+		float L_12 = (&V_0)->get_y_1();
+		Vector3_t2243707580  L_13;
+		memset(&L_13, 0, sizeof(L_13));
+		Vector3__ctor_m2638739322(&L_13, L_11, L_12, (0.0f), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_14 = V_1;
+		Vector3_t2243707580  L_15 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_13, L_14, /*hidden argument*/NULL);
+		V_3 = L_15;
+		float L_16 = (&V_0)->get_x_0();
+		float L_17 = (&V_0)->get_y_1();
+		Vector3_t2243707580  L_18;
+		memset(&L_18, 0, sizeof(L_18));
+		Vector3__ctor_m2638739322(&L_18, L_16, ((-L_17)), (0.0f), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_19 = V_1;
+		Vector3_t2243707580  L_20 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_18, L_19, /*hidden argument*/NULL);
+		V_4 = L_20;
+		float L_21 = (&V_0)->get_x_0();
+		float L_22 = (&V_0)->get_y_1();
+		Vector3_t2243707580  L_23;
+		memset(&L_23, 0, sizeof(L_23));
+		Vector3__ctor_m2638739322(&L_23, ((-L_21)), ((-L_22)), (0.0f), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_24 = V_1;
+		Vector3_t2243707580  L_25 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_23, L_24, /*hidden argument*/NULL);
+		V_5 = L_25;
+		Color_t2020392075  L_26 = Color_get_blue_m4180825090(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Gizmos_set_color_m494992840(NULL /*static, unused*/, L_26, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_27 = V_2;
+		Vector3_t2243707580  L_28 = V_3;
+		Gizmos_DrawLine_m1315654064(NULL /*static, unused*/, L_27, L_28, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_29 = V_3;
+		Vector3_t2243707580  L_30 = V_4;
+		Gizmos_DrawLine_m1315654064(NULL /*static, unused*/, L_29, L_30, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_31 = V_4;
+		Vector3_t2243707580  L_32 = V_5;
+		Gizmos_DrawLine_m1315654064(NULL /*static, unused*/, L_31, L_32, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_33 = V_5;
+		Vector3_t2243707580  L_34 = V_2;
+		Gizmos_DrawLine_m1315654064(NULL /*static, unused*/, L_33, L_34, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_AnimationController::.ctor()
+extern Il2CppCodeGenString* _stringLiteral3759402606;
+extern Il2CppCodeGenString* _stringLiteral2778557961;
+extern Il2CppCodeGenString* _stringLiteral2309168105;
+extern Il2CppCodeGenString* _stringLiteral1171240812;
+extern Il2CppCodeGenString* _stringLiteral1045133285;
+extern const uint32_t Character_AnimationController__ctor_m3743653227_MetadataUsageId;
+extern "C"  void Character_AnimationController__ctor_m3743653227 (Character_AnimationController_t2390840408 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_AnimationController__ctor_m3743653227_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		__this->set_minVelocityWalk_6((0.01f));
+		__this->set_walkNormalSpeedVelocity_7((1.0f));
+		__this->set_runNormalSpeedVelocity_8((4.0f));
+		__this->set_standAnimationStateName_9(_stringLiteral3759402606);
+		__this->set_walkAnimationStateName_10(_stringLiteral2778557961);
+		__this->set_runAnimationStateName_11(_stringLiteral2309168105);
+		__this->set_jumpDownAnimationStateName_12(_stringLiteral1171240812);
+		__this->set_jumpUpAnimationStateName_13(_stringLiteral1045133285);
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_AnimationController::OverrideThisFrame()
+extern "C"  void Character_AnimationController_OverrideThisFrame_m3258029326 (Character_AnimationController_t2390840408 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_m_bOverrideThisFrame_14((bool)1);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_AnimationController::LateUpdate()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t Character_AnimationController_LateUpdate_m1786353706_MetadataUsageId;
+extern "C"  void Character_AnimationController_LateUpdate_m1786353706 (Character_AnimationController_t2390840408 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_AnimationController_LateUpdate_m1786353706_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	float V_1 = 0.0f;
+	Vector2_t2243707579  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	float V_3 = 0.0f;
+	Vector2_t2243707579  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	{
+		bool L_0 = __this->get_m_bOverrideThisFrame_14();
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		__this->set_m_bOverrideThisFrame_14((bool)0);
+		return;
+	}
+
+IL_0013:
+	{
+		Animator_t69676727 * L_1 = __this->get_animator_2();
+		NullCheck(L_1);
+		Animator_set_speed_m3511108817(L_1, (1.0f), /*hidden argument*/NULL);
+		Character_GroundedTester_t1329240161 * L_2 = __this->get_groundedTester_5();
+		NullCheck(L_2);
+		bool L_3 = Character_GroundedTester_get_IsGrounded_m2268760287(L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_00a2;
+		}
+	}
+	{
+		Character_MovementController_t180692203 * L_4 = __this->get_movementController_3();
+		NullCheck(L_4);
+		Vector2_t2243707579  L_5 = Character_MovementController_get_Velocity_m3500833027(L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		float L_6 = (&V_2)->get_x_0();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_7 = fabsf(L_6);
+		V_1 = L_7;
+		float L_8 = V_1;
+		float L_9 = __this->get_minVelocityWalk_6();
+		if ((!(((float)L_8) <= ((float)L_9))))
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		String_t* L_10 = __this->get_standAnimationStateName_9();
+		V_0 = L_10;
+		goto IL_009d;
+	}
+
+IL_0064:
+	{
+		Character_Input_t2061814878 * L_11 = __this->get_characterInput_4();
+		NullCheck(L_11);
+		bool L_12 = Character_Input_get_Run_m3600994827(L_11, /*hidden argument*/NULL);
+		if (!L_12)
+		{
+			goto IL_0087;
+		}
+	}
+	{
+		String_t* L_13 = __this->get_runAnimationStateName_11();
+		V_0 = L_13;
+		float L_14 = __this->get_runNormalSpeedVelocity_8();
+		V_3 = L_14;
+		goto IL_0095;
+	}
+
+IL_0087:
+	{
+		String_t* L_15 = __this->get_walkAnimationStateName_10();
+		V_0 = L_15;
+		float L_16 = __this->get_walkNormalSpeedVelocity_7();
+		V_3 = L_16;
+	}
+
+IL_0095:
+	{
+		float L_17 = V_3;
+		float L_18 = V_1;
+		Character_AnimationController_AdaptAnimationSpeedToMatchVelocity_m4099057917(__this, L_17, L_18, /*hidden argument*/NULL);
+	}
+
+IL_009d:
+	{
+		goto IL_00d3;
+	}
+
+IL_00a2:
+	{
+		Character_MovementController_t180692203 * L_19 = __this->get_movementController_3();
+		NullCheck(L_19);
+		Vector2_t2243707579  L_20 = Character_MovementController_get_Velocity_m3500833027(L_19, /*hidden argument*/NULL);
+		V_4 = L_20;
+		float L_21 = (&V_4)->get_y_1();
+		if ((!(((float)L_21) > ((float)(0.0f)))))
+		{
+			goto IL_00cc;
+		}
+	}
+	{
+		String_t* L_22 = __this->get_jumpUpAnimationStateName_13();
+		V_0 = L_22;
+		goto IL_00d3;
+	}
+
+IL_00cc:
+	{
+		String_t* L_23 = __this->get_jumpDownAnimationStateName_12();
+		V_0 = L_23;
+	}
+
+IL_00d3:
+	{
+		Animator_t69676727 * L_24 = __this->get_animator_2();
+		String_t* L_25 = V_0;
+		NullCheck(L_24);
+		Animator_Play_m1123842248(L_24, L_25, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_AnimationController::AdaptAnimationSpeedToMatchVelocity(System.Single,System.Single)
+extern "C"  void Character_AnimationController_AdaptAnimationSpeedToMatchVelocity_m4099057917 (Character_AnimationController_t2390840408 * __this, float ___a_fNormalSpeedVelocity0, float ___a_fCurrentSpeed1, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = ___a_fCurrentSpeed1;
+		float L_1 = ___a_fNormalSpeedVelocity0;
+		V_0 = ((float)((float)L_0/(float)L_1));
+		Animator_t69676727 * L_2 = __this->get_animator_2();
+		float L_3 = V_0;
+		NullCheck(L_2);
+		Animator_set_speed_m3511108817(L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_CrouchController::.ctor()
+extern Il2CppCodeGenString* _stringLiteral3993833788;
+extern const uint32_t Character_CrouchController__ctor_m20681981_MetadataUsageId;
+extern "C"  void Character_CrouchController__ctor_m20681981 (Character_CrouchController_t3969958068 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_CrouchController__ctor_m20681981_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		__this->set_crouchAnimationStateName_5(_stringLiteral3993833788);
+		__this->set_lookdownOffset_6((0.5f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_CrouchController::Update()
+extern "C"  void Character_CrouchController_Update_m1219361806 (Character_CrouchController_t3969958068 * __this, const MethodInfo* method)
+{
+	Character_CrouchController_t3969958068 * G_B2_0 = NULL;
+	Character_CrouchController_t3969958068 * G_B1_0 = NULL;
+	int32_t G_B3_0 = 0;
+	Character_CrouchController_t3969958068 * G_B3_1 = NULL;
+	{
+		Character_Input_t2061814878 * L_0 = __this->get_characterInput_2();
+		NullCheck(L_0);
+		float L_1 = Character_Input_get_Vertical_m3464180068(L_0, /*hidden argument*/NULL);
+		G_B1_0 = __this;
+		if ((!(((float)L_1) < ((float)(0.0f)))))
+		{
+			G_B2_0 = __this;
+			goto IL_0023;
+		}
+	}
+	{
+		Character_GroundedTester_t1329240161 * L_2 = __this->get_groundedTester_3();
+		NullCheck(L_2);
+		bool L_3 = Character_GroundedTester_get_IsGrounded_m2268760287(L_2, /*hidden argument*/NULL);
+		G_B3_0 = ((int32_t)(L_3));
+		G_B3_1 = G_B1_0;
+		goto IL_0024;
+	}
+
+IL_0023:
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_0024:
+	{
+		NullCheck(G_B3_1);
+		G_B3_1->set_m_bCrouch_8((bool)G_B3_0);
+		bool L_4 = __this->get_m_bCrouch_8();
+		if (!L_4)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		Character_LookController_t3242335943 * L_5 = __this->get_lookController_7();
+		float L_6 = __this->get_lookdownOffset_6();
+		NullCheck(L_5);
+		Character_LookController_set_LookOffset_m2858717080(L_5, ((-L_6)), /*hidden argument*/NULL);
+	}
+
+IL_0046:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_CrouchController::LateUpdate()
+extern "C"  void Character_CrouchController_LateUpdate_m3433197994 (Character_CrouchController_t3969958068 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get_m_bCrouch_8();
+		if (!L_0)
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		Character_AnimationController_t2390840408 * L_1 = __this->get_animationController_4();
+		NullCheck(L_1);
+		Character_AnimationController_OverrideThisFrame_m3258029326(L_1, /*hidden argument*/NULL);
+		Character_AnimationController_t2390840408 * L_2 = __this->get_animationController_4();
+		NullCheck(L_2);
+		Animator_t69676727 * L_3 = L_2->get_animator_2();
+		NullCheck(L_3);
+		Animator_set_speed_m3511108817(L_3, (1.0f), /*hidden argument*/NULL);
+		Character_AnimationController_t2390840408 * L_4 = __this->get_animationController_4();
+		NullCheck(L_4);
+		Animator_t69676727 * L_5 = L_4->get_animator_2();
+		String_t* L_6 = __this->get_crouchAnimationStateName_5();
+		NullCheck(L_5);
+		Animator_Play_m1123842248(L_5, L_6, /*hidden argument*/NULL);
+	}
+
+IL_0041:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer::.ctor()
+extern "C"  void Character_FeetSoundPlayer__ctor_m3697245643 (Character_FeetSoundPlayer_t199279460 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer::LeftFeetWalkSound()
+extern "C"  void Character_FeetSoundPlayer_LeftFeetWalkSound_m689031180 (Character_FeetSoundPlayer_t199279460 * __this, const MethodInfo* method)
+{
+	{
+		Sound_t1426305660 * L_0 = __this->get_leftFootWalkSound_4();
+		Character_FeetSoundPlayer_PlaySound_m1751782592(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer::RightFeetWalkSound()
+extern "C"  void Character_FeetSoundPlayer_RightFeetWalkSound_m4240627983 (Character_FeetSoundPlayer_t199279460 * __this, const MethodInfo* method)
+{
+	{
+		Sound_t1426305660 * L_0 = __this->get_rightFootWalkSound_5();
+		Character_FeetSoundPlayer_PlaySound_m1751782592(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer::LeftFeetRunSound()
+extern "C"  void Character_FeetSoundPlayer_LeftFeetRunSound_m1701241578 (Character_FeetSoundPlayer_t199279460 * __this, const MethodInfo* method)
+{
+	{
+		Sound_t1426305660 * L_0 = __this->get_leftFootRunSound_6();
+		Character_FeetSoundPlayer_PlaySound_m1751782592(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer::RightFeetRunSound()
+extern "C"  void Character_FeetSoundPlayer_RightFeetRunSound_m2317211659 (Character_FeetSoundPlayer_t199279460 * __this, const MethodInfo* method)
+{
+	{
+		Sound_t1426305660 * L_0 = __this->get_rightFootRunSound_7();
+		Character_FeetSoundPlayer_PlaySound_m1751782592(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer::JumpSound()
+extern "C"  void Character_FeetSoundPlayer_JumpSound_m2838271596 (Character_FeetSoundPlayer_t199279460 * __this, const MethodInfo* method)
+{
+	{
+		Sound_t1426305660 * L_0 = __this->get_jumpSound_8();
+		Character_FeetSoundPlayer_PlaySound_m1751782592(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer::Awake()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* Action_t3226471752_il2cpp_TypeInfo_var;
+extern const MethodInfo* Character_FeetSoundPlayer_OnJump_m1712121546_MethodInfo_var;
+extern const uint32_t Character_FeetSoundPlayer_Awake_m4067110852_MetadataUsageId;
+extern "C"  void Character_FeetSoundPlayer_Awake_m4067110852 (Character_FeetSoundPlayer_t199279460 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_FeetSoundPlayer_Awake_m4067110852_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Character_MovementController_t180692203 * L_0 = __this->get_movementController_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		Character_MovementController_t180692203 * L_2 = __this->get_movementController_2();
+		Character_MovementController_t180692203 * L_3 = L_2;
+		NullCheck(L_3);
+		Action_t3226471752 * L_4 = L_3->get_onJump_2();
+		IntPtr_t L_5;
+		L_5.set_m_value_0((void*)(void*)Character_FeetSoundPlayer_OnJump_m1712121546_MethodInfo_var);
+		Action_t3226471752 * L_6 = (Action_t3226471752 *)il2cpp_codegen_object_new(Action_t3226471752_il2cpp_TypeInfo_var);
+		Action__ctor_m2606471964(L_6, __this, L_5, /*hidden argument*/NULL);
+		Delegate_t3022476291 * L_7 = Delegate_Combine_m3791207084(NULL /*static, unused*/, L_4, L_6, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		L_3->set_onJump_2(((Action_t3226471752 *)CastclassSealed(L_7, Action_t3226471752_il2cpp_TypeInfo_var)));
+	}
+
+IL_0038:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer::OnDestroy()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* Action_t3226471752_il2cpp_TypeInfo_var;
+extern const MethodInfo* Character_FeetSoundPlayer_OnJump_m1712121546_MethodInfo_var;
+extern const uint32_t Character_FeetSoundPlayer_OnDestroy_m1404253542_MetadataUsageId;
+extern "C"  void Character_FeetSoundPlayer_OnDestroy_m1404253542 (Character_FeetSoundPlayer_t199279460 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_FeetSoundPlayer_OnDestroy_m1404253542_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Character_MovementController_t180692203 * L_0 = __this->get_movementController_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		Character_MovementController_t180692203 * L_2 = __this->get_movementController_2();
+		Character_MovementController_t180692203 * L_3 = L_2;
+		NullCheck(L_3);
+		Action_t3226471752 * L_4 = L_3->get_onJump_2();
+		IntPtr_t L_5;
+		L_5.set_m_value_0((void*)(void*)Character_FeetSoundPlayer_OnJump_m1712121546_MethodInfo_var);
+		Action_t3226471752 * L_6 = (Action_t3226471752 *)il2cpp_codegen_object_new(Action_t3226471752_il2cpp_TypeInfo_var);
+		Action__ctor_m2606471964(L_6, __this, L_5, /*hidden argument*/NULL);
+		Delegate_t3022476291 * L_7 = Delegate_Remove_m2626518725(NULL /*static, unused*/, L_4, L_6, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		L_3->set_onJump_2(((Action_t3226471752 *)CastclassSealed(L_7, Action_t3226471752_il2cpp_TypeInfo_var)));
+	}
+
+IL_0038:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer::PlaySound(UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer/Sound)
+extern "C"  void Character_FeetSoundPlayer_PlaySound_m1751782592 (Character_FeetSoundPlayer_t199279460 * __this, Sound_t1426305660 * ___a_rSound0, const MethodInfo* method)
+{
+	{
+		AudioSource_t1135106623 * L_0 = __this->get_audioSource_3();
+		Sound_t1426305660 * L_1 = ___a_rSound0;
+		NullCheck(L_1);
+		AudioClip_t1932558630 * L_2 = L_1->get_clip_0();
+		Sound_t1426305660 * L_3 = ___a_rSound0;
+		NullCheck(L_3);
+		float L_4 = L_3->get_volume_1();
+		NullCheck(L_0);
+		AudioSource_PlayOneShot_m4118899740(L_0, L_2, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer::OnJump()
+extern "C"  void Character_FeetSoundPlayer_OnJump_m1712121546 (Character_FeetSoundPlayer_t199279460 * __this, const MethodInfo* method)
+{
+	{
+		Character_FeetSoundPlayer_JumpSound_m2838271596(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FeetSoundPlayer/Sound::.ctor()
+extern "C"  void Sound__ctor_m1430281591 (Sound_t1426305660 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_volume_1((1.0f));
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FlipController::.ctor()
+extern "C"  void Character_FlipController__ctor_m677904508 (Character_FlipController_t3240646899 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_FlipController::LateUpdate()
+extern "C"  void Character_FlipController_LateUpdate_m18967903 (Character_FlipController_t3240646899 * __this, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	{
+		Transform_t3275118058 * L_0 = __this->get_flipTransform_2();
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_localScale_m3074381503(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Character_Input_t2061814878 * L_2 = __this->get_characterInput_3();
+		NullCheck(L_2);
+		float L_3 = Character_Input_get_Horizontal_m1468178506(L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		float L_4 = V_1;
+		if ((!(((float)L_4) > ((float)(0.0f)))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		(&V_0)->set_x_1((1.0f));
+		goto IL_004b;
+	}
+
+IL_0034:
+	{
+		float L_5 = V_1;
+		if ((!(((float)L_5) < ((float)(0.0f)))))
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		(&V_0)->set_x_1((-1.0f));
+	}
+
+IL_004b:
+	{
+		Transform_t3275118058 * L_6 = __this->get_flipTransform_2();
+		Vector3_t2243707580  L_7 = V_0;
+		NullCheck(L_6);
+		Transform_set_localScale_m2325460848(L_6, L_7, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_GroundedTester::.ctor()
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern const uint32_t Character_GroundedTester__ctor_m3250325114_MetadataUsageId;
+extern "C"  void Character_GroundedTester__ctor_m3250325114 (Character_GroundedTester_t1329240161 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_GroundedTester__ctor_m3250325114_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_0 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		__this->set_groundLayerName_2(L_0);
+		__this->set_groundLayerIndex_3(8);
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean UniArt.PixelScifiLandscape.Sample.Character_GroundedTester::get_IsGrounded()
+extern "C"  bool Character_GroundedTester_get_IsGrounded_m2268760287 (Character_GroundedTester_t1329240161 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get_m_bGrounded_5();
+		return L_0;
+	}
+}
+// System.Int32 UniArt.PixelScifiLandscape.Sample.Character_GroundedTester::get_GroundLayer()
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern const uint32_t Character_GroundedTester_get_GroundLayer_m3473007653_MetadataUsageId;
+extern "C"  int32_t Character_GroundedTester_get_GroundLayer_m3473007653 (Character_GroundedTester_t1329240161 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_GroundedTester_get_GroundLayer_m3473007653_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = __this->get_groundLayerName_2();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		bool L_2 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		int32_t L_3 = __this->get_groundLayerIndex_3();
+		return L_3;
+	}
+
+IL_001c:
+	{
+		String_t* L_4 = __this->get_groundLayerName_2();
+		int32_t L_5 = LayerMask_NameToLayer_m1506372053(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_GroundedTester::FixedUpdate()
+extern "C"  void Character_GroundedTester_FixedUpdate_m1737153735 (Character_GroundedTester_t1329240161 * __this, const MethodInfo* method)
+{
+	{
+		Character_GroundedTester_GroundedTest_m742748570(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_GroundedTester::GroundedTest()
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1_GetEnumerator_m2520445299_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m579663583_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m2426175171_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m686407845_MethodInfo_var;
+extern const uint32_t Character_GroundedTester_GroundedTest_m742748570_MetadataUsageId;
+extern "C"  void Character_GroundedTester_GroundedTest_m742748570 (Character_GroundedTester_t1329240161 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_GroundedTester_GroundedTest_m742748570_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Vector2_t2243707579  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Transform_t3275118058 * V_2 = NULL;
+	Enumerator_t2178968864  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Vector2_t2243707579  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	Vector2_t2243707579  V_5;
+	memset(&V_5, 0, sizeof(V_5));
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		__this->set_m_bGrounded_5((bool)0);
+		int32_t L_0 = Character_GroundedTester_get_GroundLayer_m3473007653(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Vector3_t2243707580  L_2 = Transform_get_position_m1104419803(L_1, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_3 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		List_1_t2644239190 * L_4 = __this->get_groundedTesters_4();
+		NullCheck(L_4);
+		Enumerator_t2178968864  L_5 = List_1_GetEnumerator_m2520445299(L_4, /*hidden argument*/List_1_GetEnumerator_m2520445299_MethodInfo_var);
+		V_3 = L_5;
+	}
+
+IL_002b:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0076;
+		}
+
+IL_0030:
+		{
+			Transform_t3275118058 * L_6 = Enumerator_get_Current_m579663583((&V_3), /*hidden argument*/Enumerator_get_Current_m579663583_MethodInfo_var);
+			V_2 = L_6;
+			Transform_t3275118058 * L_7 = V_2;
+			NullCheck(L_7);
+			Vector3_t2243707580  L_8 = Transform_get_position_m1104419803(L_7, /*hidden argument*/NULL);
+			Vector2_t2243707579  L_9 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_8, /*hidden argument*/NULL);
+			V_4 = L_9;
+			Vector2_t2243707579  L_10 = V_1;
+			V_5 = L_10;
+			float L_11 = (&V_4)->get_x_0();
+			(&V_5)->set_x_0(L_11);
+			Vector2_t2243707579  L_12 = V_5;
+			Vector2_t2243707579  L_13 = V_4;
+			int32_t L_14 = V_0;
+			IL2CPP_RUNTIME_CLASS_INIT(Physics2D_t2540166467_il2cpp_TypeInfo_var);
+			RaycastHit2D_t4063908774  L_15 = Physics2D_Linecast_m2374117908(NULL /*static, unused*/, L_12, L_13, ((int32_t)((int32_t)1<<(int32_t)((int32_t)((int32_t)L_14&(int32_t)((int32_t)31))))), /*hidden argument*/NULL);
+			bool L_16 = RaycastHit2D_op_Implicit_m596912073(NULL /*static, unused*/, L_15, /*hidden argument*/NULL);
+			if (!L_16)
+			{
+				goto IL_0076;
+			}
+		}
+
+IL_006f:
+		{
+			__this->set_m_bGrounded_5((bool)1);
+		}
+
+IL_0076:
+		{
+			bool L_17 = Enumerator_MoveNext_m2426175171((&V_3), /*hidden argument*/Enumerator_MoveNext_m2426175171_MethodInfo_var);
+			if (L_17)
+			{
+				goto IL_0030;
+			}
+		}
+
+IL_0082:
+		{
+			IL2CPP_LEAVE(0x95, FINALLY_0087);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_0087;
+	}
+
+FINALLY_0087:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m686407845((&V_3), /*hidden argument*/Enumerator_Dispose_m686407845_MethodInfo_var);
+		IL2CPP_END_FINALLY(135)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(135)
+	{
+		IL2CPP_JUMP_TBL(0x95, IL_0095)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_0095:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_Input::.ctor()
+extern "C"  void Character_Input__ctor_m815843555 (Character_Input_t2061814878 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean UniArt.PixelScifiLandscape.Sample.Character_Input::get_Run()
+extern "C"  bool Character_Input_get_Run_m3600994827 (Character_Input_t2061814878 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get_m_bRun_4();
+		return L_0;
+	}
+}
+// System.Boolean UniArt.PixelScifiLandscape.Sample.Character_Input::get_Jump()
+extern "C"  bool Character_Input_get_Jump_m1939620422 (Character_Input_t2061814878 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get_m_bJump_3();
+		return L_0;
+	}
+}
+// System.Boolean UniArt.PixelScifiLandscape.Sample.Character_Input::get_JumpHeld()
+extern "C"  bool Character_Input_get_JumpHeld_m2859508413 (Character_Input_t2061814878 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get_m_bJumpWasPressed_2();
+		return L_0;
+	}
+}
+// System.Single UniArt.PixelScifiLandscape.Sample.Character_Input::get_Horizontal()
+extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
+extern const uint32_t Character_Input_get_Horizontal_m1468178506_MetadataUsageId;
+extern "C"  float Character_Input_get_Horizontal_m1468178506 (Character_Input_t2061814878 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_Input_get_Horizontal_m1468178506_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		V_0 = (0.0f);
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_0 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)276), /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_1 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)113), /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_2 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)97), /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0035;
+		}
+	}
+
+IL_002d:
+	{
+		float L_3 = V_0;
+		V_0 = ((float)((float)L_3-(float)(1.0f)));
+	}
+
+IL_0035:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_4 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)275), /*hidden argument*/NULL);
+		if (L_4)
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_5 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)100), /*hidden argument*/NULL);
+		if (!L_5)
+		{
+			goto IL_0058;
+		}
+	}
+
+IL_0050:
+	{
+		float L_6 = V_0;
+		V_0 = ((float)((float)L_6+(float)(1.0f)));
+	}
+
+IL_0058:
+	{
+		float L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Single UniArt.PixelScifiLandscape.Sample.Character_Input::get_Vertical()
+extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
+extern const uint32_t Character_Input_get_Vertical_m3464180068_MetadataUsageId;
+extern "C"  float Character_Input_get_Vertical_m3464180068 (Character_Input_t2061814878 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_Input_get_Vertical_m3464180068_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		V_0 = (0.0f);
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_0 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)274), /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_1 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)115), /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0029;
+		}
+	}
+
+IL_0021:
+	{
+		float L_2 = V_0;
+		V_0 = ((float)((float)L_2-(float)(1.0f)));
+	}
+
+IL_0029:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_3 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)273), /*hidden argument*/NULL);
+		if (L_3)
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_4 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)122), /*hidden argument*/NULL);
+		if (L_4)
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_5 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)119), /*hidden argument*/NULL);
+		if (!L_5)
+		{
+			goto IL_0058;
+		}
+	}
+
+IL_0050:
+	{
+		float L_6 = V_0;
+		V_0 = ((float)((float)L_6+(float)(1.0f)));
+	}
+
+IL_0058:
+	{
+		float L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Boolean UniArt.PixelScifiLandscape.Sample.Character_Input::get_JumpInput()
+extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
+extern const uint32_t Character_Input_get_JumpInput_m757610044_MetadataUsageId;
+extern "C"  bool Character_Input_get_JumpInput_m757610044 (Character_Input_t2061814878 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_Input_get_JumpInput_m757610044_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t G_B4_0 = 0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_0 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)32), /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_1 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)308), /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_2 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)307), /*hidden argument*/NULL);
+		G_B4_0 = ((int32_t)(L_2));
+		goto IL_0028;
+	}
+
+IL_0027:
+	{
+		G_B4_0 = 1;
+	}
+
+IL_0028:
+	{
+		return (bool)G_B4_0;
+	}
+}
+// System.Boolean UniArt.PixelScifiLandscape.Sample.Character_Input::get_RunInput()
+extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
+extern const uint32_t Character_Input_get_RunInput_m2095804501_MetadataUsageId;
+extern "C"  bool Character_Input_get_RunInput_m2095804501 (Character_Input_t2061814878 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_Input_get_RunInput_m2095804501_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t G_B7_0 = 0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_0 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)306), /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_1 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)305), /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_2 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)310), /*hidden argument*/NULL);
+		if (L_2)
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_3 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)309), /*hidden argument*/NULL);
+		if (L_3)
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_4 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)304), /*hidden argument*/NULL);
+		if (L_4)
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_5 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)303), /*hidden argument*/NULL);
+		G_B7_0 = ((int32_t)(L_5));
+		goto IL_0058;
+	}
+
+IL_0057:
+	{
+		G_B7_0 = 1;
+	}
+
+IL_0058:
+	{
+		return (bool)G_B7_0;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_Input::FixedUpdate()
+extern "C"  void Character_Input_FixedUpdate_m161026154 (Character_Input_t2061814878 * __this, const MethodInfo* method)
+{
+	{
+		Character_Input_UpdateRunInput_m4122463677(__this, /*hidden argument*/NULL);
+		Character_Input_UpdateJumpInput_m527809638(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_Input::UpdateJumpInput()
+extern "C"  void Character_Input_UpdateJumpInput_m527809638 (Character_Input_t2061814878 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t G_B3_0 = 0;
+	{
+		bool L_0 = Character_Input_get_JumpInput_m757610044(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		bool L_1 = __this->get_m_bJumpWasPressed_2();
+		if (L_1)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		bool L_2 = V_0;
+		G_B3_0 = ((int32_t)(L_2));
+		goto IL_0016;
+	}
+
+IL_0015:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0016:
+	{
+		V_1 = (bool)G_B3_0;
+		bool L_3 = V_0;
+		__this->set_m_bJumpWasPressed_2(L_3);
+		bool L_4 = V_1;
+		__this->set_m_bJump_3(L_4);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_Input::UpdateRunInput()
+extern "C"  void Character_Input_UpdateRunInput_m4122463677 (Character_Input_t2061814878 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = Character_Input_get_RunInput_m2095804501(__this, /*hidden argument*/NULL);
+		__this->set_m_bRun_4(L_0);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimbAnimation::.ctor()
+extern "C"  void Character_LadderClimbAnimation__ctor_m233702362 (Character_LadderClimbAnimation_t2755847465 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_distanceByClimbLoop_5((1.0f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimbAnimation::Awake()
+extern Il2CppClass* Action_t3226471752_il2cpp_TypeInfo_var;
+extern Il2CppClass* Action_1_t1878309314_il2cpp_TypeInfo_var;
+extern const MethodInfo* Character_LadderClimbAnimation_OnStartClimb_m3936503112_MethodInfo_var;
+extern const MethodInfo* Character_LadderClimbAnimation_OnStopClimb_m962252220_MethodInfo_var;
+extern const MethodInfo* Character_LadderClimbAnimation_OnClimb_m2603560125_MethodInfo_var;
+extern const MethodInfo* Action_1__ctor_m928763336_MethodInfo_var;
+extern const uint32_t Character_LadderClimbAnimation_Awake_m2645098517_MetadataUsageId;
+extern "C"  void Character_LadderClimbAnimation_Awake_m2645098517 (Character_LadderClimbAnimation_t2755847465 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderClimbAnimation_Awake_m2645098517_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Character_LadderClimber_t734778460 * L_0 = __this->get_ladderClimber_4();
+		Character_LadderClimber_t734778460 * L_1 = L_0;
+		NullCheck(L_1);
+		Action_t3226471752 * L_2 = L_1->get_onStartClimb_2();
+		IntPtr_t L_3;
+		L_3.set_m_value_0((void*)(void*)Character_LadderClimbAnimation_OnStartClimb_m3936503112_MethodInfo_var);
+		Action_t3226471752 * L_4 = (Action_t3226471752 *)il2cpp_codegen_object_new(Action_t3226471752_il2cpp_TypeInfo_var);
+		Action__ctor_m2606471964(L_4, __this, L_3, /*hidden argument*/NULL);
+		Delegate_t3022476291 * L_5 = Delegate_Combine_m3791207084(NULL /*static, unused*/, L_2, L_4, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		L_1->set_onStartClimb_2(((Action_t3226471752 *)CastclassSealed(L_5, Action_t3226471752_il2cpp_TypeInfo_var)));
+		Character_LadderClimber_t734778460 * L_6 = __this->get_ladderClimber_4();
+		Character_LadderClimber_t734778460 * L_7 = L_6;
+		NullCheck(L_7);
+		Action_t3226471752 * L_8 = L_7->get_onStopClimb_3();
+		IntPtr_t L_9;
+		L_9.set_m_value_0((void*)(void*)Character_LadderClimbAnimation_OnStopClimb_m962252220_MethodInfo_var);
+		Action_t3226471752 * L_10 = (Action_t3226471752 *)il2cpp_codegen_object_new(Action_t3226471752_il2cpp_TypeInfo_var);
+		Action__ctor_m2606471964(L_10, __this, L_9, /*hidden argument*/NULL);
+		Delegate_t3022476291 * L_11 = Delegate_Combine_m3791207084(NULL /*static, unused*/, L_8, L_10, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		L_7->set_onStopClimb_3(((Action_t3226471752 *)CastclassSealed(L_11, Action_t3226471752_il2cpp_TypeInfo_var)));
+		Character_LadderClimber_t734778460 * L_12 = __this->get_ladderClimber_4();
+		Character_LadderClimber_t734778460 * L_13 = L_12;
+		NullCheck(L_13);
+		Action_1_t1878309314 * L_14 = L_13->get_onClimb_4();
+		IntPtr_t L_15;
+		L_15.set_m_value_0((void*)(void*)Character_LadderClimbAnimation_OnClimb_m2603560125_MethodInfo_var);
+		Action_1_t1878309314 * L_16 = (Action_1_t1878309314 *)il2cpp_codegen_object_new(Action_1_t1878309314_il2cpp_TypeInfo_var);
+		Action_1__ctor_m928763336(L_16, __this, L_15, /*hidden argument*/Action_1__ctor_m928763336_MethodInfo_var);
+		Delegate_t3022476291 * L_17 = Delegate_Combine_m3791207084(NULL /*static, unused*/, L_14, L_16, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		L_13->set_onClimb_4(((Action_1_t1878309314 *)CastclassSealed(L_17, Action_1_t1878309314_il2cpp_TypeInfo_var)));
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimbAnimation::OnDestroy()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* Action_t3226471752_il2cpp_TypeInfo_var;
+extern Il2CppClass* Action_1_t1878309314_il2cpp_TypeInfo_var;
+extern const MethodInfo* Character_LadderClimbAnimation_OnStartClimb_m3936503112_MethodInfo_var;
+extern const MethodInfo* Character_LadderClimbAnimation_OnStopClimb_m962252220_MethodInfo_var;
+extern const MethodInfo* Character_LadderClimbAnimation_OnClimb_m2603560125_MethodInfo_var;
+extern const MethodInfo* Action_1__ctor_m928763336_MethodInfo_var;
+extern const uint32_t Character_LadderClimbAnimation_OnDestroy_m2728162647_MetadataUsageId;
+extern "C"  void Character_LadderClimbAnimation_OnDestroy_m2728162647 (Character_LadderClimbAnimation_t2755847465 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderClimbAnimation_OnDestroy_m2728162647_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Character_LadderClimber_t734778460 * L_0 = __this->get_ladderClimber_4();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0086;
+		}
+	}
+	{
+		Character_LadderClimber_t734778460 * L_2 = __this->get_ladderClimber_4();
+		Character_LadderClimber_t734778460 * L_3 = L_2;
+		NullCheck(L_3);
+		Action_t3226471752 * L_4 = L_3->get_onStartClimb_2();
+		IntPtr_t L_5;
+		L_5.set_m_value_0((void*)(void*)Character_LadderClimbAnimation_OnStartClimb_m3936503112_MethodInfo_var);
+		Action_t3226471752 * L_6 = (Action_t3226471752 *)il2cpp_codegen_object_new(Action_t3226471752_il2cpp_TypeInfo_var);
+		Action__ctor_m2606471964(L_6, __this, L_5, /*hidden argument*/NULL);
+		Delegate_t3022476291 * L_7 = Delegate_Remove_m2626518725(NULL /*static, unused*/, L_4, L_6, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		L_3->set_onStartClimb_2(((Action_t3226471752 *)CastclassSealed(L_7, Action_t3226471752_il2cpp_TypeInfo_var)));
+		Character_LadderClimber_t734778460 * L_8 = __this->get_ladderClimber_4();
+		Character_LadderClimber_t734778460 * L_9 = L_8;
+		NullCheck(L_9);
+		Action_t3226471752 * L_10 = L_9->get_onStopClimb_3();
+		IntPtr_t L_11;
+		L_11.set_m_value_0((void*)(void*)Character_LadderClimbAnimation_OnStopClimb_m962252220_MethodInfo_var);
+		Action_t3226471752 * L_12 = (Action_t3226471752 *)il2cpp_codegen_object_new(Action_t3226471752_il2cpp_TypeInfo_var);
+		Action__ctor_m2606471964(L_12, __this, L_11, /*hidden argument*/NULL);
+		Delegate_t3022476291 * L_13 = Delegate_Remove_m2626518725(NULL /*static, unused*/, L_10, L_12, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		L_9->set_onStopClimb_3(((Action_t3226471752 *)CastclassSealed(L_13, Action_t3226471752_il2cpp_TypeInfo_var)));
+		Character_LadderClimber_t734778460 * L_14 = __this->get_ladderClimber_4();
+		Character_LadderClimber_t734778460 * L_15 = L_14;
+		NullCheck(L_15);
+		Action_1_t1878309314 * L_16 = L_15->get_onClimb_4();
+		IntPtr_t L_17;
+		L_17.set_m_value_0((void*)(void*)Character_LadderClimbAnimation_OnClimb_m2603560125_MethodInfo_var);
+		Action_1_t1878309314 * L_18 = (Action_1_t1878309314 *)il2cpp_codegen_object_new(Action_1_t1878309314_il2cpp_TypeInfo_var);
+		Action_1__ctor_m928763336(L_18, __this, L_17, /*hidden argument*/Action_1__ctor_m928763336_MethodInfo_var);
+		Delegate_t3022476291 * L_19 = Delegate_Remove_m2626518725(NULL /*static, unused*/, L_16, L_18, /*hidden argument*/NULL);
+		NullCheck(L_15);
+		L_15->set_onClimb_4(((Action_1_t1878309314 *)CastclassSealed(L_19, Action_1_t1878309314_il2cpp_TypeInfo_var)));
+	}
+
+IL_0086:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimbAnimation::OnStartClimb()
+extern "C"  void Character_LadderClimbAnimation_OnStartClimb_m3936503112 (Character_LadderClimbAnimation_t2755847465 * __this, const MethodInfo* method)
+{
+	{
+		Character_AnimationController_t2390840408 * L_0 = __this->get_characterAnimationController_3();
+		NullCheck(L_0);
+		Behaviour_set_enabled_m1796096907(L_0, (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimbAnimation::OnStopClimb()
+extern "C"  void Character_LadderClimbAnimation_OnStopClimb_m962252220 (Character_LadderClimbAnimation_t2755847465 * __this, const MethodInfo* method)
+{
+	{
+		Character_AnimationController_t2390840408 * L_0 = __this->get_characterAnimationController_3();
+		NullCheck(L_0);
+		Behaviour_set_enabled_m1796096907(L_0, (bool)1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimbAnimation::OnClimb(System.Single)
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2939261633;
+extern const uint32_t Character_LadderClimbAnimation_OnClimb_m2603560125_MetadataUsageId;
+extern "C"  void Character_LadderClimbAnimation_OnClimb_m2603560125 (Character_LadderClimbAnimation_t2755847465 * __this, float ___a_fClimb0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderClimbAnimation_OnClimb_m2603560125_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	AnimatorStateInfo_t2577870592  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	{
+		Animator_t69676727 * L_0 = __this->get_animator_2();
+		NullCheck(L_0);
+		Animator_set_speed_m3511108817(L_0, (0.0f), /*hidden argument*/NULL);
+		Animator_t69676727 * L_1 = __this->get_animator_2();
+		NullCheck(L_1);
+		AnimatorStateInfo_t2577870592  L_2 = Animator_GetCurrentAnimatorStateInfo_m1931338898(L_1, 0, /*hidden argument*/NULL);
+		V_0 = L_2;
+		float L_3 = AnimatorStateInfo_get_normalizedTime_m1330221276((&V_0), /*hidden argument*/NULL);
+		V_1 = L_3;
+		float L_4 = __this->get_distanceByClimbLoop_5();
+		if ((((float)L_4) == ((float)(0.0f))))
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		float L_5 = V_1;
+		float L_6 = ___a_fClimb0;
+		float L_7 = __this->get_distanceByClimbLoop_5();
+		V_1 = ((float)((float)L_5+(float)((float)((float)L_6/(float)L_7))));
+		float L_8 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_9 = Mathf_Repeat_m943844734(NULL /*static, unused*/, L_8, (1.0f), /*hidden argument*/NULL);
+		V_1 = L_9;
+	}
+
+IL_004c:
+	{
+		Animator_t69676727 * L_10 = __this->get_animator_2();
+		float L_11 = V_1;
+		NullCheck(L_10);
+		Animator_Play_m2181614708(L_10, _stringLiteral2939261633, 0, L_11, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimber::.ctor()
+extern "C"  void Character_LadderClimber__ctor_m1553139909 (Character_LadderClimber_t734778460 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_climbSpeed_8((0.5f));
+		__this->set_climbRunSpeed_9((1.0f));
+		__this->set_quitByJumpingDuration_10((0.25f));
+		__this->set_canJumpAfterLadderDuration_11((0.2f));
+		__this->set_canClimbInADirectionTolerance_12((0.025f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean UniArt.PixelScifiLandscape.Sample.Character_LadderClimber::get_IsClimbing()
+extern "C"  bool Character_LadderClimber_get_IsClimbing_m3705621483 (Character_LadderClimber_t734778460 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get_m_bClimbing_15();
+		return L_0;
+	}
+}
+// UnityEngine.Vector2 UniArt.PixelScifiLandscape.Sample.Character_LadderClimber::get_Position()
+extern "C"  Vector2_t2243707579  Character_LadderClimber_get_Position_m2735479832 (Character_LadderClimber_t734778460 * __this, const MethodInfo* method)
+{
+	{
+		Character_MovementController_t180692203 * L_0 = __this->get_movementController_5();
+		NullCheck(L_0);
+		Vector2_t2243707579  L_1 = Character_MovementController_get_Position_m299822549(L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimber::set_Position(UnityEngine.Vector2)
+extern "C"  void Character_LadderClimber_set_Position_m3900064713 (Character_LadderClimber_t734778460 * __this, Vector2_t2243707579  ___value0, const MethodInfo* method)
+{
+	{
+		Character_MovementController_t180692203 * L_0 = __this->get_movementController_5();
+		Vector2_t2243707579  L_1 = ___value0;
+		NullCheck(L_0);
+		Character_MovementController_set_Position_m2713510114(L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimber::FixedUpdate()
+extern "C"  void Character_LadderClimber_FixedUpdate_m980028044 (Character_LadderClimber_t734778460 * __this, const MethodInfo* method)
+{
+	{
+		Character_LadderClimber_ProcessLadderClimb_m1096026197(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimber::ProcessLadderClimb()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t Character_LadderClimber_ProcessLadderClimb_m1096026197_MetadataUsageId;
+extern "C"  void Character_LadderClimber_ProcessLadderClimb_m1096026197 (Character_LadderClimber_t734778460 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderClimber_ProcessLadderClimb_m1096026197_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	bool V_2 = false;
+	float V_3 = 0.0f;
+	Object_Ladder_t2797598778 * V_4 = NULL;
+	Vector3_t2243707580  V_5;
+	memset(&V_5, 0, sizeof(V_5));
+	Vector3_t2243707580  V_6;
+	memset(&V_6, 0, sizeof(V_6));
+	Vector3_t2243707580  V_7;
+	memset(&V_7, 0, sizeof(V_7));
+	Vector3_t2243707580  V_8;
+	memset(&V_8, 0, sizeof(V_8));
+	int32_t G_B4_0 = 0;
+	{
+		Character_Input_t2061814878 * L_0 = __this->get_characterInput_6();
+		NullCheck(L_0);
+		float L_1 = Character_Input_get_Vertical_m3464180068(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Character_Input_t2061814878 * L_2 = __this->get_characterInput_6();
+		NullCheck(L_2);
+		float L_3 = Character_Input_get_Horizontal_m1468178506(L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		float L_4 = V_1;
+		if ((((float)L_4) == ((float)(0.0f))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		float L_5 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_6 = fabsf(L_5);
+		float L_7 = V_0;
+		float L_8 = fabsf(L_7);
+		if ((((float)L_6) > ((float)L_8)))
+		{
+			goto IL_0041;
+		}
+	}
+
+IL_0034:
+	{
+		Character_Input_t2061814878 * L_9 = __this->get_characterInput_6();
+		NullCheck(L_9);
+		bool L_10 = Character_Input_get_Jump_m1939620422(L_9, /*hidden argument*/NULL);
+		G_B4_0 = ((int32_t)(L_10));
+		goto IL_0042;
+	}
+
+IL_0041:
+	{
+		G_B4_0 = 1;
+	}
+
+IL_0042:
+	{
+		V_2 = (bool)G_B4_0;
+		bool L_11 = __this->get_m_bQuitByJumping_17();
+		if (!L_11)
+		{
+			goto IL_0077;
+		}
+	}
+	{
+		float L_12 = __this->get_m_fQuitByJumpingRemainingTime_18();
+		float L_13 = Time_get_fixedDeltaTime_m2734072926(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_fQuitByJumpingRemainingTime_18(((float)((float)L_12-(float)L_13)));
+		float L_14 = __this->get_m_fQuitByJumpingRemainingTime_18();
+		if ((!(((float)L_14) <= ((float)(0.0f)))))
+		{
+			goto IL_0077;
+		}
+	}
+	{
+		__this->set_m_bQuitByJumping_17((bool)0);
+	}
+
+IL_0077:
+	{
+		bool L_15 = __this->get_m_bClimbing_15();
+		if (!L_15)
+		{
+			goto IL_00ca;
+		}
+	}
+	{
+		bool L_16 = V_2;
+		if (!L_16)
+		{
+			goto IL_0093;
+		}
+	}
+	{
+		Character_LadderClimber_StopClimbing_m479902624(__this, /*hidden argument*/NULL);
+		goto IL_00c5;
+	}
+
+IL_0093:
+	{
+		Character_Input_t2061814878 * L_17 = __this->get_characterInput_6();
+		NullCheck(L_17);
+		bool L_18 = Character_Input_get_Run_m3600994827(L_17, /*hidden argument*/NULL);
+		if (!L_18)
+		{
+			goto IL_00af;
+		}
+	}
+	{
+		float L_19 = __this->get_climbRunSpeed_9();
+		V_3 = L_19;
+		goto IL_00b6;
+	}
+
+IL_00af:
+	{
+		float L_20 = __this->get_climbSpeed_8();
+		V_3 = L_20;
+	}
+
+IL_00b6:
+	{
+		float L_21 = V_3;
+		float L_22 = Time_get_fixedDeltaTime_m2734072926(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_23 = V_0;
+		Character_LadderClimber_Climb_m1151321701(__this, ((float)((float)((float)((float)L_21*(float)L_22))*(float)L_23)), /*hidden argument*/NULL);
+	}
+
+IL_00c5:
+	{
+		goto IL_019e;
+	}
+
+IL_00ca:
+	{
+		bool L_24 = V_2;
+		if (L_24)
+		{
+			goto IL_019e;
+		}
+	}
+	{
+		bool L_25 = __this->get_m_bQuitByJumping_17();
+		if (L_25)
+		{
+			goto IL_019e;
+		}
+	}
+	{
+		float L_26 = V_0;
+		if ((((float)L_26) == ((float)(0.0f))))
+		{
+			goto IL_019e;
+		}
+	}
+	{
+		Character_LadderTester_t2692161659 * L_27 = __this->get_ladderTester_7();
+		Character_MovementController_t180692203 * L_28 = __this->get_movementController_5();
+		NullCheck(L_28);
+		Rigidbody2D_t502193897 * L_29 = L_28->get_rigidbodyComponent_3();
+		NullCheck(L_29);
+		Transform_t3275118058 * L_30 = Component_get_transform_m2697483695(L_29, /*hidden argument*/NULL);
+		NullCheck(L_30);
+		Vector3_t2243707580  L_31 = Transform_get_position_m1104419803(L_30, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_32 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
+		NullCheck(L_27);
+		Object_Ladder_t2797598778 * L_33 = Character_LadderTester_GetNearestLadder_m2341607515(L_27, L_32, /*hidden argument*/NULL);
+		V_4 = L_33;
+		Object_Ladder_t2797598778 * L_34 = V_4;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_35 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_34, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_35)
+		{
+			goto IL_019e;
+		}
+	}
+	{
+		float L_36 = V_0;
+		if ((!(((float)L_36) > ((float)(0.0f)))))
+		{
+			goto IL_0160;
+		}
+	}
+	{
+		Transform_t3275118058 * L_37 = __this->get_climberTop_13();
+		NullCheck(L_37);
+		Vector3_t2243707580  L_38 = Transform_get_position_m1104419803(L_37, /*hidden argument*/NULL);
+		V_5 = L_38;
+		float L_39 = (&V_5)->get_y_2();
+		Object_Ladder_t2797598778 * L_40 = V_4;
+		NullCheck(L_40);
+		Transform_t3275118058 * L_41 = L_40->get_ladderTop_2();
+		NullCheck(L_41);
+		Vector3_t2243707580  L_42 = Transform_get_position_m1104419803(L_41, /*hidden argument*/NULL);
+		V_6 = L_42;
+		float L_43 = (&V_6)->get_y_2();
+		float L_44 = __this->get_canClimbInADirectionTolerance_12();
+		if ((!(((float)L_39) > ((float)((float)((float)L_43-(float)L_44))))))
+		{
+			goto IL_015b;
+		}
+	}
+	{
+		return;
+	}
+
+IL_015b:
+	{
+		goto IL_0196;
+	}
+
+IL_0160:
+	{
+		Transform_t3275118058 * L_45 = __this->get_climberBottom_14();
+		NullCheck(L_45);
+		Vector3_t2243707580  L_46 = Transform_get_position_m1104419803(L_45, /*hidden argument*/NULL);
+		V_7 = L_46;
+		float L_47 = (&V_7)->get_y_2();
+		Object_Ladder_t2797598778 * L_48 = V_4;
+		NullCheck(L_48);
+		Transform_t3275118058 * L_49 = L_48->get_ladderBottom_3();
+		NullCheck(L_49);
+		Vector3_t2243707580  L_50 = Transform_get_position_m1104419803(L_49, /*hidden argument*/NULL);
+		V_8 = L_50;
+		float L_51 = (&V_8)->get_y_2();
+		float L_52 = __this->get_canClimbInADirectionTolerance_12();
+		if ((!(((float)L_47) < ((float)((float)((float)L_51+(float)L_52))))))
+		{
+			goto IL_0196;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0196:
+	{
+		Object_Ladder_t2797598778 * L_53 = V_4;
+		Character_LadderClimber_StartClimbing_m2029899612(__this, L_53, /*hidden argument*/NULL);
+	}
+
+IL_019e:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimber::StartClimbing(UniArt.PixelScifiLandscape.Sample.Object_Ladder)
+extern "C"  void Character_LadderClimber_StartClimbing_m2029899612 (Character_LadderClimber_t734778460 * __this, Object_Ladder_t2797598778 * ___a_rLadder0, const MethodInfo* method)
+{
+	{
+		__this->set_m_bQuitByJumping_17((bool)0);
+		__this->set_m_bClimbing_15((bool)1);
+		Object_Ladder_t2797598778 * L_0 = ___a_rLadder0;
+		__this->set_m_rLadder_16(L_0);
+		Object_Ladder_t2797598778 * L_1 = __this->get_m_rLadder_16();
+		Vector2_t2243707579  L_2 = Character_LadderClimber_get_Position_m2735479832(__this, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_3 = __this->get_climberTop_13();
+		NullCheck(L_3);
+		Vector3_t2243707580  L_4 = Transform_get_position_m1104419803(L_3, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_5 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_6 = __this->get_climberBottom_14();
+		NullCheck(L_6);
+		Vector3_t2243707580  L_7 = Transform_get_position_m1104419803(L_6, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_8 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Vector2_t2243707579  L_9 = Object_Ladder_SnapOnLadder_m4207231875(L_1, L_2, L_5, L_8, /*hidden argument*/NULL);
+		Character_LadderClimber_set_Position_m3900064713(__this, L_9, /*hidden argument*/NULL);
+		Character_MovementController_t180692203 * L_10 = __this->get_movementController_5();
+		NullCheck(L_10);
+		Character_MovementController_DisableMovement_m4067113565(L_10, /*hidden argument*/NULL);
+		Action_t3226471752 * L_11 = __this->get_onStartClimb_2();
+		if (!L_11)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		Action_t3226471752 * L_12 = __this->get_onStartClimb_2();
+		NullCheck(L_12);
+		Action_Invoke_m3801112262(L_12, /*hidden argument*/NULL);
+	}
+
+IL_006d:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimber::StopClimbing()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t Character_LadderClimber_StopClimbing_m479902624_MetadataUsageId;
+extern "C"  void Character_LadderClimber_StopClimbing_m479902624 (Character_LadderClimber_t734778460 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderClimber_StopClimbing_m479902624_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	{
+		__this->set_m_bClimbing_15((bool)0);
+		__this->set_m_rLadder_16((Object_Ladder_t2797598778 *)NULL);
+		Character_MovementController_t180692203 * L_0 = __this->get_movementController_5();
+		NullCheck(L_0);
+		Character_MovementController_EnableMovement_m135093354(L_0, /*hidden argument*/NULL);
+		Character_Input_t2061814878 * L_1 = __this->get_characterInput_6();
+		NullCheck(L_1);
+		float L_2 = Character_Input_get_Vertical_m3464180068(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Character_Input_t2061814878 * L_3 = __this->get_characterInput_6();
+		NullCheck(L_3);
+		float L_4 = Character_Input_get_Horizontal_m1468178506(L_3, /*hidden argument*/NULL);
+		V_1 = L_4;
+		Character_Input_t2061814878 * L_5 = __this->get_characterInput_6();
+		NullCheck(L_5);
+		bool L_6 = Character_Input_get_Jump_m1939620422(L_5, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_0080;
+		}
+	}
+	{
+		float L_7 = V_0;
+		if ((!(((float)L_7) < ((float)(0.0f)))))
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		float L_8 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_9 = fabsf(L_8);
+		float L_10 = V_1;
+		float L_11 = fabsf(L_10);
+		if ((((float)L_9) >= ((float)L_11)))
+		{
+			goto IL_0068;
+		}
+	}
+
+IL_005d:
+	{
+		Character_MovementController_t180692203 * L_12 = __this->get_movementController_5();
+		NullCheck(L_12);
+		Character_MovementController_Jump_m2763054096(L_12, /*hidden argument*/NULL);
+	}
+
+IL_0068:
+	{
+		__this->set_m_bQuitByJumping_17((bool)1);
+		float L_13 = __this->get_quitByJumpingDuration_10();
+		__this->set_m_fQuitByJumpingRemainingTime_18(L_13);
+		goto IL_0091;
+	}
+
+IL_0080:
+	{
+		Character_MovementController_t180692203 * L_14 = __this->get_movementController_5();
+		float L_15 = __this->get_canJumpAfterLadderDuration_11();
+		NullCheck(L_14);
+		Character_MovementController_CanJump_m3156270193(L_14, L_15, /*hidden argument*/NULL);
+	}
+
+IL_0091:
+	{
+		Action_t3226471752 * L_16 = __this->get_onStopClimb_3();
+		if (!L_16)
+		{
+			goto IL_00a7;
+		}
+	}
+	{
+		Action_t3226471752 * L_17 = __this->get_onStopClimb_3();
+		NullCheck(L_17);
+		Action_Invoke_m3801112262(L_17, /*hidden argument*/NULL);
+	}
+
+IL_00a7:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimber::Climb(System.Single)
+extern const MethodInfo* Action_1_Invoke_m3661933365_MethodInfo_var;
+extern const uint32_t Character_LadderClimber_Climb_m1151321701_MetadataUsageId;
+extern "C"  void Character_LadderClimber_Climb_m1151321701 (Character_LadderClimber_t734778460 * __this, float ___a_fClimb0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderClimber_Climb_m1151321701_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	Vector2_t2243707579  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	bool V_2 = false;
+	bool V_3 = false;
+	float V_4 = 0.0f;
+	Vector2_t2243707579  V_5;
+	memset(&V_5, 0, sizeof(V_5));
+	{
+		Vector2_t2243707579  L_0 = Character_LadderClimber_get_Position_m2735479832(__this, /*hidden argument*/NULL);
+		V_1 = L_0;
+		float L_1 = (&V_1)->get_y_1();
+		V_0 = L_1;
+		Object_Ladder_t2797598778 * L_2 = __this->get_m_rLadder_16();
+		Vector2_t2243707579  L_3 = Character_LadderClimber_get_Position_m2735479832(__this, /*hidden argument*/NULL);
+		Object_Ladder_t2797598778 * L_4 = __this->get_m_rLadder_16();
+		NullCheck(L_4);
+		Vector2_t2243707579  L_5 = Object_Ladder_get_LadderUpDirection_m1852159371(L_4, /*hidden argument*/NULL);
+		float L_6 = ___a_fClimb0;
+		Vector2_t2243707579  L_7 = Vector2_op_Multiply_m4236139442(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_8 = Vector2_op_Addition_m1389598521(NULL /*static, unused*/, L_3, L_7, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_9 = __this->get_climberTop_13();
+		NullCheck(L_9);
+		Vector3_t2243707580  L_10 = Transform_get_position_m1104419803(L_9, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_11 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_12 = __this->get_climberBottom_14();
+		NullCheck(L_12);
+		Vector3_t2243707580  L_13 = Transform_get_position_m1104419803(L_12, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_14 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Vector2_t2243707579  L_15 = Object_Ladder_SnapOnLadder_m3417031363(L_2, L_8, L_11, L_14, (&V_2), (&V_3), /*hidden argument*/NULL);
+		Character_LadderClimber_set_Position_m3900064713(__this, L_15, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_16 = Character_LadderClimber_get_Position_m2735479832(__this, /*hidden argument*/NULL);
+		V_5 = L_16;
+		float L_17 = (&V_5)->get_y_1();
+		V_4 = L_17;
+		Action_1_t1878309314 * L_18 = __this->get_onClimb_4();
+		if (!L_18)
+		{
+			goto IL_008b;
+		}
+	}
+	{
+		Action_1_t1878309314 * L_19 = __this->get_onClimb_4();
+		float L_20 = V_4;
+		float L_21 = V_0;
+		NullCheck(L_19);
+		Action_1_Invoke_m3661933365(L_19, ((float)((float)L_20-(float)L_21)), /*hidden argument*/Action_1_Invoke_m3661933365_MethodInfo_var);
+	}
+
+IL_008b:
+	{
+		Object_Ladder_t2797598778 * L_22 = __this->get_m_rLadder_16();
+		NullCheck(L_22);
+		bool L_23 = L_22->get_canGoOnTop_4();
+		if (!L_23)
+		{
+			goto IL_00c1;
+		}
+	}
+	{
+		Character_Input_t2061814878 * L_24 = __this->get_characterInput_6();
+		NullCheck(L_24);
+		float L_25 = Character_Input_get_Vertical_m3464180068(L_24, /*hidden argument*/NULL);
+		if ((!(((float)L_25) > ((float)(0.0f)))))
+		{
+			goto IL_00c1;
+		}
+	}
+	{
+		bool L_26 = V_2;
+		if (!L_26)
+		{
+			goto IL_00c1;
+		}
+	}
+	{
+		Character_LadderClimber_PutOnTop_m1095725984(__this, /*hidden argument*/NULL);
+		goto IL_00f2;
+	}
+
+IL_00c1:
+	{
+		Object_Ladder_t2797598778 * L_27 = __this->get_m_rLadder_16();
+		NullCheck(L_27);
+		bool L_28 = L_27->get_canGoOnBottom_5();
+		if (!L_28)
+		{
+			goto IL_00f2;
+		}
+	}
+	{
+		Character_Input_t2061814878 * L_29 = __this->get_characterInput_6();
+		NullCheck(L_29);
+		float L_30 = Character_Input_get_Vertical_m3464180068(L_29, /*hidden argument*/NULL);
+		if ((!(((float)L_30) < ((float)(0.0f)))))
+		{
+			goto IL_00f2;
+		}
+	}
+	{
+		bool L_31 = V_3;
+		if (!L_31)
+		{
+			goto IL_00f2;
+		}
+	}
+	{
+		Character_LadderClimber_PutOnBottom_m3097234012(__this, /*hidden argument*/NULL);
+	}
+
+IL_00f2:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimber::PutOnTop()
+extern "C"  void Character_LadderClimber_PutOnTop_m1095725984 (Character_LadderClimber_t734778460 * __this, const MethodInfo* method)
+{
+	{
+		Object_Ladder_t2797598778 * L_0 = __this->get_m_rLadder_16();
+		NullCheck(L_0);
+		Transform_t3275118058 * L_1 = L_0->get_ladderTop_2();
+		NullCheck(L_1);
+		Vector3_t2243707580  L_2 = Transform_get_position_m1104419803(L_1, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_3 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_4 = Character_LadderClimber_get_Position_m2735479832(__this, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_5 = __this->get_climberBottom_14();
+		NullCheck(L_5);
+		Vector3_t2243707580  L_6 = Transform_get_position_m1104419803(L_5, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_7 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_8 = Vector2_op_Subtraction_m1984215297(NULL /*static, unused*/, L_4, L_7, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_9 = Vector2_op_Addition_m1389598521(NULL /*static, unused*/, L_3, L_8, /*hidden argument*/NULL);
+		Character_LadderClimber_set_Position_m3900064713(__this, L_9, /*hidden argument*/NULL);
+		Character_LadderClimber_StopClimbing_m479902624(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderClimber::PutOnBottom()
+extern "C"  void Character_LadderClimber_PutOnBottom_m3097234012 (Character_LadderClimber_t734778460 * __this, const MethodInfo* method)
+{
+	{
+		Object_Ladder_t2797598778 * L_0 = __this->get_m_rLadder_16();
+		NullCheck(L_0);
+		Transform_t3275118058 * L_1 = L_0->get_ladderBottom_3();
+		NullCheck(L_1);
+		Vector3_t2243707580  L_2 = Transform_get_position_m1104419803(L_1, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_3 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_4 = Character_LadderClimber_get_Position_m2735479832(__this, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_5 = __this->get_climberBottom_14();
+		NullCheck(L_5);
+		Vector3_t2243707580  L_6 = Transform_get_position_m1104419803(L_5, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_7 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_8 = Vector2_op_Subtraction_m1984215297(NULL /*static, unused*/, L_4, L_7, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_9 = Vector2_op_Addition_m1389598521(NULL /*static, unused*/, L_3, L_8, /*hidden argument*/NULL);
+		Character_LadderClimber_set_Position_m3900064713(__this, L_9, /*hidden argument*/NULL);
+		Character_LadderClimber_StopClimbing_m479902624(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderTester::.ctor()
+extern Il2CppClass* List_1_t2166719910_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1__ctor_m660836897_MethodInfo_var;
+extern const uint32_t Character_LadderTester__ctor_m2759297216_MetadataUsageId;
+extern "C"  void Character_LadderTester__ctor_m2759297216 (Character_LadderTester_t2692161659 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderTester__ctor_m2759297216_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		List_1_t2166719910 * L_0 = (List_1_t2166719910 *)il2cpp_codegen_object_new(List_1_t2166719910_il2cpp_TypeInfo_var);
+		List_1__ctor_m660836897(L_0, /*hidden argument*/List_1__ctor_m660836897_MethodInfo_var);
+		__this->set_m_oLadders_2(L_0);
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// UniArt.PixelScifiLandscape.Sample.Object_Ladder UniArt.PixelScifiLandscape.Sample.Character_LadderTester::GetNearestLadder(UnityEngine.Vector2)
+extern const MethodInfo* List_1_GetEnumerator_m3658004394_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m868009712_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m2303523906_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m3040638942_MethodInfo_var;
+extern const uint32_t Character_LadderTester_GetNearestLadder_m2341607515_MetadataUsageId;
+extern "C"  Object_Ladder_t2797598778 * Character_LadderTester_GetNearestLadder_m2341607515 (Character_LadderTester_t2692161659 * __this, Vector2_t2243707579  ___a_f2Position0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderTester_GetNearestLadder_m2341607515_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Object_Ladder_t2797598778 * V_0 = NULL;
+	float V_1 = 0.0f;
+	Object_Ladder_t2797598778 * V_2 = NULL;
+	Enumerator_t1701449584  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	float V_4 = 0.0f;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		V_0 = (Object_Ladder_t2797598778 *)NULL;
+		V_1 = (std::numeric_limits<float>::infinity());
+		List_1_t2166719910 * L_0 = __this->get_m_oLadders_2();
+		NullCheck(L_0);
+		Enumerator_t1701449584  L_1 = List_1_GetEnumerator_m3658004394(L_0, /*hidden argument*/List_1_GetEnumerator_m3658004394_MethodInfo_var);
+		V_3 = L_1;
+	}
+
+IL_0014:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0037;
+		}
+
+IL_0019:
+		{
+			Object_Ladder_t2797598778 * L_2 = Enumerator_get_Current_m868009712((&V_3), /*hidden argument*/Enumerator_get_Current_m868009712_MethodInfo_var);
+			V_2 = L_2;
+			Object_Ladder_t2797598778 * L_3 = V_2;
+			Vector2_t2243707579  L_4 = ___a_f2Position0;
+			NullCheck(L_3);
+			float L_5 = Object_Ladder_DistanceToLadder_m3142284483(L_3, L_4, /*hidden argument*/NULL);
+			V_4 = L_5;
+			float L_6 = V_4;
+			float L_7 = V_1;
+			if ((!(((float)L_6) < ((float)L_7))))
+			{
+				goto IL_0037;
+			}
+		}
+
+IL_0032:
+		{
+			float L_8 = V_4;
+			V_1 = L_8;
+			Object_Ladder_t2797598778 * L_9 = V_2;
+			V_0 = L_9;
+		}
+
+IL_0037:
+		{
+			bool L_10 = Enumerator_MoveNext_m2303523906((&V_3), /*hidden argument*/Enumerator_MoveNext_m2303523906_MethodInfo_var);
+			if (L_10)
+			{
+				goto IL_0019;
+			}
+		}
+
+IL_0043:
+		{
+			IL2CPP_LEAVE(0x56, FINALLY_0048);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_0048;
+	}
+
+FINALLY_0048:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m3040638942((&V_3), /*hidden argument*/Enumerator_Dispose_m3040638942_MethodInfo_var);
+		IL2CPP_END_FINALLY(72)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(72)
+	{
+		IL2CPP_JUMP_TBL(0x56, IL_0056)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_0056:
+	{
+		Object_Ladder_t2797598778 * L_11 = V_0;
+		return L_11;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderTester::OnLadderColliderEnter(UniArt.PixelScifiLandscape.Sample.Object_Ladder_Collider)
+extern const MethodInfo* List_1_Contains_m3876564663_MethodInfo_var;
+extern const MethodInfo* List_1_Add_m3999382477_MethodInfo_var;
+extern const uint32_t Character_LadderTester_OnLadderColliderEnter_m2881410080_MetadataUsageId;
+extern "C"  void Character_LadderTester_OnLadderColliderEnter_m2881410080 (Character_LadderTester_t2692161659 * __this, Object_Ladder_Collider_t2250306207 * ___a_rLadderCollider0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderTester_OnLadderColliderEnter_m2881410080_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Object_Ladder_t2797598778 * V_0 = NULL;
+	{
+		Object_Ladder_Collider_t2250306207 * L_0 = ___a_rLadderCollider0;
+		NullCheck(L_0);
+		Object_Ladder_t2797598778 * L_1 = L_0->get_ladder_2();
+		V_0 = L_1;
+		List_1_t2166719910 * L_2 = __this->get_m_oLadders_2();
+		Object_Ladder_t2797598778 * L_3 = V_0;
+		NullCheck(L_2);
+		bool L_4 = List_1_Contains_m3876564663(L_2, L_3, /*hidden argument*/List_1_Contains_m3876564663_MethodInfo_var);
+		if (L_4)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		List_1_t2166719910 * L_5 = __this->get_m_oLadders_2();
+		Object_Ladder_t2797598778 * L_6 = V_0;
+		NullCheck(L_5);
+		List_1_Add_m3999382477(L_5, L_6, /*hidden argument*/List_1_Add_m3999382477_MethodInfo_var);
+	}
+
+IL_0024:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderTester::OnLadderColliderExit(UniArt.PixelScifiLandscape.Sample.Object_Ladder_Collider)
+extern const MethodInfo* List_1_Remove_m2058975800_MethodInfo_var;
+extern const uint32_t Character_LadderTester_OnLadderColliderExit_m2624579026_MetadataUsageId;
+extern "C"  void Character_LadderTester_OnLadderColliderExit_m2624579026 (Character_LadderTester_t2692161659 * __this, Object_Ladder_Collider_t2250306207 * ___a_rLadderCollider0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderTester_OnLadderColliderExit_m2624579026_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Object_Ladder_t2797598778 * V_0 = NULL;
+	{
+		Object_Ladder_Collider_t2250306207 * L_0 = ___a_rLadderCollider0;
+		NullCheck(L_0);
+		Object_Ladder_t2797598778 * L_1 = L_0->get_ladder_2();
+		V_0 = L_1;
+		List_1_t2166719910 * L_2 = __this->get_m_oLadders_2();
+		Object_Ladder_t2797598778 * L_3 = V_0;
+		NullCheck(L_2);
+		List_1_Remove_m2058975800(L_2, L_3, /*hidden argument*/List_1_Remove_m2058975800_MethodInfo_var);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderTesterListener::.ctor()
+extern "C"  void Character_LadderTesterListener__ctor_m3562767316 (Character_LadderTesterListener_t4009816349 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderTesterListener::OnTriggerEnter2D(UnityEngine.Collider2D)
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisObject_Ladder_Collider_t2250306207_m778367548_MethodInfo_var;
+extern const uint32_t Character_LadderTesterListener_OnTriggerEnter2D_m39560644_MetadataUsageId;
+extern "C"  void Character_LadderTesterListener_OnTriggerEnter2D_m39560644 (Character_LadderTesterListener_t4009816349 * __this, Collider2D_t646061738 * ___a_rCollider0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderTesterListener_OnTriggerEnter2D_m39560644_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Object_Ladder_Collider_t2250306207 * V_0 = NULL;
+	{
+		Collider2D_t646061738 * L_0 = ___a_rCollider0;
+		NullCheck(L_0);
+		Object_Ladder_Collider_t2250306207 * L_1 = Component_GetComponent_TisObject_Ladder_Collider_t2250306207_m778367548(L_0, /*hidden argument*/Component_GetComponent_TisObject_Ladder_Collider_t2250306207_m778367548_MethodInfo_var);
+		V_0 = L_1;
+		Object_Ladder_Collider_t2250306207 * L_2 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_3 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_2, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		Character_LadderTester_t2692161659 * L_4 = __this->get_ladderTester_2();
+		Object_Ladder_Collider_t2250306207 * L_5 = V_0;
+		NullCheck(L_4);
+		Character_LadderTester_OnLadderColliderEnter_m2881410080(L_4, L_5, /*hidden argument*/NULL);
+	}
+
+IL_001f:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LadderTesterListener::OnTriggerExit2D(UnityEngine.Collider2D)
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisObject_Ladder_Collider_t2250306207_m778367548_MethodInfo_var;
+extern const uint32_t Character_LadderTesterListener_OnTriggerExit2D_m1876489086_MetadataUsageId;
+extern "C"  void Character_LadderTesterListener_OnTriggerExit2D_m1876489086 (Character_LadderTesterListener_t4009816349 * __this, Collider2D_t646061738 * ___a_rCollider0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LadderTesterListener_OnTriggerExit2D_m1876489086_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Object_Ladder_Collider_t2250306207 * V_0 = NULL;
+	{
+		Collider2D_t646061738 * L_0 = ___a_rCollider0;
+		NullCheck(L_0);
+		Object_Ladder_Collider_t2250306207 * L_1 = Component_GetComponent_TisObject_Ladder_Collider_t2250306207_m778367548(L_0, /*hidden argument*/Component_GetComponent_TisObject_Ladder_Collider_t2250306207_m778367548_MethodInfo_var);
+		V_0 = L_1;
+		Object_Ladder_Collider_t2250306207 * L_2 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_3 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_2, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		Character_LadderTester_t2692161659 * L_4 = __this->get_ladderTester_2();
+		Object_Ladder_Collider_t2250306207 * L_5 = V_0;
+		NullCheck(L_4);
+		Character_LadderTester_OnLadderColliderExit_m2624579026(L_4, L_5, /*hidden argument*/NULL);
+	}
+
+IL_001f:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LookController::.ctor()
+extern "C"  void Character_LookController__ctor_m1108820232 (Character_LookController_t3242335943 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_smoothTime_3((0.5f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Single UniArt.PixelScifiLandscape.Sample.Character_LookController::get_LookOffset()
+extern "C"  float Character_LookController_get_LookOffset_m3417111079 (Character_LookController_t3242335943 * __this, const MethodInfo* method)
+{
+	{
+		float L_0 = __this->get_m_fLookOffset_6();
+		return L_0;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LookController::set_LookOffset(System.Single)
+extern "C"  void Character_LookController_set_LookOffset_m2858717080 (Character_LookController_t3242335943 * __this, float ___value0, const MethodInfo* method)
+{
+	{
+		float L_0 = ___value0;
+		__this->set_m_fLookOffset_6(L_0);
+		return;
+	}
+}
+// System.Single UniArt.PixelScifiLandscape.Sample.Character_LookController::get_CameraTargetHeight()
+extern "C"  float Character_LookController_get_CameraTargetHeight_m1666062236 (Character_LookController_t3242335943 * __this, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Transform_t3275118058 * L_0 = __this->get_cameraTarget_2();
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_localPosition_m2533925116(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		float L_2 = (&V_0)->get_y_2();
+		return L_2;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LookController::set_CameraTargetHeight(System.Single)
+extern "C"  void Character_LookController_set_CameraTargetHeight_m651413605 (Character_LookController_t3242335943 * __this, float ___value0, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Transform_t3275118058 * L_0 = __this->get_cameraTarget_2();
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_localPosition_m2533925116(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		float L_2 = ___value0;
+		(&V_0)->set_y_2(L_2);
+		Transform_t3275118058 * L_3 = __this->get_cameraTarget_2();
+		Vector3_t2243707580  L_4 = V_0;
+		NullCheck(L_3);
+		Transform_set_localPosition_m1026930133(L_3, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LookController::Awake()
+extern "C"  void Character_LookController_Awake_m2992140371 (Character_LookController_t3242335943 * __this, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Transform_t3275118058 * L_0 = __this->get_cameraTarget_2();
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_localPosition_m2533925116(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		float L_2 = (&V_0)->get_z_3();
+		__this->set_m_fCameraTargetInitialLocalHeight_5(L_2);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LookController::Update()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t Character_LookController_Update_m3899532983_MetadataUsageId;
+extern "C"  void Character_LookController_Update_m3899532983 (Character_LookController_t3242335943 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LookController_Update_m3899532983_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = Character_LookController_get_CameraTargetHeight_m1666062236(__this, /*hidden argument*/NULL);
+		float L_1 = __this->get_m_fLookOffset_6();
+		float L_2 = __this->get_m_fCameraTargetInitialLocalHeight_5();
+		float* L_3 = __this->get_address_of_m_fLookVelocity_4();
+		float L_4 = __this->get_smoothTime_3();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_5 = Mathf_SmoothDamp_m1166236953(NULL /*static, unused*/, L_0, ((float)((float)L_1+(float)L_2)), L_3, L_4, /*hidden argument*/NULL);
+		Character_LookController_set_CameraTargetHeight_m651413605(__this, L_5, /*hidden argument*/NULL);
+		__this->set_m_fLookOffset_6((0.0f));
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LookUpController::.ctor()
+extern Il2CppCodeGenString* _stringLiteral3349409628;
+extern const uint32_t Character_LookUpController__ctor_m2064683403_MetadataUsageId;
+extern "C"  void Character_LookUpController__ctor_m2064683403 (Character_LookUpController_t1896595172 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_LookUpController__ctor_m2064683403_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		__this->set_lookUpAnimationStateName_5(_stringLiteral3349409628);
+		__this->set_lookUpOffset_6((0.5f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LookUpController::Update()
+extern "C"  void Character_LookUpController_Update_m1901370194 (Character_LookUpController_t1896595172 * __this, const MethodInfo* method)
+{
+	Character_LookUpController_t1896595172 * G_B3_0 = NULL;
+	Character_LookUpController_t1896595172 * G_B1_0 = NULL;
+	Character_LookUpController_t1896595172 * G_B2_0 = NULL;
+	int32_t G_B4_0 = 0;
+	Character_LookUpController_t1896595172 * G_B4_1 = NULL;
+	{
+		Character_Input_t2061814878 * L_0 = __this->get_characterInput_2();
+		NullCheck(L_0);
+		float L_1 = Character_Input_get_Vertical_m3464180068(L_0, /*hidden argument*/NULL);
+		G_B1_0 = __this;
+		if ((!(((float)L_1) > ((float)(0.0f)))))
+		{
+			G_B3_0 = __this;
+			goto IL_0038;
+		}
+	}
+	{
+		Character_Input_t2061814878 * L_2 = __this->get_characterInput_2();
+		NullCheck(L_2);
+		float L_3 = Character_Input_get_Horizontal_m1468178506(L_2, /*hidden argument*/NULL);
+		G_B2_0 = G_B1_0;
+		if ((!(((float)L_3) == ((float)(0.0f)))))
+		{
+			G_B3_0 = G_B1_0;
+			goto IL_0038;
+		}
+	}
+	{
+		Character_GroundedTester_t1329240161 * L_4 = __this->get_groundedTester_3();
+		NullCheck(L_4);
+		bool L_5 = Character_GroundedTester_get_IsGrounded_m2268760287(L_4, /*hidden argument*/NULL);
+		G_B4_0 = ((int32_t)(L_5));
+		G_B4_1 = G_B2_0;
+		goto IL_0039;
+	}
+
+IL_0038:
+	{
+		G_B4_0 = 0;
+		G_B4_1 = G_B3_0;
+	}
+
+IL_0039:
+	{
+		NullCheck(G_B4_1);
+		G_B4_1->set_m_bLookingUp_8((bool)G_B4_0);
+		bool L_6 = __this->get_m_bLookingUp_8();
+		if (!L_6)
+		{
+			goto IL_005a;
+		}
+	}
+	{
+		Character_LookController_t3242335943 * L_7 = __this->get_lookController_7();
+		float L_8 = __this->get_lookUpOffset_6();
+		NullCheck(L_7);
+		Character_LookController_set_LookOffset_m2858717080(L_7, L_8, /*hidden argument*/NULL);
+	}
+
+IL_005a:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_LookUpController::LateUpdate()
+extern "C"  void Character_LookUpController_LateUpdate_m2196289054 (Character_LookUpController_t1896595172 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get_m_bLookingUp_8();
+		if (!L_0)
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		Character_AnimationController_t2390840408 * L_1 = __this->get_animationController_4();
+		NullCheck(L_1);
+		Character_AnimationController_OverrideThisFrame_m3258029326(L_1, /*hidden argument*/NULL);
+		Character_AnimationController_t2390840408 * L_2 = __this->get_animationController_4();
+		NullCheck(L_2);
+		Animator_t69676727 * L_3 = L_2->get_animator_2();
+		NullCheck(L_3);
+		Animator_set_speed_m3511108817(L_3, (1.0f), /*hidden argument*/NULL);
+		Character_AnimationController_t2390840408 * L_4 = __this->get_animationController_4();
+		NullCheck(L_4);
+		Animator_t69676727 * L_5 = L_4->get_animator_2();
+		String_t* L_6 = __this->get_lookUpAnimationStateName_5();
+		NullCheck(L_5);
+		Animator_Play_m1123842248(L_5, L_6, /*hidden argument*/NULL);
+	}
+
+IL_0041:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::.ctor()
+extern "C"  void Character_MovementController__ctor_m3360419342 (Character_MovementController_t180692203 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_moveForce_6((40.0f));
+		__this->set_moveSpeedMax_Walk_7((0.05f));
+		__this->set_moveSpeedMax_Run_8((0.05f));
+		__this->set_moveSpeedMax_Fall_9((1.0f));
+		__this->set_moveSpeedMax_FallRun_10((2.0f));
+		__this->set_moveSpeedMax_Slide_11((0.05f));
+		__this->set_groundDamping_12((20.0f));
+		__this->set_groundSlideDamping_13((20.0f));
+		__this->set_minSlideVelocity_14((0.1f));
+		__this->set_airDamping_15((20.0f));
+		__this->set_jump_16((2.0f));
+		__this->set_earlyJumpToleranceDuration_17((0.2f));
+		__this->set_lateJumpToleranceDuration_18((0.2f));
+		__this->set_jumpGravityScale_19((0.42f));
+		__this->set_runGravityScale_20((0.9f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// UnityEngine.Vector2 UniArt.PixelScifiLandscape.Sample.Character_MovementController::get_Velocity()
+extern "C"  Vector2_t2243707579  Character_MovementController_get_Velocity_m3500833027 (Character_MovementController_t180692203 * __this, const MethodInfo* method)
+{
+	{
+		Rigidbody2D_t502193897 * L_0 = __this->get_rigidbodyComponent_3();
+		NullCheck(L_0);
+		Vector2_t2243707579  L_1 = Rigidbody2D_get_velocity_m3310151195(L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::set_Velocity(UnityEngine.Vector2)
+extern "C"  void Character_MovementController_set_Velocity_m451649286 (Character_MovementController_t180692203 * __this, Vector2_t2243707579  ___value0, const MethodInfo* method)
+{
+	{
+		Rigidbody2D_t502193897 * L_0 = __this->get_rigidbodyComponent_3();
+		Vector2_t2243707579  L_1 = ___value0;
+		NullCheck(L_0);
+		Rigidbody2D_set_velocity_m3592751374(L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// UnityEngine.Vector2 UniArt.PixelScifiLandscape.Sample.Character_MovementController::get_Position()
+extern "C"  Vector2_t2243707579  Character_MovementController_get_Position_m299822549 (Character_MovementController_t180692203 * __this, const MethodInfo* method)
+{
+	{
+		Rigidbody2D_t502193897 * L_0 = __this->get_rigidbodyComponent_3();
+		NullCheck(L_0);
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(L_0, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Vector3_t2243707580  L_2 = Transform_get_position_m1104419803(L_1, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_3 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::set_Position(UnityEngine.Vector2)
+extern "C"  void Character_MovementController_set_Position_m2713510114 (Character_MovementController_t180692203 * __this, Vector2_t2243707579  ___value0, const MethodInfo* method)
+{
+	{
+		Rigidbody2D_t502193897 * L_0 = __this->get_rigidbodyComponent_3();
+		NullCheck(L_0);
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(L_0, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_2 = ___value0;
+		Vector3_t2243707580  L_3 = Vector2_op_Implicit_m176791411(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Transform_set_position_m2469242620(L_1, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::DisableMovement()
+extern "C"  void Character_MovementController_DisableMovement_m4067113565 (Character_MovementController_t180692203 * __this, const MethodInfo* method)
+{
+	{
+		Behaviour_set_enabled_m1796096907(__this, (bool)0, /*hidden argument*/NULL);
+		Rigidbody2D_t502193897 * L_0 = __this->get_rigidbodyComponent_3();
+		NullCheck(L_0);
+		Rigidbody2D_set_isKinematic_m548319077(L_0, (bool)1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::EnableMovement()
+extern "C"  void Character_MovementController_EnableMovement_m135093354 (Character_MovementController_t180692203 * __this, const MethodInfo* method)
+{
+	{
+		Behaviour_set_enabled_m1796096907(__this, (bool)1, /*hidden argument*/NULL);
+		Rigidbody2D_t502193897 * L_0 = __this->get_rigidbodyComponent_3();
+		NullCheck(L_0);
+		Rigidbody2D_set_isKinematic_m548319077(L_0, (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::CanJump(System.Single)
+extern "C"  void Character_MovementController_CanJump_m3156270193 (Character_MovementController_t180692203 * __this, float ___a_fDuration0, const MethodInfo* method)
+{
+	{
+		float L_0 = ___a_fDuration0;
+		__this->set_m_fCanJumpTimeRemaining_22(L_0);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::Jump()
+extern "C"  void Character_MovementController_Jump_m2763054096 (Character_MovementController_t180692203 * __this, const MethodInfo* method)
+{
+	Vector2_t2243707579  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		__this->set_m_fWillJumpTimeRemaining_21((0.0f));
+		__this->set_m_fCanJumpTimeRemaining_22((0.0f));
+		Rigidbody2D_t502193897 * L_0 = __this->get_rigidbodyComponent_3();
+		NullCheck(L_0);
+		Vector2_t2243707579  L_1 = Rigidbody2D_get_velocity_m3310151195(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		float L_2 = __this->get_jump_16();
+		(&V_0)->set_y_1(L_2);
+		Rigidbody2D_t502193897 * L_3 = __this->get_rigidbodyComponent_3();
+		Vector2_t2243707579  L_4 = V_0;
+		NullCheck(L_3);
+		Rigidbody2D_set_velocity_m3592751374(L_3, L_4, /*hidden argument*/NULL);
+		Action_t3226471752 * L_5 = __this->get_onJump_2();
+		if (!L_5)
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		Action_t3226471752 * L_6 = __this->get_onJump_2();
+		NullCheck(L_6);
+		Action_Invoke_m3801112262(L_6, /*hidden argument*/NULL);
+	}
+
+IL_0051:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::Awake()
+extern "C"  void Character_MovementController_Awake_m1472212427 (Character_MovementController_t180692203 * __this, const MethodInfo* method)
+{
+	{
+		Rigidbody2D_t502193897 * L_0 = __this->get_rigidbodyComponent_3();
+		NullCheck(L_0);
+		float L_1 = Rigidbody2D_get_gravityScale_m3363788087(L_0, /*hidden argument*/NULL);
+		__this->set_m_fInitialGravityScale_24(L_1);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::FixedUpdate()
+extern "C"  void Character_MovementController_FixedUpdate_m4200060033 (Character_MovementController_t180692203 * __this, const MethodInfo* method)
+{
+	{
+		Character_MovementController_ProcessHorizontalMovement_m3280717410(__this, /*hidden argument*/NULL);
+		Character_MovementController_ProcessJump_m1376285327(__this, /*hidden argument*/NULL);
+		Character_MovementController_ProcessGravityModification_m3327099329(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::ProcessHorizontalMovement()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t Character_MovementController_ProcessHorizontalMovement_m3280717410_MetadataUsageId;
+extern "C"  void Character_MovementController_ProcessHorizontalMovement_m3280717410 (Character_MovementController_t180692203 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Character_MovementController_ProcessHorizontalMovement_m3280717410_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	Vector2_t2243707579  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	float V_3 = 0.0f;
+	float V_4 = 0.0f;
+	int32_t G_B3_0 = 0;
+	{
+		Character_Input_t2061814878 * L_0 = __this->get_characterInput_4();
+		NullCheck(L_0);
+		float L_1 = Character_Input_get_Vertical_m3464180068(L_0, /*hidden argument*/NULL);
+		if ((!(((float)L_1) < ((float)(0.0f)))))
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		Character_GroundedTester_t1329240161 * L_2 = __this->get_groundedTester_5();
+		NullCheck(L_2);
+		bool L_3 = Character_GroundedTester_get_IsGrounded_m2268760287(L_2, /*hidden argument*/NULL);
+		G_B3_0 = ((int32_t)(L_3));
+		goto IL_0023;
+	}
+
+IL_0022:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0023:
+	{
+		V_0 = (bool)G_B3_0;
+		Character_Input_t2061814878 * L_4 = __this->get_characterInput_4();
+		NullCheck(L_4);
+		float L_5 = Character_Input_get_Horizontal_m1468178506(L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		Rigidbody2D_t502193897 * L_6 = __this->get_rigidbodyComponent_3();
+		NullCheck(L_6);
+		Vector2_t2243707579  L_7 = Rigidbody2D_get_velocity_m3310151195(L_6, /*hidden argument*/NULL);
+		V_2 = L_7;
+		bool L_8 = V_0;
+		if (L_8)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		Vector2_t2243707579 * L_9 = (&V_2);
+		float L_10 = L_9->get_x_0();
+		float L_11 = __this->get_moveForce_6();
+		float L_12 = V_1;
+		float L_13 = Time_get_fixedDeltaTime_m2734072926(NULL /*static, unused*/, /*hidden argument*/NULL);
+		L_9->set_x_0(((float)((float)L_10+(float)((float)((float)((float)((float)L_11*(float)L_12))*(float)L_13)))));
+	}
+
+IL_005e:
+	{
+		__this->set_m_bStill_23((bool)0);
+		Character_GroundedTester_t1329240161 * L_14 = __this->get_groundedTester_5();
+		NullCheck(L_14);
+		bool L_15 = Character_GroundedTester_get_IsGrounded_m2268760287(L_14, /*hidden argument*/NULL);
+		if (!L_15)
+		{
+			goto IL_00ce;
+		}
+	}
+	{
+		float L_16 = V_1;
+		if ((!(((float)L_16) == ((float)(0.0f)))))
+		{
+			goto IL_0098;
+		}
+	}
+	{
+		bool L_17 = V_0;
+		if (L_17)
+		{
+			goto IL_0098;
+		}
+	}
+	{
+		__this->set_m_bStill_23((bool)1);
+		Vector2_t2243707579  L_18 = Vector2_get_zero_m3966848876(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_2 = L_18;
+		goto IL_00c9;
+	}
+
+IL_0098:
+	{
+		float L_19 = __this->get_groundDamping_12();
+		V_3 = L_19;
+		bool L_20 = V_0;
+		if (!L_20)
+		{
+			goto IL_00ac;
+		}
+	}
+	{
+		float L_21 = __this->get_groundSlideDamping_13();
+		V_3 = L_21;
+	}
+
+IL_00ac:
+	{
+		Vector2_t2243707579 * L_22 = (&V_2);
+		float L_23 = L_22->get_x_0();
+		float L_24 = V_3;
+		float L_25 = (&V_2)->get_x_0();
+		float L_26 = Time_get_fixedDeltaTime_m2734072926(NULL /*static, unused*/, /*hidden argument*/NULL);
+		L_22->set_x_0(((float)((float)L_23-(float)((float)((float)((float)((float)L_24*(float)L_25))*(float)L_26)))));
+	}
+
+IL_00c9:
+	{
+		goto IL_00f0;
+	}
+
+IL_00ce:
+	{
+		Vector2_t2243707579 * L_27 = (&V_2);
+		float L_28 = L_27->get_x_0();
+		float L_29 = __this->get_airDamping_15();
+		float L_30 = (&V_2)->get_x_0();
+		float L_31 = Time_get_fixedDeltaTime_m2734072926(NULL /*static, unused*/, /*hidden argument*/NULL);
+		L_27->set_x_0(((float)((float)L_28-(float)((float)((float)((float)((float)L_29*(float)L_30))*(float)L_31)))));
+	}
+
+IL_00f0:
+	{
+		bool L_32 = V_0;
+		if (!L_32)
+		{
+			goto IL_0103;
+		}
+	}
+	{
+		float L_33 = __this->get_moveSpeedMax_Slide_11();
+		V_4 = L_33;
+		goto IL_0162;
+	}
+
+IL_0103:
+	{
+		Character_GroundedTester_t1329240161 * L_34 = __this->get_groundedTester_5();
+		NullCheck(L_34);
+		bool L_35 = Character_GroundedTester_get_IsGrounded_m2268760287(L_34, /*hidden argument*/NULL);
+		if (!L_35)
+		{
+			goto IL_013d;
+		}
+	}
+	{
+		Character_Input_t2061814878 * L_36 = __this->get_characterInput_4();
+		NullCheck(L_36);
+		bool L_37 = Character_Input_get_Run_m3600994827(L_36, /*hidden argument*/NULL);
+		if (!L_37)
+		{
+			goto IL_0130;
+		}
+	}
+	{
+		float L_38 = __this->get_moveSpeedMax_Run_8();
+		V_4 = L_38;
+		goto IL_0138;
+	}
+
+IL_0130:
+	{
+		float L_39 = __this->get_moveSpeedMax_Walk_7();
+		V_4 = L_39;
+	}
+
+IL_0138:
+	{
+		goto IL_0162;
+	}
+
+IL_013d:
+	{
+		Character_Input_t2061814878 * L_40 = __this->get_characterInput_4();
+		NullCheck(L_40);
+		bool L_41 = Character_Input_get_Run_m3600994827(L_40, /*hidden argument*/NULL);
+		if (!L_41)
+		{
+			goto IL_015a;
+		}
+	}
+	{
+		float L_42 = __this->get_moveSpeedMax_FallRun_10();
+		V_4 = L_42;
+		goto IL_0162;
+	}
+
+IL_015a:
+	{
+		float L_43 = __this->get_moveSpeedMax_Fall_9();
+		V_4 = L_43;
+	}
+
+IL_0162:
+	{
+		float L_44 = (&V_2)->get_x_0();
+		float L_45 = V_4;
+		float L_46 = V_4;
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_47 = Mathf_Clamp_m2354025655(NULL /*static, unused*/, L_44, ((-L_45)), L_46, /*hidden argument*/NULL);
+		(&V_2)->set_x_0(L_47);
+		bool L_48 = V_0;
+		if (!L_48)
+		{
+			goto IL_01a3;
+		}
+	}
+	{
+		float L_49 = (&V_2)->get_x_0();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_50 = fabsf(L_49);
+		float L_51 = __this->get_minSlideVelocity_14();
+		if ((!(((float)L_50) < ((float)L_51))))
+		{
+			goto IL_01a3;
+		}
+	}
+	{
+		(&V_2)->set_x_0((0.0f));
+	}
+
+IL_01a3:
+	{
+		Rigidbody2D_t502193897 * L_52 = __this->get_rigidbodyComponent_3();
+		Vector2_t2243707579  L_53 = V_2;
+		NullCheck(L_52);
+		Rigidbody2D_set_velocity_m3592751374(L_52, L_53, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::ProcessJump()
+extern "C"  void Character_MovementController_ProcessJump_m1376285327 (Character_MovementController_t180692203 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		Character_Input_t2061814878 * L_0 = __this->get_characterInput_4();
+		NullCheck(L_0);
+		bool L_1 = Character_Input_get_Jump_m1939620422(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		Character_GroundedTester_t1329240161 * L_3 = __this->get_groundedTester_5();
+		NullCheck(L_3);
+		bool L_4 = Character_GroundedTester_get_IsGrounded_m2268760287(L_3, /*hidden argument*/NULL);
+		if (L_4)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		float L_5 = __this->get_earlyJumpToleranceDuration_17();
+		__this->set_m_fWillJumpTimeRemaining_21(L_5);
+		goto IL_0055;
+	}
+
+IL_0033:
+	{
+		float L_6 = __this->get_m_fWillJumpTimeRemaining_21();
+		if ((!(((float)L_6) > ((float)(0.0f)))))
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		float L_7 = __this->get_m_fWillJumpTimeRemaining_21();
+		float L_8 = Time_get_fixedDeltaTime_m2734072926(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_fWillJumpTimeRemaining_21(((float)((float)L_7-(float)L_8)));
+	}
+
+IL_0055:
+	{
+		Character_GroundedTester_t1329240161 * L_9 = __this->get_groundedTester_5();
+		NullCheck(L_9);
+		bool L_10 = Character_GroundedTester_get_IsGrounded_m2268760287(L_9, /*hidden argument*/NULL);
+		if (!L_10)
+		{
+			goto IL_0071;
+		}
+	}
+	{
+		float L_11 = __this->get_lateJumpToleranceDuration_18();
+		__this->set_m_fCanJumpTimeRemaining_22(L_11);
+	}
+
+IL_0071:
+	{
+		Character_GroundedTester_t1329240161 * L_12 = __this->get_groundedTester_5();
+		NullCheck(L_12);
+		bool L_13 = Character_GroundedTester_get_IsGrounded_m2268760287(L_12, /*hidden argument*/NULL);
+		if (L_13)
+		{
+			goto IL_0091;
+		}
+	}
+	{
+		float L_14 = __this->get_m_fCanJumpTimeRemaining_22();
+		if ((!(((float)L_14) > ((float)(0.0f)))))
+		{
+			goto IL_00ad;
+		}
+	}
+
+IL_0091:
+	{
+		bool L_15 = V_0;
+		if (L_15)
+		{
+			goto IL_00a7;
+		}
+	}
+	{
+		float L_16 = __this->get_m_fWillJumpTimeRemaining_21();
+		if ((!(((float)L_16) > ((float)(0.0f)))))
+		{
+			goto IL_00ad;
+		}
+	}
+
+IL_00a7:
+	{
+		Character_MovementController_Jump_m2763054096(__this, /*hidden argument*/NULL);
+	}
+
+IL_00ad:
+	{
+		float L_17 = __this->get_m_fCanJumpTimeRemaining_22();
+		if ((!(((float)L_17) > ((float)(0.0f)))))
+		{
+			goto IL_00cf;
+		}
+	}
+	{
+		float L_18 = __this->get_m_fCanJumpTimeRemaining_22();
+		float L_19 = Time_get_fixedDeltaTime_m2734072926(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_fCanJumpTimeRemaining_22(((float)((float)L_18-(float)L_19)));
+	}
+
+IL_00cf:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Character_MovementController::ProcessGravityModification()
+extern "C"  void Character_MovementController_ProcessGravityModification_m3327099329 (Character_MovementController_t180692203 * __this, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	Vector2_t2243707579  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		float L_0 = __this->get_m_fInitialGravityScale_24();
+		V_0 = L_0;
+		bool L_1 = __this->get_m_bStill_23();
+		if (!L_1)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		V_0 = (0.0f);
+		goto IL_006c;
+	}
+
+IL_001d:
+	{
+		Character_Input_t2061814878 * L_2 = __this->get_characterInput_4();
+		NullCheck(L_2);
+		bool L_3 = Character_Input_get_JumpHeld_m2859508413(L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		Rigidbody2D_t502193897 * L_4 = __this->get_rigidbodyComponent_3();
+		NullCheck(L_4);
+		Vector2_t2243707579  L_5 = Rigidbody2D_get_velocity_m3310151195(L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		float L_6 = (&V_1)->get_y_1();
+		if ((!(((float)L_6) > ((float)(0.0f)))))
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		float L_7 = V_0;
+		float L_8 = __this->get_jumpGravityScale_19();
+		V_0 = ((float)((float)L_7*(float)L_8));
+	}
+
+IL_0053:
+	{
+		Character_Input_t2061814878 * L_9 = __this->get_characterInput_4();
+		NullCheck(L_9);
+		bool L_10 = Character_Input_get_Run_m3600994827(L_9, /*hidden argument*/NULL);
+		if (!L_10)
+		{
+			goto IL_006c;
+		}
+	}
+	{
+		float L_11 = V_0;
+		float L_12 = __this->get_runGravityScale_20();
+		V_0 = ((float)((float)L_11*(float)L_12));
+	}
+
+IL_006c:
+	{
+		Rigidbody2D_t502193897 * L_13 = __this->get_rigidbodyComponent_3();
+		float L_14 = V_0;
+		NullCheck(L_13);
+		Rigidbody2D_set_gravityScale_m1426625078(L_13, L_14, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Object_Ladder::.ctor()
+extern "C"  void Object_Ladder__ctor_m3222156779 (Object_Ladder_t2797598778 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// UnityEngine.Vector2 UniArt.PixelScifiLandscape.Sample.Object_Ladder::get_LadderUpDirection()
+extern "C"  Vector2_t2243707579  Object_Ladder_get_LadderUpDirection_m1852159371 (Object_Ladder_t2797598778 * __this, const MethodInfo* method)
+{
+	{
+		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_up_m1603627763(L_0, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_2 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Single UniArt.PixelScifiLandscape.Sample.Object_Ladder::DistanceToLadder(UnityEngine.Vector2)
+extern "C"  float Object_Ladder_DistanceToLadder_m3142284483 (Object_Ladder_t2797598778 * __this, Vector2_t2243707579  ___a_f2Position0, const MethodInfo* method)
+{
+	Vector2_t2243707579  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	{
+		Vector2_t2243707579  L_0 = ___a_f2Position0;
+		Vector2_t2243707579  L_1 = Object_Ladder_ProjectOnLadder_m3047806546(__this, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Vector2_t2243707579  L_2 = V_0;
+		Vector2_t2243707579  L_3 = ___a_f2Position0;
+		float L_4 = Vector2_Distance_m280750759(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		V_1 = L_4;
+		float L_5 = V_1;
+		return L_5;
+	}
+}
+// UnityEngine.Vector2 UniArt.PixelScifiLandscape.Sample.Object_Ladder::SnapOnLadder(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)
+extern "C"  Vector2_t2243707579  Object_Ladder_SnapOnLadder_m4207231875 (Object_Ladder_t2797598778 * __this, Vector2_t2243707579  ___a_f2Position0, Vector2_t2243707579  ___a_f2SnapTop1, Vector2_t2243707579  ___a_f2SnapBottom2, const MethodInfo* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		Vector2_t2243707579  L_0 = ___a_f2Position0;
+		Vector2_t2243707579  L_1 = ___a_f2SnapTop1;
+		Vector2_t2243707579  L_2 = ___a_f2SnapBottom2;
+		Vector2_t2243707579  L_3 = Object_Ladder_SnapOnLadder_m3417031363(__this, L_0, L_1, L_2, (&V_0), (&V_1), /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// UnityEngine.Vector2 UniArt.PixelScifiLandscape.Sample.Object_Ladder::SnapOnLadder(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,System.Boolean&,System.Boolean&)
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t Object_Ladder_SnapOnLadder_m3417031363_MetadataUsageId;
+extern "C"  Vector2_t2243707579  Object_Ladder_SnapOnLadder_m3417031363 (Object_Ladder_t2797598778 * __this, Vector2_t2243707579  ___a_f2Position0, Vector2_t2243707579  ___a_f2SnapTop1, Vector2_t2243707579  ___a_f2SnapBottom2, bool* ___a_bReachTheTop3, bool* ___a_bReachTheBottom4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Object_Ladder_SnapOnLadder_m3417031363_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector2_t2243707579  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector2_t2243707579  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vector2_t2243707579  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector2_t2243707579  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Vector2_t2243707579  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	float V_5 = 0.0f;
+	float V_6 = 0.0f;
+	float V_7 = 0.0f;
+	float V_8 = 0.0f;
+	float V_9 = 0.0f;
+	float V_10 = 0.0f;
+	{
+		Vector2_t2243707579  L_0 = ___a_f2Position0;
+		Vector2_t2243707579  L_1 = Object_Ladder_ProjectOnLadder_m3047806546(__this, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Transform_t3275118058 * L_2 = __this->get_ladderTop_2();
+		NullCheck(L_2);
+		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_4 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_5 = Object_Ladder_ProjectOnLadder_m3047806546(__this, L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		Transform_t3275118058 * L_6 = __this->get_ladderBottom_3();
+		NullCheck(L_6);
+		Vector3_t2243707580  L_7 = Transform_get_position_m1104419803(L_6, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_8 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_9 = Object_Ladder_ProjectOnLadder_m3047806546(__this, L_8, /*hidden argument*/NULL);
+		V_2 = L_9;
+		Vector2_t2243707579  L_10 = ___a_f2SnapTop1;
+		Vector2_t2243707579  L_11 = Object_Ladder_ProjectOnLadder_m3047806546(__this, L_10, /*hidden argument*/NULL);
+		V_3 = L_11;
+		Vector2_t2243707579  L_12 = ___a_f2SnapBottom2;
+		Vector2_t2243707579  L_13 = Object_Ladder_ProjectOnLadder_m3047806546(__this, L_12, /*hidden argument*/NULL);
+		V_4 = L_13;
+		float L_14 = (&V_3)->get_y_1();
+		float L_15 = (&V_4)->get_y_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_16 = Mathf_Min_m1648492575(NULL /*static, unused*/, L_14, L_15, /*hidden argument*/NULL);
+		V_5 = L_16;
+		float L_17 = (&V_3)->get_y_1();
+		float L_18 = (&V_4)->get_y_1();
+		float L_19 = Mathf_Max_m2564622569(NULL /*static, unused*/, L_17, L_18, /*hidden argument*/NULL);
+		V_6 = L_19;
+		float L_20 = (&V_1)->get_y_1();
+		float L_21 = (&V_2)->get_y_1();
+		float L_22 = Mathf_Min_m1648492575(NULL /*static, unused*/, L_20, L_21, /*hidden argument*/NULL);
+		V_7 = L_22;
+		float L_23 = (&V_1)->get_y_1();
+		float L_24 = (&V_2)->get_y_1();
+		float L_25 = Mathf_Max_m2564622569(NULL /*static, unused*/, L_23, L_24, /*hidden argument*/NULL);
+		V_8 = L_25;
+		float L_26 = V_8;
+		float L_27 = V_6;
+		float L_28 = (&V_0)->get_y_1();
+		V_9 = ((float)((float)L_26-(float)((float)((float)L_27-(float)L_28))));
+		float L_29 = V_7;
+		float L_30 = (&V_0)->get_y_1();
+		float L_31 = V_5;
+		V_10 = ((float)((float)L_29-(float)((float)((float)L_30-(float)L_31))));
+		float L_32 = (&V_0)->get_y_1();
+		float L_33 = V_9;
+		if ((!(((float)L_32) >= ((float)L_33))))
+		{
+			goto IL_00d0;
+		}
+	}
+	{
+		bool* L_34 = ___a_bReachTheTop3;
+		*((int8_t*)(L_34)) = (int8_t)1;
+		goto IL_00d4;
+	}
+
+IL_00d0:
+	{
+		bool* L_35 = ___a_bReachTheTop3;
+		*((int8_t*)(L_35)) = (int8_t)0;
+	}
+
+IL_00d4:
+	{
+		float L_36 = (&V_0)->get_y_1();
+		float L_37 = V_10;
+		if ((!(((float)L_36) <= ((float)L_37))))
+		{
+			goto IL_00eb;
+		}
+	}
+	{
+		bool* L_38 = ___a_bReachTheBottom4;
+		*((int8_t*)(L_38)) = (int8_t)1;
+		goto IL_00ef;
+	}
+
+IL_00eb:
+	{
+		bool* L_39 = ___a_bReachTheBottom4;
+		*((int8_t*)(L_39)) = (int8_t)0;
+	}
+
+IL_00ef:
+	{
+		float L_40 = (&V_0)->get_y_1();
+		float L_41 = V_10;
+		float L_42 = V_9;
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_43 = Mathf_Clamp_m2354025655(NULL /*static, unused*/, L_40, L_41, L_42, /*hidden argument*/NULL);
+		(&V_0)->set_y_1(L_43);
+		Vector2_t2243707579  L_44 = V_0;
+		return L_44;
+	}
+}
+// UnityEngine.Vector2 UniArt.PixelScifiLandscape.Sample.Object_Ladder::ProjectOnLadder(UnityEngine.Vector2)
+extern "C"  Vector2_t2243707579  Object_Ladder_ProjectOnLadder_m3047806546 (Object_Ladder_t2797598778 * __this, Vector2_t2243707579  ___a_f2Position0, const MethodInfo* method)
+{
+	Vector2_t2243707579  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector2_t2243707579  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vector2_t2243707579  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector2_t2243707579  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		Vector2_t2243707579  L_0 = Object_Ladder_get_LadderUpDirection_m1852159371(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Vector3_t2243707580  L_2 = Transform_get_position_m1104419803(L_1, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_3 = Vector2_op_Implicit_m1064335535(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		Vector2_t2243707579  L_4 = ___a_f2Position0;
+		Vector2_t2243707579  L_5 = V_1;
+		Vector2_t2243707579  L_6 = Vector2_op_Subtraction_m1984215297(NULL /*static, unused*/, L_4, L_5, /*hidden argument*/NULL);
+		V_2 = L_6;
+		Vector2_t2243707579  L_7 = V_2;
+		Vector2_t2243707579  L_8 = V_0;
+		float L_9 = Vector2_Dot_m778921987(NULL /*static, unused*/, L_7, L_8, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_10 = V_0;
+		Vector2_t2243707579  L_11 = Vector2_op_Multiply_m3393065202(NULL /*static, unused*/, L_9, L_10, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_12 = V_1;
+		Vector2_t2243707579  L_13 = Vector2_op_Addition_m1389598521(NULL /*static, unused*/, L_11, L_12, /*hidden argument*/NULL);
+		V_3 = L_13;
+		Vector2_t2243707579  L_14 = V_3;
+		return L_14;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.Object_Ladder_Collider::.ctor()
+extern "C"  void Object_Ladder_Collider__ctor_m3165541190 (Object_Ladder_Collider_t2250306207 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.ParallaxLayer::.ctor()
+extern "C"  void ParallaxLayer__ctor_m4227144203 (ParallaxLayer_t2928357686 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_parallax_3((0.5f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.ParallaxLayer::Start()
+extern "C"  void ParallaxLayer_Start_m1418721815 (ParallaxLayer_t2928357686 * __this, const MethodInfo* method)
+{
+	{
+		ParallaxLayer_SelectCamera_m3764245170(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_0 = ParallaxLayer_GetMasterCameraPosition_m3591806591(__this, /*hidden argument*/NULL);
+		__this->set_m_f3CameraLastPosition_10(L_0);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.ParallaxLayer::LateUpdate()
+extern "C"  void ParallaxLayer_LateUpdate_m4212867716 (ParallaxLayer_t2928357686 * __this, const MethodInfo* method)
+{
+	{
+		ParallaxLayer_UpdateParallax_m3025135201(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.ParallaxLayer::UpdateParallax()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t ParallaxLayer_UpdateParallax_m3025135201_MetadataUsageId;
+extern "C"  void ParallaxLayer_UpdateParallax_m3025135201 (ParallaxLayer_t2928357686 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ParallaxLayer_UpdateParallax_m3025135201_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	int32_t V_2 = 0;
+	{
+		Camera_t189460977 * L_0 = __this->get_masterCameraReference_7();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0012:
+	{
+		Vector3_t2243707580  L_2 = ParallaxLayer_GetMasterCameraPosition_m3591806591(__this, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Vector3_t2243707580  L_3 = V_0;
+		Vector3_t2243707580  L_4 = __this->get_m_f3CameraLastPosition_10();
+		Vector3_t2243707580  L_5 = Vector3_op_Subtraction_m2407545601(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		(&V_1)->set_z_3((0.0f));
+		int32_t L_6 = __this->get_mode_2();
+		V_2 = L_6;
+		int32_t L_7 = V_2;
+		if (!L_7)
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		int32_t L_8 = V_2;
+		if ((((int32_t)L_8) == ((int32_t)1)))
+		{
+			goto IL_0095;
+		}
+	}
+	{
+		goto IL_00cc;
+	}
+
+IL_004b:
+	{
+		Vector3_t2243707580  L_9 = V_1;
+		float L_10 = __this->get_parallax_3();
+		Vector3_t2243707580  L_11 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_9, L_10, /*hidden argument*/NULL);
+		V_1 = L_11;
+		FreezeAxes_t2653407965 * L_12 = __this->get_freezeAxes_4();
+		NullCheck(L_12);
+		bool L_13 = L_12->get_x_0();
+		if (!L_13)
+		{
+			goto IL_0074;
+		}
+	}
+	{
+		(&V_1)->set_x_1((0.0f));
+	}
+
+IL_0074:
+	{
+		FreezeAxes_t2653407965 * L_14 = __this->get_freezeAxes_4();
+		NullCheck(L_14);
+		bool L_15 = L_14->get_y_1();
+		if (!L_15)
+		{
+			goto IL_0090;
+		}
+	}
+	{
+		(&V_1)->set_y_2((0.0f));
+	}
+
+IL_0090:
+	{
+		goto IL_00cc;
+	}
+
+IL_0095:
+	{
+		Vector3_t2243707580 * L_16 = (&V_1);
+		float L_17 = L_16->get_x_1();
+		ParallaxByAxis_t1678954032 * L_18 = __this->get_parallaxByAxis_5();
+		NullCheck(L_18);
+		float L_19 = L_18->get_x_0();
+		L_16->set_x_1(((float)((float)L_17*(float)L_19)));
+		Vector3_t2243707580 * L_20 = (&V_1);
+		float L_21 = L_20->get_y_2();
+		ParallaxByAxis_t1678954032 * L_22 = __this->get_parallaxByAxis_5();
+		NullCheck(L_22);
+		float L_23 = L_22->get_y_1();
+		L_20->set_y_2(((float)((float)L_21*(float)L_23)));
+		goto IL_00cc;
+	}
+
+IL_00cc:
+	{
+		Transform_t3275118058 * L_24 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_25 = L_24;
+		NullCheck(L_25);
+		Vector3_t2243707580  L_26 = Transform_get_position_m1104419803(L_25, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_27 = V_1;
+		Vector3_t2243707580  L_28 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_26, L_27, /*hidden argument*/NULL);
+		NullCheck(L_25);
+		Transform_set_position_m2469242620(L_25, L_28, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_29 = V_0;
+		__this->set_m_f3CameraLastPosition_10(L_29);
+		return;
+	}
+}
+// UnityEngine.Vector3 UniArt.PixelScifiLandscape.Sample.ParallaxLayer::GetMasterCameraPosition()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t ParallaxLayer_GetMasterCameraPosition_m3591806591_MetadataUsageId;
+extern "C"  Vector3_t2243707580  ParallaxLayer_GetMasterCameraPosition_m3591806591 (ParallaxLayer_t2928357686 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ParallaxLayer_GetMasterCameraPosition_m3591806591_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Camera_t189460977 * L_0 = __this->get_masterCameraReference_7();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		Vector3_t2243707580  L_2 = Vector3_get_zero_m1527993324(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return L_2;
+	}
+
+IL_0017:
+	{
+		Camera_t189460977 * L_3 = __this->get_masterCameraReference_7();
+		NullCheck(L_3);
+		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(L_3, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t2243707580  L_5 = Transform_get_position_m1104419803(L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.ParallaxLayer::SelectCamera()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisCamera_t189460977_m4200645945_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1903228271;
+extern Il2CppCodeGenString* _stringLiteral2876960894;
+extern Il2CppCodeGenString* _stringLiteral867377301;
+extern const uint32_t ParallaxLayer_SelectCamera_m3764245170_MetadataUsageId;
+extern "C"  void ParallaxLayer_SelectCamera_m3764245170 (ParallaxLayer_t2928357686 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ParallaxLayer_SelectCamera_m3764245170_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Camera_t189460977 * V_0 = NULL;
+	int32_t V_1 = 0;
+	GameObject_t1756533147 * V_2 = NULL;
+	GameObject_t1756533147 * V_3 = NULL;
+	{
+		V_0 = (Camera_t189460977 *)NULL;
+		int32_t L_0 = __this->get_masterCamera_6();
+		V_1 = L_0;
+		int32_t L_1 = V_1;
+		if (L_1 == 0)
+		{
+			goto IL_0024;
+		}
+		if (L_1 == 1)
+		{
+			goto IL_002f;
+		}
+		if (L_1 == 2)
+		{
+			goto IL_003b;
+		}
+		if (L_1 == 3)
+		{
+			goto IL_009f;
+		}
+	}
+	{
+		goto IL_0103;
+	}
+
+IL_0024:
+	{
+		Camera_t189460977 * L_2 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = L_2;
+		goto IL_0103;
+	}
+
+IL_002f:
+	{
+		Camera_t189460977 * L_3 = __this->get_masterCameraReference_7();
+		V_0 = L_3;
+		goto IL_0103;
+	}
+
+IL_003b:
+	{
+		String_t* L_4 = __this->get_masterCameraName_8();
+		GameObject_t1756533147 * L_5 = GameObject_Find_m836511350(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		GameObject_t1756533147 * L_6 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_7 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_6, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		String_t* L_8 = __this->get_masterCameraName_8();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_9 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral1903228271, L_8, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_LogError_m3715728798(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
+		goto IL_009a;
+	}
+
+IL_006d:
+	{
+		GameObject_t1756533147 * L_10 = V_2;
+		NullCheck(L_10);
+		Camera_t189460977 * L_11 = GameObject_GetComponent_TisCamera_t189460977_m4200645945(L_10, /*hidden argument*/GameObject_GetComponent_TisCamera_t189460977_m4200645945_MethodInfo_var);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_12 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_11, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_12)
+		{
+			goto IL_0093;
+		}
+	}
+	{
+		GameObject_t1756533147 * L_13 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_14 = String_Concat_m56707527(NULL /*static, unused*/, L_13, _stringLiteral2876960894, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_LogError_m3715728798(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
+		goto IL_009a;
+	}
+
+IL_0093:
+	{
+		GameObject_t1756533147 * L_15 = V_2;
+		NullCheck(L_15);
+		Camera_t189460977 * L_16 = GameObject_GetComponent_TisCamera_t189460977_m4200645945(L_15, /*hidden argument*/GameObject_GetComponent_TisCamera_t189460977_m4200645945_MethodInfo_var);
+		V_0 = L_16;
+	}
+
+IL_009a:
+	{
+		goto IL_0103;
+	}
+
+IL_009f:
+	{
+		String_t* L_17 = __this->get_masterCameraTag_9();
+		GameObject_t1756533147 * L_18 = GameObject_FindGameObjectWithTag_m829057129(NULL /*static, unused*/, L_17, /*hidden argument*/NULL);
+		V_3 = L_18;
+		GameObject_t1756533147 * L_19 = V_3;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_20 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_19, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_20)
+		{
+			goto IL_00d1;
+		}
+	}
+	{
+		String_t* L_21 = __this->get_masterCameraName_8();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_22 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral867377301, L_21, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_LogError_m3715728798(NULL /*static, unused*/, L_22, /*hidden argument*/NULL);
+		goto IL_00fe;
+	}
+
+IL_00d1:
+	{
+		GameObject_t1756533147 * L_23 = V_3;
+		NullCheck(L_23);
+		Camera_t189460977 * L_24 = GameObject_GetComponent_TisCamera_t189460977_m4200645945(L_23, /*hidden argument*/GameObject_GetComponent_TisCamera_t189460977_m4200645945_MethodInfo_var);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_25 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_24, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_25)
+		{
+			goto IL_00f7;
+		}
+	}
+	{
+		GameObject_t1756533147 * L_26 = V_3;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_27 = String_Concat_m56707527(NULL /*static, unused*/, L_26, _stringLiteral2876960894, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_LogError_m3715728798(NULL /*static, unused*/, L_27, /*hidden argument*/NULL);
+		goto IL_00fe;
+	}
+
+IL_00f7:
+	{
+		GameObject_t1756533147 * L_28 = V_3;
+		NullCheck(L_28);
+		Camera_t189460977 * L_29 = GameObject_GetComponent_TisCamera_t189460977_m4200645945(L_28, /*hidden argument*/GameObject_GetComponent_TisCamera_t189460977_m4200645945_MethodInfo_var);
+		V_0 = L_29;
+	}
+
+IL_00fe:
+	{
+		goto IL_0103;
+	}
+
+IL_0103:
+	{
+		Camera_t189460977 * L_30 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_31 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_30, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_31)
+		{
+			goto IL_0131;
+		}
+	}
+	{
+		__this->set_masterCameraReference_7((Camera_t189460977 *)NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_32 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		__this->set_masterCameraName_8(L_32);
+		String_t* L_33 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		__this->set_masterCameraTag_9(L_33);
+		goto IL_0150;
+	}
+
+IL_0131:
+	{
+		Camera_t189460977 * L_34 = V_0;
+		__this->set_masterCameraReference_7(L_34);
+		Camera_t189460977 * L_35 = V_0;
+		NullCheck(L_35);
+		String_t* L_36 = Object_get_name_m2079638459(L_35, /*hidden argument*/NULL);
+		__this->set_masterCameraName_8(L_36);
+		Camera_t189460977 * L_37 = V_0;
+		NullCheck(L_37);
+		String_t* L_38 = Component_get_tag_m357168014(L_37, /*hidden argument*/NULL);
+		__this->set_masterCameraTag_9(L_38);
+	}
+
+IL_0150:
+	{
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.ParallaxLayer/FreezeAxes::.ctor()
+extern "C"  void FreezeAxes__ctor_m3164800100 (FreezeAxes_t2653407965 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.ParallaxLayer/ParallaxByAxis::.ctor()
+extern "C"  void ParallaxByAxis__ctor_m1136942039 (ParallaxByAxis_t1678954032 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_x_0((0.5f));
+		__this->set_y_1((0.5f));
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.SetOrderInLayer::.ctor()
+extern "C"  void SetOrderInLayer__ctor_m3989751779 (SetOrderInLayer_t1065420130 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UniArt.PixelScifiLandscape.Sample.SetOrderInLayer::Update()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var;
+extern const uint32_t SetOrderInLayer_Update_m1907583136_MetadataUsageId;
+extern "C"  void SetOrderInLayer_Update_m1907583136 (SetOrderInLayer_t1065420130 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SetOrderInLayer_Update_m1907583136_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Renderer_t257310565 * L_0 = Component_GetComponent_TisRenderer_t257310565_m772028041(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		Renderer_t257310565 * L_2 = Component_GetComponent_TisRenderer_t257310565_m772028041(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var);
+		int32_t L_3 = __this->get_orderInLayer_2();
+		NullCheck(L_2);
+		Renderer_set_sortingOrder_m809829562(L_2, L_3, /*hidden argument*/NULL);
+	}
+
+IL_0022:
+	{
 		return;
 	}
 }
@@ -18726,94 +23880,6 @@ extern "C"  void BoundingPoly__ctor_m602170284 (BoundingPoly_t202383367 * __this
 }
 // System.Void WebCamTextureToCloudVision/EntityAnnotation::.ctor()
 extern "C"  void EntityAnnotation__ctor_m3683615008 (EntityAnnotation_t3728473491 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/FaceAnnotation::.ctor()
-extern "C"  void FaceAnnotation__ctor_m3124898250 (FaceAnnotation_t2061169673 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/Feature::.ctor()
-extern "C"  void Feature__ctor_m337496338 (Feature_t1423281007 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/Image::.ctor()
-extern "C"  void Image__ctor_m1987179261 (Image_t618653592 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/ImageContext::.ctor()
-extern "C"  void ImageContext__ctor_m742726862 (ImageContext_t361977959 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/Landmark::.ctor()
-extern "C"  void Landmark__ctor_m3869138886 (Landmark_t3119732773 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/LatLng::.ctor()
-extern "C"  void LatLng__ctor_m4290045682 (LatLng_t31298955 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/LatLongRect::.ctor()
-extern "C"  void LatLongRect__ctor_m3778885873 (LatLongRect_t4029533484 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/LocationInfo::.ctor()
-extern "C"  void LocationInfo__ctor_m804086345 (LocationInfo_t2573743508 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/Position::.ctor()
-extern "C"  void Position__ctor_m959171527 (Position_t381495948 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/Property::.ctor()
-extern "C"  void Property__ctor_m2399815113 (Property_t4059421526 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/Vertex::.ctor()
-extern "C"  void Vertex__ctor_m93298780 (Vertex_t2714087479 * __this, const MethodInfo* method)
 {
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);

@@ -31,6 +31,8 @@ extern "C"  Vector2_t2243707579  RaycastHit2D_get_normal_m3768105386 (RaycastHit
 extern "C"  float RaycastHit2D_get_fraction_m1296150410 (RaycastHit2D_t4063908774 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Collider2D UnityEngine.RaycastHit2D::get_collider()
 extern "C"  Collider2D_t646061738 * RaycastHit2D_get_collider_m2568504212 (RaycastHit2D_t4063908774 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.RaycastHit2D::op_Implicit(UnityEngine.RaycastHit2D)
+extern "C"  bool RaycastHit2D_op_Implicit_m596912073 (Il2CppObject * __this /* static, unused */, RaycastHit2D_t4063908774  ___hit0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 
 // Methods for marshaling
 struct RaycastHit2D_t4063908774;

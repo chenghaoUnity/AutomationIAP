@@ -14188,6 +14188,9 @@ extern "C" void Animator_INTERNAL_get_deltaPosition_m3555533205 ();
 extern "C" void Animator_set_applyRootMotion_m635228566 ();
 extern "C" void Animator_GetCurrentAnimatorStateInfo_m1931338898 ();
 extern "C" void Animator_set_speed_m3511108817 ();
+extern "C" void Animator_Play_m1123842248 ();
+extern "C" void Animator_Play_m2181614708 ();
+extern "C" void Animator_Play_m3632052371 ();
 extern "C" void Animator_get_runtimeAnimatorController_m652575931 ();
 extern "C" void Animator_StringToHash_m3313850714 ();
 extern "C" void Animator_SetFloatString_m3960043456 ();
@@ -14277,6 +14280,7 @@ extern "C" void AudioSource_Play_m889724421 ();
 extern "C" void AudioSource_Play_m353744792 ();
 extern "C" void AudioSource_Stop_m3452679614 ();
 extern "C" void AudioSource_get_isPlaying_m3677592677 ();
+extern "C" void AudioSource_PlayOneShot_m4118899740 ();
 extern "C" void AudioSource_set_loop_m313035616 ();
 extern "C" void Behaviour__ctor_m2699265412 ();
 extern "C" void Behaviour_get_enabled_m4079055610 ();
@@ -14366,6 +14370,8 @@ extern "C" void Camera_INTERNAL_get_projectionMatrix_m3593932001 ();
 extern "C" void Camera_INTERNAL_set_projectionMatrix_m179473573 ();
 extern "C" void Camera_get_clearFlags_m1743144302 ();
 extern "C" void Camera_set_clearFlags_m4142614199 ();
+extern "C" void Camera_WorldToViewportPoint_m1897251752 ();
+extern "C" void Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772 ();
 extern "C" void Camera_ViewportToWorldPoint_m3841010930 ();
 extern "C" void Camera_INTERNAL_CALL_ViewportToWorldPoint_m3505854934 ();
 extern "C" void Camera_ScreenToWorldPoint_m929392728 ();
@@ -14499,6 +14505,7 @@ extern "C" void Color_op_Inequality_m3949383683 ();
 extern "C" void Color_Lerp_m3323752807 ();
 extern "C" void Color_get_red_m2410286591 ();
 extern "C" void Color_get_green_m2671273823 ();
+extern "C" void Color_get_blue_m4180825090 ();
 extern "C" void Color_get_white_m3987539815 ();
 extern "C" void Color_get_black_m2650940523 ();
 extern "C" void Color_get_yellow_m3741935494 ();
@@ -15367,6 +15374,8 @@ extern "C" void Mathf__cctor_m326403828 ();
 extern "C" void Matrix4x4_Inverse_m146029241 ();
 extern "C" void Matrix4x4_INTERNAL_CALL_Inverse_m4134773479 ();
 extern "C" void Matrix4x4_get_inverse_m2479387736_AdjustorThunk ();
+extern "C" void Matrix4x4_TRS_m1913765359 ();
+extern "C" void Matrix4x4_INTERNAL_CALL_TRS_m2077933669 ();
 extern "C" void Matrix4x4_get_Item_m312280350_AdjustorThunk ();
 extern "C" void Matrix4x4_get_Item_m3317262185_AdjustorThunk ();
 extern "C" void Matrix4x4_set_Item_m870949794_AdjustorThunk ();
@@ -15676,6 +15685,10 @@ extern "C" void Physics_Internal_CapsuleCast_m1833501922 ();
 extern "C" void Physics_INTERNAL_CALL_Internal_CapsuleCast_m4097719249 ();
 extern "C" void Physics_Internal_RaycastTest_m3442924926 ();
 extern "C" void Physics_INTERNAL_CALL_Internal_RaycastTest_m3440840981 ();
+extern "C" void Physics2D_Internal_Linecast_m1593067799 ();
+extern "C" void Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300 ();
+extern "C" void Physics2D_Linecast_m2374117908 ();
+extern "C" void Physics2D_Linecast_m3607674036 ();
 extern "C" void Physics2D_Internal_Raycast_m683685528 ();
 extern "C" void Physics2D_INTERNAL_CALL_Internal_Raycast_m3956067819 ();
 extern "C" void Physics2D_Raycast_m1220041042 ();
@@ -15763,6 +15776,7 @@ extern "C" void RaycastHit2D_get_point_m442317739_AdjustorThunk ();
 extern "C" void RaycastHit2D_get_normal_m3768105386_AdjustorThunk ();
 extern "C" void RaycastHit2D_get_fraction_m1296150410_AdjustorThunk ();
 extern "C" void RaycastHit2D_get_collider_m2568504212_AdjustorThunk ();
+extern "C" void RaycastHit2D_op_Implicit_m596912073 ();
 extern "C" void Rect__ctor_m1220545469_AdjustorThunk ();
 extern "C" void Rect_get_x_m1393582490_AdjustorThunk ();
 extern "C" void Rect_set_x_m3783700513_AdjustorThunk ();
@@ -15873,8 +15887,10 @@ extern "C" void Renderer_get_sharedMaterial_m155010392 ();
 extern "C" void Renderer_get_materials_m810004692 ();
 extern "C" void Renderer_set_materials_m1556465155 ();
 extern "C" void Renderer_get_sharedMaterials_m4026934221 ();
+extern "C" void Renderer_get_isVisible_m3612355717 ();
 extern "C" void Renderer_get_sortingLayerID_m2403577271 ();
 extern "C" void Renderer_get_sortingOrder_m1544525007 ();
+extern "C" void Renderer_set_sortingOrder_m809829562 ();
 extern "C" void RenderTexture__ctor_m4075605457 ();
 extern "C" void RenderTexture_Internal_CreateRenderTexture_m1679754911 ();
 extern "C" void RenderTexture_Internal_GetWidth_m2317917654 ();
@@ -15924,6 +15940,10 @@ extern "C" void Rigidbody2D_INTERNAL_get_velocity_m3018296454 ();
 extern "C" void Rigidbody2D_INTERNAL_set_velocity_m1537663346 ();
 extern "C" void Rigidbody2D_get_mass_m410633361 ();
 extern "C" void Rigidbody2D_set_mass_m2409729346 ();
+extern "C" void Rigidbody2D_get_gravityScale_m3363788087 ();
+extern "C" void Rigidbody2D_set_gravityScale_m1426625078 ();
+extern "C" void Rigidbody2D_set_bodyType_m2943264019 ();
+extern "C" void Rigidbody2D_set_isKinematic_m548319077 ();
 extern "C" void Rigidbody2D_set_simulated_m2089192866 ();
 extern "C" void Rigidbody2D_AddForce_m3200488178 ();
 extern "C" void Rigidbody2D_INTERNAL_CALL_AddForce_m1958598324 ();
@@ -16237,6 +16257,7 @@ extern "C" void Time_get_timeSinceLevelLoad_m1980066582 ();
 extern "C" void Time_get_deltaTime_m2233168104 ();
 extern "C" void Time_get_unscaledTime_m862335845 ();
 extern "C" void Time_get_unscaledDeltaTime_m4281640537 ();
+extern "C" void Time_get_fixedDeltaTime_m2734072926 ();
 extern "C" void Time_get_timeScale_m3151482970 ();
 extern "C" void Time_set_timeScale_m2194722837 ();
 extern "C" void Time_get_frameCount_m1198768813 ();
@@ -16349,10 +16370,12 @@ extern "C" void Vector2_Equals_m1405920279_AdjustorThunk ();
 extern "C" void Vector2_Dot_m778921987 ();
 extern "C" void Vector2_get_magnitude_m33802565_AdjustorThunk ();
 extern "C" void Vector2_get_sqrMagnitude_m1226294581_AdjustorThunk ();
+extern "C" void Vector2_Distance_m280750759 ();
 extern "C" void Vector2_ClampMagnitude_m951527075 ();
 extern "C" void Vector2_op_Addition_m1389598521 ();
 extern "C" void Vector2_op_Subtraction_m1984215297 ();
 extern "C" void Vector2_op_Multiply_m4236139442 ();
+extern "C" void Vector2_op_Multiply_m3393065202 ();
 extern "C" void Vector2_op_Division_m96580069 ();
 extern "C" void Vector2_op_Equality_m4168854394 ();
 extern "C" void Vector2_op_Inequality_m4283136193 ();
@@ -20964,6 +20987,150 @@ extern "C" void ThirdPersonUserControl_Start_m1032517350 ();
 extern "C" void ThirdPersonUserControl_Update_m1754483475 ();
 extern "C" void ThirdPersonUserControl_FixedUpdate_m354412725 ();
 extern "C" void ThirdPersonUserControl_PlayerJump_m1870760939 ();
+extern "C" void Animal__ctor_m2369283589 ();
+extern "C" void Animal_Awake_m4258901154 ();
+extern "C" void Animal_Update_m1305126788 ();
+extern "C" void Animal_UpdateAnimation_m932208904 ();
+extern "C" void Animal_GetAnimationStateName_m2463861226 ();
+extern "C" void Animal_SelectDirection_m1834850252 ();
+extern "C" void Animal_UpdateFlip_m760285751 ();
+extern "C" void Animal_EnsureWalkingZoneCoherence_m3457960398 ();
+extern "C" void Animal_StartRandomState_m1805367053 ();
+extern "C" void Animal_StartState_m4273053325 ();
+extern "C" void Animal_StartStand_m2760683425 ();
+extern "C" void Animal_StopStand_m193034593 ();
+extern "C" void Animal_UpdateStand_m1648008170 ();
+extern "C" void Animal_StartEat_m1978182357 ();
+extern "C" void Animal_StopEat_m3394727981 ();
+extern "C" void Animal_UpdateEat_m581115892 ();
+extern "C" void Animal_GetCurrentCycle_m3505784258 ();
+extern "C" void Animal_StartWalk_m1862795380 ();
+extern "C" void Animal_StopWalk_m1836123096 ();
+extern "C" void Animal_UpdateWalk_m1514882513 ();
+extern "C" void Animal_OnDrawGizmos_m1292515393 ();
+extern "C" void Bird__ctor_m728820168 ();
+extern "C" void Bird_Awake_m2619183699 ();
+extern "C" void Bird_Update_m2457678327 ();
+extern "C" void Bird_OnTriggerEnter2D_m3861319457 ();
+extern "C" void Bird_UpdateFlip_m972155576 ();
+extern "C" void Bird_StartFlying_m1534357805 ();
+extern "C" void Bird_StopFlying_m273302373 ();
+extern "C" void Bird_CanRespawn_m2483894974 ();
+extern "C" void Bird_SoundPlayer__ctor_m2773012177 ();
+extern "C" void Bird_SoundPlayer_FlySound_m857588349 ();
+extern "C" void Bird_SoundPlayer_Awake_m2145560172 ();
+extern "C" void Bird_SoundPlayer_OnDestroy_m242858986 ();
+extern "C" void Bird_SoundPlayer_PlaySound_m644100114 ();
+extern "C" void Bird_SoundPlayer_OnStartFlying_m1283640943 ();
+extern "C" void Sound__ctor_m2627329201 ();
+extern "C" void CameraFollowTarget__ctor_m4150716052 ();
+extern "C" void CameraFollowTarget_FixedUpdate_m839975165 ();
+extern "C" void CameraRestrictToSafeZone__ctor_m2023980398 ();
+extern "C" void CameraRestrictToSafeZone_FixedUpdate_m945181925 ();
+extern "C" void CameraRestrictToSafeZone_LateUpdate_m1692085387 ();
+extern "C" void CameraRestrictToSafeZone_ConstraintInSafeZone_m3418482335 ();
+extern "C" void CameraRestrictToSafeZone_OnDrawGizmos_m2874025940 ();
+extern "C" void Character_AnimationController__ctor_m3743653227 ();
+extern "C" void Character_AnimationController_OverrideThisFrame_m3258029326 ();
+extern "C" void Character_AnimationController_LateUpdate_m1786353706 ();
+extern "C" void Character_AnimationController_AdaptAnimationSpeedToMatchVelocity_m4099057917 ();
+extern "C" void Character_CrouchController__ctor_m20681981 ();
+extern "C" void Character_CrouchController_Update_m1219361806 ();
+extern "C" void Character_CrouchController_LateUpdate_m3433197994 ();
+extern "C" void Character_FeetSoundPlayer__ctor_m3697245643 ();
+extern "C" void Character_FeetSoundPlayer_LeftFeetWalkSound_m689031180 ();
+extern "C" void Character_FeetSoundPlayer_RightFeetWalkSound_m4240627983 ();
+extern "C" void Character_FeetSoundPlayer_LeftFeetRunSound_m1701241578 ();
+extern "C" void Character_FeetSoundPlayer_RightFeetRunSound_m2317211659 ();
+extern "C" void Character_FeetSoundPlayer_JumpSound_m2838271596 ();
+extern "C" void Character_FeetSoundPlayer_Awake_m4067110852 ();
+extern "C" void Character_FeetSoundPlayer_OnDestroy_m1404253542 ();
+extern "C" void Character_FeetSoundPlayer_PlaySound_m1751782592 ();
+extern "C" void Character_FeetSoundPlayer_OnJump_m1712121546 ();
+extern "C" void Sound__ctor_m1430281591 ();
+extern "C" void Character_FlipController__ctor_m677904508 ();
+extern "C" void Character_FlipController_LateUpdate_m18967903 ();
+extern "C" void Character_GroundedTester__ctor_m3250325114 ();
+extern "C" void Character_GroundedTester_get_IsGrounded_m2268760287 ();
+extern "C" void Character_GroundedTester_get_GroundLayer_m3473007653 ();
+extern "C" void Character_GroundedTester_FixedUpdate_m1737153735 ();
+extern "C" void Character_GroundedTester_GroundedTest_m742748570 ();
+extern "C" void Character_Input__ctor_m815843555 ();
+extern "C" void Character_Input_get_Run_m3600994827 ();
+extern "C" void Character_Input_get_Jump_m1939620422 ();
+extern "C" void Character_Input_get_JumpHeld_m2859508413 ();
+extern "C" void Character_Input_get_Horizontal_m1468178506 ();
+extern "C" void Character_Input_get_Vertical_m3464180068 ();
+extern "C" void Character_Input_get_JumpInput_m757610044 ();
+extern "C" void Character_Input_get_RunInput_m2095804501 ();
+extern "C" void Character_Input_FixedUpdate_m161026154 ();
+extern "C" void Character_Input_UpdateJumpInput_m527809638 ();
+extern "C" void Character_Input_UpdateRunInput_m4122463677 ();
+extern "C" void Character_LadderClimbAnimation__ctor_m233702362 ();
+extern "C" void Character_LadderClimbAnimation_Awake_m2645098517 ();
+extern "C" void Character_LadderClimbAnimation_OnDestroy_m2728162647 ();
+extern "C" void Character_LadderClimbAnimation_OnStartClimb_m3936503112 ();
+extern "C" void Character_LadderClimbAnimation_OnStopClimb_m962252220 ();
+extern "C" void Character_LadderClimbAnimation_OnClimb_m2603560125 ();
+extern "C" void Character_LadderClimber__ctor_m1553139909 ();
+extern "C" void Character_LadderClimber_get_IsClimbing_m3705621483 ();
+extern "C" void Character_LadderClimber_get_Position_m2735479832 ();
+extern "C" void Character_LadderClimber_set_Position_m3900064713 ();
+extern "C" void Character_LadderClimber_FixedUpdate_m980028044 ();
+extern "C" void Character_LadderClimber_ProcessLadderClimb_m1096026197 ();
+extern "C" void Character_LadderClimber_StartClimbing_m2029899612 ();
+extern "C" void Character_LadderClimber_StopClimbing_m479902624 ();
+extern "C" void Character_LadderClimber_Climb_m1151321701 ();
+extern "C" void Character_LadderClimber_PutOnTop_m1095725984 ();
+extern "C" void Character_LadderClimber_PutOnBottom_m3097234012 ();
+extern "C" void Character_LadderTester__ctor_m2759297216 ();
+extern "C" void Character_LadderTester_GetNearestLadder_m2341607515 ();
+extern "C" void Character_LadderTester_OnLadderColliderEnter_m2881410080 ();
+extern "C" void Character_LadderTester_OnLadderColliderExit_m2624579026 ();
+extern "C" void Character_LadderTesterListener__ctor_m3562767316 ();
+extern "C" void Character_LadderTesterListener_OnTriggerEnter2D_m39560644 ();
+extern "C" void Character_LadderTesterListener_OnTriggerExit2D_m1876489086 ();
+extern "C" void Character_LookController__ctor_m1108820232 ();
+extern "C" void Character_LookController_get_LookOffset_m3417111079 ();
+extern "C" void Character_LookController_set_LookOffset_m2858717080 ();
+extern "C" void Character_LookController_get_CameraTargetHeight_m1666062236 ();
+extern "C" void Character_LookController_set_CameraTargetHeight_m651413605 ();
+extern "C" void Character_LookController_Awake_m2992140371 ();
+extern "C" void Character_LookController_Update_m3899532983 ();
+extern "C" void Character_LookUpController__ctor_m2064683403 ();
+extern "C" void Character_LookUpController_Update_m1901370194 ();
+extern "C" void Character_LookUpController_LateUpdate_m2196289054 ();
+extern "C" void Character_MovementController__ctor_m3360419342 ();
+extern "C" void Character_MovementController_get_Velocity_m3500833027 ();
+extern "C" void Character_MovementController_set_Velocity_m451649286 ();
+extern "C" void Character_MovementController_get_Position_m299822549 ();
+extern "C" void Character_MovementController_set_Position_m2713510114 ();
+extern "C" void Character_MovementController_DisableMovement_m4067113565 ();
+extern "C" void Character_MovementController_EnableMovement_m135093354 ();
+extern "C" void Character_MovementController_CanJump_m3156270193 ();
+extern "C" void Character_MovementController_Jump_m2763054096 ();
+extern "C" void Character_MovementController_Awake_m1472212427 ();
+extern "C" void Character_MovementController_FixedUpdate_m4200060033 ();
+extern "C" void Character_MovementController_ProcessHorizontalMovement_m3280717410 ();
+extern "C" void Character_MovementController_ProcessJump_m1376285327 ();
+extern "C" void Character_MovementController_ProcessGravityModification_m3327099329 ();
+extern "C" void Object_Ladder__ctor_m3222156779 ();
+extern "C" void Object_Ladder_get_LadderUpDirection_m1852159371 ();
+extern "C" void Object_Ladder_DistanceToLadder_m3142284483 ();
+extern "C" void Object_Ladder_SnapOnLadder_m4207231875 ();
+extern "C" void Object_Ladder_SnapOnLadder_m3417031363 ();
+extern "C" void Object_Ladder_ProjectOnLadder_m3047806546 ();
+extern "C" void Object_Ladder_Collider__ctor_m3165541190 ();
+extern "C" void ParallaxLayer__ctor_m4227144203 ();
+extern "C" void ParallaxLayer_Start_m1418721815 ();
+extern "C" void ParallaxLayer_LateUpdate_m4212867716 ();
+extern "C" void ParallaxLayer_UpdateParallax_m3025135201 ();
+extern "C" void ParallaxLayer_GetMasterCameraPosition_m3591806591 ();
+extern "C" void ParallaxLayer_SelectCamera_m3764245170 ();
+extern "C" void FreezeAxes__ctor_m3164800100 ();
+extern "C" void ParallaxByAxis__ctor_m1136942039 ();
+extern "C" void SetOrderInLayer__ctor_m3989751779 ();
+extern "C" void SetOrderInLayer_Update_m1907583136 ();
 extern "C" void Displace__ctor_m2942617592 ();
 extern "C" void Displace_Awake_m1052964061 ();
 extern "C" void Displace_OnEnable_m4052856048 ();
@@ -21060,7 +21227,7 @@ extern "C" void LocationInfo__ctor_m804086345 ();
 extern "C" void Position__ctor_m959171527 ();
 extern "C" void Property__ctor_m2399815113 ();
 extern "C" void Vertex__ctor_m93298780 ();
-extern const Il2CppMethodPointer g_MethodPointers[21049] = 
+extern const Il2CppMethodPointer g_MethodPointers[21216] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -35239,6 +35406,9 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	Animator_set_applyRootMotion_m635228566,
 	Animator_GetCurrentAnimatorStateInfo_m1931338898,
 	Animator_set_speed_m3511108817,
+	Animator_Play_m1123842248,
+	Animator_Play_m2181614708,
+	Animator_Play_m3632052371,
 	Animator_get_runtimeAnimatorController_m652575931,
 	Animator_StringToHash_m3313850714,
 	Animator_SetFloatString_m3960043456,
@@ -35328,6 +35498,7 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	AudioSource_Play_m353744792,
 	AudioSource_Stop_m3452679614,
 	AudioSource_get_isPlaying_m3677592677,
+	AudioSource_PlayOneShot_m4118899740,
 	AudioSource_set_loop_m313035616,
 	Behaviour__ctor_m2699265412,
 	Behaviour_get_enabled_m4079055610,
@@ -35417,6 +35588,8 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	Camera_INTERNAL_set_projectionMatrix_m179473573,
 	Camera_get_clearFlags_m1743144302,
 	Camera_set_clearFlags_m4142614199,
+	Camera_WorldToViewportPoint_m1897251752,
+	Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772,
 	Camera_ViewportToWorldPoint_m3841010930,
 	Camera_INTERNAL_CALL_ViewportToWorldPoint_m3505854934,
 	Camera_ScreenToWorldPoint_m929392728,
@@ -35550,6 +35723,7 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	Color_Lerp_m3323752807,
 	Color_get_red_m2410286591,
 	Color_get_green_m2671273823,
+	Color_get_blue_m4180825090,
 	Color_get_white_m3987539815,
 	Color_get_black_m2650940523,
 	Color_get_yellow_m3741935494,
@@ -36418,6 +36592,8 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	Matrix4x4_Inverse_m146029241,
 	Matrix4x4_INTERNAL_CALL_Inverse_m4134773479,
 	Matrix4x4_get_inverse_m2479387736_AdjustorThunk,
+	Matrix4x4_TRS_m1913765359,
+	Matrix4x4_INTERNAL_CALL_TRS_m2077933669,
 	Matrix4x4_get_Item_m312280350_AdjustorThunk,
 	Matrix4x4_get_Item_m3317262185_AdjustorThunk,
 	Matrix4x4_set_Item_m870949794_AdjustorThunk,
@@ -36727,6 +36903,10 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	Physics_INTERNAL_CALL_Internal_CapsuleCast_m4097719249,
 	Physics_Internal_RaycastTest_m3442924926,
 	Physics_INTERNAL_CALL_Internal_RaycastTest_m3440840981,
+	Physics2D_Internal_Linecast_m1593067799,
+	Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300,
+	Physics2D_Linecast_m2374117908,
+	Physics2D_Linecast_m3607674036,
 	Physics2D_Internal_Raycast_m683685528,
 	Physics2D_INTERNAL_CALL_Internal_Raycast_m3956067819,
 	Physics2D_Raycast_m1220041042,
@@ -36814,6 +36994,7 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	RaycastHit2D_get_normal_m3768105386_AdjustorThunk,
 	RaycastHit2D_get_fraction_m1296150410_AdjustorThunk,
 	RaycastHit2D_get_collider_m2568504212_AdjustorThunk,
+	RaycastHit2D_op_Implicit_m596912073,
 	Rect__ctor_m1220545469_AdjustorThunk,
 	Rect_get_x_m1393582490_AdjustorThunk,
 	Rect_set_x_m3783700513_AdjustorThunk,
@@ -36924,8 +37105,10 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	Renderer_get_materials_m810004692,
 	Renderer_set_materials_m1556465155,
 	Renderer_get_sharedMaterials_m4026934221,
+	Renderer_get_isVisible_m3612355717,
 	Renderer_get_sortingLayerID_m2403577271,
 	Renderer_get_sortingOrder_m1544525007,
+	Renderer_set_sortingOrder_m809829562,
 	RenderTexture__ctor_m4075605457,
 	RenderTexture_Internal_CreateRenderTexture_m1679754911,
 	RenderTexture_Internal_GetWidth_m2317917654,
@@ -36975,6 +37158,10 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	Rigidbody2D_INTERNAL_set_velocity_m1537663346,
 	Rigidbody2D_get_mass_m410633361,
 	Rigidbody2D_set_mass_m2409729346,
+	Rigidbody2D_get_gravityScale_m3363788087,
+	Rigidbody2D_set_gravityScale_m1426625078,
+	Rigidbody2D_set_bodyType_m2943264019,
+	Rigidbody2D_set_isKinematic_m548319077,
 	Rigidbody2D_set_simulated_m2089192866,
 	Rigidbody2D_AddForce_m3200488178,
 	Rigidbody2D_INTERNAL_CALL_AddForce_m1958598324,
@@ -37288,6 +37475,7 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	Time_get_deltaTime_m2233168104,
 	Time_get_unscaledTime_m862335845,
 	Time_get_unscaledDeltaTime_m4281640537,
+	Time_get_fixedDeltaTime_m2734072926,
 	Time_get_timeScale_m3151482970,
 	Time_set_timeScale_m2194722837,
 	Time_get_frameCount_m1198768813,
@@ -37400,10 +37588,12 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	Vector2_Dot_m778921987,
 	Vector2_get_magnitude_m33802565_AdjustorThunk,
 	Vector2_get_sqrMagnitude_m1226294581_AdjustorThunk,
+	Vector2_Distance_m280750759,
 	Vector2_ClampMagnitude_m951527075,
 	Vector2_op_Addition_m1389598521,
 	Vector2_op_Subtraction_m1984215297,
 	Vector2_op_Multiply_m4236139442,
+	Vector2_op_Multiply_m3393065202,
 	Vector2_op_Division_m96580069,
 	Vector2_op_Equality_m4168854394,
 	Vector2_op_Inequality_m4283136193,
@@ -42015,6 +42205,150 @@ extern const Il2CppMethodPointer g_MethodPointers[21049] =
 	ThirdPersonUserControl_Update_m1754483475,
 	ThirdPersonUserControl_FixedUpdate_m354412725,
 	ThirdPersonUserControl_PlayerJump_m1870760939,
+	Animal__ctor_m2369283589,
+	Animal_Awake_m4258901154,
+	Animal_Update_m1305126788,
+	Animal_UpdateAnimation_m932208904,
+	Animal_GetAnimationStateName_m2463861226,
+	Animal_SelectDirection_m1834850252,
+	Animal_UpdateFlip_m760285751,
+	Animal_EnsureWalkingZoneCoherence_m3457960398,
+	Animal_StartRandomState_m1805367053,
+	Animal_StartState_m4273053325,
+	Animal_StartStand_m2760683425,
+	Animal_StopStand_m193034593,
+	Animal_UpdateStand_m1648008170,
+	Animal_StartEat_m1978182357,
+	Animal_StopEat_m3394727981,
+	Animal_UpdateEat_m581115892,
+	Animal_GetCurrentCycle_m3505784258,
+	Animal_StartWalk_m1862795380,
+	Animal_StopWalk_m1836123096,
+	Animal_UpdateWalk_m1514882513,
+	Animal_OnDrawGizmos_m1292515393,
+	Bird__ctor_m728820168,
+	Bird_Awake_m2619183699,
+	Bird_Update_m2457678327,
+	Bird_OnTriggerEnter2D_m3861319457,
+	Bird_UpdateFlip_m972155576,
+	Bird_StartFlying_m1534357805,
+	Bird_StopFlying_m273302373,
+	Bird_CanRespawn_m2483894974,
+	Bird_SoundPlayer__ctor_m2773012177,
+	Bird_SoundPlayer_FlySound_m857588349,
+	Bird_SoundPlayer_Awake_m2145560172,
+	Bird_SoundPlayer_OnDestroy_m242858986,
+	Bird_SoundPlayer_PlaySound_m644100114,
+	Bird_SoundPlayer_OnStartFlying_m1283640943,
+	Sound__ctor_m2627329201,
+	CameraFollowTarget__ctor_m4150716052,
+	CameraFollowTarget_FixedUpdate_m839975165,
+	CameraRestrictToSafeZone__ctor_m2023980398,
+	CameraRestrictToSafeZone_FixedUpdate_m945181925,
+	CameraRestrictToSafeZone_LateUpdate_m1692085387,
+	CameraRestrictToSafeZone_ConstraintInSafeZone_m3418482335,
+	CameraRestrictToSafeZone_OnDrawGizmos_m2874025940,
+	Character_AnimationController__ctor_m3743653227,
+	Character_AnimationController_OverrideThisFrame_m3258029326,
+	Character_AnimationController_LateUpdate_m1786353706,
+	Character_AnimationController_AdaptAnimationSpeedToMatchVelocity_m4099057917,
+	Character_CrouchController__ctor_m20681981,
+	Character_CrouchController_Update_m1219361806,
+	Character_CrouchController_LateUpdate_m3433197994,
+	Character_FeetSoundPlayer__ctor_m3697245643,
+	Character_FeetSoundPlayer_LeftFeetWalkSound_m689031180,
+	Character_FeetSoundPlayer_RightFeetWalkSound_m4240627983,
+	Character_FeetSoundPlayer_LeftFeetRunSound_m1701241578,
+	Character_FeetSoundPlayer_RightFeetRunSound_m2317211659,
+	Character_FeetSoundPlayer_JumpSound_m2838271596,
+	Character_FeetSoundPlayer_Awake_m4067110852,
+	Character_FeetSoundPlayer_OnDestroy_m1404253542,
+	Character_FeetSoundPlayer_PlaySound_m1751782592,
+	Character_FeetSoundPlayer_OnJump_m1712121546,
+	Sound__ctor_m1430281591,
+	Character_FlipController__ctor_m677904508,
+	Character_FlipController_LateUpdate_m18967903,
+	Character_GroundedTester__ctor_m3250325114,
+	Character_GroundedTester_get_IsGrounded_m2268760287,
+	Character_GroundedTester_get_GroundLayer_m3473007653,
+	Character_GroundedTester_FixedUpdate_m1737153735,
+	Character_GroundedTester_GroundedTest_m742748570,
+	Character_Input__ctor_m815843555,
+	Character_Input_get_Run_m3600994827,
+	Character_Input_get_Jump_m1939620422,
+	Character_Input_get_JumpHeld_m2859508413,
+	Character_Input_get_Horizontal_m1468178506,
+	Character_Input_get_Vertical_m3464180068,
+	Character_Input_get_JumpInput_m757610044,
+	Character_Input_get_RunInput_m2095804501,
+	Character_Input_FixedUpdate_m161026154,
+	Character_Input_UpdateJumpInput_m527809638,
+	Character_Input_UpdateRunInput_m4122463677,
+	Character_LadderClimbAnimation__ctor_m233702362,
+	Character_LadderClimbAnimation_Awake_m2645098517,
+	Character_LadderClimbAnimation_OnDestroy_m2728162647,
+	Character_LadderClimbAnimation_OnStartClimb_m3936503112,
+	Character_LadderClimbAnimation_OnStopClimb_m962252220,
+	Character_LadderClimbAnimation_OnClimb_m2603560125,
+	Character_LadderClimber__ctor_m1553139909,
+	Character_LadderClimber_get_IsClimbing_m3705621483,
+	Character_LadderClimber_get_Position_m2735479832,
+	Character_LadderClimber_set_Position_m3900064713,
+	Character_LadderClimber_FixedUpdate_m980028044,
+	Character_LadderClimber_ProcessLadderClimb_m1096026197,
+	Character_LadderClimber_StartClimbing_m2029899612,
+	Character_LadderClimber_StopClimbing_m479902624,
+	Character_LadderClimber_Climb_m1151321701,
+	Character_LadderClimber_PutOnTop_m1095725984,
+	Character_LadderClimber_PutOnBottom_m3097234012,
+	Character_LadderTester__ctor_m2759297216,
+	Character_LadderTester_GetNearestLadder_m2341607515,
+	Character_LadderTester_OnLadderColliderEnter_m2881410080,
+	Character_LadderTester_OnLadderColliderExit_m2624579026,
+	Character_LadderTesterListener__ctor_m3562767316,
+	Character_LadderTesterListener_OnTriggerEnter2D_m39560644,
+	Character_LadderTesterListener_OnTriggerExit2D_m1876489086,
+	Character_LookController__ctor_m1108820232,
+	Character_LookController_get_LookOffset_m3417111079,
+	Character_LookController_set_LookOffset_m2858717080,
+	Character_LookController_get_CameraTargetHeight_m1666062236,
+	Character_LookController_set_CameraTargetHeight_m651413605,
+	Character_LookController_Awake_m2992140371,
+	Character_LookController_Update_m3899532983,
+	Character_LookUpController__ctor_m2064683403,
+	Character_LookUpController_Update_m1901370194,
+	Character_LookUpController_LateUpdate_m2196289054,
+	Character_MovementController__ctor_m3360419342,
+	Character_MovementController_get_Velocity_m3500833027,
+	Character_MovementController_set_Velocity_m451649286,
+	Character_MovementController_get_Position_m299822549,
+	Character_MovementController_set_Position_m2713510114,
+	Character_MovementController_DisableMovement_m4067113565,
+	Character_MovementController_EnableMovement_m135093354,
+	Character_MovementController_CanJump_m3156270193,
+	Character_MovementController_Jump_m2763054096,
+	Character_MovementController_Awake_m1472212427,
+	Character_MovementController_FixedUpdate_m4200060033,
+	Character_MovementController_ProcessHorizontalMovement_m3280717410,
+	Character_MovementController_ProcessJump_m1376285327,
+	Character_MovementController_ProcessGravityModification_m3327099329,
+	Object_Ladder__ctor_m3222156779,
+	Object_Ladder_get_LadderUpDirection_m1852159371,
+	Object_Ladder_DistanceToLadder_m3142284483,
+	Object_Ladder_SnapOnLadder_m4207231875,
+	Object_Ladder_SnapOnLadder_m3417031363,
+	Object_Ladder_ProjectOnLadder_m3047806546,
+	Object_Ladder_Collider__ctor_m3165541190,
+	ParallaxLayer__ctor_m4227144203,
+	ParallaxLayer_Start_m1418721815,
+	ParallaxLayer_LateUpdate_m4212867716,
+	ParallaxLayer_UpdateParallax_m3025135201,
+	ParallaxLayer_GetMasterCameraPosition_m3591806591,
+	ParallaxLayer_SelectCamera_m3764245170,
+	FreezeAxes__ctor_m3164800100,
+	ParallaxByAxis__ctor_m1136942039,
+	SetOrderInLayer__ctor_m3989751779,
+	SetOrderInLayer_Update_m1907583136,
 	Displace__ctor_m2942617592,
 	Displace_Awake_m1052964061,
 	Displace_OnEnable_m4052856048,

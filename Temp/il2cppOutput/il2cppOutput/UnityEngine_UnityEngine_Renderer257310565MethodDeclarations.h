@@ -38,7 +38,11 @@ extern "C"  MaterialU5BU5D_t3123989686* Renderer_get_materials_m810004692 (Rende
 extern "C"  void Renderer_set_materials_m1556465155 (Renderer_t257310565 * __this, MaterialU5BU5D_t3123989686* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Material[] UnityEngine.Renderer::get_sharedMaterials()
 extern "C"  MaterialU5BU5D_t3123989686* Renderer_get_sharedMaterials_m4026934221 (Renderer_t257310565 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Renderer::get_isVisible()
+extern "C"  bool Renderer_get_isVisible_m3612355717 (Renderer_t257310565 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Renderer::get_sortingLayerID()
 extern "C"  int32_t Renderer_get_sortingLayerID_m2403577271 (Renderer_t257310565 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Renderer::get_sortingOrder()
 extern "C"  int32_t Renderer_get_sortingOrder_m1544525007 (Renderer_t257310565 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Renderer::set_sortingOrder(System.Int32)
+extern "C"  void Renderer_set_sortingOrder_m809829562 (Renderer_t257310565 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

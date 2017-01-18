@@ -8,7 +8,7 @@ namespace UnityStandardAssets._2D
     {
         [SerializeField] private float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
         [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
-        [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
+        [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .2f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
 
@@ -60,21 +60,9 @@ namespace UnityStandardAssets._2D
                 // Move the character
                 m_Rigidbody2D.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody2D.velocity.y);
 
-                // If the input is moving the player right and the player is facing left...
-                if (move > 0 && !m_FacingRight)
-                {
-                    // ... flip the player.
-                    Flip();
-                }
-                    // Otherwise if the input is moving the player left and the player is facing right...
-                else if (move < 0 && m_FacingRight)
-                {
-                    // ... flip the player.
-                    Flip();
-                }
             }
             // If the player should jump...
-			if (m_Grounded && m_Rigidbody2D.velocity.y == 0 && m_Anim.GetBool("Ground"))
+			if (m_Grounded && Math.Abs(m_Rigidbody2D.velocity.y) <= 0.01f && m_Anim.GetBool("Ground"))
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
@@ -97,11 +85,11 @@ namespace UnityStandardAssets._2D
         }
 
 		public void AddPower() {
-			m_JumpForce += 40;
+			m_JumpForce += m_JumpForce * 0.05f;
 		}
 
 		private int RandomFace() {
-			return (int)UnityEngine.Random.Range (0, 24);
+			return (int)UnityEngine.Random.Range (0, 48);
 		}
     }
 }

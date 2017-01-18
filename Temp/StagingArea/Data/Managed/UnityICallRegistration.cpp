@@ -374,6 +374,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Animator_INTERNAL_get_deltaPosition();
 		Register_UnityEngine_Animator_INTERNAL_get_deltaPosition();
 
+		//System.Void UnityEngine.Animator::Play(System.Int32,System.Int32,System.Single)
+		void Register_UnityEngine_Animator_Play();
+		Register_UnityEngine_Animator_Play();
+
 		//System.Void UnityEngine.Animator::ResetTriggerString(System.String)
 		void Register_UnityEngine_Animator_ResetTriggerString();
 		Register_UnityEngine_Animator_ResetTriggerString();
@@ -529,6 +533,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.AudioSource::Play(System.UInt64)
 		void Register_UnityEngine_AudioSource_Play();
 		Register_UnityEngine_AudioSource_Play();
+
+		//System.Void UnityEngine.AudioSource::PlayOneShot(UnityEngine.AudioClip,System.Single)
+		void Register_UnityEngine_AudioSource_PlayOneShot();
+		Register_UnityEngine_AudioSource_PlayOneShot();
 
 		//System.Void UnityEngine.AudioSource::Stop()
 		void Register_UnityEngine_AudioSource_Stop();
@@ -693,6 +701,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Camera::INTERNAL_CALL_ViewportToWorldPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Camera_INTERNAL_CALL_ViewportToWorldPoint();
 		Register_UnityEngine_Camera_INTERNAL_CALL_ViewportToWorldPoint();
+
+		//System.Void UnityEngine.Camera::INTERNAL_CALL_WorldToViewportPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
+		void Register_UnityEngine_Camera_INTERNAL_CALL_WorldToViewportPoint();
+		Register_UnityEngine_Camera_INTERNAL_CALL_WorldToViewportPoint();
 
 		//System.Void UnityEngine.Camera::INTERNAL_get_backgroundColor(UnityEngine.Color&)
 		void Register_UnityEngine_Camera_INTERNAL_get_backgroundColor();
@@ -2106,6 +2118,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Matrix4x4_INTERNAL_CALL_Inverse();
 		Register_UnityEngine_Matrix4x4_INTERNAL_CALL_Inverse();
 
+		//System.Void UnityEngine.Matrix4x4::INTERNAL_CALL_TRS(UnityEngine.Vector3&,UnityEngine.Quaternion&,UnityEngine.Vector3&,UnityEngine.Matrix4x4&)
+		void Register_UnityEngine_Matrix4x4_INTERNAL_CALL_TRS();
+		Register_UnityEngine_Matrix4x4_INTERNAL_CALL_TRS();
+
 	//End Registrations for type : UnityEngine.Matrix4x4
 
 	//Start Registrations for type : UnityEngine.Mesh
@@ -2598,6 +2614,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Physics2D
 
+		//System.Void UnityEngine.Physics2D::INTERNAL_CALL_Internal_Linecast(UnityEngine.Vector2&,UnityEngine.Vector2&,System.Int32,System.Single,System.Single,UnityEngine.RaycastHit2D&)
+		void Register_UnityEngine_Physics2D_INTERNAL_CALL_Internal_Linecast();
+		Register_UnityEngine_Physics2D_INTERNAL_CALL_Internal_Linecast();
+
 		//System.Void UnityEngine.Physics2D::INTERNAL_CALL_Internal_Raycast(UnityEngine.Vector2&,UnityEngine.Vector2&,System.Single,System.Int32,System.Single,System.Single,UnityEngine.RaycastHit2D&)
 		void Register_UnityEngine_Physics2D_INTERNAL_CALL_Internal_Raycast();
 		Register_UnityEngine_Physics2D_INTERNAL_CALL_Internal_Raycast();
@@ -2842,6 +2862,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Renderer_get_enabled();
 		Register_UnityEngine_Renderer_get_enabled();
 
+		//System.Boolean UnityEngine.Renderer::get_isVisible()
+		void Register_UnityEngine_Renderer_get_isVisible();
+		Register_UnityEngine_Renderer_get_isVisible();
+
 		//System.Int32 UnityEngine.Renderer::get_sortingLayerID()
 		void Register_UnityEngine_Renderer_get_sortingLayerID();
 		Register_UnityEngine_Renderer_get_sortingLayerID();
@@ -2861,6 +2885,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Renderer::set_materials(UnityEngine.Material[])
 		void Register_UnityEngine_Renderer_set_materials();
 		Register_UnityEngine_Renderer_set_materials();
+
+		//System.Void UnityEngine.Renderer::set_sortingOrder(System.Int32)
+		void Register_UnityEngine_Renderer_set_sortingOrder();
+		Register_UnityEngine_Renderer_set_sortingOrder();
 
 		//UnityEngine.Material UnityEngine.Renderer::get_material()
 		void Register_UnityEngine_Renderer_get_material();
@@ -2998,6 +3026,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Rigidbody2D
 
+		//System.Single UnityEngine.Rigidbody2D::get_gravityScale()
+		void Register_UnityEngine_Rigidbody2D_get_gravityScale();
+		Register_UnityEngine_Rigidbody2D_get_gravityScale();
+
 		//System.Single UnityEngine.Rigidbody2D::get_mass()
 		void Register_UnityEngine_Rigidbody2D_get_mass();
 		Register_UnityEngine_Rigidbody2D_get_mass();
@@ -3013,6 +3045,14 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Rigidbody2D::INTERNAL_set_velocity(UnityEngine.Vector2&)
 		void Register_UnityEngine_Rigidbody2D_INTERNAL_set_velocity();
 		Register_UnityEngine_Rigidbody2D_INTERNAL_set_velocity();
+
+		//System.Void UnityEngine.Rigidbody2D::set_bodyType(UnityEngine.RigidbodyType2D)
+		void Register_UnityEngine_Rigidbody2D_set_bodyType();
+		Register_UnityEngine_Rigidbody2D_set_bodyType();
+
+		//System.Void UnityEngine.Rigidbody2D::set_gravityScale(System.Single)
+		void Register_UnityEngine_Rigidbody2D_set_gravityScale();
+		Register_UnityEngine_Rigidbody2D_set_gravityScale();
 
 		//System.Void UnityEngine.Rigidbody2D::set_mass(System.Single)
 		void Register_UnityEngine_Rigidbody2D_set_mass();
@@ -3409,6 +3449,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Time::get_deltaTime()
 		void Register_UnityEngine_Time_get_deltaTime();
 		Register_UnityEngine_Time_get_deltaTime();
+
+		//System.Single UnityEngine.Time::get_fixedDeltaTime()
+		void Register_UnityEngine_Time_get_fixedDeltaTime();
+		Register_UnityEngine_Time_get_fixedDeltaTime();
 
 		//System.Single UnityEngine.Time::get_realtimeSinceStartup()
 		void Register_UnityEngine_Time_get_realtimeSinceStartup();

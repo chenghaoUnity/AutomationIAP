@@ -369,8 +369,10 @@ struct IUserProfileU5BU5D_t3461248430;
 #include "UnityEngine_UnityEngine_ForceMode1856518252.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D502193897.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D502193897MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_RigidbodyType2D1116729369.h"
 #include "UnityEngine_UnityEngine_ForceMode2D4177575466.h"
 #include "UnityEngine_UnityEngine_RigidbodyConstraints251614631MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_RigidbodyType2D1116729369MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RPC3323229423.h"
 #include "UnityEngine_UnityEngine_RPC3323229423MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RuntimeAnimatorController670468573.h"
@@ -490,7 +492,6 @@ struct IUserProfileU5BU5D_t3461248430;
 #include "UnityEngine_UnityEngine_SocialPlatforms_Range3455291607MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_TimeScope2583939667MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_UserScope3775842435MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_UserState455716270MethodDeclarations.h"
 
 // T UnityEngine.GameObject::GetComponent<System.Object>()
 extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2650145732_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
@@ -4354,6 +4355,105 @@ extern "C"  bool Physics_INTERNAL_CALL_Internal_RaycastTest_m3440840981 (Il2CppO
 	_il2cpp_icall_func = (Physics_INTERNAL_CALL_Internal_RaycastTest_m3440840981_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics::INTERNAL_CALL_Internal_RaycastTest(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)");
 	return _il2cpp_icall_func(___origin0, ___direction1, ___maxDistance2, ___layermask3, ___queryTriggerInteraction4);
 }
+// System.Void UnityEngine.Physics2D::Internal_Linecast(UnityEngine.Vector2,UnityEngine.Vector2,System.Int32,System.Single,System.Single,UnityEngine.RaycastHit2D&)
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
+extern const uint32_t Physics2D_Internal_Linecast_m1593067799_MetadataUsageId;
+extern "C"  void Physics2D_Internal_Linecast_m1593067799 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  ___start0, Vector2_t2243707579  ___end1, int32_t ___layerMask2, float ___minDepth3, float ___maxDepth4, RaycastHit2D_t4063908774 * ___raycastHit5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Physics2D_Internal_Linecast_m1593067799_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___layerMask2;
+		float L_1 = ___minDepth3;
+		float L_2 = ___maxDepth4;
+		RaycastHit2D_t4063908774 * L_3 = ___raycastHit5;
+		IL2CPP_RUNTIME_CLASS_INIT(Physics2D_t2540166467_il2cpp_TypeInfo_var);
+		Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300(NULL /*static, unused*/, (&___start0), (&___end1), L_0, L_1, L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Physics2D::INTERNAL_CALL_Internal_Linecast(UnityEngine.Vector2&,UnityEngine.Vector2&,System.Int32,System.Single,System.Single,UnityEngine.RaycastHit2D&)
+extern "C"  void Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579 * ___start0, Vector2_t2243707579 * ___end1, int32_t ___layerMask2, float ___minDepth3, float ___maxDepth4, RaycastHit2D_t4063908774 * ___raycastHit5, const MethodInfo* method)
+{
+	typedef void (*Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300_ftn) (Vector2_t2243707579 *, Vector2_t2243707579 *, int32_t, float, float, RaycastHit2D_t4063908774 *);
+	static Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics2D::INTERNAL_CALL_Internal_Linecast(UnityEngine.Vector2&,UnityEngine.Vector2&,System.Int32,System.Single,System.Single,UnityEngine.RaycastHit2D&)");
+	_il2cpp_icall_func(___start0, ___end1, ___layerMask2, ___minDepth3, ___maxDepth4, ___raycastHit5);
+}
+// UnityEngine.RaycastHit2D UnityEngine.Physics2D::Linecast(UnityEngine.Vector2,UnityEngine.Vector2,System.Int32)
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
+extern const uint32_t Physics2D_Linecast_m2374117908_MetadataUsageId;
+extern "C"  RaycastHit2D_t4063908774  Physics2D_Linecast_m2374117908 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  ___start0, Vector2_t2243707579  ___end1, int32_t ___layerMask2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Physics2D_Linecast_m2374117908_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	RaycastHit2D_t4063908774  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	{
+		V_0 = (std::numeric_limits<float>::infinity());
+		V_1 = (-std::numeric_limits<float>::infinity());
+		Vector2_t2243707579  L_0 = ___start0;
+		Vector2_t2243707579  L_1 = ___end1;
+		int32_t L_2 = ___layerMask2;
+		float L_3 = V_1;
+		float L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Physics2D_t2540166467_il2cpp_TypeInfo_var);
+		RaycastHit2D_t4063908774  L_5 = Physics2D_Linecast_m3607674036(NULL /*static, unused*/, L_0, L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		RaycastHit2D_t4063908774  L_6 = V_2;
+		return L_6;
+	}
+}
+// UnityEngine.RaycastHit2D UnityEngine.Physics2D::Linecast(UnityEngine.Vector2,UnityEngine.Vector2,System.Int32,System.Single,System.Single)
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
+extern const uint32_t Physics2D_Linecast_m3607674036_MetadataUsageId;
+extern "C"  RaycastHit2D_t4063908774  Physics2D_Linecast_m3607674036 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  ___start0, Vector2_t2243707579  ___end1, int32_t ___layerMask2, float ___minDepth3, float ___maxDepth4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Physics2D_Linecast_m3607674036_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RaycastHit2D_t4063908774  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	RaycastHit2D_t4063908774  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Vector2_t2243707579  L_0 = ___start0;
+		Vector2_t2243707579  L_1 = ___end1;
+		int32_t L_2 = ___layerMask2;
+		float L_3 = ___minDepth3;
+		float L_4 = ___maxDepth4;
+		IL2CPP_RUNTIME_CLASS_INIT(Physics2D_t2540166467_il2cpp_TypeInfo_var);
+		Physics2D_Internal_Linecast_m1593067799(NULL /*static, unused*/, L_0, L_1, L_2, L_3, L_4, (&V_0), /*hidden argument*/NULL);
+		RaycastHit2D_t4063908774  L_5 = V_0;
+		V_1 = L_5;
+		goto IL_0015;
+	}
+
+IL_0015:
+	{
+		RaycastHit2D_t4063908774  L_6 = V_1;
+		return L_6;
+	}
+}
 // System.Void UnityEngine.Physics2D::Internal_Raycast(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Int32,System.Single,System.Single,UnityEngine.RaycastHit2D&)
 extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
 extern const uint32_t Physics2D_Internal_Raycast_m683685528_MetadataUsageId;
@@ -6406,6 +6506,32 @@ extern "C"  Collider2D_t646061738 * RaycastHit2D_get_collider_m2568504212_Adjust
 {
 	RaycastHit2D_t4063908774 * _thisAdjusted = reinterpret_cast<RaycastHit2D_t4063908774 *>(__this + 1);
 	return RaycastHit2D_get_collider_m2568504212(_thisAdjusted, method);
+}
+// System.Boolean UnityEngine.RaycastHit2D::op_Implicit(UnityEngine.RaycastHit2D)
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t RaycastHit2D_op_Implicit_m596912073_MetadataUsageId;
+extern "C"  bool RaycastHit2D_op_Implicit_m596912073 (Il2CppObject * __this /* static, unused */, RaycastHit2D_t4063908774  ___hit0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (RaycastHit2D_op_Implicit_m596912073_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		Collider2D_t646061738 * L_0 = RaycastHit2D_get_collider_m2568504212((&___hit0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_0014;
+	}
+
+IL_0014:
+	{
+		bool L_2 = V_0;
+		return L_2;
+	}
 }
 // Conversion methods for marshalling of: UnityEngine.RaycastHit2D
 extern "C" void RaycastHit2D_t4063908774_marshal_pinvoke(const RaycastHit2D_t4063908774& unmarshaled, RaycastHit2D_t4063908774_marshaled_pinvoke& marshaled)
@@ -9391,6 +9517,15 @@ extern "C"  MaterialU5BU5D_t3123989686* Renderer_get_sharedMaterials_m4026934221
 	_il2cpp_icall_func = (Renderer_get_sharedMaterials_m4026934221_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Renderer::get_sharedMaterials()");
 	return _il2cpp_icall_func(__this);
 }
+// System.Boolean UnityEngine.Renderer::get_isVisible()
+extern "C"  bool Renderer_get_isVisible_m3612355717 (Renderer_t257310565 * __this, const MethodInfo* method)
+{
+	typedef bool (*Renderer_get_isVisible_m3612355717_ftn) (Renderer_t257310565 *);
+	static Renderer_get_isVisible_m3612355717_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Renderer_get_isVisible_m3612355717_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Renderer::get_isVisible()");
+	return _il2cpp_icall_func(__this);
+}
 // System.Int32 UnityEngine.Renderer::get_sortingLayerID()
 extern "C"  int32_t Renderer_get_sortingLayerID_m2403577271 (Renderer_t257310565 * __this, const MethodInfo* method)
 {
@@ -9408,6 +9543,15 @@ extern "C"  int32_t Renderer_get_sortingOrder_m1544525007 (Renderer_t257310565 *
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Renderer_get_sortingOrder_m1544525007_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Renderer::get_sortingOrder()");
 	return _il2cpp_icall_func(__this);
+}
+// System.Void UnityEngine.Renderer::set_sortingOrder(System.Int32)
+extern "C"  void Renderer_set_sortingOrder_m809829562 (Renderer_t257310565 * __this, int32_t ___value0, const MethodInfo* method)
+{
+	typedef void (*Renderer_set_sortingOrder_m809829562_ftn) (Renderer_t257310565 *, int32_t);
+	static Renderer_set_sortingOrder_m809829562_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Renderer_set_sortingOrder_m809829562_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Renderer::set_sortingOrder(System.Int32)");
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Void UnityEngine.RenderTexture::.ctor(System.Int32,System.Int32,System.Int32)
 extern "C"  void RenderTexture__ctor_m4075605457 (RenderTexture_t2666733923 * __this, int32_t ___width0, int32_t ___height1, int32_t ___depth2, const MethodInfo* method)
@@ -9962,6 +10106,68 @@ extern "C"  void Rigidbody2D_set_mass_m2409729346 (Rigidbody2D_t502193897 * __th
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Rigidbody2D_set_mass_m2409729346_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody2D::set_mass(System.Single)");
 	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Single UnityEngine.Rigidbody2D::get_gravityScale()
+extern "C"  float Rigidbody2D_get_gravityScale_m3363788087 (Rigidbody2D_t502193897 * __this, const MethodInfo* method)
+{
+	typedef float (*Rigidbody2D_get_gravityScale_m3363788087_ftn) (Rigidbody2D_t502193897 *);
+	static Rigidbody2D_get_gravityScale_m3363788087_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody2D_get_gravityScale_m3363788087_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody2D::get_gravityScale()");
+	return _il2cpp_icall_func(__this);
+}
+// System.Void UnityEngine.Rigidbody2D::set_gravityScale(System.Single)
+extern "C"  void Rigidbody2D_set_gravityScale_m1426625078 (Rigidbody2D_t502193897 * __this, float ___value0, const MethodInfo* method)
+{
+	typedef void (*Rigidbody2D_set_gravityScale_m1426625078_ftn) (Rigidbody2D_t502193897 *, float);
+	static Rigidbody2D_set_gravityScale_m1426625078_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody2D_set_gravityScale_m1426625078_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody2D::set_gravityScale(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Rigidbody2D::set_bodyType(UnityEngine.RigidbodyType2D)
+extern "C"  void Rigidbody2D_set_bodyType_m2943264019 (Rigidbody2D_t502193897 * __this, int32_t ___value0, const MethodInfo* method)
+{
+	typedef void (*Rigidbody2D_set_bodyType_m2943264019_ftn) (Rigidbody2D_t502193897 *, int32_t);
+	static Rigidbody2D_set_bodyType_m2943264019_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody2D_set_bodyType_m2943264019_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody2D::set_bodyType(UnityEngine.RigidbodyType2D)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Rigidbody2D::set_isKinematic(System.Boolean)
+extern "C"  void Rigidbody2D_set_isKinematic_m548319077 (Rigidbody2D_t502193897 * __this, bool ___value0, const MethodInfo* method)
+{
+	Rigidbody2D_t502193897 * G_B2_0 = NULL;
+	Rigidbody2D_t502193897 * G_B1_0 = NULL;
+	int32_t G_B3_0 = 0;
+	Rigidbody2D_t502193897 * G_B3_1 = NULL;
+	{
+		bool L_0 = ___value0;
+		G_B1_0 = __this;
+		if (!L_0)
+		{
+			G_B2_0 = __this;
+			goto IL_000e;
+		}
+	}
+	{
+		G_B3_0 = 1;
+		G_B3_1 = G_B1_0;
+		goto IL_000f;
+	}
+
+IL_000e:
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_000f:
+	{
+		NullCheck(G_B3_1);
+		Rigidbody2D_set_bodyType_m2943264019(G_B3_1, G_B3_0, /*hidden argument*/NULL);
+		return;
+	}
 }
 // System.Void UnityEngine.Rigidbody2D::set_simulated(System.Boolean)
 extern "C"  void Rigidbody2D_set_simulated_m2089192866 (Rigidbody2D_t502193897 * __this, bool ___value0, const MethodInfo* method)

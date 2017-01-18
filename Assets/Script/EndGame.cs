@@ -37,6 +37,11 @@ public class EndGame : MonoBehaviour {
 				reduceGold (100);
 			}
 
+			if (this.gameObject.name == "Killzone") {
+				sentEvent ();
+				UI.GetComponent<UIupdater> ().openWindow ("Death");
+			}
+
 		}
 	}
 

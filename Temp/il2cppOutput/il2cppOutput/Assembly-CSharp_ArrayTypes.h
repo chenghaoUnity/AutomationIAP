@@ -9,6 +9,8 @@
 #endif
 
 
+// UniArt.PixelScifiLandscape.Sample.Object_Ladder
+struct Object_Ladder_t2797598778;
 // User
 struct User_t719925459;
 // TestCase
@@ -33,6 +35,8 @@ struct Property_t4059421526;
 struct Vertex_t2714087479;
 
 #include "mscorlib_System_Array3829468939.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl1114264637.h"
+#include "AssemblyU2DCSharp_UniArt_PixelScifiLandscape_Sampl2797598778.h"
 #include "AssemblyU2DCSharp_User719925459.h"
 #include "AssemblyU2DCSharp_TestCase820417420.h"
 #include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Annot1702253283.h"
@@ -46,6 +50,78 @@ struct Vertex_t2714087479;
 #include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Verte2714087479.h"
 
 #pragma once
+// UniArt.PixelScifiLandscape.Sample.Animal/EState[]
+struct EStateU5BU5D_t165063216  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+public:
+	inline int32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline int32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UniArt.PixelScifiLandscape.Sample.Object_Ladder[]
+struct Object_LadderU5BU5D_t3790736799  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Object_Ladder_t2797598778 * m_Items[1];
+
+public:
+	inline Object_Ladder_t2797598778 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Object_Ladder_t2797598778 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Object_Ladder_t2797598778 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline Object_Ladder_t2797598778 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Object_Ladder_t2797598778 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Object_Ladder_t2797598778 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
 // User[]
 struct UserU5BU5D_t141576834  : public Il2CppArray
 {

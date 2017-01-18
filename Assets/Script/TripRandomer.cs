@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TripRandomer : MonoBehaviour {
-	
+
 	void Start () {
 		if (this.gameObject.name == "spikes-md") {
 			random ();
 		}	
 	}
 
+
 	public void random () {
-		this.gameObject.transform.localPosition = new Vector2(Random.Range (0.3f, 1.6f), this.gameObject.transform.localPosition.y);
+		this.gameObject.transform.localPosition = new Vector2(Random.Range (-3.48f, 2.26f), this.gameObject.transform.localPosition.y);
 	}
 }
