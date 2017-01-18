@@ -53,22 +53,17 @@
      <None Include="Assets\3rdParty\Ultimate Joystick Examples\Third Person Example\README_ThirdPerson.txt" />
      <None Include="Assets\Plugins\Ultimate Joystick\README.txt" />
      <None Include="Assets\3rdParty\Bleed\HowToUse.txt" />
-     <None Include="Assets\3rdParty\RainMaker\Demo\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
      <None Include="Assets\3rdParty\RainMaker\Prefab\RainShader.shader" />
      <None Include="Assets\Plugins\Android\firebase-common-10.0.1\proguard.txt" />
-     <None Include="Assets\3rdParty\RainMaker\Demo\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\3rdParty\Bleed\ImageBlendEffect.shader" />
      <None Include="Assets\3rdParty\Ultimate Joystick Examples\Spaceship Example\README_Spaceship.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\3rdParty\RainMaker\Demo\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Firebase\Plugins\link.xml" />
      <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver.txt" />
      <None Include="Assets\Plugins\Android\Firebase\res\values\google-services.xml" />
      <None Include="Assets\3rdParty\RainMaker\Readme.txt" />
-     <None Include="Assets\3rdParty\RainMaker\Demo\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
-     <None Include="Assets\3rdParty\RainMaker\Demo\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/chenghao/AutomationIAP/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
