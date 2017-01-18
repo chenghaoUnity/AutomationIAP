@@ -352,6 +352,7 @@ struct Vector4U5BU5D_t1658499504;
 #include "UnityEngine_UnityEngine_ParticleSystem_MinMaxCurve122563058.h"
 #include "UnityEngine_UnityEngine_Color32874517518.h"
 #include "UnityEngine_UnityEngine_RaycastHit87180320.h"
+#include "UnityEngine_UnityEngine_CollisionFlags4046947985.h"
 #include "UnityEngine_UnityEngine_RaycastHit2D4063908774.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions1414041951.h"
 #include "UnityEngine_UnityEngine_AnimatorStateInfo2577870592.h"
@@ -8465,6 +8466,13 @@ void* RuntimeInvoker_Void_t1841601450_Il2CppObject_Int32_t2071877448_Vector3U26_
 	return NULL;
 }
 
+void* RuntimeInvoker_Void_t1841601450_Il2CppObject_Il2CppObject_Il2CppObject_Int32_t2071877448_SByte_t454417549 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef void (*Func)(void* obj, Il2CppObject * p1, Il2CppObject * p2, Il2CppObject * p3, int32_t p4, int8_t p5, const MethodInfo* method);
+	((Func)method->methodPointer)(obj, (Il2CppObject *)args[0], (Il2CppObject *)args[1], (Il2CppObject *)args[2], *((int32_t*)args[3]), *((int8_t*)args[4]), method);
+	return NULL;
+}
+
 void* RuntimeInvoker_Il2CppObject_Vector3_t2243707580 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef Il2CppObject * (*Func)(void* obj, Vector3_t2243707580  p1, const MethodInfo* method);
@@ -8610,6 +8618,13 @@ void* RuntimeInvoker_Vector3_t2243707580_Vector3_t2243707580_Vector3_t2243707580
 	typedef Vector3_t2243707580  (*Func)(void* obj, Vector3_t2243707580  p1, Vector3_t2243707580  p2, float p3, const MethodInfo* method);
 	Vector3_t2243707580  ret = ((Func)method->methodPointer)(obj, *((Vector3_t2243707580 *)args[0]), *((Vector3_t2243707580 *)args[1]), *((float*)args[2]), method);
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
+void* RuntimeInvoker_Void_t1841601450_Vector3U26_t425862308_Vector3U26_t425862308_Single_t2076509932_Vector3U26_t425862308 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef void (*Func)(void* obj, Vector3_t2243707580 * p1, Vector3_t2243707580 * p2, float p3, Vector3_t2243707580 * p4, const MethodInfo* method);
+	((Func)method->methodPointer)(obj, (Vector3_t2243707580 *)args[0], (Vector3_t2243707580 *)args[1], *((float*)args[2]), (Vector3_t2243707580 *)args[3], method);
+	return NULL;
 }
 
 void* RuntimeInvoker_Vector3_t2243707580_Vector3_t2243707580_Vector3_t2243707580_Vector3U26_t425862308_Single_t2076509932 (const MethodInfo* method, void* obj, void** args)
@@ -9879,6 +9894,20 @@ void* RuntimeInvoker_Void_t1841601450_Il2CppObject_Vector3U26_t425862308_Int32_t
 	return NULL;
 }
 
+void* RuntimeInvoker_CollisionFlags_t4046947985_Vector3_t2243707580 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef int32_t (*Func)(void* obj, Vector3_t2243707580  p1, const MethodInfo* method);
+	int32_t ret = ((Func)method->methodPointer)(obj, *((Vector3_t2243707580 *)args[0]), method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
+void* RuntimeInvoker_CollisionFlags_t4046947985_Il2CppObject_Vector3U26_t425862308 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef int32_t (*Func)(void* obj, Il2CppObject * p1, Vector3_t2243707580 * p2, const MethodInfo* method);
+	int32_t ret = ((Func)method->methodPointer)(obj, (Il2CppObject *)args[0], (Vector3_t2243707580 *)args[1], method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
 void* RuntimeInvoker_Boolean_t3825574718_RaycastHit2D_t4063908774 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef bool (*Func)(void* obj, RaycastHit2D_t4063908774  p1, const MethodInfo* method);
@@ -10299,10 +10328,38 @@ void* RuntimeInvoker_KeyCode_t2283395152 (const MethodInfo* method, void* obj, v
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
+void* RuntimeInvoker_Void_t1841601450_Rect_t3681755626_Il2CppObject (const MethodInfo* method, void* obj, void** args)
+{
+	typedef void (*Func)(void* obj, Rect_t3681755626  p1, Il2CppObject * p2, const MethodInfo* method);
+	((Func)method->methodPointer)(obj, *((Rect_t3681755626 *)args[0]), (Il2CppObject *)args[1], method);
+	return NULL;
+}
+
+void* RuntimeInvoker_Void_t1841601450_Rect_t3681755626_Il2CppObject_Il2CppObject (const MethodInfo* method, void* obj, void** args)
+{
+	typedef void (*Func)(void* obj, Rect_t3681755626  p1, Il2CppObject * p2, Il2CppObject * p3, const MethodInfo* method);
+	((Func)method->methodPointer)(obj, *((Rect_t3681755626 *)args[0]), (Il2CppObject *)args[1], (Il2CppObject *)args[2], method);
+	return NULL;
+}
+
 void* RuntimeInvoker_Void_t1841601450_Il2CppObject_Int32_t2071877448_Il2CppObject_Int32_t2071877448_Single_t2076509932_Single_t2076509932_Il2CppObject (const MethodInfo* method, void* obj, void** args)
 {
 	typedef void (*Func)(void* obj, Il2CppObject * p1, int32_t p2, Il2CppObject * p3, int32_t p4, float p5, float p6, Il2CppObject * p7, const MethodInfo* method);
 	((Func)method->methodPointer)(obj, (Il2CppObject *)args[0], *((int32_t*)args[1]), (Il2CppObject *)args[2], *((int32_t*)args[3]), *((float*)args[4]), *((float*)args[5]), (Il2CppObject *)args[6], method);
+	return NULL;
+}
+
+void* RuntimeInvoker_Void_t1841601450_Rect_t3681755626_Il2CppObject_IntPtr_t (const MethodInfo* method, void* obj, void** args)
+{
+	typedef void (*Func)(void* obj, Rect_t3681755626  p1, Il2CppObject * p2, IntPtr_t p3, const MethodInfo* method);
+	((Func)method->methodPointer)(obj, *((Rect_t3681755626 *)args[0]), (Il2CppObject *)args[1], *((IntPtr_t*)args[2]), method);
+	return NULL;
+}
+
+void* RuntimeInvoker_Void_t1841601450_RectU26_t844847526_Il2CppObject_IntPtr_t (const MethodInfo* method, void* obj, void** args)
+{
+	typedef void (*Func)(void* obj, Rect_t3681755626 * p1, Il2CppObject * p2, IntPtr_t p3, const MethodInfo* method);
+	((Func)method->methodPointer)(obj, (Rect_t3681755626 *)args[0], (Il2CppObject *)args[1], *((IntPtr_t*)args[2]), method);
 	return NULL;
 }
 
@@ -17376,7 +17433,7 @@ void* RuntimeInvoker_Il2CppObject_FloatTween_t2986189219 (const MethodInfo* meth
 	return ret;
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[2402] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[2410] = 
 {
 	RuntimeInvoker_Void_t1841601450,
 	RuntimeInvoker_Boolean_t3825574718_Il2CppObject,
@@ -18507,6 +18564,7 @@ extern const InvokerMethod g_Il2CppInvokerPointers[2402] =
 	RuntimeInvoker_Void_t1841601450_Single_t2076509932_Single_t2076509932,
 	RuntimeInvoker_Void_t1841601450_Int32_t2071877448_Vector3_t2243707580,
 	RuntimeInvoker_Void_t1841601450_Il2CppObject_Int32_t2071877448_Vector3U26_t425862308,
+	RuntimeInvoker_Void_t1841601450_Il2CppObject_Il2CppObject_Il2CppObject_Int32_t2071877448_SByte_t454417549,
 	RuntimeInvoker_Il2CppObject_Vector3_t2243707580,
 	RuntimeInvoker_Il2CppObject_Il2CppObject_Vector3U26_t425862308,
 	RuntimeInvoker_Void_t1841601450_Il2CppObject_Int32_t2071877448_SByte_t454417549_SByte_t454417549_SByte_t454417549_SByte_t454417549_Il2CppObject,
@@ -18528,6 +18586,7 @@ extern const InvokerMethod g_Il2CppInvokerPointers[2402] =
 	RuntimeInvoker_LayerMask_t3188175821_Int32_t2071877448,
 	RuntimeInvoker_Void_t1841601450_Single_t2076509932_Single_t2076509932_Single_t2076509932,
 	RuntimeInvoker_Vector3_t2243707580_Vector3_t2243707580_Vector3_t2243707580_Single_t2076509932,
+	RuntimeInvoker_Void_t1841601450_Vector3U26_t425862308_Vector3U26_t425862308_Single_t2076509932_Vector3U26_t425862308,
 	RuntimeInvoker_Vector3_t2243707580_Vector3_t2243707580_Vector3_t2243707580_Vector3U26_t425862308_Single_t2076509932,
 	RuntimeInvoker_Vector3_t2243707580_Vector3_t2243707580_Vector3_t2243707580_Vector3U26_t425862308_Single_t2076509932_Single_t2076509932_Single_t2076509932,
 	RuntimeInvoker_Vector3_t2243707580_Vector3_t2243707580_Vector3_t2243707580,
@@ -18709,6 +18768,8 @@ extern const InvokerMethod g_Il2CppInvokerPointers[2402] =
 	RuntimeInvoker_Boolean_t3825574718_Vector3U26_t425862308_Vector3U26_t425862308_Single_t2076509932_Vector3U26_t425862308_RaycastHitU26_t1969197280_Single_t2076509932_Int32_t2071877448_Int32_t2071877448,
 	RuntimeInvoker_Boolean_t3825574718_Vector3U26_t425862308_Vector3U26_t425862308_Single_t2076509932_Int32_t2071877448_Int32_t2071877448,
 	RuntimeInvoker_Void_t1841601450_Il2CppObject_Vector3U26_t425862308_Int32_t2071877448,
+	RuntimeInvoker_CollisionFlags_t4046947985_Vector3_t2243707580,
+	RuntimeInvoker_CollisionFlags_t4046947985_Il2CppObject_Vector3U26_t425862308,
 	RuntimeInvoker_Boolean_t3825574718_RaycastHit2D_t4063908774,
 	RuntimeInvoker_Void_t1841601450_Vector2_t2243707579_Vector2_t2243707579_Int32_t2071877448_Single_t2076509932_Single_t2076509932_RaycastHit2DU26_t4207306570,
 	RuntimeInvoker_Void_t1841601450_Vector2U26_t3911752445_Vector2U26_t3911752445_Int32_t2071877448_Single_t2076509932_Single_t2076509932_RaycastHit2DU26_t4207306570,
@@ -18769,7 +18830,11 @@ extern const InvokerMethod g_Il2CppInvokerPointers[2402] =
 	RuntimeInvoker_EventType_t3919834026,
 	RuntimeInvoker_EventModifiers_t2690251474,
 	RuntimeInvoker_KeyCode_t2283395152,
+	RuntimeInvoker_Void_t1841601450_Rect_t3681755626_Il2CppObject,
+	RuntimeInvoker_Void_t1841601450_Rect_t3681755626_Il2CppObject_Il2CppObject,
 	RuntimeInvoker_Void_t1841601450_Il2CppObject_Int32_t2071877448_Il2CppObject_Int32_t2071877448_Single_t2076509932_Single_t2076509932_Il2CppObject,
+	RuntimeInvoker_Void_t1841601450_Rect_t3681755626_Il2CppObject_IntPtr_t,
+	RuntimeInvoker_Void_t1841601450_RectU26_t844847526_Il2CppObject_IntPtr_t,
 	RuntimeInvoker_Void_t1841601450_Single_t2076509932_Single_t2076509932_Single_t2076509932_Single_t2076509932_Il2CppObject,
 	RuntimeInvoker_Rect_t3681755626_Int32_t2071877448,
 	RuntimeInvoker_Void_t1841601450_Int32_t2071877448_RectU26_t844847526,

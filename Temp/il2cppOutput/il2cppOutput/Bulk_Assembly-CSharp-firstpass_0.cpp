@@ -71,6 +71,10 @@ struct Button_t2872111280;
 struct Text_t356221433;
 // IAPDemo/<ProcessPurchase>c__AnonStorey0
 struct U3CProcessPurchaseU3Ec__AnonStorey0_t1218622627;
+// MouseLook
+struct MouseLook_t2643707144;
+// UnityEngine.Rigidbody
+struct Rigidbody_t4233889191;
 // UltimateJoystick
 struct UltimateJoystick_t3188338117;
 // UltimateJoystickUpdater
@@ -183,8 +187,6 @@ struct Transform_t3275118058;
 struct CurveControlledBob_t2107922160;
 // UnityStandardAssets.Utility.DragRigidbody
 struct DragRigidbody_t2127994057;
-// UnityEngine.Rigidbody
-struct Rigidbody_t4233889191;
 // UnityEngine.SpringJoint
 struct SpringJoint_t4147555327;
 // UnityStandardAssets.Utility.DragRigidbody/<DragObject>c__Iterator0
@@ -387,10 +389,20 @@ struct WaypointProgressTracker_t2206407592;
 #include "System_Core_System_Action_3_gen681716397MethodDeclarations.h"
 #include "System_Core_System_Action_3_gen681716397.h"
 #include "Stores_UnityEngine_Purchasing_ValidateReceiptState4359597.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_MouseLook2643707144.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_MouseLook2643707144MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Transform3275118058MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Input1785128008MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Mathf2336485820MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Vector32243707580.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_MouseLook_RotationAx2150291266.h"
+#include "UnityEngine_UnityEngine_Transform3275118058.h"
+#include "UnityEngine_UnityEngine_Vector32243707580MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Rigidbody4233889191MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Rigidbody4233889191.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_MouseLook_RotationAx2150291266MethodDeclarations.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UltimateJoystick3188338117.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UltimateJoystick3188338117MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Vector32243707580MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Vector32243707580.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UltimateJoystick_Scal562516458.h"
 #include "UnityEngine_UnityEngine_Color2020392075MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Animator69676727MethodDeclarations.h"
@@ -401,13 +413,10 @@ struct WaypointProgressTracker_t2206407592;
 #include "mscorlib_System_RuntimeTypeHandle2330101084.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_PointerEve1599784723.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_PointerEve1599784723MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Transform3275118058MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Animator69676727.h"
 #include "UnityEngine_UnityEngine_CanvasGroup3296560743.h"
 #include "UnityEngine_UnityEngine_Coroutine2299508840.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UltimateJoystick_TapC963140259.h"
-#include "UnityEngine_UnityEngine_Transform3275118058.h"
-#include "UnityEngine_UnityEngine_Mathf2336485820MethodDeclarations.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UltimateJoystick_Axis572188769.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UltimateJoystick_Boun150649600.h"
 #include "UnityEngine_UnityEngine_Screen786852042MethodDeclarations.h"
@@ -483,7 +492,6 @@ struct WaypointProgressTracker_t2206407592;
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityStandardAssets_2175582400MethodDeclarations.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityStandardAssets__607923855.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityStandardAssets__607923855MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Input1785128008MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_KeyCode2283395152.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D502193897.h"
 #include "UnityEngine_UnityEngine_LayerMask3188175821MethodDeclarations.h"
@@ -586,11 +594,9 @@ struct WaypointProgressTracker_t2206407592;
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityStandardAssets_2127994057.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityStandardAssets_2127994057MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Camera189460977MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Rigidbody4233889191MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Joint454317436MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SpringJoint4147555327MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Ray2469606224.h"
-#include "UnityEngine_UnityEngine_Rigidbody4233889191.h"
 #include "UnityEngine_UnityEngine_Ray2469606224MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SpringJoint4147555327.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityStandardAssets_4075247181MethodDeclarations.h"
@@ -727,6 +733,8 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2650145732_g
 #define GameObject_GetComponent_TisButton_t2872111280_m3862106414(__this, method) ((  Button_t2872111280 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2650145732_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Text>()
 #define GameObject_GetComponent_TisText_t356221433_m4280536079(__this, method) ((  Text_t356221433 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2650145732_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.Rigidbody>()
+#define Component_GetComponent_TisRigidbody_t4233889191_m2323824819(__this, method) ((  Rigidbody_t4233889191 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UltimateJoystickUpdater>()
 #define Component_GetComponent_TisUltimateJoystickUpdater_t2731756862_m1873009105(__this, method) ((  UltimateJoystickUpdater_t2731756862 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Canvas>()
@@ -777,8 +785,6 @@ extern "C"  ObjectU5BU5D_t3614634134* Component_GetComponentsInChildren_TisIl2Cp
 #define Component_GetComponentsInChildren_TisIl2CppObject_m1861644630(__this, method) ((  ObjectU5BU5D_t3614634134* (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponentsInChildren_TisIl2CppObject_m1861644630_gshared)(__this, method)
 // !!0[] UnityEngine.Component::GetComponentsInChildren<UnityEngine.Transform>()
 #define Component_GetComponentsInChildren_TisTransform_t3275118058_m3843146815(__this, method) ((  TransformU5BU5D_t3764228911* (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponentsInChildren_TisIl2CppObject_m1861644630_gshared)(__this, method)
-// !!0 UnityEngine.Component::GetComponent<UnityEngine.Rigidbody>()
-#define Component_GetComponent_TisRigidbody_t4233889191_m2323824819(__this, method) ((  Rigidbody_t4233889191 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0[] UnityEngine.Component::GetComponentsInChildren<UnityEngine.ParticleSystem>()
 #define Component_GetComponentsInChildren_TisParticleSystem_t3394631041_m1274579998(__this, method) ((  ParticleSystemU5BU5D_t1490986844* (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponentsInChildren_TisIl2CppObject_m1861644630_gshared)(__this, method)
 #ifdef __clang__
@@ -3228,6 +3234,159 @@ IL_0026:
 	}
 
 IL_005f:
+	{
+		return;
+	}
+}
+// System.Void MouseLook::.ctor()
+extern "C"  void MouseLook__ctor_m1062050195 (MouseLook_t2643707144 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_sensitivityX_3((15.0f));
+		__this->set_sensitivityY_4((15.0f));
+		__this->set_minimumX_5((-360.0f));
+		__this->set_maximumX_6((360.0f));
+		__this->set_minimumY_7((-60.0f));
+		__this->set_maximumY_8((60.0f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MouseLook::Update()
+extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1307534077;
+extern Il2CppCodeGenString* _stringLiteral1307534078;
+extern const uint32_t MouseLook_Update_m1706128328_MetadataUsageId;
+extern "C"  void MouseLook_Update_m1706128328 (MouseLook_t2643707144 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MouseLook_Update_m1706128328_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vector3_t2243707580  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	{
+		int32_t L_0 = __this->get_axes_2();
+		if (L_0)
+		{
+			goto IL_008e;
+		}
+	}
+	{
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Vector3_t2243707580  L_2 = Transform_get_localEulerAngles_m4231787854(L_1, /*hidden argument*/NULL);
+		V_1 = L_2;
+		float L_3 = (&V_1)->get_y_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		float L_4 = Input_GetAxis_m2098048324(NULL /*static, unused*/, _stringLiteral1307534077, /*hidden argument*/NULL);
+		float L_5 = __this->get_sensitivityX_3();
+		V_0 = ((float)((float)L_3+(float)((float)((float)L_4*(float)L_5))));
+		float L_6 = __this->get_rotationY_9();
+		float L_7 = Input_GetAxis_m2098048324(NULL /*static, unused*/, _stringLiteral1307534078, /*hidden argument*/NULL);
+		float L_8 = __this->get_sensitivityY_4();
+		__this->set_rotationY_9(((float)((float)L_6+(float)((float)((float)L_7*(float)L_8)))));
+		float L_9 = __this->get_rotationY_9();
+		float L_10 = __this->get_minimumY_7();
+		float L_11 = __this->get_maximumY_8();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_12 = Mathf_Clamp_m2354025655(NULL /*static, unused*/, L_9, L_10, L_11, /*hidden argument*/NULL);
+		__this->set_rotationY_9(L_12);
+		Transform_t3275118058 * L_13 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		float L_14 = __this->get_rotationY_9();
+		float L_15 = V_0;
+		Vector3_t2243707580  L_16;
+		memset(&L_16, 0, sizeof(L_16));
+		Vector3__ctor_m2638739322(&L_16, ((-L_14)), L_15, (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_13);
+		Transform_set_localEulerAngles_m2927195985(L_13, L_16, /*hidden argument*/NULL);
+		goto IL_012f;
+	}
+
+IL_008e:
+	{
+		int32_t L_17 = __this->get_axes_2();
+		if ((!(((uint32_t)L_17) == ((uint32_t)1))))
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		Transform_t3275118058 * L_18 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		float L_19 = Input_GetAxis_m2098048324(NULL /*static, unused*/, _stringLiteral1307534077, /*hidden argument*/NULL);
+		float L_20 = __this->get_sensitivityX_3();
+		NullCheck(L_18);
+		Transform_Rotate_m4255273365(L_18, (0.0f), ((float)((float)L_19*(float)L_20)), (0.0f), /*hidden argument*/NULL);
+		goto IL_012f;
+	}
+
+IL_00c5:
+	{
+		float L_21 = __this->get_rotationY_9();
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		float L_22 = Input_GetAxis_m2098048324(NULL /*static, unused*/, _stringLiteral1307534078, /*hidden argument*/NULL);
+		float L_23 = __this->get_sensitivityY_4();
+		__this->set_rotationY_9(((float)((float)L_21+(float)((float)((float)L_22*(float)L_23)))));
+		float L_24 = __this->get_rotationY_9();
+		float L_25 = __this->get_minimumY_7();
+		float L_26 = __this->get_maximumY_8();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_27 = Mathf_Clamp_m2354025655(NULL /*static, unused*/, L_24, L_25, L_26, /*hidden argument*/NULL);
+		__this->set_rotationY_9(L_27);
+		Transform_t3275118058 * L_28 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		float L_29 = __this->get_rotationY_9();
+		Transform_t3275118058 * L_30 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_30);
+		Vector3_t2243707580  L_31 = Transform_get_localEulerAngles_m4231787854(L_30, /*hidden argument*/NULL);
+		V_2 = L_31;
+		float L_32 = (&V_2)->get_y_2();
+		Vector3_t2243707580  L_33;
+		memset(&L_33, 0, sizeof(L_33));
+		Vector3__ctor_m2638739322(&L_33, ((-L_29)), L_32, (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_28);
+		Transform_set_localEulerAngles_m2927195985(L_28, L_33, /*hidden argument*/NULL);
+	}
+
+IL_012f:
+	{
+		return;
+	}
+}
+// System.Void MouseLook::Start()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisRigidbody_t4233889191_m2323824819_MethodInfo_var;
+extern const uint32_t MouseLook_Start_m3145701487_MetadataUsageId;
+extern "C"  void MouseLook_Start_m3145701487 (MouseLook_t2643707144 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MouseLook_Start_m3145701487_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Rigidbody_t4233889191 * L_0 = Component_GetComponent_TisRigidbody_t4233889191_m2323824819(__this, /*hidden argument*/Component_GetComponent_TisRigidbody_t4233889191_m2323824819_MethodInfo_var);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Implicit_m2856731593(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		Rigidbody_t4233889191 * L_2 = Component_GetComponent_TisRigidbody_t4233889191_m2323824819(__this, /*hidden argument*/Component_GetComponent_TisRigidbody_t4233889191_m2323824819_MethodInfo_var);
+		NullCheck(L_2);
+		Rigidbody_set_freezeRotation_m2131864169(L_2, (bool)1, /*hidden argument*/NULL);
+	}
+
+IL_001c:
 	{
 		return;
 	}

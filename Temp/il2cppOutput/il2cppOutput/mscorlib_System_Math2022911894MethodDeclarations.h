@@ -46,6 +46,8 @@ extern "C"  double Math_Round_m2632426160 (Il2CppObject * __this /* static, unus
 extern "C"  double Math_Sin_m2320256962 (Il2CppObject * __this /* static, unused */, double ___a0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Cos(System.Double)
 extern "C"  double Math_Cos_m43596019 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Double System.Math::Asin(System.Double)
+extern "C"  double Math_Asin_m347297897 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Atan2(System.Double,System.Double)
 extern "C"  double Math_Atan2_m792822848 (Il2CppObject * __this /* static, unused */, double ___y0, double ___x1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Log(System.Double)

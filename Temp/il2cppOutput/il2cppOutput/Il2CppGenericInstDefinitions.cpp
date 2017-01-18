@@ -3182,6 +3182,12 @@ extern const Il2CppGenericInst GenInst_UnityUtil_GetAnyComponentsOfType_m7092197
 extern const Il2CppType UnityUtil_LoadResourceInstanceOfType_m463261387_gp_0_0_0_0;
 static const Il2CppType* GenInst_UnityUtil_LoadResourceInstanceOfType_m463261387_gp_0_0_0_0_Types[] = { &UnityUtil_LoadResourceInstanceOfType_m463261387_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_UnityUtil_LoadResourceInstanceOfType_m463261387_gp_0_0_0_0 = { 1, GenInst_UnityUtil_LoadResourceInstanceOfType_m463261387_gp_0_0_0_0_Types };
+extern const Il2CppType GenericGenerator_1_t2598493761_gp_0_0_0_0;
+static const Il2CppType* GenInst_GenericGenerator_1_t2598493761_gp_0_0_0_0_Types[] = { &GenericGenerator_1_t2598493761_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_GenericGenerator_1_t2598493761_gp_0_0_0_0 = { 1, GenInst_GenericGenerator_1_t2598493761_gp_0_0_0_0_Types };
+extern const Il2CppType GenericGeneratorEnumerator_1_t484336861_gp_0_0_0_0;
+static const Il2CppType* GenInst_GenericGeneratorEnumerator_1_t484336861_gp_0_0_0_0_Types[] = { &GenericGeneratorEnumerator_1_t484336861_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_GenericGeneratorEnumerator_1_t484336861_gp_0_0_0_0 = { 1, GenInst_GenericGeneratorEnumerator_1_t484336861_gp_0_0_0_0_Types };
 extern const Il2CppType DefaultExecutionOrder_t2717914595_0_0_0;
 static const Il2CppType* GenInst_DefaultExecutionOrder_t2717914595_0_0_0_Types[] = { &DefaultExecutionOrder_t2717914595_0_0_0 };
 extern const Il2CppGenericInst GenInst_DefaultExecutionOrder_t2717914595_0_0_0 = { 1, GenInst_DefaultExecutionOrder_t2717914595_0_0_0_Types };
@@ -3325,6 +3331,9 @@ extern const Il2CppGenericInst GenInst_LifecycleNotifier_t1057582876_0_0_0 = { 1
 extern const Il2CppType StandaloneInputModule_t70867863_0_0_0;
 static const Il2CppType* GenInst_StandaloneInputModule_t70867863_0_0_0_Types[] = { &StandaloneInputModule_t70867863_0_0_0 };
 extern const Il2CppGenericInst GenInst_StandaloneInputModule_t70867863_0_0_0 = { 1, GenInst_StandaloneInputModule_t70867863_0_0_0_Types };
+extern const Il2CppType Rigidbody_t4233889191_0_0_0;
+static const Il2CppType* GenInst_Rigidbody_t4233889191_0_0_0_Types[] = { &Rigidbody_t4233889191_0_0_0 };
+extern const Il2CppGenericInst GenInst_Rigidbody_t4233889191_0_0_0 = { 1, GenInst_Rigidbody_t4233889191_0_0_0_Types };
 extern const Il2CppType UltimateJoystickUpdater_t2731756862_0_0_0;
 static const Il2CppType* GenInst_UltimateJoystickUpdater_t2731756862_0_0_0_Types[] = { &UltimateJoystickUpdater_t2731756862_0_0_0 };
 extern const Il2CppGenericInst GenInst_UltimateJoystickUpdater_t2731756862_0_0_0 = { 1, GenInst_UltimateJoystickUpdater_t2731756862_0_0_0_Types };
@@ -3334,9 +3343,6 @@ extern const Il2CppGenericInst GenInst_PlatformerCharacter2D_t607923855_0_0_0 = 
 extern const Il2CppType Animation_t2068071072_0_0_0;
 static const Il2CppType* GenInst_Animation_t2068071072_0_0_0_Types[] = { &Animation_t2068071072_0_0_0 };
 extern const Il2CppGenericInst GenInst_Animation_t2068071072_0_0_0 = { 1, GenInst_Animation_t2068071072_0_0_0_Types };
-extern const Il2CppType Rigidbody_t4233889191_0_0_0;
-static const Il2CppType* GenInst_Rigidbody_t4233889191_0_0_0_Types[] = { &Rigidbody_t4233889191_0_0_0 };
-extern const Il2CppGenericInst GenInst_Rigidbody_t4233889191_0_0_0 = { 1, GenInst_Rigidbody_t4233889191_0_0_0_Types };
 extern const Il2CppType SpringJoint_t4147555327_0_0_0;
 static const Il2CppType* GenInst_SpringJoint_t4147555327_0_0_0_Types[] = { &SpringJoint_t4147555327_0_0_0 };
 extern const Il2CppGenericInst GenInst_SpringJoint_t4147555327_0_0_0 = { 1, GenInst_SpringJoint_t4147555327_0_0_0_Types };
@@ -3510,7 +3516,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t566713506_0_0_0_Il2CppObject_0_
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t566713506_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t566713506_0_0_0_Il2CppObject_0_0_0_Types };
 static const Il2CppType* GenInst_AndroidStore_t3203055206_0_0_0_AndroidStore_t3203055206_0_0_0_Types[] = { &AndroidStore_t3203055206_0_0_0, &AndroidStore_t3203055206_0_0_0 };
 extern const Il2CppGenericInst GenInst_AndroidStore_t3203055206_0_0_0_AndroidStore_t3203055206_0_0_0 = { 2, GenInst_AndroidStore_t3203055206_0_0_0_AndroidStore_t3203055206_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1264] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1266] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2071877448_0_0_0,
@@ -4650,6 +4656,8 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1264] =
 	&GenInst_Boolean_t3825574718_0_0_0_U3CStartUIU3Ec__AnonStorey0_1_t3316954766_gp_0_0_0_0,
 	&GenInst_UnityUtil_GetAnyComponentsOfType_m709219744_gp_0_0_0_0,
 	&GenInst_UnityUtil_LoadResourceInstanceOfType_m463261387_gp_0_0_0_0,
+	&GenInst_GenericGenerator_1_t2598493761_gp_0_0_0_0,
+	&GenInst_GenericGeneratorEnumerator_1_t484336861_gp_0_0_0_0,
 	&GenInst_DefaultExecutionOrder_t2717914595_0_0_0,
 	&GenInst_GUILayer_t3254902478_0_0_0,
 	&GenInst_FirebaseHandler_t2907300047_0_0_0,
@@ -4698,10 +4706,10 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1264] =
 	&GenInst_MoolahStoreImpl_t4206626141_0_0_0,
 	&GenInst_LifecycleNotifier_t1057582876_0_0_0,
 	&GenInst_StandaloneInputModule_t70867863_0_0_0,
+	&GenInst_Rigidbody_t4233889191_0_0_0,
 	&GenInst_UltimateJoystickUpdater_t2731756862_0_0_0,
 	&GenInst_PlatformerCharacter2D_t607923855_0_0_0,
 	&GenInst_Animation_t2068071072_0_0_0,
-	&GenInst_Rigidbody_t4233889191_0_0_0,
 	&GenInst_SpringJoint_t4147555327_0_0_0,
 	&GenInst_AudioSource_t1135106623_0_0_0,
 	&GenInst_Inventory_t3617926772_0_0_0,

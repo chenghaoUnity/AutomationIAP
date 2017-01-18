@@ -236,6 +236,12 @@ UnityEngine.CapsuleCollider::get_radius
 UnityEngine.CapsuleCollider::INTERNAL_get_center
 UnityEngine.CapsuleCollider::INTERNAL_set_center
 UnityEngine.CapsuleCollider::set_height
+UnityEngine.CharacterController::get_height
+UnityEngine.CharacterController::get_radius
+UnityEngine.CharacterController::get_slopeLimit
+UnityEngine.CharacterController::get_stepOffset
+UnityEngine.CharacterController::INTERNAL_get_center
+UnityEngine.CharacterController::INTERNAL_CALL_Move
 UnityEngine.Collider::get_attachedRigidbody
 UnityEngine.Collider2D::INTERNAL_set_offset
 UnityEngine.Collider2D::set_isTrigger
@@ -319,6 +325,9 @@ UnityEngine.GL::get_invertCulling
 UnityEngine.GL::set_invertCulling
 UnityEngine.Gradient::Cleanup
 UnityEngine.Gradient::Init
+UnityEngine.Graphics::Internal_GetMaxDrawMeshInstanceCount
+UnityEngine.Graphics::Internal_BlitMaterial
+UnityEngine.GUI::INTERNAL_CALL_DoLabel
 UnityEngine.GUI::set_changed
 UnityEngine.GUILayer::INTERNAL_CALL_HitTest
 UnityEngine.GUILayoutUtility::INTERNAL_CALL_Internal_GetWindowRect
@@ -466,6 +475,7 @@ UnityEngine.Material::EnableKeyword
 UnityEngine.Material::INTERNAL_CALL_GetColor
 UnityEngine.Material::INTERNAL_CALL_SetColor
 UnityEngine.Material::Internal_CreateWithMaterial
+UnityEngine.Material::Internal_CreateWithShader
 UnityEngine.Material::SetFloat
 UnityEngine.Material::SetTexture
 UnityEngine.Material::set_renderQueue
@@ -670,6 +680,7 @@ UnityEngine.Rigidbody::INTERNAL_set_velocity
 UnityEngine.Rigidbody::set_angularDrag
 UnityEngine.Rigidbody::set_constraints
 UnityEngine.Rigidbody::set_drag
+UnityEngine.Rigidbody::set_freezeRotation
 UnityEngine.Rigidbody::set_isKinematic
 UnityEngine.Rigidbody2D::get_gravityScale
 UnityEngine.Rigidbody2D::get_mass
@@ -787,6 +798,7 @@ UnityEngine.Transform::INTERNAL_CALL_TransformPoint
 UnityEngine.Transform::INTERNAL_get_localPosition
 UnityEngine.Transform::INTERNAL_get_localRotation
 UnityEngine.Transform::INTERNAL_get_localScale
+UnityEngine.Transform::INTERNAL_get_localToWorldMatrix
 UnityEngine.Transform::INTERNAL_get_position
 UnityEngine.Transform::INTERNAL_get_rotation
 UnityEngine.Transform::INTERNAL_get_worldToLocalMatrix
@@ -802,6 +814,7 @@ UnityEngine.Transform::Find
 UnityEngine.Transform::GetChild
 UnityEngine.Transform::get_parentInternal
 UnityEngine.UnhandledExceptionHandler::NativeUnhandledExceptionHandler
+UnityEngine.Vector3::INTERNAL_CALL_Slerp
 UnityEngine.VR.VRSettings::get_enabled
 UnityEngine.WindZone::get_radius
 UnityEngine.WindZone::get_windMain

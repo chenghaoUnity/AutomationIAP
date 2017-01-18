@@ -19,6 +19,8 @@
 extern "C"  float Mathf_Sin_m831310046 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Cos(System.Single)
 extern "C"  float Mathf_Cos_m238853451 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Asin(System.Single)
+extern "C"  float Mathf_Asin_m1367675601 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Atan2(System.Single,System.Single)
 extern "C"  float Mathf_Atan2_m496071197 (Il2CppObject * __this /* static, unused */, float ___y0, float ___x1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Sqrt(System.Single)

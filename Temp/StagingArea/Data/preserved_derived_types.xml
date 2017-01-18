@@ -10,6 +10,7 @@
 <type fullname="UnityStandardAssets._2D.Platformer2DUserControl" preserve="all"/>
 <type fullname="UnityStandardAssets._2D.PlatformerCharacter2D" preserve="all"/>
 <type fullname="UnityStandardAssets._2D.Restarter" preserve="all"/>
+<type fullname="MouseLook" preserve="all"/>
 <type fullname="UnityStandardAssets.CrossPlatformInput.AxisTouchButton" preserve="all"/>
 <type fullname="UnityStandardAssets.CrossPlatformInput.ButtonHandler" preserve="all"/>
 <type fullname="UnityStandardAssets.CrossPlatformInput.InputAxisScrollbar" preserve="all"/>
@@ -39,6 +40,9 @@
 <type fullname="UnityStandardAssets.Utility.WaypointProgressTracker" preserve="all"/>
 </assembly>
 <assembly fullname="Assembly-CSharp">
+<type fullname="BleedBehavior" preserve="all"/>
+<type fullname="SimpleFire" preserve="all"/>
+<type fullname="SimplePlayer" preserve="all"/>
 <type fullname="DigitalRuby.RainMaker.DemoScript" preserve="all"/>
 <type fullname="DigitalRuby.RainMaker.DemoScript2D" preserve="all"/>
 <type fullname="UnityStandardAssets.Water.WaterBasic" preserve="all"/>
@@ -98,6 +102,10 @@
 <type fullname="TripRandomer" preserve="all"/>
 <type fullname="UIupdater" preserve="all"/>
 <type fullname="WebCamTextureToCloudVision" preserve="all"/>
+</assembly>
+<assembly fullname="Assembly-UnityScript-firstpass">
+<type fullname="CharacterMotor" preserve="all"/>
+<type fullname="FPSInputController" preserve="all"/>
 </assembly>
 <assembly fullname="UnityEngine.UI">
 <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all"/>

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FloorMoving : MonoBehaviour {
 
-	float downSpeed = 1.5f;
+	float downSpeed = 2.0f;
 
 	// Use this for initialization
 	void Start () {

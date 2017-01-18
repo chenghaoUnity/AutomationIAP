@@ -184,8 +184,10 @@ public class Inventory : MonoBehaviour
 		if (hurt != null) {
 			GameObject newHurt = Instantiate(hurt) as GameObject; 
 			newHurt.transform.parent = this.gameObject.transform;
-			newHurt.GetComponent<HurtFX> ().m_Text = "-" + (number * 2).ToString () + " GOLDS";
+			newHurt.GetComponent<HurtFX> ().m_Text = "-" + (number).ToString () + " GOLDS";
 			newHurt.transform.localPosition = new Vector3 (650f, -215f);
+
+			BleedBehavior.BloodAmount = 0.5f;
 		}
 
 		if (m_GoldAmount - number < 0) {

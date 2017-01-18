@@ -1032,6 +1032,34 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.CapsuleCollider
 
+	//Start Registrations for type : UnityEngine.CharacterController
+
+		//System.Single UnityEngine.CharacterController::get_height()
+		void Register_UnityEngine_CharacterController_get_height();
+		Register_UnityEngine_CharacterController_get_height();
+
+		//System.Single UnityEngine.CharacterController::get_radius()
+		void Register_UnityEngine_CharacterController_get_radius();
+		Register_UnityEngine_CharacterController_get_radius();
+
+		//System.Single UnityEngine.CharacterController::get_slopeLimit()
+		void Register_UnityEngine_CharacterController_get_slopeLimit();
+		Register_UnityEngine_CharacterController_get_slopeLimit();
+
+		//System.Single UnityEngine.CharacterController::get_stepOffset()
+		void Register_UnityEngine_CharacterController_get_stepOffset();
+		Register_UnityEngine_CharacterController_get_stepOffset();
+
+		//System.Void UnityEngine.CharacterController::INTERNAL_get_center(UnityEngine.Vector3&)
+		void Register_UnityEngine_CharacterController_INTERNAL_get_center();
+		Register_UnityEngine_CharacterController_INTERNAL_get_center();
+
+		//UnityEngine.CollisionFlags UnityEngine.CharacterController::INTERNAL_CALL_Move(UnityEngine.CharacterController,UnityEngine.Vector3&)
+		void Register_UnityEngine_CharacterController_INTERNAL_CALL_Move();
+		Register_UnityEngine_CharacterController_INTERNAL_CALL_Move();
+
+	//End Registrations for type : UnityEngine.CharacterController
+
 	//Start Registrations for type : UnityEngine.Collider
 
 		//UnityEngine.Rigidbody UnityEngine.Collider::get_attachedRigidbody()
@@ -1432,7 +1460,23 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Gradient
 
+	//Start Registrations for type : UnityEngine.Graphics
+
+		//System.Int32 UnityEngine.Graphics::Internal_GetMaxDrawMeshInstanceCount()
+		void Register_UnityEngine_Graphics_Internal_GetMaxDrawMeshInstanceCount();
+		Register_UnityEngine_Graphics_Internal_GetMaxDrawMeshInstanceCount();
+
+		//System.Void UnityEngine.Graphics::Internal_BlitMaterial(UnityEngine.Texture,UnityEngine.RenderTexture,UnityEngine.Material,System.Int32,System.Boolean)
+		void Register_UnityEngine_Graphics_Internal_BlitMaterial();
+		Register_UnityEngine_Graphics_Internal_BlitMaterial();
+
+	//End Registrations for type : UnityEngine.Graphics
+
 	//Start Registrations for type : UnityEngine.GUI
+
+		//System.Void UnityEngine.GUI::INTERNAL_CALL_DoLabel(UnityEngine.Rect&,UnityEngine.GUIContent,System.IntPtr)
+		void Register_UnityEngine_GUI_INTERNAL_CALL_DoLabel();
+		Register_UnityEngine_GUI_INTERNAL_CALL_DoLabel();
 
 		//System.Void UnityEngine.GUI::set_changed(System.Boolean)
 		void Register_UnityEngine_GUI_set_changed();
@@ -2085,6 +2129,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Material::Internal_CreateWithMaterial(UnityEngine.Material,UnityEngine.Material)
 		void Register_UnityEngine_Material_Internal_CreateWithMaterial();
 		Register_UnityEngine_Material_Internal_CreateWithMaterial();
+
+		//System.Void UnityEngine.Material::Internal_CreateWithShader(UnityEngine.Material,UnityEngine.Shader)
+		void Register_UnityEngine_Material_Internal_CreateWithShader();
+		Register_UnityEngine_Material_Internal_CreateWithShader();
 
 		//System.Void UnityEngine.Material::SetFloat(System.Int32,System.Single)
 		void Register_UnityEngine_Material_SetFloat();
@@ -3018,6 +3066,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Rigidbody_set_drag();
 		Register_UnityEngine_Rigidbody_set_drag();
 
+		//System.Void UnityEngine.Rigidbody::set_freezeRotation(System.Boolean)
+		void Register_UnityEngine_Rigidbody_set_freezeRotation();
+		Register_UnityEngine_Rigidbody_set_freezeRotation();
+
 		//System.Void UnityEngine.Rigidbody::set_isKinematic(System.Boolean)
 		void Register_UnityEngine_Rigidbody_set_isKinematic();
 		Register_UnityEngine_Rigidbody_set_isKinematic();
@@ -3570,6 +3622,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Transform_INTERNAL_get_localScale();
 		Register_UnityEngine_Transform_INTERNAL_get_localScale();
 
+		//System.Void UnityEngine.Transform::INTERNAL_get_localToWorldMatrix(UnityEngine.Matrix4x4&)
+		void Register_UnityEngine_Transform_INTERNAL_get_localToWorldMatrix();
+		Register_UnityEngine_Transform_INTERNAL_get_localToWorldMatrix();
+
 		//System.Void UnityEngine.Transform::INTERNAL_get_position(UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_INTERNAL_get_position();
 		Register_UnityEngine_Transform_INTERNAL_get_position();
@@ -3635,6 +3691,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_UnhandledExceptionHandler_NativeUnhandledExceptionHandler();
 
 	//End Registrations for type : UnityEngine.UnhandledExceptionHandler
+
+	//Start Registrations for type : UnityEngine.Vector3
+
+		//System.Void UnityEngine.Vector3::INTERNAL_CALL_Slerp(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)
+		void Register_UnityEngine_Vector3_INTERNAL_CALL_Slerp();
+		Register_UnityEngine_Vector3_INTERNAL_CALL_Slerp();
+
+	//End Registrations for type : UnityEngine.Vector3
 
 	//Start Registrations for type : UnityEngine.VR.VRSettings
 

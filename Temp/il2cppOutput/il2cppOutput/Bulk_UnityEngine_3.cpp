@@ -123,6 +123,10 @@ struct TypeInferenceRuleAttribute_t1390152093;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_TimeScope2583939667.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_TimeScope2583939667MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_UserScope3775842435.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_UserScope3775842435MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_UserState455716270.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_UserState455716270MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SortingLayer221838959.h"
@@ -4555,6 +4559,37 @@ extern "C"  void Transform_set_eulerAngles_m2881310872 (Transform_t3275118058 * 
 		return;
 	}
 }
+// UnityEngine.Vector3 UnityEngine.Transform::get_localEulerAngles()
+extern "C"  Vector3_t2243707580  Transform_get_localEulerAngles_m4231787854 (Transform_t3275118058 * __this, const MethodInfo* method)
+{
+	Quaternion_t4030073918  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Quaternion_t4030073918  L_0 = Transform_get_localRotation_m4001487205(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		Vector3_t2243707580  L_1 = Quaternion_get_eulerAngles_m3302573991((&V_0), /*hidden argument*/NULL);
+		V_1 = L_1;
+		goto IL_0015;
+	}
+
+IL_0015:
+	{
+		Vector3_t2243707580  L_2 = V_1;
+		return L_2;
+	}
+}
+// System.Void UnityEngine.Transform::set_localEulerAngles(UnityEngine.Vector3)
+extern "C"  void Transform_set_localEulerAngles_m2927195985 (Transform_t3275118058 * __this, Vector3_t2243707580  ___value0, const MethodInfo* method)
+{
+	{
+		Vector3_t2243707580  L_0 = ___value0;
+		Quaternion_t4030073918  L_1 = Quaternion_Euler_m3586339259(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		Transform_set_localRotation_m2055111962(__this, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
 // UnityEngine.Vector3 UnityEngine.Transform::get_right()
 extern "C"  Vector3_t2243707580  Transform_get_right_m440863970 (Transform_t3275118058 * __this, const MethodInfo* method)
 {
@@ -4860,6 +4895,35 @@ extern "C"  void Transform_INTERNAL_get_worldToLocalMatrix_m3394773201 (Transfor
 	static Transform_INTERNAL_get_worldToLocalMatrix_m3394773201_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Transform_INTERNAL_get_worldToLocalMatrix_m3394773201_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::INTERNAL_get_worldToLocalMatrix(UnityEngine.Matrix4x4&)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// UnityEngine.Matrix4x4 UnityEngine.Transform::get_localToWorldMatrix()
+extern "C"  Matrix4x4_t2933234003  Transform_get_localToWorldMatrix_m2868579006 (Transform_t3275118058 * __this, const MethodInfo* method)
+{
+	Matrix4x4_t2933234003  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Matrix4x4_t2933234003  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Transform_INTERNAL_get_localToWorldMatrix_m2347930409(__this, (&V_0), /*hidden argument*/NULL);
+		Matrix4x4_t2933234003  L_0 = V_0;
+		V_1 = L_0;
+		goto IL_0010;
+	}
+
+IL_0010:
+	{
+		Matrix4x4_t2933234003  L_1 = V_1;
+		return L_1;
+	}
+}
+// System.Void UnityEngine.Transform::INTERNAL_get_localToWorldMatrix(UnityEngine.Matrix4x4&)
+extern "C"  void Transform_INTERNAL_get_localToWorldMatrix_m2347930409 (Transform_t3275118058 * __this, Matrix4x4_t2933234003 * ___value0, const MethodInfo* method)
+{
+	typedef void (*Transform_INTERNAL_get_localToWorldMatrix_m2347930409_ftn) (Transform_t3275118058 *, Matrix4x4_t2933234003 *);
+	static Transform_INTERNAL_get_localToWorldMatrix_m2347930409_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Transform_INTERNAL_get_localToWorldMatrix_m2347930409_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::INTERNAL_get_localToWorldMatrix(UnityEngine.Matrix4x4&)");
 	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Void UnityEngine.Transform::Translate(UnityEngine.Vector3,UnityEngine.Space)
@@ -6379,6 +6443,36 @@ extern "C"  void Vector3__ctor_m2720820983_AdjustorThunk (Il2CppObject * __this,
 	Vector3_t2243707580 * _thisAdjusted = reinterpret_cast<Vector3_t2243707580 *>(__this + 1);
 	Vector3__ctor_m2720820983(_thisAdjusted, ___x0, ___y1, method);
 }
+// UnityEngine.Vector3 UnityEngine.Vector3::Slerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+extern "C"  Vector3_t2243707580  Vector3_Slerp_m846771032 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___a0, Vector3_t2243707580  ___b1, float ___t2, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		float L_0 = ___t2;
+		Vector3_INTERNAL_CALL_Slerp_m1119564456(NULL /*static, unused*/, (&___a0), (&___b1), L_0, (&V_0), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_1 = V_0;
+		V_1 = L_1;
+		goto IL_0014;
+	}
+
+IL_0014:
+	{
+		Vector3_t2243707580  L_2 = V_1;
+		return L_2;
+	}
+}
+// System.Void UnityEngine.Vector3::INTERNAL_CALL_Slerp(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)
+extern "C"  void Vector3_INTERNAL_CALL_Slerp_m1119564456 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580 * ___a0, Vector3_t2243707580 * ___b1, float ___t2, Vector3_t2243707580 * ___value3, const MethodInfo* method)
+{
+	typedef void (*Vector3_INTERNAL_CALL_Slerp_m1119564456_ftn) (Vector3_t2243707580 *, Vector3_t2243707580 *, float, Vector3_t2243707580 *);
+	static Vector3_INTERNAL_CALL_Slerp_m1119564456_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Vector3_INTERNAL_CALL_Slerp_m1119564456_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Vector3::INTERNAL_CALL_Slerp(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)");
+	_il2cpp_icall_func(___a0, ___b1, ___t2, ___value3);
+}
 // UnityEngine.Vector3 UnityEngine.Vector3::Lerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
 extern const uint32_t Vector3_Lerp_m2935648359_MetadataUsageId;
@@ -6790,6 +6884,37 @@ IL_0039:
 	{
 		Vector3_t2243707580  L_7 = V_0;
 		return L_7;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.Vector3::Cross(UnityEngine.Vector3,UnityEngine.Vector3)
+extern "C"  Vector3_t2243707580  Vector3_Cross_m4149044051 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___lhs0, Vector3_t2243707580  ___rhs1, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		float L_0 = (&___lhs0)->get_y_2();
+		float L_1 = (&___rhs1)->get_z_3();
+		float L_2 = (&___lhs0)->get_z_3();
+		float L_3 = (&___rhs1)->get_y_2();
+		float L_4 = (&___lhs0)->get_z_3();
+		float L_5 = (&___rhs1)->get_x_1();
+		float L_6 = (&___lhs0)->get_x_1();
+		float L_7 = (&___rhs1)->get_z_3();
+		float L_8 = (&___lhs0)->get_x_1();
+		float L_9 = (&___rhs1)->get_y_2();
+		float L_10 = (&___lhs0)->get_y_2();
+		float L_11 = (&___rhs1)->get_x_1();
+		Vector3_t2243707580  L_12;
+		memset(&L_12, 0, sizeof(L_12));
+		Vector3__ctor_m2638739322(&L_12, ((float)((float)((float)((float)L_0*(float)L_1))-(float)((float)((float)L_2*(float)L_3)))), ((float)((float)((float)((float)L_4*(float)L_5))-(float)((float)((float)L_6*(float)L_7)))), ((float)((float)((float)((float)L_8*(float)L_9))-(float)((float)((float)L_10*(float)L_11)))), /*hidden argument*/NULL);
+		V_0 = L_12;
+		goto IL_0069;
+	}
+
+IL_0069:
+	{
+		Vector3_t2243707580  L_13 = V_0;
+		return L_13;
 	}
 }
 // System.Int32 UnityEngine.Vector3::GetHashCode()

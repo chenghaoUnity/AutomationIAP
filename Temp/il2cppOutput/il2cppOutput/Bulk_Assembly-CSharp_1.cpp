@@ -13,6 +13,12 @@
 #include <limits>
 #include <assert.h>
 
+// WebCamTextureToCloudVision/AnnotateImageResponses
+struct AnnotateImageResponses_t1647677944;
+// WebCamTextureToCloudVision/BoundingPoly
+struct BoundingPoly_t202383367;
+// WebCamTextureToCloudVision/EntityAnnotation
+struct EntityAnnotation_t3728473491;
 // WebCamTextureToCloudVision/FaceAnnotation
 struct FaceAnnotation_t2061169673;
 // WebCamTextureToCloudVision/Feature
@@ -39,10 +45,16 @@ struct Vertex_t2714087479;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_FaceA2061169673.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_FaceA2061169673MethodDeclarations.h"
+#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Annot1647677944.h"
+#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Annot1647677944MethodDeclarations.h"
 #include "mscorlib_System_Void1841601450.h"
 #include "mscorlib_System_Object2689449295MethodDeclarations.h"
+#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Boundi202383367.h"
+#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Boundi202383367MethodDeclarations.h"
+#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Entit3728473491.h"
+#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Entit3728473491MethodDeclarations.h"
+#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_FaceA2061169673.h"
+#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_FaceA2061169673MethodDeclarations.h"
 #include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Featu1423281007.h"
 #include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Featu1423281007MethodDeclarations.h"
 #include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Featur927396839.h"
@@ -75,6 +87,30 @@ struct Vertex_t2714087479;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void WebCamTextureToCloudVision/AnnotateImageResponses::.ctor()
+extern "C"  void AnnotateImageResponses__ctor_m2388085467 (AnnotateImageResponses_t1647677944 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void WebCamTextureToCloudVision/BoundingPoly::.ctor()
+extern "C"  void BoundingPoly__ctor_m602170284 (BoundingPoly_t202383367 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void WebCamTextureToCloudVision/EntityAnnotation::.ctor()
+extern "C"  void EntityAnnotation__ctor_m3683615008 (EntityAnnotation_t3728473491 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void WebCamTextureToCloudVision/FaceAnnotation::.ctor()
 extern "C"  void FaceAnnotation__ctor_m3124898250 (FaceAnnotation_t2061169673 * __this, const MethodInfo* method)
 {

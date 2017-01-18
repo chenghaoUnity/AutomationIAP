@@ -13,18 +13,20 @@
 #include <limits>
 #include <assert.h>
 
-// System.Threading.WaitHandle
-struct WaitHandle_t677569169;
-// System.Threading.WaitHandle[]
-struct WaitHandleU5BU5D_t1032950796;
-// System.Threading.WaitOrTimerCallback
-struct WaitOrTimerCallback_t2724438238;
+// System.Threading.WaitCallback
+struct WaitCallback_t2798937288;
 // System.Object
 struct Il2CppObject;
 // System.IAsyncResult
 struct IAsyncResult_t1999651008;
 // System.AsyncCallback
 struct AsyncCallback_t163412349;
+// System.Threading.WaitHandle
+struct WaitHandle_t677569169;
+// System.Threading.WaitHandle[]
+struct WaitHandleU5BU5D_t1032950796;
+// System.Threading.WaitOrTimerCallback
+struct WaitOrTimerCallback_t2724438238;
 // System.ThreadStaticAttribute
 struct ThreadStaticAttribute_t1787731584;
 // System.String
@@ -93,16 +95,19 @@ struct WindowsConsoleDriver_t276624544;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "mscorlib_System_Threading_WaitCallback2798937288.h"
+#include "mscorlib_System_Threading_WaitCallback2798937288MethodDeclarations.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "mscorlib_System_AsyncCallback163412349.h"
 #include "mscorlib_System_Threading_WaitHandle677569169.h"
 #include "mscorlib_System_Threading_WaitHandle677569169MethodDeclarations.h"
-#include "mscorlib_System_Void1841601450.h"
 #include "mscorlib_System_MarshalByRefObject1285298191MethodDeclarations.h"
 #include "mscorlib_System_IntPtr2504060609MethodDeclarations.h"
-#include "mscorlib_System_IntPtr2504060609.h"
 #include "mscorlib_System_Int322071877448.h"
 #include "mscorlib_System_GC2902933594MethodDeclarations.h"
 #include "mscorlib_System_Boolean3825574718.h"
-#include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_ArrayTypes.h"
 #include "mscorlib_System_ArgumentNullException628810857MethodDeclarations.h"
 #include "mscorlib_System_NotSupportedException1793819818MethodDeclarations.h"
@@ -130,7 +135,6 @@ struct WindowsConsoleDriver_t276624544;
 #include "mscorlib_System_ObjectDisposedException2695136451.h"
 #include "mscorlib_System_Threading_WaitOrTimerCallback2724438238.h"
 #include "mscorlib_System_Threading_WaitOrTimerCallback2724438238MethodDeclarations.h"
-#include "mscorlib_System_AsyncCallback163412349.h"
 #include "mscorlib_System_ThreadStaticAttribute1787731584.h"
 #include "mscorlib_System_ThreadStaticAttribute1787731584MethodDeclarations.h"
 #include "mscorlib_System_Attribute542643598MethodDeclarations.h"
@@ -276,6 +280,50 @@ struct WindowsConsoleDriver_t276624544;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Threading.WaitCallback::.ctor(System.Object,System.IntPtr)
+extern "C"  void WaitCallback__ctor_m1513386157 (WaitCallback_t2798937288 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void System.Threading.WaitCallback::Invoke(System.Object)
+extern "C"  void WaitCallback_Invoke_m298762639 (WaitCallback_t2798937288 * __this, Il2CppObject * ___state0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		WaitCallback_Invoke_m298762639((WaitCallback_t2798937288 *)__this->get_prev_9(),___state0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, Il2CppObject * ___state0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___state0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (void* __this, Il2CppObject * ___state0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___state0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(___state0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult System.Threading.WaitCallback::BeginInvoke(System.Object,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * WaitCallback_BeginInvoke_m703198454 (WaitCallback_t2798937288 * __this, Il2CppObject * ___state0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	void *__d_args[2] = {0};
+	__d_args[0] = ___state0;
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void System.Threading.WaitCallback::EndInvoke(System.IAsyncResult)
+extern "C"  void WaitCallback_EndInvoke_m3559405747 (WaitCallback_t2798937288 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
 // System.Void System.Threading.WaitHandle::.ctor()
 extern "C"  void WaitHandle__ctor_m1256161634 (WaitHandle_t677569169 * __this, const MethodInfo* method)
 {

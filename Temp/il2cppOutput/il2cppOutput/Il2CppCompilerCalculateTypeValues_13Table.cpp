@@ -16,6 +16,7 @@
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
+#include "System_Xml_System_Xml_Schema_XmlSchemaComplexConte1722137421.h"
 #include "System_Xml_System_Xml_Schema_XmlSchemaComplexType4086789226.h"
 #include "System_Xml_System_Xml_Schema_XmlSchemaContent3733871217.h"
 #include "System_Xml_System_Xml_Schema_XmlSchemaContentModel907989596.h"
@@ -114,7 +115,6 @@
 #include "Mono_Security_Mono_Math_Prime_PrimalityTests3283102398.h"
 #include "Mono_Security_Mono_Math_Prime_Generator_PrimeGener1053438167.h"
 #include "Mono_Security_Mono_Math_Prime_Generator_SequentialS463670656.h"
-#include "Mono_Security_Mono_Security_ASN1924533535.h"
 
 
 
@@ -123,8 +123,16 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1300 = { sizeof (XmlSchemaComplexType_t4086789226), -1, sizeof(XmlSchemaComplexType_t4086789226_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1300[17] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1300 = { sizeof (XmlSchemaComplexContentRestriction_t1722137421), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1300[4] = 
+{
+	XmlSchemaComplexContentRestriction_t1722137421::get_offset_of_any_17(),
+	XmlSchemaComplexContentRestriction_t1722137421::get_offset_of_attributes_18(),
+	XmlSchemaComplexContentRestriction_t1722137421::get_offset_of_baseTypeName_19(),
+	XmlSchemaComplexContentRestriction_t1722137421::get_offset_of_particle_20(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1301 = { sizeof (XmlSchemaComplexType_t4086789226), -1, sizeof(XmlSchemaComplexType_t4086789226_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1301[17] = 
 {
 	XmlSchemaComplexType_t4086789226::get_offset_of_anyAttribute_28(),
 	XmlSchemaComplexType_t4086789226::get_offset_of_attributes_29(),
@@ -144,14 +152,14 @@ extern const int32_t g_FieldOffsetTable1300[17] =
 	XmlSchemaComplexType_t4086789226_StaticFields::get_offset_of_AnyTypeName_43(),
 	XmlSchemaComplexType_t4086789226::get_offset_of_CollectProcessId_44(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1301 = { sizeof (XmlSchemaContent_t3733871217), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1301[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1302 = { sizeof (XmlSchemaContent_t3733871217), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1302[1] = 
 {
 	XmlSchemaContent_t3733871217::get_offset_of_actualBaseSchemaType_16(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1302 = { sizeof (XmlSchemaContentModel_t907989596), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1303 = { sizeof (XmlSchemaContentProcessing_t74226324)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1303[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1303 = { sizeof (XmlSchemaContentModel_t907989596), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1304 = { sizeof (XmlSchemaContentProcessing_t74226324)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1304[5] = 
 {
 	XmlSchemaContentProcessing_t74226324::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -159,8 +167,8 @@ extern const int32_t g_FieldOffsetTable1303[5] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1304 = { sizeof (XmlSchemaContentType_t2874429441)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1304[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1305 = { sizeof (XmlSchemaContentType_t2874429441)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1305[5] = 
 {
 	XmlSchemaContentType_t2874429441::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -168,8 +176,8 @@ extern const int32_t g_FieldOffsetTable1304[5] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1305 = { sizeof (XmlSchemaDatatype_t1195946242), -1, sizeof(XmlSchemaDatatype_t1195946242_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1305[55] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1306 = { sizeof (XmlSchemaDatatype_t1195946242), -1, sizeof(XmlSchemaDatatype_t1195946242_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1306[55] = 
 {
 	XmlSchemaDatatype_t1195946242::get_offset_of_WhitespaceValue_0(),
 	XmlSchemaDatatype_t1195946242_StaticFields::get_offset_of_wsChars_1(),
@@ -227,8 +235,8 @@ extern const int32_t g_FieldOffsetTable1305[55] =
 	XmlSchemaDatatype_t1195946242_StaticFields::get_offset_of_U3CU3Ef__switchU24map3F_53(),
 	XmlSchemaDatatype_t1195946242_StaticFields::get_offset_of_U3CU3Ef__switchU24map40_54(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1306 = { sizeof (XmlSchemaDerivationMethod_t3165007540)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1306[9] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1307 = { sizeof (XmlSchemaDerivationMethod_t3165007540)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1307[9] = 
 {
 	XmlSchemaDerivationMethod_t3165007540::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -240,15 +248,15 @@ extern const int32_t g_FieldOffsetTable1306[9] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1307 = { sizeof (XmlSchemaDocumentation_t3832803992), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1307[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1308 = { sizeof (XmlSchemaDocumentation_t3832803992), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1308[3] = 
 {
 	XmlSchemaDocumentation_t3832803992::get_offset_of_language_13(),
 	XmlSchemaDocumentation_t3832803992::get_offset_of_markup_14(),
 	XmlSchemaDocumentation_t3832803992::get_offset_of_source_15(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1308 = { sizeof (XmlSchemaElement_t2433337156), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1308[27] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1309 = { sizeof (XmlSchemaElement_t2433337156), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1309[27] = 
 {
 	XmlSchemaElement_t2433337156::get_offset_of_block_27(),
 	XmlSchemaElement_t2433337156::get_offset_of_constraints_28(),
@@ -278,9 +286,9 @@ extern const int32_t g_FieldOffsetTable1308[27] =
 	XmlSchemaElement_t2433337156::get_offset_of_validatedDefaultValue_52(),
 	XmlSchemaElement_t2433337156::get_offset_of_validatedFixedValue_53(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1309 = { sizeof (XmlSchemaEnumerationFacet_t3989738874), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1310 = { sizeof (XmlSchemaException_t4082200141), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1310[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1310 = { sizeof (XmlSchemaEnumerationFacet_t3989738874), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1311 = { sizeof (XmlSchemaException_t4082200141), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1311[5] = 
 {
 	XmlSchemaException_t4082200141::get_offset_of_hasLineInfo_11(),
 	XmlSchemaException_t4082200141::get_offset_of_lineNumber_12(),
@@ -288,22 +296,22 @@ extern const int32_t g_FieldOffsetTable1310[5] =
 	XmlSchemaException_t4082200141::get_offset_of_sourceObj_14(),
 	XmlSchemaException_t4082200141::get_offset_of_sourceUri_15(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1311 = { sizeof (XmlSchemaExternal_t3943748629), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1311[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1312 = { sizeof (XmlSchemaExternal_t3943748629), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1312[3] = 
 {
 	XmlSchemaExternal_t3943748629::get_offset_of_id_13(),
 	XmlSchemaExternal_t3943748629::get_offset_of_schema_14(),
 	XmlSchemaExternal_t3943748629::get_offset_of_location_15(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1312 = { sizeof (XmlSchemaFacet_t614309579), -1, sizeof(XmlSchemaFacet_t614309579_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1312[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1313 = { sizeof (XmlSchemaFacet_t614309579), -1, sizeof(XmlSchemaFacet_t614309579_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1313[3] = 
 {
 	XmlSchemaFacet_t614309579_StaticFields::get_offset_of_AllFacets_16(),
 	XmlSchemaFacet_t614309579::get_offset_of_isFixed_17(),
 	XmlSchemaFacet_t614309579::get_offset_of_val_18(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1313 = { sizeof (Facet_t3019654938)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1313[14] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1314 = { sizeof (Facet_t3019654938)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1314[14] = 
 {
 	Facet_t3019654938::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -320,38 +328,38 @@ extern const int32_t g_FieldOffsetTable1313[14] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1314 = { sizeof (XmlSchemaForm_t1143227640)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1314[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1315 = { sizeof (XmlSchemaForm_t1143227640)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1315[4] = 
 {
 	XmlSchemaForm_t1143227640::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1315 = { sizeof (XmlSchemaFractionDigitsFacet_t2708215647), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1316 = { sizeof (XmlSchemaGroup_t4189650927), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1316[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1316 = { sizeof (XmlSchemaFractionDigitsFacet_t2708215647), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1317 = { sizeof (XmlSchemaGroup_t4189650927), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1317[4] = 
 {
 	XmlSchemaGroup_t4189650927::get_offset_of_name_16(),
 	XmlSchemaGroup_t4189650927::get_offset_of_particle_17(),
 	XmlSchemaGroup_t4189650927::get_offset_of_qualifiedName_18(),
 	XmlSchemaGroup_t4189650927::get_offset_of_isCircularDefinition_19(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1317 = { sizeof (XmlSchemaGroupBase_t3811767860), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1317[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1318 = { sizeof (XmlSchemaGroupBase_t3811767860), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1318[1] = 
 {
 	XmlSchemaGroupBase_t3811767860::get_offset_of_compiledItems_27(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1318 = { sizeof (XmlSchemaGroupRef_t3082205844), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1318[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1319 = { sizeof (XmlSchemaGroupRef_t3082205844), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1319[4] = 
 {
 	XmlSchemaGroupRef_t3082205844::get_offset_of_schema_27(),
 	XmlSchemaGroupRef_t3082205844::get_offset_of_refName_28(),
 	XmlSchemaGroupRef_t3082205844::get_offset_of_referencedGroup_29(),
 	XmlSchemaGroupRef_t3082205844::get_offset_of_busy_30(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1319 = { sizeof (XmlSchemaIdentityConstraint_t1058613623), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1319[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1320 = { sizeof (XmlSchemaIdentityConstraint_t1058613623), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1320[5] = 
 {
 	XmlSchemaIdentityConstraint_t1058613623::get_offset_of_fields_16(),
 	XmlSchemaIdentityConstraint_t1058613623::get_offset_of_name_17(),
@@ -359,19 +367,19 @@ extern const int32_t g_FieldOffsetTable1319[5] =
 	XmlSchemaIdentityConstraint_t1058613623::get_offset_of_selector_19(),
 	XmlSchemaIdentityConstraint_t1058613623::get_offset_of_compiledSelector_20(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1320 = { sizeof (XmlSchemaImport_t250324363), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1320[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1321 = { sizeof (XmlSchemaImport_t250324363), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1321[2] = 
 {
 	XmlSchemaImport_t250324363::get_offset_of_annotation_16(),
 	XmlSchemaImport_t250324363::get_offset_of_nameSpace_17(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1321 = { sizeof (XmlSchemaInclude_t2752556710), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1321[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1322 = { sizeof (XmlSchemaInclude_t2752556710), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1322[1] = 
 {
 	XmlSchemaInclude_t2752556710::get_offset_of_annotation_16(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1322 = { sizeof (XmlSchemaInfo_t2864028808), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1322[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1323 = { sizeof (XmlSchemaInfo_t2864028808), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1323[7] = 
 {
 	XmlSchemaInfo_t2864028808::get_offset_of_isDefault_0(),
 	XmlSchemaInfo_t2864028808::get_offset_of_isNil_1(),
@@ -381,31 +389,31 @@ extern const int32_t g_FieldOffsetTable1322[7] =
 	XmlSchemaInfo_t2864028808::get_offset_of_type_5(),
 	XmlSchemaInfo_t2864028808::get_offset_of_validity_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1323 = { sizeof (XmlSchemaKey_t1946917723), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1324 = { sizeof (XmlSchemaKeyref_t1894386400), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1324[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1324 = { sizeof (XmlSchemaKey_t1946917723), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1325 = { sizeof (XmlSchemaKeyref_t1894386400), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1325[2] = 
 {
 	XmlSchemaKeyref_t1894386400::get_offset_of_refer_21(),
 	XmlSchemaKeyref_t1894386400::get_offset_of_target_22(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1325 = { sizeof (XmlSchemaLengthFacet_t430394943), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1326 = { sizeof (XmlSchemaMaxExclusiveFacet_t2593226405), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1327 = { sizeof (XmlSchemaMaxInclusiveFacet_t663510947), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1328 = { sizeof (XmlSchemaMaxLengthFacet_t3225833099), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1329 = { sizeof (XmlSchemaMinExclusiveFacet_t3225721695), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1330 = { sizeof (XmlSchemaMinInclusiveFacet_t708563817), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1331 = { sizeof (XmlSchemaMinLengthFacet_t1871324785), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1332 = { sizeof (XmlSchemaNotation_t346281646), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1332[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1326 = { sizeof (XmlSchemaLengthFacet_t430394943), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1327 = { sizeof (XmlSchemaMaxExclusiveFacet_t2593226405), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1328 = { sizeof (XmlSchemaMaxInclusiveFacet_t663510947), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1329 = { sizeof (XmlSchemaMaxLengthFacet_t3225833099), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1330 = { sizeof (XmlSchemaMinExclusiveFacet_t3225721695), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1331 = { sizeof (XmlSchemaMinInclusiveFacet_t708563817), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1332 = { sizeof (XmlSchemaMinLengthFacet_t1871324785), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1333 = { sizeof (XmlSchemaNotation_t346281646), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1333[4] = 
 {
 	XmlSchemaNotation_t346281646::get_offset_of_name_16(),
 	XmlSchemaNotation_t346281646::get_offset_of_pub_17(),
 	XmlSchemaNotation_t346281646::get_offset_of_system_18(),
 	XmlSchemaNotation_t346281646::get_offset_of_qualifiedName_19(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1333 = { sizeof (XmlSchemaNumericFacet_t3887766756), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1334 = { sizeof (XmlSchemaObject_t2050913741), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1334[13] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1334 = { sizeof (XmlSchemaNumericFacet_t3887766756), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1335 = { sizeof (XmlSchemaObject_t2050913741), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1335[13] = 
 {
 	XmlSchemaObject_t2050913741::get_offset_of_lineNumber_0(),
 	XmlSchemaObject_t2050913741::get_offset_of_linePosition_1(),
@@ -421,25 +429,25 @@ extern const int32_t g_FieldOffsetTable1334[13] =
 	XmlSchemaObject_t2050913741::get_offset_of_redefinedObject_11(),
 	XmlSchemaObject_t2050913741::get_offset_of_parent_12(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1335 = { sizeof (XmlSchemaObjectCollection_t395083109), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1336 = { sizeof (XmlSchemaObjectEnumerator_t2354997415), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1336[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1336 = { sizeof (XmlSchemaObjectCollection_t395083109), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1337 = { sizeof (XmlSchemaObjectEnumerator_t2354997415), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1337[1] = 
 {
 	XmlSchemaObjectEnumerator_t2354997415::get_offset_of_ienum_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1337 = { sizeof (XmlSchemaObjectTable_t3364835593), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1337[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1338 = { sizeof (XmlSchemaObjectTable_t3364835593), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1338[1] = 
 {
 	XmlSchemaObjectTable_t3364835593::get_offset_of_table_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1338 = { sizeof (XmlSchemaObjectTableEnumerator_t2908487920), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1338[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1339 = { sizeof (XmlSchemaObjectTableEnumerator_t2908487920), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1339[2] = 
 {
 	XmlSchemaObjectTableEnumerator_t2908487920::get_offset_of_xenum_0(),
 	XmlSchemaObjectTableEnumerator_t2908487920::get_offset_of_tmp_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1339 = { sizeof (XmlSchemaParticle_t3365045970), -1, sizeof(XmlSchemaParticle_t3365045970_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1339[11] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1340 = { sizeof (XmlSchemaParticle_t3365045970), -1, sizeof(XmlSchemaParticle_t3365045970_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1340[11] = 
 {
 	XmlSchemaParticle_t3365045970::get_offset_of_minOccurs_16(),
 	XmlSchemaParticle_t3365045970::get_offset_of_maxOccurs_17(),
@@ -453,18 +461,18 @@ extern const int32_t g_FieldOffsetTable1339[11] =
 	XmlSchemaParticle_t3365045970::get_offset_of_parentIsGroupDefinition_25(),
 	XmlSchemaParticle_t3365045970::get_offset_of_OptimizedParticle_26(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1340 = { sizeof (EmptyParticle_t446815059), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1341 = { sizeof (XmlSchemaPatternFacet_t2024909611), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1342 = { sizeof (XmlSchemaRedefine_t3478619248), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1342[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1341 = { sizeof (EmptyParticle_t446815059), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1342 = { sizeof (XmlSchemaPatternFacet_t2024909611), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1343 = { sizeof (XmlSchemaRedefine_t3478619248), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1343[4] = 
 {
 	XmlSchemaRedefine_t3478619248::get_offset_of_attributeGroups_16(),
 	XmlSchemaRedefine_t3478619248::get_offset_of_groups_17(),
 	XmlSchemaRedefine_t3478619248::get_offset_of_items_18(),
 	XmlSchemaRedefine_t3478619248::get_offset_of_schemaTypes_19(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1343 = { sizeof (XmlSchemaSet_t313318308), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1343[12] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1344 = { sizeof (XmlSchemaSet_t313318308), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1344[12] = 
 {
 	XmlSchemaSet_t313318308::get_offset_of_nameTable_0(),
 	XmlSchemaSet_t313318308::get_offset_of_xmlResolver_1(),
@@ -479,25 +487,25 @@ extern const int32_t g_FieldOffsetTable1343[12] =
 	XmlSchemaSet_t313318308::get_offset_of_CompilationId_10(),
 	XmlSchemaSet_t313318308::get_offset_of_ValidationEventHandler_11(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1344 = { sizeof (XmlSchemaSequence_t728414063), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1344[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1345 = { sizeof (XmlSchemaSequence_t728414063), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1345[1] = 
 {
 	XmlSchemaSequence_t728414063::get_offset_of_items_28(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1345 = { sizeof (XmlSchemaSimpleContent_t2303138587), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1345[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1346 = { sizeof (XmlSchemaSimpleContent_t2303138587), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1346[1] = 
 {
 	XmlSchemaSimpleContent_t2303138587::get_offset_of_content_16(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1346 = { sizeof (XmlSchemaSimpleContentExtension_t3718357176), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1346[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1347 = { sizeof (XmlSchemaSimpleContentExtension_t3718357176), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1347[3] = 
 {
 	XmlSchemaSimpleContentExtension_t3718357176::get_offset_of_any_17(),
 	XmlSchemaSimpleContentExtension_t3718357176::get_offset_of_attributes_18(),
 	XmlSchemaSimpleContentExtension_t3718357176::get_offset_of_baseTypeName_19(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1347 = { sizeof (XmlSchemaSimpleContentRestriction_t2728776481), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1347[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1348 = { sizeof (XmlSchemaSimpleContentRestriction_t2728776481), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1348[5] = 
 {
 	XmlSchemaSimpleContentRestriction_t2728776481::get_offset_of_any_17(),
 	XmlSchemaSimpleContentRestriction_t2728776481::get_offset_of_attributes_18(),
@@ -505,8 +513,8 @@ extern const int32_t g_FieldOffsetTable1347[5] =
 	XmlSchemaSimpleContentRestriction_t2728776481::get_offset_of_baseTypeName_20(),
 	XmlSchemaSimpleContentRestriction_t2728776481::get_offset_of_facets_21(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1348 = { sizeof (XmlSchemaSimpleType_t248156492), -1, sizeof(XmlSchemaSimpleType_t248156492_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1348[54] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1349 = { sizeof (XmlSchemaSimpleType_t248156492), -1, sizeof(XmlSchemaSimpleType_t248156492_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1349[54] = 
 {
 	XmlSchemaSimpleType_t248156492_StaticFields::get_offset_of_schemaLocationType_28(),
 	XmlSchemaSimpleType_t248156492::get_offset_of_content_29(),
@@ -563,21 +571,21 @@ extern const int32_t g_FieldOffsetTable1348[54] =
 	XmlSchemaSimpleType_t248156492_StaticFields::get_offset_of_XdtYearMonthDuration_80(),
 	XmlSchemaSimpleType_t248156492_StaticFields::get_offset_of_XdtDayTimeDuration_81(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1349 = { sizeof (XmlSchemaSimpleTypeContent_t1606103299), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1349[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1350 = { sizeof (XmlSchemaSimpleTypeContent_t1606103299), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1350[1] = 
 {
 	XmlSchemaSimpleTypeContent_t1606103299::get_offset_of_OwnerType_16(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1350 = { sizeof (XmlSchemaSimpleTypeList_t2170323082), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1350[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1351 = { sizeof (XmlSchemaSimpleTypeList_t2170323082), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1351[4] = 
 {
 	XmlSchemaSimpleTypeList_t2170323082::get_offset_of_itemType_17(),
 	XmlSchemaSimpleTypeList_t2170323082::get_offset_of_itemTypeName_18(),
 	XmlSchemaSimpleTypeList_t2170323082::get_offset_of_validatedListItemType_19(),
 	XmlSchemaSimpleTypeList_t2170323082::get_offset_of_validatedListItemSchemaType_20(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1351 = { sizeof (XmlSchemaSimpleTypeRestriction_t1099506232), -1, sizeof(XmlSchemaSimpleTypeRestriction_t1099506232_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1351[18] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1352 = { sizeof (XmlSchemaSimpleTypeRestriction_t1099506232), -1, sizeof(XmlSchemaSimpleTypeRestriction_t1099506232_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1352[18] = 
 {
 	XmlSchemaSimpleTypeRestriction_t1099506232::get_offset_of_baseType_17(),
 	XmlSchemaSimpleTypeRestriction_t1099506232::get_offset_of_baseTypeName_18(),
@@ -598,17 +606,17 @@ extern const int32_t g_FieldOffsetTable1351[18] =
 	XmlSchemaSimpleTypeRestriction_t1099506232_StaticFields::get_offset_of_lengthStyle_33(),
 	XmlSchemaSimpleTypeRestriction_t1099506232_StaticFields::get_offset_of_listFacets_34(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1352 = { sizeof (XmlSchemaSimpleTypeUnion_t91327365), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1352[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1353 = { sizeof (XmlSchemaSimpleTypeUnion_t91327365), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1353[4] = 
 {
 	XmlSchemaSimpleTypeUnion_t91327365::get_offset_of_baseTypes_17(),
 	XmlSchemaSimpleTypeUnion_t91327365::get_offset_of_memberTypes_18(),
 	XmlSchemaSimpleTypeUnion_t91327365::get_offset_of_validatedTypes_19(),
 	XmlSchemaSimpleTypeUnion_t91327365::get_offset_of_validatedSchemaTypes_20(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1353 = { sizeof (XmlSchemaTotalDigitsFacet_t2939281405), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1354 = { sizeof (XmlSchemaType_t1795078578), -1, sizeof(XmlSchemaType_t1795078578_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1354[12] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1354 = { sizeof (XmlSchemaTotalDigitsFacet_t2939281405), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1355 = { sizeof (XmlSchemaType_t1795078578), -1, sizeof(XmlSchemaType_t1795078578_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1355[12] = 
 {
 	XmlSchemaType_t1795078578::get_offset_of_final_16(),
 	XmlSchemaType_t1795078578::get_offset_of_isMixed_17(),
@@ -623,9 +631,9 @@ extern const int32_t g_FieldOffsetTable1354[12] =
 	XmlSchemaType_t1795078578_StaticFields::get_offset_of_U3CU3Ef__switchU24map42_26(),
 	XmlSchemaType_t1795078578_StaticFields::get_offset_of_U3CU3Ef__switchU24map43_27(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1355 = { sizeof (XmlSchemaUnique_t403169513), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1356 = { sizeof (XmlSchemaUse_t3553149267)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1356[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1356 = { sizeof (XmlSchemaUnique_t403169513), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1357 = { sizeof (XmlSchemaUse_t3553149267)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1357[5] = 
 {
 	XmlSchemaUse_t3553149267::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -633,18 +641,18 @@ extern const int32_t g_FieldOffsetTable1356[5] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1357 = { sizeof (XmlSchemaValidity_t995929432)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1357[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1358 = { sizeof (XmlSchemaValidity_t995929432)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1358[4] = 
 {
 	XmlSchemaValidity_t995929432::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1358 = { sizeof (XmlSchemaValidationException_t2387044366), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1359 = { sizeof (XmlSchemaWhiteSpaceFacet_t2007056012), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1360 = { sizeof (XmlSchemaXPath_t604820427), -1, sizeof(XmlSchemaXPath_t604820427_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1360[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1359 = { sizeof (XmlSchemaValidationException_t2387044366), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1360 = { sizeof (XmlSchemaWhiteSpaceFacet_t2007056012), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1361 = { sizeof (XmlSchemaXPath_t604820427), -1, sizeof(XmlSchemaXPath_t604820427_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1361[6] = 
 {
 	XmlSchemaXPath_t604820427::get_offset_of_xpath_16(),
 	XmlSchemaXPath_t604820427::get_offset_of_nsmgr_17(),
@@ -653,16 +661,16 @@ extern const int32_t g_FieldOffsetTable1360[6] =
 	XmlSchemaXPath_t604820427::get_offset_of_currentPath_20(),
 	XmlSchemaXPath_t604820427_StaticFields::get_offset_of_U3CU3Ef__switchU24map4A_21(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1361 = { sizeof (XmlSeverityType_t3547578624)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1361[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1362 = { sizeof (XmlSeverityType_t3547578624)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1362[3] = 
 {
 	XmlSeverityType_t3547578624::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1362 = { sizeof (ValidationHandler_t3342756761), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1363 = { sizeof (XmlSchemaUtil_t3576230726), -1, sizeof(XmlSchemaUtil_t3576230726_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1363[10] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1363 = { sizeof (ValidationHandler_t3342756761), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1364 = { sizeof (XmlSchemaUtil_t3576230726), -1, sizeof(XmlSchemaUtil_t3576230726_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1364[10] = 
 {
 	XmlSchemaUtil_t3576230726_StaticFields::get_offset_of_FinalAllowed_0(),
 	XmlSchemaUtil_t3576230726_StaticFields::get_offset_of_ElementBlockAllowed_1(),
@@ -675,15 +683,15 @@ extern const int32_t g_FieldOffsetTable1363[10] =
 	XmlSchemaUtil_t3576230726_StaticFields::get_offset_of_U3CU3Ef__switchU24map4F_8(),
 	XmlSchemaUtil_t3576230726_StaticFields::get_offset_of_U3CU3Ef__switchU24map50_9(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1364 = { sizeof (XmlSchemaReader_t3786681597), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1364[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1365 = { sizeof (XmlSchemaReader_t3786681597), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1365[3] = 
 {
 	XmlSchemaReader_t3786681597::get_offset_of_reader_2(),
 	XmlSchemaReader_t3786681597::get_offset_of_handler_3(),
 	XmlSchemaReader_t3786681597::get_offset_of_hasLineInfo_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1365 = { sizeof (XmlSchemaValidationFlags_t910489930)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1365[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1366 = { sizeof (XmlSchemaValidationFlags_t910489930)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1366[7] = 
 {
 	XmlSchemaValidationFlags_t910489930::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -693,8 +701,8 @@ extern const int32_t g_FieldOffsetTable1365[7] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1366 = { sizeof (XmlTypeCode_t58293802)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1366[56] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1367 = { sizeof (XmlTypeCode_t58293802)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1367[56] = 
 {
 	XmlTypeCode_t58293802::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -753,10 +761,10 @@ extern const int32_t g_FieldOffsetTable1366[56] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1367 = { sizeof (CodeIdentifier_t3245527920), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1368 = { 0, -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1369 = { sizeof (SchemaTypes_t3045759914)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1369[9] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1368 = { sizeof (CodeIdentifier_t3245527920), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1369 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1370 = { sizeof (SchemaTypes_t3045759914)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1370[9] = 
 {
 	SchemaTypes_t3045759914::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -768,8 +776,8 @@ extern const int32_t g_FieldOffsetTable1369[9] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1370 = { sizeof (TypeData_t3979356678), -1, sizeof(TypeData_t3979356678_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1370[12] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1371 = { sizeof (TypeData_t3979356678), -1, sizeof(TypeData_t3979356678_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1371[12] = 
 {
 	TypeData_t3979356678::get_offset_of_type_0(),
 	TypeData_t3979356678::get_offset_of_elementName_1(),
@@ -784,57 +792,57 @@ extern const int32_t g_FieldOffsetTable1370[12] =
 	TypeData_t3979356678::get_offset_of_nullableOverride_10(),
 	TypeData_t3979356678_StaticFields::get_offset_of_keywords_11(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1371 = { sizeof (TypeTranslator_t1077722680), -1, sizeof(TypeTranslator_t1077722680_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1371[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1372 = { sizeof (TypeTranslator_t1077722680), -1, sizeof(TypeTranslator_t1077722680_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1372[4] = 
 {
 	TypeTranslator_t1077722680_StaticFields::get_offset_of_nameCache_0(),
 	TypeTranslator_t1077722680_StaticFields::get_offset_of_primitiveTypes_1(),
 	TypeTranslator_t1077722680_StaticFields::get_offset_of_primitiveArrayTypes_2(),
 	TypeTranslator_t1077722680_StaticFields::get_offset_of_nullableTypes_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1372 = { sizeof (XmlAnyAttributeAttribute_t713947513), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1373 = { sizeof (XmlAnyElementAttribute_t2502375235), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1373[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1373 = { sizeof (XmlAnyAttributeAttribute_t713947513), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1374 = { sizeof (XmlAnyElementAttribute_t2502375235), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1374[1] = 
 {
 	XmlAnyElementAttribute_t2502375235::get_offset_of_order_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1374 = { sizeof (XmlAttributeAttribute_t850813783), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1374[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1375 = { sizeof (XmlAttributeAttribute_t850813783), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1375[2] = 
 {
 	XmlAttributeAttribute_t850813783::get_offset_of_attributeName_0(),
 	XmlAttributeAttribute_t850813783::get_offset_of_dataType_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1375 = { sizeof (XmlElementAttribute_t2182839281), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1375[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1376 = { sizeof (XmlElementAttribute_t2182839281), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1376[3] = 
 {
 	XmlElementAttribute_t2182839281::get_offset_of_elementName_0(),
 	XmlElementAttribute_t2182839281::get_offset_of_type_1(),
 	XmlElementAttribute_t2182839281::get_offset_of_order_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1376 = { sizeof (XmlEnumAttribute_t919400678), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1376[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1377 = { sizeof (XmlEnumAttribute_t919400678), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1377[1] = 
 {
 	XmlEnumAttribute_t919400678::get_offset_of_name_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1377 = { sizeof (XmlIgnoreAttribute_t2333915871), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1378 = { sizeof (XmlNamespaceDeclarationsAttribute_t2069522403), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1379 = { sizeof (XmlRootAttribute_t3527426713), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1379[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1378 = { sizeof (XmlIgnoreAttribute_t2333915871), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1379 = { sizeof (XmlNamespaceDeclarationsAttribute_t2069522403), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1380 = { sizeof (XmlRootAttribute_t3527426713), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1380[3] = 
 {
 	XmlRootAttribute_t3527426713::get_offset_of_elementName_0(),
 	XmlRootAttribute_t3527426713::get_offset_of_isNullable_1(),
 	XmlRootAttribute_t3527426713::get_offset_of_ns_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1380 = { sizeof (XmlSerializerNamespaces_t3063656491), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1380[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1381 = { sizeof (XmlSerializerNamespaces_t3063656491), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1381[1] = 
 {
 	XmlSerializerNamespaces_t3063656491::get_offset_of_namespaces_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1381 = { sizeof (XmlTextAttribute_t3321178844), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1382 = { sizeof (XmlNodeChangedEventHandler_t2964483403), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1383 = { sizeof (ValidationEventHandler_t1580700381), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1384 = { sizeof (U3CPrivateImplementationDetailsU3E_t1486305138), -1, sizeof(U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1384[8] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1382 = { sizeof (XmlTextAttribute_t3321178844), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1383 = { sizeof (XmlNodeChangedEventHandler_t2964483403), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1384 = { sizeof (ValidationEventHandler_t1580700381), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1385 = { sizeof (U3CPrivateImplementationDetailsU3E_t1486305138), -1, sizeof(U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1385[8] = 
 {
 	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D36_0(),
 	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D37_1(),
@@ -845,37 +853,37 @@ extern const int32_t g_FieldOffsetTable1384[8] =
 	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D43_6(),
 	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D44_7(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1385 = { sizeof (U24ArrayTypeU2412_t3672778803)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t3672778803 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1386 = { sizeof (U24ArrayTypeU248_t1957337328)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU248_t1957337328 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1387 = { sizeof (U24ArrayTypeU24256_t2038352955)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24256_t2038352955 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1388 = { sizeof (U24ArrayTypeU241280_t628910058)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU241280_t628910058 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1389 = { sizeof (U3CModuleU3E_t3783534217), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1390 = { sizeof (Locale_t4255929015), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1391 = { sizeof (BigInteger_t925946153), -1, sizeof(BigInteger_t925946153_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1391[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1386 = { sizeof (U24ArrayTypeU2412_t3672778803)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t3672778803 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1387 = { sizeof (U24ArrayTypeU248_t1957337328)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU248_t1957337328 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1388 = { sizeof (U24ArrayTypeU24256_t2038352955)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24256_t2038352955 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1389 = { sizeof (U24ArrayTypeU241280_t628910058)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU241280_t628910058 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1390 = { sizeof (U3CModuleU3E_t3783534217), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1391 = { sizeof (Locale_t4255929015), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1392 = { sizeof (BigInteger_t925946153), -1, sizeof(BigInteger_t925946153_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1392[4] = 
 {
 	BigInteger_t925946153::get_offset_of_length_0(),
 	BigInteger_t925946153::get_offset_of_data_1(),
 	BigInteger_t925946153_StaticFields::get_offset_of_smallPrimes_2(),
 	BigInteger_t925946153_StaticFields::get_offset_of_rng_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1392 = { sizeof (Sign_t874893936)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1392[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1393 = { sizeof (Sign_t874893936)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1393[4] = 
 {
 	Sign_t874893936::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1393 = { sizeof (ModulusRing_t80355992), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1393[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1394 = { sizeof (ModulusRing_t80355992), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1394[2] = 
 {
 	ModulusRing_t80355992::get_offset_of_mod_0(),
 	ModulusRing_t80355992::get_offset_of_constant_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1394 = { sizeof (Kernel_t1353186456), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1395 = { sizeof (ConfidenceFactor_t1997037802)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1395[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1395 = { sizeof (Kernel_t1353186456), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1396 = { sizeof (ConfidenceFactor_t1997037802)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1396[7] = 
 {
 	ConfidenceFactor_t1997037802::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -885,16 +893,9 @@ extern const int32_t g_FieldOffsetTable1395[7] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1396 = { sizeof (PrimalityTests_t3283102399), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1397 = { sizeof (PrimeGeneratorBase_t1053438168), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1398 = { sizeof (SequentialSearchPrimeGeneratorBase_t463670657), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1399 = { sizeof (ASN1_t924533536), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1399[3] = 
-{
-	ASN1_t924533536::get_offset_of_m_nTag_0(),
-	ASN1_t924533536::get_offset_of_m_aValue_1(),
-	ASN1_t924533536::get_offset_of_elist_2(),
-};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1397 = { sizeof (PrimalityTests_t3283102399), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1398 = { sizeof (PrimeGeneratorBase_t1053438168), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1399 = { sizeof (SequentialSearchPrimeGeneratorBase_t463670657), -1, 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

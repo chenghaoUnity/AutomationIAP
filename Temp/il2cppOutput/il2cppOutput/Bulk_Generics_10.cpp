@@ -13,14 +13,18 @@
 #include <limits>
 #include <assert.h>
 
-// System.Comparison`1<UnityEngine.Vector4>
-struct Comparison_1_t3505446432;
+// System.Comparison`1<UnityEngine.Vector2>
+struct Comparison_1_t3505446430;
 // System.Object
 struct Il2CppObject;
 // System.IAsyncResult
 struct IAsyncResult_t1999651008;
 // System.AsyncCallback
 struct AsyncCallback_t163412349;
+// System.Comparison`1<UnityEngine.Vector3>
+struct Comparison_1_t3505446431;
+// System.Comparison`1<UnityEngine.Vector4>
+struct Comparison_1_t3505446432;
 // System.Converter`2<System.Object,System.Object>
 struct Converter_2_t106372939;
 // System.EventHandler`1<System.Object>
@@ -49,14 +53,20 @@ struct Func_3_t3369346583;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
-#include "mscorlib_System_Comparison_1_gen3505446432.h"
-#include "mscorlib_System_Comparison_1_gen3505446432MethodDeclarations.h"
+#include "mscorlib_System_Comparison_1_gen3505446430.h"
+#include "mscorlib_System_Comparison_1_gen3505446430MethodDeclarations.h"
 #include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_IntPtr2504060609.h"
 #include "mscorlib_System_Void1841601450.h"
-#include "UnityEngine_UnityEngine_Vector42243707581.h"
+#include "UnityEngine_UnityEngine_Vector22243707579.h"
 #include "mscorlib_System_Int322071877448.h"
 #include "mscorlib_System_AsyncCallback163412349.h"
+#include "mscorlib_System_Comparison_1_gen3505446431.h"
+#include "mscorlib_System_Comparison_1_gen3505446431MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Vector32243707580.h"
+#include "mscorlib_System_Comparison_1_gen3505446432.h"
+#include "mscorlib_System_Comparison_1_gen3505446432MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Vector42243707581.h"
 #include "mscorlib_System_Converter_2_gen106372939.h"
 #include "mscorlib_System_Converter_2_gen106372939MethodDeclarations.h"
 #include "mscorlib_System_EventHandler_1_gen1280756467.h"
@@ -91,6 +101,104 @@ struct Func_3_t3369346583;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Comparison`1<UnityEngine.Vector2>::.ctor(System.Object,System.IntPtr)
+extern "C"  void Comparison_1__ctor_m883164393_gshared (Comparison_1_t3505446430 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Int32 System.Comparison`1<UnityEngine.Vector2>::Invoke(T,T)
+extern "C"  int32_t Comparison_1_Invoke_m2664841287_gshared (Comparison_1_t3505446430 * __this, Vector2_t2243707579  ___x0, Vector2_t2243707579  ___y1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		Comparison_1_Invoke_m2664841287((Comparison_1_t3505446430 *)__this->get_prev_9(),___x0, ___y1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, Vector2_t2243707579  ___x0, Vector2_t2243707579  ___y1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___x0, ___y1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, Vector2_t2243707579  ___x0, Vector2_t2243707579  ___y1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___x0, ___y1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult System.Comparison`1<UnityEngine.Vector2>::BeginInvoke(T,T,System.AsyncCallback,System.Object)
+extern Il2CppClass* Vector2_t2243707579_il2cpp_TypeInfo_var;
+extern const uint32_t Comparison_1_BeginInvoke_m4030535530_MetadataUsageId;
+extern "C"  Il2CppObject * Comparison_1_BeginInvoke_m4030535530_gshared (Comparison_1_t3505446430 * __this, Vector2_t2243707579  ___x0, Vector2_t2243707579  ___y1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Comparison_1_BeginInvoke_m4030535530_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(Vector2_t2243707579_il2cpp_TypeInfo_var, &___x0);
+	__d_args[1] = Box(Vector2_t2243707579_il2cpp_TypeInfo_var, &___y1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// System.Int32 System.Comparison`1<UnityEngine.Vector2>::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t Comparison_1_EndInvoke_m153558673_gshared (Comparison_1_t3505446430 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
+// System.Void System.Comparison`1<UnityEngine.Vector3>::.ctor(System.Object,System.IntPtr)
+extern "C"  void Comparison_1__ctor_m3438229060_gshared (Comparison_1_t3505446431 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Int32 System.Comparison`1<UnityEngine.Vector3>::Invoke(T,T)
+extern "C"  int32_t Comparison_1_Invoke_m4047872872_gshared (Comparison_1_t3505446431 * __this, Vector3_t2243707580  ___x0, Vector3_t2243707580  ___y1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		Comparison_1_Invoke_m4047872872((Comparison_1_t3505446431 *)__this->get_prev_9(),___x0, ___y1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef int32_t (*FunctionPointerType) (Il2CppObject *, void* __this, Vector3_t2243707580  ___x0, Vector3_t2243707580  ___y1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),___x0, ___y1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef int32_t (*FunctionPointerType) (void* __this, Vector3_t2243707580  ___x0, Vector3_t2243707580  ___y1, const MethodInfo* method);
+		return ((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),___x0, ___y1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult System.Comparison`1<UnityEngine.Vector3>::BeginInvoke(T,T,System.AsyncCallback,System.Object)
+extern Il2CppClass* Vector3_t2243707580_il2cpp_TypeInfo_var;
+extern const uint32_t Comparison_1_BeginInvoke_m1103040431_MetadataUsageId;
+extern "C"  Il2CppObject * Comparison_1_BeginInvoke_m1103040431_gshared (Comparison_1_t3505446431 * __this, Vector3_t2243707580  ___x0, Vector3_t2243707580  ___y1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Comparison_1_BeginInvoke_m1103040431_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(Vector3_t2243707580_il2cpp_TypeInfo_var, &___x0);
+	__d_args[1] = Box(Vector3_t2243707580_il2cpp_TypeInfo_var, &___y1);
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// System.Int32 System.Comparison`1<UnityEngine.Vector3>::EndInvoke(System.IAsyncResult)
+extern "C"  int32_t Comparison_1_EndInvoke_m2678763282_gshared (Comparison_1_t3505446431 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	Il2CppObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	return *(int32_t*)UnBox ((Il2CppCodeGenObject*)__result);
+}
 // System.Void System.Comparison`1<UnityEngine.Vector4>::.ctor(System.Object,System.IntPtr)
 extern "C"  void Comparison_1__ctor_m2159122699_gshared (Comparison_1_t3505446432 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
 {

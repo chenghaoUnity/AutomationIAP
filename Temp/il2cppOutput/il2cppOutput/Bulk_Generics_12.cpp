@@ -13,6 +13,10 @@
 #include <limits>
 #include <assert.h>
 
+// System.Collections.Generic.List`1<System.Int32>
+struct List_1_t1440998580;
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_t2058570427;
 // System.Collections.Generic.List`1<UnityEngine.Color32>
 struct List_1_t243638650;
 // System.Collections.Generic.List`1<UnityEngine.UIVertex>
@@ -33,16 +37,32 @@ struct Il2CppObject;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen924852264.h"
+#include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen924852264MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen1440998580.h"
+#include "UnityEngine_UI_UnityEngine_UI_ObjectPool_1_gen4282372027.h"
+#include "UnityEngine_UI_UnityEngine_UI_ObjectPool_1_gen4282372027MethodDeclarations.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "UnityEngine_UnityEngine_Events_UnityAction_1_gen2807584331.h"
+#include "UnityEngine_UnityEngine_Events_UnityAction_1_gen2807584331MethodDeclarations.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen1440998580MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen1542424111.h"
+#include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen1542424111MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2058570427.h"
+#include "UnityEngine_UI_UnityEngine_UI_ObjectPool_1_gen604976578.h"
+#include "UnityEngine_UI_UnityEngine_UI_ObjectPool_1_gen604976578MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Events_UnityAction_1_gen3425156178.h"
+#include "UnityEngine_UnityEngine_Events_UnityAction_1_gen3425156178MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2058570427MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen4022459630.h"
 #include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen4022459630MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen243638650.h"
 #include "UnityEngine_UI_UnityEngine_UI_ObjectPool_1_gen3085012097.h"
 #include "UnityEngine_UI_UnityEngine_UI_ObjectPool_1_gen3085012097MethodDeclarations.h"
-#include "mscorlib_System_Void1841601450.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_1_gen1610224401.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_1_gen1610224401MethodDeclarations.h"
-#include "mscorlib_System_Object2689449295.h"
-#include "mscorlib_System_IntPtr2504060609.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen243638650MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen57233634.h"
 #include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen57233634MethodDeclarations.h"
@@ -98,6 +118,116 @@ extern "C"  Il2CppObject * Activator_CreateInstance_TisIl2CppObject_m1022768098_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Collections.Generic.List`1<T> UnityEngine.UI.ListPool`1<System.Int32>::Get()
+extern "C"  List_1_t1440998580 * ListPool_1_Get_m3809147792_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	List_1_t1440998580 * V_0 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0));
+		ObjectPool_1_t4282372027 * L_0 = ((ListPool_1_t924852264_StaticFields*)IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->static_fields)->get_s_ListPool_0();
+		NullCheck((ObjectPool_1_t4282372027 *)L_0);
+		List_1_t1440998580 * L_1 = ((  List_1_t1440998580 * (*) (ObjectPool_1_t4282372027 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 1)->methodPointer)((ObjectPool_1_t4282372027 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 1));
+		V_0 = (List_1_t1440998580 *)L_1;
+		goto IL_0011;
+	}
+
+IL_0011:
+	{
+		List_1_t1440998580 * L_2 = V_0;
+		return L_2;
+	}
+}
+// System.Void UnityEngine.UI.ListPool`1<System.Int32>::Release(System.Collections.Generic.List`1<T>)
+extern "C"  void ListPool_1_Release_m3716853512_gshared (Il2CppObject * __this /* static, unused */, List_1_t1440998580 * ___toRelease0, const MethodInfo* method)
+{
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0));
+		ObjectPool_1_t4282372027 * L_0 = ((ListPool_1_t924852264_StaticFields*)IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->static_fields)->get_s_ListPool_0();
+		List_1_t1440998580 * L_1 = ___toRelease0;
+		NullCheck((ObjectPool_1_t4282372027 *)L_0);
+		((  void (*) (ObjectPool_1_t4282372027 *, List_1_t1440998580 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2)->methodPointer)((ObjectPool_1_t4282372027 *)L_0, (List_1_t1440998580 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2));
+		return;
+	}
+}
+// System.Void UnityEngine.UI.ListPool`1<System.Int32>::.cctor()
+extern "C"  void ListPool_1__cctor_m408291388_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		IntPtr_t L_0;
+		L_0.set_m_value_0((void*)(void*)IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 3));
+		UnityAction_1_t2807584331 * L_1 = (UnityAction_1_t2807584331 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4));
+		((  void (*) (UnityAction_1_t2807584331 *, Il2CppObject *, IntPtr_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 5)->methodPointer)(L_1, (Il2CppObject *)NULL, (IntPtr_t)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 5));
+		ObjectPool_1_t4282372027 * L_2 = (ObjectPool_1_t4282372027 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6));
+		((  void (*) (ObjectPool_1_t4282372027 *, UnityAction_1_t2807584331 *, UnityAction_1_t2807584331 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7)->methodPointer)(L_2, (UnityAction_1_t2807584331 *)NULL, (UnityAction_1_t2807584331 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7));
+		((ListPool_1_t924852264_StaticFields*)IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->static_fields)->set_s_ListPool_0(L_2);
+		return;
+	}
+}
+// System.Void UnityEngine.UI.ListPool`1<System.Int32>::<s_ListPool>m__0(System.Collections.Generic.List`1<T>)
+extern "C"  void ListPool_1_U3Cs_ListPoolU3Em__0_m2151100132_gshared (Il2CppObject * __this /* static, unused */, List_1_t1440998580 * ___l0, const MethodInfo* method)
+{
+	{
+		List_1_t1440998580 * L_0 = ___l0;
+		NullCheck((List_1_t1440998580 *)L_0);
+		((  void (*) (List_1_t1440998580 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 8)->methodPointer)((List_1_t1440998580 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 8));
+		return;
+	}
+}
+// System.Collections.Generic.List`1<T> UnityEngine.UI.ListPool`1<System.Object>::Get()
+extern "C"  List_1_t2058570427 * ListPool_1_Get_m529219189_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	List_1_t2058570427 * V_0 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0));
+		ObjectPool_1_t604976578 * L_0 = ((ListPool_1_t1542424111_StaticFields*)IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->static_fields)->get_s_ListPool_0();
+		NullCheck((ObjectPool_1_t604976578 *)L_0);
+		List_1_t2058570427 * L_1 = ((  List_1_t2058570427 * (*) (ObjectPool_1_t604976578 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 1)->methodPointer)((ObjectPool_1_t604976578 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 1));
+		V_0 = (List_1_t2058570427 *)L_1;
+		goto IL_0011;
+	}
+
+IL_0011:
+	{
+		List_1_t2058570427 * L_2 = V_0;
+		return L_2;
+	}
+}
+// System.Void UnityEngine.UI.ListPool`1<System.Object>::Release(System.Collections.Generic.List`1<T>)
+extern "C"  void ListPool_1_Release_m1464559125_gshared (Il2CppObject * __this /* static, unused */, List_1_t2058570427 * ___toRelease0, const MethodInfo* method)
+{
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0));
+		ObjectPool_1_t604976578 * L_0 = ((ListPool_1_t1542424111_StaticFields*)IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->static_fields)->get_s_ListPool_0();
+		List_1_t2058570427 * L_1 = ___toRelease0;
+		NullCheck((ObjectPool_1_t604976578 *)L_0);
+		((  void (*) (ObjectPool_1_t604976578 *, List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2)->methodPointer)((ObjectPool_1_t604976578 *)L_0, (List_1_t2058570427 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2));
+		return;
+	}
+}
+// System.Void UnityEngine.UI.ListPool`1<System.Object>::.cctor()
+extern "C"  void ListPool_1__cctor_m1613652121_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		IntPtr_t L_0;
+		L_0.set_m_value_0((void*)(void*)IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 3));
+		UnityAction_1_t3425156178 * L_1 = (UnityAction_1_t3425156178 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4));
+		((  void (*) (UnityAction_1_t3425156178 *, Il2CppObject *, IntPtr_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 5)->methodPointer)(L_1, (Il2CppObject *)NULL, (IntPtr_t)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 5));
+		ObjectPool_1_t604976578 * L_2 = (ObjectPool_1_t604976578 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6));
+		((  void (*) (ObjectPool_1_t604976578 *, UnityAction_1_t3425156178 *, UnityAction_1_t3425156178 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7)->methodPointer)(L_2, (UnityAction_1_t3425156178 *)NULL, (UnityAction_1_t3425156178 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7));
+		((ListPool_1_t1542424111_StaticFields*)IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->static_fields)->set_s_ListPool_0(L_2);
+		return;
+	}
+}
+// System.Void UnityEngine.UI.ListPool`1<System.Object>::<s_ListPool>m__0(System.Collections.Generic.List`1<T>)
+extern "C"  void ListPool_1_U3Cs_ListPoolU3Em__0_m441310157_gshared (Il2CppObject * __this /* static, unused */, List_1_t2058570427 * ___l0, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = ___l0;
+		NullCheck((List_1_t2058570427 *)L_0);
+		((  void (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 8)->methodPointer)((List_1_t2058570427 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 8));
+		return;
+	}
+}
 // System.Collections.Generic.List`1<T> UnityEngine.UI.ListPool`1<UnityEngine.Color32>::Get()
 extern "C"  List_1_t243638650 * ListPool_1_Get_m3357896252_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {

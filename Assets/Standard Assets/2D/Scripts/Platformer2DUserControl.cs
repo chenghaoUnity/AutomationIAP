@@ -41,7 +41,7 @@ namespace UnityStandardAssets._2D
 			if (PlayerPrefs.GetString ("PreferController").Equals ("Vistual")) {
 				h = UltimateJoystick.GetPosition ("Movement").x;
 			} else if (PlayerPrefs.GetString ("PreferController").Equals ("Gravity")) {
-				h = Input.acceleration.x * 3;
+				h = Input.acceleration.x * 2;
 			} else {
 				h = UltimateJoystick.GetPosition( "Movement" ).x;                                                                                              
 			}

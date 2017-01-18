@@ -22,13 +22,15 @@ struct Texture_t2243626319;
 struct String_t;
 
 #include "codegen/il2cpp-codegen.h"
-#include "UnityEngine_UnityEngine_Material193706927.h"
 #include "UnityEngine_UnityEngine_Shader2430389951.h"
+#include "UnityEngine_UnityEngine_Material193706927.h"
 #include "mscorlib_System_String2029220233.h"
 #include "UnityEngine_UnityEngine_Color2020392075.h"
 #include "UnityEngine_UnityEngine_Vector42243707581.h"
 #include "UnityEngine_UnityEngine_Texture2243626319.h"
 
+// System.Void UnityEngine.Material::.ctor(UnityEngine.Shader)
+extern "C"  void Material__ctor_m1897560860 (Material_t193706927 * __this, Shader_t2430389951 * ___shader0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::.ctor(UnityEngine.Material)
 extern "C"  void Material__ctor_m1440882780 (Material_t193706927 * __this, Material_t193706927 * ___source0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Shader UnityEngine.Material::get_shader()
@@ -81,6 +83,8 @@ extern "C"  String_t* Material_GetTag_m3319424960 (Material_t193706927 * __this,
 extern "C"  String_t* Material_GetTag_m847488492 (Material_t193706927 * __this, String_t* ___tag0, bool ___searchFallbacks1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::set_renderQueue(System.Int32)
 extern "C"  void Material_set_renderQueue_m3118406393 (Material_t193706927 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::Internal_CreateWithShader(UnityEngine.Material,UnityEngine.Shader)
+extern "C"  void Material_Internal_CreateWithShader_m4029381963 (Il2CppObject * __this /* static, unused */, Material_t193706927 * ___mono0, Shader_t2430389951 * ___shader1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::Internal_CreateWithMaterial(UnityEngine.Material,UnityEngine.Material)
 extern "C"  void Material_Internal_CreateWithMaterial_m2907597451 (Il2CppObject * __this /* static, unused */, Material_t193706927 * ___mono0, Material_t193706927 * ___source1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::EnableKeyword(System.String)

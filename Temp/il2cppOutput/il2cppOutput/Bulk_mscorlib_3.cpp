@@ -251,6 +251,8 @@ struct AssemblyFileVersionAttribute_t2897687916;
 struct AssemblyInformationalVersionAttribute_t3037389657;
 // System.Reflection.AssemblyKeyFileAttribute
 struct AssemblyKeyFileAttribute_t605245443;
+// System.Reflection.AssemblyKeyNameAttribute
+struct AssemblyKeyNameAttribute_t2494571406;
 // System.Reflection.StrongNameKeyPair
 struct StrongNameKeyPair_t4090869089;
 // System.Reflection.AssemblyProductAttribute
@@ -313,8 +315,6 @@ struct EnumBuilder_t2808714468;
 struct FieldBuilder_t2784804005;
 // System.Reflection.Emit.UnmanagedMarshal
 struct UnmanagedMarshal_t4270021860;
-// System.Reflection.Emit.GenericTypeParameterBuilder
-struct GenericTypeParameterBuilder_t1370236603;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -640,6 +640,8 @@ struct GenericTypeParameterBuilder_t1370236603;
 #include "mscorlib_System_Reflection_AssemblyInformationalVe3037389657MethodDeclarations.h"
 #include "mscorlib_System_Reflection_AssemblyKeyFileAttribute605245443.h"
 #include "mscorlib_System_Reflection_AssemblyKeyFileAttribute605245443MethodDeclarations.h"
+#include "mscorlib_System_Reflection_AssemblyKeyNameAttribut2494571406.h"
+#include "mscorlib_System_Reflection_AssemblyKeyNameAttribut2494571406MethodDeclarations.h"
 #include "mscorlib_System_Configuration_Assemblies_AssemblyV1223556284.h"
 #include "mscorlib_System_Configuration_Assemblies_AssemblyH4147282775.h"
 #include "mscorlib_System_Reflection_StrongNameKeyPair4090869089.h"
@@ -728,10 +730,6 @@ struct GenericTypeParameterBuilder_t1370236603;
 #include "mscorlib_System_Reflection_Emit_FieldBuilder2784804005MethodDeclarations.h"
 #include "mscorlib_System_Reflection_FieldAttributes1122705193.h"
 #include "mscorlib_System_Reflection_Emit_UnmanagedMarshal4270021860.h"
-#include "mscorlib_System_Reflection_Emit_GenericTypeParamet1370236603.h"
-#include "mscorlib_System_Reflection_Emit_GenericTypeParamet1370236603MethodDeclarations.h"
-#include "mscorlib_System_Reflection_Emit_MethodBuilder644187984MethodDeclarations.h"
-#include "mscorlib_System_Reflection_Emit_MethodBuilder644187984.h"
 
 // System.Collections.ObjectModel.ReadOnlyCollection`1<!!0> System.Array::AsReadOnly<System.Object>(!!0[])
 extern "C"  ReadOnlyCollection_1_t2875234987 * Array_AsReadOnly_TisIl2CppObject_m1721559766_gshared (Il2CppObject * __this /* static, unused */, ObjectU5BU5D_t3614634134* p0, const MethodInfo* method);
@@ -10222,6 +10220,11 @@ extern "C"  double Math_Sin_m2320256962 (Il2CppObject * __this /* static, unused
 extern "C"  double Math_Cos_m43596019 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method)
 {
 	return cos(___d0);
+}
+// System.Double System.Math::Asin(System.Double)
+extern "C"  double Math_Asin_m347297897 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method)
+{
+	return asin(___d0);
 }
 // System.Double System.Math::Atan2(System.Double,System.Double)
 extern "C"  double Math_Atan2_m792822848 (Il2CppObject * __this /* static, unused */, double ___y0, double ___x1, const MethodInfo* method)
@@ -29154,6 +29157,16 @@ extern "C"  void AssemblyKeyFileAttribute__ctor_m1072556611 (AssemblyKeyFileAttr
 		return;
 	}
 }
+// System.Void System.Reflection.AssemblyKeyNameAttribute::.ctor(System.String)
+extern "C"  void AssemblyKeyNameAttribute__ctor_m3504441012 (AssemblyKeyNameAttribute_t2494571406 * __this, String_t* ___keyName0, const MethodInfo* method)
+{
+	{
+		Attribute__ctor_m1730479323(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___keyName0;
+		__this->set_name_0(L_0);
+		return;
+	}
+}
 // System.Void System.Reflection.AssemblyName::.ctor()
 extern "C"  void AssemblyName__ctor_m2505746587 (AssemblyName_t894705941 * __this, const MethodInfo* method)
 {
@@ -39627,550 +39640,6 @@ extern "C"  Module_t4282841206 * FieldBuilder_get_Module_m1920701714 (FieldBuild
 	{
 		Module_t4282841206 * L_0 = MemberInfo_get_Module_m3957426656(__this, /*hidden argument*/NULL);
 		return L_0;
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::IsSubclassOf(System.Type)
-extern Il2CppClass* ModuleBuilder_t4156028127_il2cpp_TypeInfo_var;
-extern const uint32_t GenericTypeParameterBuilder_IsSubclassOf_m563999142_MetadataUsageId;
-extern "C"  bool GenericTypeParameterBuilder_IsSubclassOf_m563999142 (GenericTypeParameterBuilder_t1370236603 * __this, Type_t * ___c0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (GenericTypeParameterBuilder_IsSubclassOf_m563999142_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t G_B7_0 = 0;
-	{
-		TypeBuilder_t3308873219 * L_0 = __this->get_tbuilder_8();
-		NullCheck(L_0);
-		Module_t4282841206 * L_1 = TypeBuilder_get_Module_m1668298460(L_0, /*hidden argument*/NULL);
-		NullCheck(((ModuleBuilder_t4156028127 *)CastclassClass(L_1, ModuleBuilder_t4156028127_il2cpp_TypeInfo_var)));
-		AssemblyBuilder_t1646117627 * L_2 = ((ModuleBuilder_t4156028127 *)CastclassClass(L_1, ModuleBuilder_t4156028127_il2cpp_TypeInfo_var))->get_assemblyb_14();
-		NullCheck(L_2);
-		bool L_3 = AssemblyBuilder_get_IsCompilerContext_m2864230005(L_2, /*hidden argument*/NULL);
-		if (L_3)
-		{
-			goto IL_0026;
-		}
-	}
-	{
-		Exception_t1927440687 * L_4 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4);
-	}
-
-IL_0026:
-	{
-		Type_t * L_5 = GenericTypeParameterBuilder_get_BaseType_m101683868(__this, /*hidden argument*/NULL);
-		if (L_5)
-		{
-			goto IL_0033;
-		}
-	}
-	{
-		return (bool)0;
-	}
-
-IL_0033:
-	{
-		Type_t * L_6 = GenericTypeParameterBuilder_get_BaseType_m101683868(__this, /*hidden argument*/NULL);
-		Type_t * L_7 = ___c0;
-		if ((((Il2CppObject*)(Type_t *)L_6) == ((Il2CppObject*)(Type_t *)L_7)))
-		{
-			goto IL_004d;
-		}
-	}
-	{
-		Type_t * L_8 = GenericTypeParameterBuilder_get_BaseType_m101683868(__this, /*hidden argument*/NULL);
-		Type_t * L_9 = ___c0;
-		NullCheck(L_8);
-		bool L_10 = VirtFuncInvoker1< bool, Type_t * >::Invoke(39 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_8, L_9);
-		G_B7_0 = ((int32_t)(L_10));
-		goto IL_004e;
-	}
-
-IL_004d:
-	{
-		G_B7_0 = 1;
-	}
-
-IL_004e:
-	{
-		return (bool)G_B7_0;
-	}
-}
-// System.Reflection.TypeAttributes System.Reflection.Emit.GenericTypeParameterBuilder::GetAttributeFlagsImpl()
-extern Il2CppClass* ModuleBuilder_t4156028127_il2cpp_TypeInfo_var;
-extern const uint32_t GenericTypeParameterBuilder_GetAttributeFlagsImpl_m3338182267_MetadataUsageId;
-extern "C"  int32_t GenericTypeParameterBuilder_GetAttributeFlagsImpl_m3338182267 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (GenericTypeParameterBuilder_GetAttributeFlagsImpl_m3338182267_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		TypeBuilder_t3308873219 * L_0 = __this->get_tbuilder_8();
-		NullCheck(L_0);
-		Module_t4282841206 * L_1 = TypeBuilder_get_Module_m1668298460(L_0, /*hidden argument*/NULL);
-		NullCheck(((ModuleBuilder_t4156028127 *)CastclassClass(L_1, ModuleBuilder_t4156028127_il2cpp_TypeInfo_var)));
-		AssemblyBuilder_t1646117627 * L_2 = ((ModuleBuilder_t4156028127 *)CastclassClass(L_1, ModuleBuilder_t4156028127_il2cpp_TypeInfo_var))->get_assemblyb_14();
-		NullCheck(L_2);
-		bool L_3 = AssemblyBuilder_get_IsCompilerContext_m2864230005(L_2, /*hidden argument*/NULL);
-		if (!L_3)
-		{
-			goto IL_0021;
-		}
-	}
-	{
-		return (int32_t)(1);
-	}
-
-IL_0021:
-	{
-		Exception_t1927440687 * L_4 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4);
-	}
-}
-// System.Reflection.ConstructorInfo System.Reflection.Emit.GenericTypeParameterBuilder::GetConstructorImpl(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
-extern "C"  ConstructorInfo_t2851816542 * GenericTypeParameterBuilder_GetConstructorImpl_m2310028502 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, Binder_t3404612058 * ___binder1, int32_t ___callConvention2, TypeU5BU5D_t1664964607* ___types3, ParameterModifierU5BU5D_t963192633* ___modifiers4, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Reflection.ConstructorInfo[] System.Reflection.Emit.GenericTypeParameterBuilder::GetConstructors(System.Reflection.BindingFlags)
-extern "C"  ConstructorInfoU5BU5D_t1996683371* GenericTypeParameterBuilder_GetConstructors_m103067670 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Reflection.EventInfo System.Reflection.Emit.GenericTypeParameterBuilder::GetEvent(System.String,System.Reflection.BindingFlags)
-extern "C"  EventInfo_t * GenericTypeParameterBuilder_GetEvent_m4210567427 (GenericTypeParameterBuilder_t1370236603 * __this, String_t* ___name0, int32_t ___bindingAttr1, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Reflection.FieldInfo System.Reflection.Emit.GenericTypeParameterBuilder::GetField(System.String,System.Reflection.BindingFlags)
-extern "C"  FieldInfo_t * GenericTypeParameterBuilder_GetField_m1135650395 (GenericTypeParameterBuilder_t1370236603 * __this, String_t* ___name0, int32_t ___bindingAttr1, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Reflection.FieldInfo[] System.Reflection.Emit.GenericTypeParameterBuilder::GetFields(System.Reflection.BindingFlags)
-extern "C"  FieldInfoU5BU5D_t125053523* GenericTypeParameterBuilder_GetFields_m1855948450 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Type[] System.Reflection.Emit.GenericTypeParameterBuilder::GetInterfaces()
-extern "C"  TypeU5BU5D_t1664964607* GenericTypeParameterBuilder_GetInterfaces_m922686350 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Reflection.MethodInfo[] System.Reflection.Emit.GenericTypeParameterBuilder::GetMethods(System.Reflection.BindingFlags)
-extern "C"  MethodInfoU5BU5D_t152480188* GenericTypeParameterBuilder_GetMethods_m1243855818 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Reflection.MethodInfo System.Reflection.Emit.GenericTypeParameterBuilder::GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
-extern "C"  MethodInfo_t * GenericTypeParameterBuilder_GetMethodImpl_m528545634 (GenericTypeParameterBuilder_t1370236603 * __this, String_t* ___name0, int32_t ___bindingAttr1, Binder_t3404612058 * ___binder2, int32_t ___callConvention3, TypeU5BU5D_t1664964607* ___types4, ParameterModifierU5BU5D_t963192633* ___modifiers5, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Reflection.PropertyInfo[] System.Reflection.Emit.GenericTypeParameterBuilder::GetProperties(System.Reflection.BindingFlags)
-extern "C"  PropertyInfoU5BU5D_t1736152084* GenericTypeParameterBuilder_GetProperties_m571906413 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Reflection.PropertyInfo System.Reflection.Emit.GenericTypeParameterBuilder::GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])
-extern "C"  PropertyInfo_t * GenericTypeParameterBuilder_GetPropertyImpl_m3566422383 (GenericTypeParameterBuilder_t1370236603 * __this, String_t* ___name0, int32_t ___bindingAttr1, Binder_t3404612058 * ___binder2, Type_t * ___returnType3, TypeU5BU5D_t1664964607* ___types4, ParameterModifierU5BU5D_t963192633* ___modifiers5, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::HasElementTypeImpl()
-extern "C"  bool GenericTypeParameterBuilder_HasElementTypeImpl_m2592272488 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (bool)0;
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::IsAssignableFrom(System.Type)
-extern "C"  bool GenericTypeParameterBuilder_IsAssignableFrom_m3874566384 (GenericTypeParameterBuilder_t1370236603 * __this, Type_t * ___c0, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::IsInstanceOfType(System.Object)
-extern "C"  bool GenericTypeParameterBuilder_IsInstanceOfType_m2048682904 (GenericTypeParameterBuilder_t1370236603 * __this, Il2CppObject * ___o0, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::IsArrayImpl()
-extern "C"  bool GenericTypeParameterBuilder_IsArrayImpl_m1786931395 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (bool)0;
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::IsByRefImpl()
-extern "C"  bool GenericTypeParameterBuilder_IsByRefImpl_m3339093128 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (bool)0;
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::IsPointerImpl()
-extern "C"  bool GenericTypeParameterBuilder_IsPointerImpl_m4265374617 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (bool)0;
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::IsPrimitiveImpl()
-extern "C"  bool GenericTypeParameterBuilder_IsPrimitiveImpl_m1198748291 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (bool)0;
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::IsValueTypeImpl()
-extern "C"  bool GenericTypeParameterBuilder_IsValueTypeImpl_m20800593 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	int32_t G_B3_0 = 0;
-	{
-		Type_t * L_0 = __this->get_base_type_11();
-		if (!L_0)
-		{
-			goto IL_001b;
-		}
-	}
-	{
-		Type_t * L_1 = __this->get_base_type_11();
-		NullCheck(L_1);
-		bool L_2 = Type_get_IsValueType_m1733572463(L_1, /*hidden argument*/NULL);
-		G_B3_0 = ((int32_t)(L_2));
-		goto IL_001c;
-	}
-
-IL_001b:
-	{
-		G_B3_0 = 0;
-	}
-
-IL_001c:
-	{
-		return (bool)G_B3_0;
-	}
-}
-// System.Object System.Reflection.Emit.GenericTypeParameterBuilder::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])
-extern "C"  Il2CppObject * GenericTypeParameterBuilder_InvokeMember_m1055646245 (GenericTypeParameterBuilder_t1370236603 * __this, String_t* ___name0, int32_t ___invokeAttr1, Binder_t3404612058 * ___binder2, Il2CppObject * ___target3, ObjectU5BU5D_t3614634134* ___args4, ParameterModifierU5BU5D_t963192633* ___modifiers5, CultureInfo_t3500843524 * ___culture6, StringU5BU5D_t1642385972* ___namedParameters7, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Type System.Reflection.Emit.GenericTypeParameterBuilder::GetElementType()
-extern "C"  Type_t * GenericTypeParameterBuilder_GetElementType_m2702341452 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Type System.Reflection.Emit.GenericTypeParameterBuilder::get_UnderlyingSystemType()
-extern "C"  Type_t * GenericTypeParameterBuilder_get_UnderlyingSystemType_m200578513 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return __this;
-	}
-}
-// System.Reflection.Assembly System.Reflection.Emit.GenericTypeParameterBuilder::get_Assembly()
-extern "C"  Assembly_t4268412390 * GenericTypeParameterBuilder_get_Assembly_m2103587580 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		TypeBuilder_t3308873219 * L_0 = __this->get_tbuilder_8();
-		NullCheck(L_0);
-		Assembly_t4268412390 * L_1 = TypeBuilder_get_Assembly_m492491492(L_0, /*hidden argument*/NULL);
-		return L_1;
-	}
-}
-// System.String System.Reflection.Emit.GenericTypeParameterBuilder::get_AssemblyQualifiedName()
-extern "C"  String_t* GenericTypeParameterBuilder_get_AssemblyQualifiedName_m902593295 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (String_t*)NULL;
-	}
-}
-// System.Type System.Reflection.Emit.GenericTypeParameterBuilder::get_BaseType()
-extern "C"  Type_t * GenericTypeParameterBuilder_get_BaseType_m101683868 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		Type_t * L_0 = __this->get_base_type_11();
-		return L_0;
-	}
-}
-// System.String System.Reflection.Emit.GenericTypeParameterBuilder::get_FullName()
-extern "C"  String_t* GenericTypeParameterBuilder_get_FullName_m3508212436 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (String_t*)NULL;
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::IsDefined(System.Type,System.Boolean)
-extern "C"  bool GenericTypeParameterBuilder_IsDefined_m1413593919 (GenericTypeParameterBuilder_t1370236603 * __this, Type_t * ___attributeType0, bool ___inherit1, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Object[] System.Reflection.Emit.GenericTypeParameterBuilder::GetCustomAttributes(System.Boolean)
-extern "C"  ObjectU5BU5D_t3614634134* GenericTypeParameterBuilder_GetCustomAttributes_m1330155190 (GenericTypeParameterBuilder_t1370236603 * __this, bool ___inherit0, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Object[] System.Reflection.Emit.GenericTypeParameterBuilder::GetCustomAttributes(System.Type,System.Boolean)
-extern "C"  ObjectU5BU5D_t3614634134* GenericTypeParameterBuilder_GetCustomAttributes_m3266536625 (GenericTypeParameterBuilder_t1370236603 * __this, Type_t * ___attributeType0, bool ___inherit1, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.String System.Reflection.Emit.GenericTypeParameterBuilder::get_Name()
-extern "C"  String_t* GenericTypeParameterBuilder_get_Name_m2640162747 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_name_10();
-		return L_0;
-	}
-}
-// System.String System.Reflection.Emit.GenericTypeParameterBuilder::get_Namespace()
-extern "C"  String_t* GenericTypeParameterBuilder_get_Namespace_m1776615511 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (String_t*)NULL;
-	}
-}
-// System.Reflection.Module System.Reflection.Emit.GenericTypeParameterBuilder::get_Module()
-extern "C"  Module_t4282841206 * GenericTypeParameterBuilder_get_Module_m2427847092 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		TypeBuilder_t3308873219 * L_0 = __this->get_tbuilder_8();
-		NullCheck(L_0);
-		Module_t4282841206 * L_1 = TypeBuilder_get_Module_m1668298460(L_0, /*hidden argument*/NULL);
-		return L_1;
-	}
-}
-// System.Type System.Reflection.Emit.GenericTypeParameterBuilder::get_DeclaringType()
-extern "C"  Type_t * GenericTypeParameterBuilder_get_DeclaringType_m1652924692 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	Type_t * G_B3_0 = NULL;
-	{
-		MethodBuilder_t644187984 * L_0 = __this->get_mbuilder_9();
-		if (!L_0)
-		{
-			goto IL_001b;
-		}
-	}
-	{
-		MethodBuilder_t644187984 * L_1 = __this->get_mbuilder_9();
-		NullCheck(L_1);
-		Type_t * L_2 = MethodBuilder_get_DeclaringType_m2734207591(L_1, /*hidden argument*/NULL);
-		G_B3_0 = L_2;
-		goto IL_0021;
-	}
-
-IL_001b:
-	{
-		TypeBuilder_t3308873219 * L_3 = __this->get_tbuilder_8();
-		G_B3_0 = ((Type_t *)(L_3));
-	}
-
-IL_0021:
-	{
-		return G_B3_0;
-	}
-}
-// System.Type System.Reflection.Emit.GenericTypeParameterBuilder::get_ReflectedType()
-extern "C"  Type_t * GenericTypeParameterBuilder_get_ReflectedType_m562256091 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		Type_t * L_0 = GenericTypeParameterBuilder_get_DeclaringType_m1652924692(__this, /*hidden argument*/NULL);
-		return L_0;
-	}
-}
-// System.RuntimeTypeHandle System.Reflection.Emit.GenericTypeParameterBuilder::get_TypeHandle()
-extern "C"  RuntimeTypeHandle_t2330101084  GenericTypeParameterBuilder_get_TypeHandle_m3293062357 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		Exception_t1927440687 * L_0 = GenericTypeParameterBuilder_not_supported_m3784909043(__this, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Type[] System.Reflection.Emit.GenericTypeParameterBuilder::GetGenericArguments()
-extern Il2CppClass* InvalidOperationException_t721527559_il2cpp_TypeInfo_var;
-extern const uint32_t GenericTypeParameterBuilder_GetGenericArguments_m277381309_MetadataUsageId;
-extern "C"  TypeU5BU5D_t1664964607* GenericTypeParameterBuilder_GetGenericArguments_m277381309 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (GenericTypeParameterBuilder_GetGenericArguments_m277381309_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		InvalidOperationException_t721527559 * L_0 = (InvalidOperationException_t721527559 *)il2cpp_codegen_object_new(InvalidOperationException_t721527559_il2cpp_TypeInfo_var);
-		InvalidOperationException__ctor_m102359810(L_0, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Type System.Reflection.Emit.GenericTypeParameterBuilder::GetGenericTypeDefinition()
-extern Il2CppClass* InvalidOperationException_t721527559_il2cpp_TypeInfo_var;
-extern const uint32_t GenericTypeParameterBuilder_GetGenericTypeDefinition_m2936287336_MetadataUsageId;
-extern "C"  Type_t * GenericTypeParameterBuilder_GetGenericTypeDefinition_m2936287336 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (GenericTypeParameterBuilder_GetGenericTypeDefinition_m2936287336_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		InvalidOperationException_t721527559 * L_0 = (InvalidOperationException_t721527559 *)il2cpp_codegen_object_new(InvalidOperationException_t721527559_il2cpp_TypeInfo_var);
-		InvalidOperationException__ctor_m102359810(L_0, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::get_ContainsGenericParameters()
-extern "C"  bool GenericTypeParameterBuilder_get_ContainsGenericParameters_m1449092549 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (bool)1;
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::get_IsGenericParameter()
-extern "C"  bool GenericTypeParameterBuilder_get_IsGenericParameter_m1565478927 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (bool)1;
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::get_IsGenericType()
-extern "C"  bool GenericTypeParameterBuilder_get_IsGenericType_m1883522222 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (bool)0;
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::get_IsGenericTypeDefinition()
-extern "C"  bool GenericTypeParameterBuilder_get_IsGenericTypeDefinition_m2790308279 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		return (bool)0;
-	}
-}
-// System.Exception System.Reflection.Emit.GenericTypeParameterBuilder::not_supported()
-extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
-extern const uint32_t GenericTypeParameterBuilder_not_supported_m3784909043_MetadataUsageId;
-extern "C"  Exception_t1927440687 * GenericTypeParameterBuilder_not_supported_m3784909043 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (GenericTypeParameterBuilder_not_supported_m3784909043_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		NotSupportedException_t1793819818 * L_0 = (NotSupportedException_t1793819818 *)il2cpp_codegen_object_new(NotSupportedException_t1793819818_il2cpp_TypeInfo_var);
-		NotSupportedException__ctor_m3232764727(L_0, /*hidden argument*/NULL);
-		return L_0;
-	}
-}
-// System.String System.Reflection.Emit.GenericTypeParameterBuilder::ToString()
-extern "C"  String_t* GenericTypeParameterBuilder_ToString_m4223425511 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_name_10();
-		return L_0;
-	}
-}
-// System.Boolean System.Reflection.Emit.GenericTypeParameterBuilder::Equals(System.Object)
-extern "C"  bool GenericTypeParameterBuilder_Equals_m2498927509 (GenericTypeParameterBuilder_t1370236603 * __this, Il2CppObject * ___o0, const MethodInfo* method)
-{
-	{
-		Il2CppObject * L_0 = ___o0;
-		bool L_1 = Type_Equals_m1272005660(__this, L_0, /*hidden argument*/NULL);
-		return L_1;
-	}
-}
-// System.Int32 System.Reflection.Emit.GenericTypeParameterBuilder::GetHashCode()
-extern "C"  int32_t GenericTypeParameterBuilder_GetHashCode_m867619899 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	{
-		int32_t L_0 = Type_GetHashCode_m1150382148(__this, /*hidden argument*/NULL);
-		return L_0;
-	}
-}
-// System.Type System.Reflection.Emit.GenericTypeParameterBuilder::MakeByRefType()
-extern Il2CppClass* ByRefType_t1587086384_il2cpp_TypeInfo_var;
-extern const uint32_t GenericTypeParameterBuilder_MakeByRefType_m4279657370_MetadataUsageId;
-extern "C"  Type_t * GenericTypeParameterBuilder_MakeByRefType_m4279657370 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (GenericTypeParameterBuilder_MakeByRefType_m4279657370_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		ByRefType_t1587086384 * L_0 = (ByRefType_t1587086384 *)il2cpp_codegen_object_new(ByRefType_t1587086384_il2cpp_TypeInfo_var);
-		ByRefType__ctor_m2068210324(L_0, __this, /*hidden argument*/NULL);
-		return L_0;
-	}
-}
-// System.Type System.Reflection.Emit.GenericTypeParameterBuilder::MakeGenericType(System.Type[])
-extern "C"  Type_t * GenericTypeParameterBuilder_MakeGenericType_m2955814622 (GenericTypeParameterBuilder_t1370236603 * __this, TypeU5BU5D_t1664964607* ___typeArguments0, const MethodInfo* method)
-{
-	{
-		TypeU5BU5D_t1664964607* L_0 = ___typeArguments0;
-		Type_t * L_1 = Type_MakeGenericType_m2765875033(__this, L_0, /*hidden argument*/NULL);
-		return L_1;
 	}
 }
 #ifdef __clang__

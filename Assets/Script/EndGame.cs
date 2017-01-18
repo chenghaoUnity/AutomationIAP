@@ -20,7 +20,7 @@ public class EndGame : MonoBehaviour {
 
 	public void reduceGold(int number) {
 		if (UI != null) {
-			bool death = UI.GetComponent<Inventory> ().ReduceGold (number / 2);
+			bool death = UI.GetComponent<Inventory> ().ReduceGold (number);
 			if (death == true) {
 				// what happen while death
 				sentEvent ();

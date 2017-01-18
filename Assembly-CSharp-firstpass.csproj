@@ -59,6 +59,7 @@
      <Compile Include="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Restarter.cs" />
+     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
@@ -98,12 +99,14 @@
      <None Include="Assets\Plugins\Android\firebase-common-10.0.1\AndroidManifest.xml" />
      <None Include="Assets\3rdParty\Ultimate Joystick Examples\Third Person Example\README_ThirdPerson.txt" />
      <None Include="Assets\Plugins\Ultimate Joystick\README.txt" />
+     <None Include="Assets\3rdParty\Bleed\HowToUse.txt" />
      <None Include="Assets\3rdParty\RainMaker\Demo\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
      <None Include="Assets\3rdParty\RainMaker\Prefab\RainShader.shader" />
      <None Include="Assets\Plugins\Android\firebase-common-10.0.1\proguard.txt" />
      <None Include="Assets\3rdParty\RainMaker\Demo\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\3rdParty\Bleed\ImageBlendEffect.shader" />
      <None Include="Assets\3rdParty\Ultimate Joystick Examples\Spaceship Example\README_Spaceship.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\3rdParty\RainMaker\Demo\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />

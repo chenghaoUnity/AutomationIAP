@@ -13,6 +13,10 @@
 #include <limits>
 #include <assert.h>
 
+// BleedBehavior
+struct BleedBehavior_t3074137086;
+// UnityEngine.RenderTexture
+struct RenderTexture_t2666733923;
 // Clickspawn
 struct Clickspawn_t776936059;
 // UnityEngine.GameObject
@@ -115,6 +119,12 @@ struct Image_t2042527209;
 struct InputField_t1631627530;
 // NewBehaviourScript
 struct NewBehaviourScript_t3815670778;
+// SimpleFire
+struct SimpleFire_t2560976854;
+// UnityEngine.Collider
+struct Collider_t3497673348;
+// SimplePlayer
+struct SimplePlayer_t3677415875;
 // UltimateJoystickExample.Spaceship.AsteroidController
 struct AsteroidController_t2056796649;
 // UnityEngine.Rigidbody
@@ -211,8 +221,6 @@ struct MeshContainer_t299039902;
 struct Mesh_t1356156583;
 // UnityStandardAssets.Water.PlanarReflection
 struct PlanarReflection_t2931543887;
-// UnityEngine.RenderTexture
-struct RenderTexture_t2666733923;
 // UnityStandardAssets.Water.SpecularLighting
 struct SpecularLighting_t2824122729;
 // UnityStandardAssets.Water.Water
@@ -249,12 +257,6 @@ struct AnnotateImageRequest_t1702253283;
 struct AnnotateImageRequests_t3617395854;
 // WebCamTextureToCloudVision/AnnotateImageResponse
 struct AnnotateImageResponse_t1085119557;
-// WebCamTextureToCloudVision/AnnotateImageResponses
-struct AnnotateImageResponses_t1647677944;
-// WebCamTextureToCloudVision/BoundingPoly
-struct BoundingPoly_t202383367;
-// WebCamTextureToCloudVision/EntityAnnotation
-struct EntityAnnotation_t3728473491;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -265,10 +267,25 @@ struct EntityAnnotation_t3728473491;
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU1486305137MethodDeclarations.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3762068664.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3762068664MethodDeclarations.h"
-#include "AssemblyU2DCSharp_Clickspawn776936059.h"
-#include "AssemblyU2DCSharp_Clickspawn776936059MethodDeclarations.h"
+#include "AssemblyU2DCSharp_BleedBehavior3074137086.h"
+#include "AssemblyU2DCSharp_BleedBehavior3074137086MethodDeclarations.h"
 #include "mscorlib_System_Void1841601450.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972MethodDeclarations.h"
+#include "mscorlib_System_Single2076509932.h"
+#include "mscorlib_System_Boolean3825574718.h"
+#include "UnityEngine_UnityEngine_Material193706927MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Shader2430389951.h"
+#include "UnityEngine_UnityEngine_Material193706927.h"
+#include "mscorlib_System_String2029220233.h"
+#include "UnityEngine_UnityEngine_Texture2D3542995729.h"
+#include "UnityEngine_UnityEngine_Texture2243626319.h"
+#include "UnityEngine_UnityEngine_Time31991979MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Mathf2336485820MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_RenderTexture2666733923.h"
+#include "UnityEngine_UnityEngine_Application354826772MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Graphics2412809155MethodDeclarations.h"
+#include "AssemblyU2DCSharp_Clickspawn776936059.h"
+#include "AssemblyU2DCSharp_Clickspawn776936059MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Input1785128008MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Camera189460977MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector32243707580MethodDeclarations.h"
@@ -279,10 +296,8 @@ struct EntityAnnotation_t3728473491;
 #include "UnityEngine_UnityEngine_Rigidbody2D502193897MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GameObject1756533147.h"
 #include "UnityEngine_UnityEngine_Vector32243707580.h"
-#include "mscorlib_System_Boolean3825574718.h"
 #include "mscorlib_System_Int322071877448.h"
 #include "UnityEngine_UnityEngine_Camera189460977.h"
-#include "mscorlib_System_Single2076509932.h"
 #include "UnityEngine_UnityEngine_Transform3275118058.h"
 #include "UnityEngine_UnityEngine_Quaternion4030073918.h"
 #include "UnityEngine_UnityEngine_Object1021602117.h"
@@ -293,7 +308,6 @@ struct EntityAnnotation_t3728473491;
 #include "Firebase_Database_Unity_Firebase_Unity_Editor_Fireba83728876MethodDeclarations.h"
 #include "Firebase_Database_Firebase_Database_FirebaseDataba1318758358MethodDeclarations.h"
 #include "Firebase_App_Firebase_FirebaseApp210707726.h"
-#include "mscorlib_System_String2029220233.h"
 #include "Firebase_Database_Firebase_Database_FirebaseDataba1318758358.h"
 #include "Firebase_Database_Firebase_Database_DatabaseRefere1167676104.h"
 #include "Firebase_Database_Firebase_Database_DatabaseRefere1167676104MethodDeclarations.h"
@@ -328,7 +342,6 @@ struct EntityAnnotation_t3728473491;
 #include "UnityEngine_UnityEngine_Vector22243707579MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Component3819376471MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WindZone3879450892MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Time31991979MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Quaternion4030073918MethodDeclarations.h"
 #include "AssemblyU2DCSharp_DigitalRuby_RainMaker_LoopingAudi960853467MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WindZone3879450892.h"
@@ -343,10 +356,8 @@ struct EntityAnnotation_t3728473491;
 #include "UnityEngine_UnityEngine_Component3819376471.h"
 #include "UnityEngine_UnityEngine_ParticleSystem_MinMaxCurve122563058MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_ParticleSystemCurveMode1659312557.h"
-#include "UnityEngine_UnityEngine_Material193706927MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AudioClip1932558630.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
-#include "UnityEngine_UnityEngine_Material193706927.h"
 #include "AssemblyU2DCSharp_DigitalRuby_RainMaker_DemoScript3397952802.h"
 #include "AssemblyU2DCSharp_DigitalRuby_RainMaker_DemoScript3397952802MethodDeclarations.h"
 #include "AssemblyU2DCSharp_DigitalRuby_RainMaker_RainScript2248401219.h"
@@ -356,7 +367,6 @@ struct EntityAnnotation_t3728473491;
 #include "AssemblyU2DCSharp_DigitalRuby_RainMaker_DemoScript3146159468.h"
 #include "UnityEngine_UnityEngine_Behaviour955675639MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Light494725636.h"
-#include "UnityEngine_UnityEngine_Mathf2336485820MethodDeclarations.h"
 #include "AssemblyU2DCSharp_DigitalRuby_RainMaker_DemoScript3146159468MethodDeclarations.h"
 #include "AssemblyU2DCSharp_DigitalRuby_RainMaker_DemoScript3229309160.h"
 #include "AssemblyU2DCSharp_DigitalRuby_RainMaker_DemoScript3229309160MethodDeclarations.h"
@@ -450,7 +460,6 @@ struct EntityAnnotation_t3728473491;
 #include "AssemblyU2DCSharp_HurtFX2260489167MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color2020392075.h"
 #include "UnityEngine_UnityEngine_Color2020392075MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Application354826772MethodDeclarations.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityStandardAssets__607923855MethodDeclarations.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityStandardAssets__607923855.h"
 #include "AssemblyU2DCSharp_Loading2871513552.h"
@@ -477,6 +486,14 @@ struct EntityAnnotation_t3728473491;
 #include "AssemblyU2DCSharp_NewBehaviourScript3815670778.h"
 #include "AssemblyU2DCSharp_NewBehaviourScript3815670778MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Debug1368543263MethodDeclarations.h"
+#include "AssemblyU2DCSharp_SimpleFire2560976854.h"
+#include "AssemblyU2DCSharp_SimpleFire2560976854MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Collider3497673348.h"
+#include "AssemblyU2DCSharp_SimplePlayer3677415875.h"
+#include "AssemblyU2DCSharp_SimplePlayer3677415875MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_GUI4082743951MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Rect3681755626.h"
+#include "UnityEngine_UnityEngine_Rect3681755626MethodDeclarations.h"
 #include "mscorlib_System_Single2076509932MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UltimateJoystickExample_Spaceshi2056796649.h"
 #include "AssemblyU2DCSharp_UltimateJoystickExample_Spaceshi2056796649MethodDeclarations.h"
@@ -616,12 +633,10 @@ struct EntityAnnotation_t3728473491;
 #include "mscorlib_System_RuntimeTypeHandle2330101084.h"
 #include "AssemblyU2DCSharp_UnityStandardAssets_Water_WaterB4291487940.h"
 #include "UnityEngine_UnityEngine_CameraClearFlags452084705.h"
-#include "UnityEngine_UnityEngine_RenderTexture2666733923.h"
 #include "UnityEngine_UnityEngine_RenderTexture2666733923MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_HideFlags1434274199.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g2882765492MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g2882765492.h"
-#include "UnityEngine_UnityEngine_Texture2243626319.h"
 #include "UnityEngine_UnityEngine_Skybox2033495038MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GL1765937205MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Skybox2033495038.h"
@@ -647,7 +662,6 @@ struct EntityAnnotation_t3728473491;
 #include "AssemblyU2DCSharp_UnityStandardAssets_Water_Water_2303503718MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UnityStandardAssets_Water_WaterB4291487940MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UnityStandardAssets_Water_WaterQ3485013746.h"
-#include "UnityEngine_UnityEngine_Shader2430389951.h"
 #include "UnityEngine_UnityEngine_RenderTextureFormat3360518468.h"
 #include "AssemblyU2DCSharp_UnityStandardAssets_Water_WaterB3567276807.h"
 #include "AssemblyU2DCSharp_UnityStandardAssets_Water_WaterB3567276807MethodDeclarations.h"
@@ -696,12 +710,6 @@ struct EntityAnnotation_t3728473491;
 #include "UnityEngine_UnityEngine_WWW2919945039.h"
 #include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Annot1085119557.h"
 #include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Annot1085119557MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Annot1647677944.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Annot1647677944MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Boundi202383367.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Boundi202383367MethodDeclarations.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Entit3728473491.h"
-#include "AssemblyU2DCSharp_WebCamTextureToCloudVision_Entit3728473491MethodDeclarations.h"
 
 // !!0 UnityEngine.Object::Instantiate<System.Object>(!!0,UnityEngine.Vector3,UnityEngine.Quaternion)
 extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m3692334404_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Vector3_t2243707580  p1, Quaternion_t4030073918  p2, const MethodInfo* method);
@@ -820,6 +828,220 @@ extern "C"  Il2CppObject * Component_GetComponentInChildren_TisIl2CppObject_m246
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void BleedBehavior::.ctor()
+extern "C"  void BleedBehavior__ctor_m659107949 (BleedBehavior_t3074137086 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_TestingBloodAmount_3((0.5f));
+		__this->set_EdgeSharpness_5((1.0f));
+		__this->set_maxAlpha_7((1.0f));
+		__this->set_distortion_8((0.2f));
+		__this->set_autoFadeOut_9((bool)1);
+		__this->set_autoFadeOutAbsReduc_10((0.05f));
+		__this->set_autoFadeOutRelReduc_11((0.5f));
+		__this->set_updateSpeed_12((20.0f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void BleedBehavior::Awake()
+extern Il2CppClass* Material_t193706927_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2850404003;
+extern Il2CppCodeGenString* _stringLiteral836285905;
+extern const uint32_t BleedBehavior_Awake_m552343070_MetadataUsageId;
+extern "C"  void BleedBehavior_Awake_m552343070 (BleedBehavior_t3074137086 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (BleedBehavior_Awake_m552343070_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Shader_t2430389951 * L_0 = __this->get_Shader_16();
+		Material_t193706927 * L_1 = (Material_t193706927 *)il2cpp_codegen_object_new(Material_t193706927_il2cpp_TypeInfo_var);
+		Material__ctor_m1897560860(L_1, L_0, /*hidden argument*/NULL);
+		__this->set__material_17(L_1);
+		Material_t193706927 * L_2 = __this->get__material_17();
+		Texture2D_t3542995729 * L_3 = __this->get_Image_14();
+		NullCheck(L_2);
+		Material_SetTexture_m141095205(L_2, _stringLiteral2850404003, L_3, /*hidden argument*/NULL);
+		Material_t193706927 * L_4 = __this->get__material_17();
+		Texture2D_t3542995729 * L_5 = __this->get_Normals_15();
+		NullCheck(L_4);
+		Material_SetTexture_m141095205(L_4, _stringLiteral836285905, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void BleedBehavior::Update()
+extern Il2CppClass* BleedBehavior_t3074137086_il2cpp_TypeInfo_var;
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t BleedBehavior_Update_m1914967136_MetadataUsageId;
+extern "C"  void BleedBehavior_Update_m1914967136 (BleedBehavior_t3074137086 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (BleedBehavior_Update_m1914967136_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		bool L_0 = __this->get_autoFadeOut_9();
+		if (!L_0)
+		{
+			goto IL_0066;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(BleedBehavior_t3074137086_il2cpp_TypeInfo_var);
+		float L_1 = ((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->get_BloodAmount_2();
+		if ((!(((float)L_1) > ((float)(0.0f)))))
+		{
+			goto IL_0066;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(BleedBehavior_t3074137086_il2cpp_TypeInfo_var);
+		float L_2 = ((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->get_BloodAmount_2();
+		float L_3 = __this->get_autoFadeOutAbsReduc_10();
+		float L_4 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->set_BloodAmount_2(((float)((float)L_2-(float)((float)((float)L_3*(float)L_4)))));
+		float L_5 = ((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->get_BloodAmount_2();
+		float L_6 = __this->get_autoFadeOutRelReduc_11();
+		float L_7 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_8 = powf(((float)((float)(1.0f)-(float)L_6)), L_7);
+		((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->set_BloodAmount_2(((float)((float)L_5*(float)L_8)));
+		float L_9 = ((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->get_BloodAmount_2();
+		float L_10 = Mathf_Max_m2564622569(NULL /*static, unused*/, L_9, (0.0f), /*hidden argument*/NULL);
+		((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->set_BloodAmount_2(L_10);
+	}
+
+IL_0066:
+	{
+		return;
+	}
+}
+// System.Void BleedBehavior::OnRenderImage(UnityEngine.RenderTexture,UnityEngine.RenderTexture)
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern Il2CppClass* BleedBehavior_t3074137086_il2cpp_TypeInfo_var;
+extern Il2CppClass* Graphics_t2412809155_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2850404003;
+extern Il2CppCodeGenString* _stringLiteral836285905;
+extern Il2CppCodeGenString* _stringLiteral2225137226;
+extern Il2CppCodeGenString* _stringLiteral1773121627;
+extern Il2CppCodeGenString* _stringLiteral911631760;
+extern const uint32_t BleedBehavior_OnRenderImage_m3318135413_MetadataUsageId;
+extern "C"  void BleedBehavior_OnRenderImage_m3318135413 (BleedBehavior_t3074137086 * __this, RenderTexture_t2666733923 * ___source0, RenderTexture_t2666733923 * ___destination1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (BleedBehavior_OnRenderImage_m3318135413_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	{
+		bool L_0 = Application_get_isPlaying_m4091950718(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_00ab;
+		}
+	}
+	{
+		Material_t193706927 * L_1 = __this->get__material_17();
+		Texture2D_t3542995729 * L_2 = __this->get_Image_14();
+		NullCheck(L_1);
+		Material_SetTexture_m141095205(L_1, _stringLiteral2850404003, L_2, /*hidden argument*/NULL);
+		Material_t193706927 * L_3 = __this->get__material_17();
+		Texture2D_t3542995729 * L_4 = __this->get_Normals_15();
+		NullCheck(L_3);
+		Material_SetTexture_m141095205(L_3, _stringLiteral836285905, L_4, /*hidden argument*/NULL);
+		float L_5 = __this->get_TestingBloodAmount_3();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_6 = Mathf_Clamp01_m3888954684(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(BleedBehavior_t3074137086_il2cpp_TypeInfo_var);
+		float L_7 = ((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->get_minBloodAmount_4();
+		float L_8 = ((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->get_minBloodAmount_4();
+		V_0 = ((float)((float)((float)((float)L_6*(float)((float)((float)(1.0f)-(float)L_7))))+(float)L_8));
+		float L_9 = V_0;
+		float L_10 = __this->get_maxAlpha_7();
+		float L_11 = __this->get_minAlpha_6();
+		float L_12 = __this->get_minAlpha_6();
+		float L_13 = Mathf_Clamp01_m3888954684(NULL /*static, unused*/, ((float)((float)((float)((float)L_9*(float)((float)((float)L_10-(float)L_11))))+(float)L_12)), /*hidden argument*/NULL);
+		V_0 = L_13;
+		float L_14 = __this->get_prevBloodAmount_13();
+		float L_15 = V_0;
+		float L_16 = __this->get_updateSpeed_12();
+		float L_17 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_18 = Mathf_Clamp01_m3888954684(NULL /*static, unused*/, ((float)((float)L_16*(float)L_17)), /*hidden argument*/NULL);
+		float L_19 = Mathf_Lerp_m1686556575(NULL /*static, unused*/, L_14, L_15, L_18, /*hidden argument*/NULL);
+		V_0 = L_19;
+		Material_t193706927 * L_20 = __this->get__material_17();
+		float L_21 = V_0;
+		NullCheck(L_20);
+		Material_SetFloat_m1926275467(L_20, _stringLiteral2225137226, L_21, /*hidden argument*/NULL);
+		float L_22 = V_0;
+		__this->set_prevBloodAmount_13(L_22);
+		goto IL_011a;
+	}
+
+IL_00ab:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(BleedBehavior_t3074137086_il2cpp_TypeInfo_var);
+		float L_23 = ((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->get_BloodAmount_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_24 = Mathf_Clamp01_m3888954684(NULL /*static, unused*/, L_23, /*hidden argument*/NULL);
+		float L_25 = ((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->get_minBloodAmount_4();
+		float L_26 = ((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->get_minBloodAmount_4();
+		V_1 = ((float)((float)((float)((float)L_24*(float)((float)((float)(1.0f)-(float)L_25))))+(float)L_26));
+		float L_27 = V_1;
+		float L_28 = __this->get_maxAlpha_7();
+		float L_29 = __this->get_minAlpha_6();
+		float L_30 = __this->get_minAlpha_6();
+		float L_31 = Mathf_Clamp01_m3888954684(NULL /*static, unused*/, ((float)((float)((float)((float)L_27*(float)((float)((float)L_28-(float)L_29))))+(float)L_30)), /*hidden argument*/NULL);
+		V_1 = L_31;
+		float L_32 = __this->get_prevBloodAmount_13();
+		float L_33 = V_1;
+		float L_34 = __this->get_updateSpeed_12();
+		float L_35 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_36 = Mathf_Clamp01_m3888954684(NULL /*static, unused*/, ((float)((float)L_34*(float)L_35)), /*hidden argument*/NULL);
+		float L_37 = Mathf_Lerp_m1686556575(NULL /*static, unused*/, L_32, L_33, L_36, /*hidden argument*/NULL);
+		V_1 = L_37;
+		Material_t193706927 * L_38 = __this->get__material_17();
+		float L_39 = V_1;
+		NullCheck(L_38);
+		Material_SetFloat_m1926275467(L_38, _stringLiteral2225137226, L_39, /*hidden argument*/NULL);
+		float L_40 = V_1;
+		__this->set_prevBloodAmount_13(L_40);
+	}
+
+IL_011a:
+	{
+		Material_t193706927 * L_41 = __this->get__material_17();
+		float L_42 = __this->get_EdgeSharpness_5();
+		NullCheck(L_41);
+		Material_SetFloat_m1926275467(L_41, _stringLiteral1773121627, L_42, /*hidden argument*/NULL);
+		Material_t193706927 * L_43 = __this->get__material_17();
+		float L_44 = __this->get_distortion_8();
+		NullCheck(L_43);
+		Material_SetFloat_m1926275467(L_43, _stringLiteral911631760, L_44, /*hidden argument*/NULL);
+		RenderTexture_t2666733923 * L_45 = ___source0;
+		RenderTexture_t2666733923 * L_46 = ___destination1;
+		Material_t193706927 * L_47 = __this->get__material_17();
+		IL2CPP_RUNTIME_CLASS_INIT(Graphics_t2412809155_il2cpp_TypeInfo_var);
+		Graphics_Blit_m4129959705(NULL /*static, unused*/, L_45, L_46, L_47, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void BleedBehavior::.cctor()
+extern "C"  void BleedBehavior__cctor_m1210715032 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
 // System.Void Clickspawn::.ctor()
 extern "C"  void Clickspawn__ctor_m2634554690 (Clickspawn_t776936059 * __this, const MethodInfo* method)
 {
@@ -4040,7 +4262,7 @@ extern "C"  void EndGame_reduceGold_m1850614835 (EndGame_t101703823 * __this, in
 		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
 		{
-			goto IL_0046;
+			goto IL_0044;
 		}
 	}
 	{
@@ -4049,12 +4271,12 @@ extern "C"  void EndGame_reduceGold_m1850614835 (EndGame_t101703823 * __this, in
 		Inventory_t3617926772 * L_3 = GameObject_GetComponent_TisInventory_t3617926772_m2345183205(L_2, /*hidden argument*/GameObject_GetComponent_TisInventory_t3617926772_m2345183205_MethodInfo_var);
 		int32_t L_4 = ___number0;
 		NullCheck(L_3);
-		bool L_5 = Inventory_ReduceGold_m1286868676(L_3, ((int32_t)((int32_t)L_4/(int32_t)2)), /*hidden argument*/NULL);
+		bool L_5 = Inventory_ReduceGold_m1286868676(L_3, L_4, /*hidden argument*/NULL);
 		V_0 = L_5;
 		bool L_6 = V_0;
 		if (!L_6)
 		{
-			goto IL_0046;
+			goto IL_0044;
 		}
 	}
 	{
@@ -4066,7 +4288,7 @@ extern "C"  void EndGame_reduceGold_m1850614835 (EndGame_t101703823 * __this, in
 		UIupdater_openWindow_m2829570234(L_8, _stringLiteral3611345420, /*hidden argument*/NULL);
 	}
 
-IL_0046:
+IL_0044:
 	{
 		return;
 	}
@@ -8017,6 +8239,7 @@ extern "C"  void Inventory_onJumpf_m3598406142 (Inventory_t3617926772 * __this, 
 // System.Boolean Inventory::ReduceGold(System.Int32)
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* BleedBehavior_t3074137086_il2cpp_TypeInfo_var;
 extern const MethodInfo* Object_Instantiate_TisGameObject_t1756533147_m3664764861_MethodInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisHurtFX_t2260489167_m888121614_MethodInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094_MethodInfo_var;
@@ -8032,7 +8255,6 @@ extern "C"  bool Inventory_ReduceGold_m1286868676 (Inventory_t3617926772 * __thi
 		s_Il2CppMethodInitialized = true;
 	}
 	GameObject_t1756533147 * V_0 = NULL;
-	int32_t V_1 = 0;
 	{
 		int32_t L_0 = ___number0;
 		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)2147483647LL)))))
@@ -8051,7 +8273,7 @@ IL_000d:
 		bool L_2 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_2)
 		{
-			goto IL_0085;
+			goto IL_008b;
 		}
 	}
 	{
@@ -8070,52 +8292,52 @@ IL_000d:
 		GameObject_t1756533147 * L_9 = V_0;
 		NullCheck(L_9);
 		HurtFX_t2260489167 * L_10 = GameObject_GetComponent_TisHurtFX_t2260489167_m888121614(L_9, /*hidden argument*/GameObject_GetComponent_TisHurtFX_t2260489167_m888121614_MethodInfo_var);
-		int32_t L_11 = ___number0;
-		V_1 = ((int32_t)((int32_t)L_11*(int32_t)2));
-		String_t* L_12 = Int32_ToString_m2960866144((&V_1), /*hidden argument*/NULL);
+		String_t* L_11 = Int32_ToString_m2960866144((&___number0), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_13 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral372029313, L_12, _stringLiteral3784377407, /*hidden argument*/NULL);
+		String_t* L_12 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral372029313, L_11, _stringLiteral3784377407, /*hidden argument*/NULL);
 		NullCheck(L_10);
-		L_10->set_m_Text_4(L_13);
-		GameObject_t1756533147 * L_14 = V_0;
+		L_10->set_m_Text_4(L_12);
+		GameObject_t1756533147 * L_13 = V_0;
+		NullCheck(L_13);
+		Transform_t3275118058 * L_14 = GameObject_get_transform_m909382139(L_13, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_15;
+		memset(&L_15, 0, sizeof(L_15));
+		Vector3__ctor_m2720820983(&L_15, (650.0f), (-215.0f), /*hidden argument*/NULL);
 		NullCheck(L_14);
-		Transform_t3275118058 * L_15 = GameObject_get_transform_m909382139(L_14, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_16;
-		memset(&L_16, 0, sizeof(L_16));
-		Vector3__ctor_m2720820983(&L_16, (650.0f), (-215.0f), /*hidden argument*/NULL);
-		NullCheck(L_15);
-		Transform_set_localPosition_m1026930133(L_15, L_16, /*hidden argument*/NULL);
+		Transform_set_localPosition_m1026930133(L_14, L_15, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(BleedBehavior_t3074137086_il2cpp_TypeInfo_var);
+		((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->set_BloodAmount_2((0.5f));
 	}
 
-IL_0085:
+IL_008b:
 	{
-		int32_t L_17 = __this->get_m_GoldAmount_2();
-		int32_t L_18 = ___number0;
-		if ((((int32_t)((int32_t)((int32_t)L_17-(int32_t)L_18))) >= ((int32_t)0)))
+		int32_t L_16 = __this->get_m_GoldAmount_2();
+		int32_t L_17 = ___number0;
+		if ((((int32_t)((int32_t)((int32_t)L_16-(int32_t)L_17))) >= ((int32_t)0)))
 		{
-			goto IL_00ac;
+			goto IL_00b2;
 		}
 	}
 	{
 		__this->set_m_GoldAmount_2(0);
-		GameObject_t1756533147 * L_19 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_18 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		UIupdater_t4158074345 * L_19 = GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094(L_18, /*hidden argument*/GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094_MethodInfo_var);
 		NullCheck(L_19);
-		UIupdater_t4158074345 * L_20 = GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094(L_19, /*hidden argument*/GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094_MethodInfo_var);
-		NullCheck(L_20);
-		UIupdater_sync_m1824133567(L_20, /*hidden argument*/NULL);
+		UIupdater_sync_m1824133567(L_19, /*hidden argument*/NULL);
 		return (bool)1;
 	}
 
-IL_00ac:
+IL_00b2:
 	{
-		int32_t L_21 = __this->get_m_GoldAmount_2();
-		int32_t L_22 = ___number0;
-		__this->set_m_GoldAmount_2(((int32_t)((int32_t)L_21-(int32_t)L_22)));
-		GameObject_t1756533147 * L_23 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		int32_t L_20 = __this->get_m_GoldAmount_2();
+		int32_t L_21 = ___number0;
+		__this->set_m_GoldAmount_2(((int32_t)((int32_t)L_20-(int32_t)L_21)));
+		GameObject_t1756533147 * L_22 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		NullCheck(L_22);
+		UIupdater_t4158074345 * L_23 = GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094(L_22, /*hidden argument*/GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094_MethodInfo_var);
 		NullCheck(L_23);
-		UIupdater_t4158074345 * L_24 = GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094(L_23, /*hidden argument*/GameObject_GetComponent_TisUIupdater_t4158074345_m2992798094_MethodInfo_var);
-		NullCheck(L_24);
-		UIupdater_sync_m1824133567(L_24, /*hidden argument*/NULL);
+		UIupdater_sync_m1824133567(L_23, /*hidden argument*/NULL);
 		return (bool)0;
 	}
 }
@@ -9726,6 +9948,204 @@ extern "C"  void NewBehaviourScript_onPurchaseFail_m3859199457 (NewBehaviourScri
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral1149143974, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SimpleFire::.ctor()
+extern "C"  void SimpleFire__ctor_m4026717853 (SimpleFire_t2560976854 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_damage_2(((int32_t)10));
+		__this->set_damageDelay_3((1.0f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SimpleFire::OnTriggerStay(UnityEngine.Collider)
+extern "C"  void SimpleFire_OnTriggerStay_m1730807642 (SimpleFire_t2560976854 * __this, Collider_t3497673348 * ___other0, const MethodInfo* method)
+{
+	{
+		Collider_t3497673348 * L_0 = ___other0;
+		SimpleFire_DoDamage_m3153029880(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SimpleFire::DoDamage(UnityEngine.Collider)
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2270927019;
+extern const uint32_t SimpleFire_DoDamage_m3153029880_MetadataUsageId;
+extern "C"  void SimpleFire_DoDamage_m3153029880 (SimpleFire_t2560976854 * __this, Collider_t3497673348 * ___other0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SimpleFire_DoDamage_m3153029880_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_1 = __this->get_lastDamageTime_4();
+		float L_2 = __this->get_damageDelay_3();
+		if ((!(((float)L_0) > ((float)((float)((float)L_1+(float)L_2))))))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		Collider_t3497673348 * L_3 = ___other0;
+		int32_t L_4 = __this->get_damage_2();
+		int32_t L_5 = L_4;
+		Il2CppObject * L_6 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_5);
+		NullCheck(L_3);
+		Component_SendMessageUpwards_m325086847(L_3, _stringLiteral2270927019, L_6, /*hidden argument*/NULL);
+		float L_7 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_lastDamageTime_4(L_7);
+	}
+
+IL_0038:
+	{
+		return;
+	}
+}
+// System.Void SimplePlayer::.ctor()
+extern "C"  void SimplePlayer__ctor_m949755642 (SimplePlayer_t3677415875 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_maxHP_2((100.0f));
+		__this->set_HP_3((100.0f));
+		__this->set_damageBloodAmount_4((3.0f));
+		__this->set_maxBloodIndication_5((0.5f));
+		__this->set_recoverSpeed_6((1.0f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SimplePlayer::Start()
+extern "C"  void SimplePlayer_Start_m1676391982 (SimplePlayer_t3677415875 * __this, const MethodInfo* method)
+{
+	{
+		float L_0 = __this->get_maxHP_2();
+		__this->set_HP_3(L_0);
+		return;
+	}
+}
+// System.Void SimplePlayer::Update()
+extern Il2CppClass* BleedBehavior_t3074137086_il2cpp_TypeInfo_var;
+extern const uint32_t SimplePlayer_Update_m853804171_MetadataUsageId;
+extern "C"  void SimplePlayer_Update_m853804171 (SimplePlayer_t3677415875 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SimplePlayer_Update_m853804171_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = __this->get_HP_3();
+		float L_1 = __this->get_recoverSpeed_6();
+		float L_2 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_HP_3(((float)((float)L_0+(float)((float)((float)L_1*(float)L_2)))));
+		float L_3 = __this->get_HP_3();
+		float L_4 = __this->get_maxHP_2();
+		if ((!(((float)L_3) > ((float)L_4))))
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		float L_5 = __this->get_maxHP_2();
+		__this->set_HP_3(L_5);
+	}
+
+IL_0036:
+	{
+		float L_6 = __this->get_maxBloodIndication_5();
+		float L_7 = __this->get_maxHP_2();
+		float L_8 = __this->get_HP_3();
+		float L_9 = __this->get_maxHP_2();
+		IL2CPP_RUNTIME_CLASS_INIT(BleedBehavior_t3074137086_il2cpp_TypeInfo_var);
+		((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->set_minBloodAmount_4(((float)((float)((float)((float)L_6*(float)((float)((float)L_7-(float)L_8))))/(float)L_9)));
+		return;
+	}
+}
+// System.Void SimplePlayer::Damage(System.Int32)
+extern Il2CppClass* BleedBehavior_t3074137086_il2cpp_TypeInfo_var;
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3174470082;
+extern const uint32_t SimplePlayer_Damage_m1624929516_MetadataUsageId;
+extern "C"  void SimplePlayer_Damage_m1624929516 (SimplePlayer_t3677415875 * __this, int32_t ___amount0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SimplePlayer_Damage_m1624929516_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(BleedBehavior_t3074137086_il2cpp_TypeInfo_var);
+		float L_0 = ((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->get_BloodAmount_2();
+		float L_1 = __this->get_damageBloodAmount_4();
+		int32_t L_2 = ___amount0;
+		float L_3 = __this->get_HP_3();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_4 = Mathf_Clamp01_m3888954684(NULL /*static, unused*/, ((float)((float)((float)((float)L_1*(float)(((float)((float)L_2)))))/(float)L_3)), /*hidden argument*/NULL);
+		((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->set_BloodAmount_2(((float)((float)L_0+(float)L_4)));
+		float L_5 = __this->get_HP_3();
+		int32_t L_6 = ___amount0;
+		__this->set_HP_3(((float)((float)L_5-(float)(((float)((float)L_6))))));
+		float L_7 = __this->get_HP_3();
+		if ((!(((float)L_7) <= ((float)(0.0f)))))
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		float L_8 = __this->get_maxHP_2();
+		__this->set_HP_3(L_8);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3174470082, /*hidden argument*/NULL);
+	}
+
+IL_0055:
+	{
+		float L_9 = __this->get_maxBloodIndication_5();
+		float L_10 = __this->get_maxHP_2();
+		float L_11 = __this->get_HP_3();
+		float L_12 = __this->get_maxHP_2();
+		IL2CPP_RUNTIME_CLASS_INIT(BleedBehavior_t3074137086_il2cpp_TypeInfo_var);
+		((BleedBehavior_t3074137086_StaticFields*)BleedBehavior_t3074137086_il2cpp_TypeInfo_var->static_fields)->set_minBloodAmount_4(((float)((float)((float)((float)L_9*(float)((float)((float)L_10-(float)L_11))))/(float)L_12)));
+		return;
+	}
+}
+// System.Void SimplePlayer::OnGUI()
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* GUI_t4082743951_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2503656992;
+extern const uint32_t SimplePlayer_OnGUI_m762552682_MetadataUsageId;
+extern "C"  void SimplePlayer_OnGUI_m762552682 (SimplePlayer_t3677415875 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SimplePlayer_OnGUI_m762552682_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Rect_t3681755626  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Rect__ctor_m1220545469(&L_0, (50.0f), (50.0f), (100.0f), (20.0f), /*hidden argument*/NULL);
+		float L_1 = __this->get_HP_3();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		int32_t L_2 = Mathf_FloorToInt_m4005035722(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		int32_t L_3 = L_2;
+		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_5 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral2503656992, L_4, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		GUI_Label_m2412846501(NULL /*static, unused*/, L_0, L_5, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -23856,30 +24276,6 @@ extern "C"  void AnnotateImageRequests__ctor_m2802089925 (AnnotateImageRequests_
 }
 // System.Void WebCamTextureToCloudVision/AnnotateImageResponse::.ctor()
 extern "C"  void AnnotateImageResponse__ctor_m630858522 (AnnotateImageResponse_t1085119557 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/AnnotateImageResponses::.ctor()
-extern "C"  void AnnotateImageResponses__ctor_m2388085467 (AnnotateImageResponses_t1647677944 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/BoundingPoly::.ctor()
-extern "C"  void BoundingPoly__ctor_m602170284 (BoundingPoly_t202383367 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void WebCamTextureToCloudVision/EntityAnnotation::.ctor()
-extern "C"  void EntityAnnotation__ctor_m3683615008 (EntityAnnotation_t3728473491 * __this, const MethodInfo* method)
 {
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
