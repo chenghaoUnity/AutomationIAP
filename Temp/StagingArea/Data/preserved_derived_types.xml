@@ -41,18 +41,6 @@
 </assembly>
 <assembly fullname="Assembly-CSharp">
 <type fullname="BleedBehavior" preserve="all"/>
-<type fullname="SimpleFire" preserve="all"/>
-<type fullname="SimplePlayer" preserve="all"/>
-<type fullname="DigitalRuby.RainMaker.DemoScript" preserve="all"/>
-<type fullname="DigitalRuby.RainMaker.DemoScript2D" preserve="all"/>
-<type fullname="UnityStandardAssets.Water.WaterBasic" preserve="all"/>
-<type fullname="UnityStandardAssets.Water.Displace" preserve="all"/>
-<type fullname="UnityStandardAssets.Water.GerstnerDisplace" preserve="all"/>
-<type fullname="UnityStandardAssets.Water.PlanarReflection" preserve="all"/>
-<type fullname="UnityStandardAssets.Water.SpecularLighting" preserve="all"/>
-<type fullname="UnityStandardAssets.Water.Water" preserve="all"/>
-<type fullname="UnityStandardAssets.Water.WaterBase" preserve="all"/>
-<type fullname="UnityStandardAssets.Water.WaterTile" preserve="all"/>
 <type fullname="DigitalRuby.RainMaker.BaseRainScript" preserve="all"/>
 <type fullname="DigitalRuby.RainMaker.RainCollision" preserve="all"/>
 <type fullname="DigitalRuby.RainMaker.RainScript" preserve="all"/>

@@ -100,8 +100,6 @@ extern "C"  Vector3U5BU5D_t1172311765* Mesh_get_vertices_m626989480 (Mesh_t13561
 extern "C"  void Mesh_set_vertices_m2936804213 (Mesh_t1356156583 * __this, Vector3U5BU5D_t1172311765* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3[] UnityEngine.Mesh::get_normals()
 extern "C"  Vector3U5BU5D_t1172311765* Mesh_get_normals_m1837187359 (Mesh_t1356156583 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Mesh::set_normals(UnityEngine.Vector3[])
-extern "C"  void Mesh_set_normals_m2674236682 (Mesh_t1356156583 * __this, Vector3U5BU5D_t1172311765* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector4[] UnityEngine.Mesh::get_tangents()
 extern "C"  Vector4U5BU5D_t1658499504* Mesh_get_tangents_m2910922714 (Mesh_t1356156583 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2[] UnityEngine.Mesh::get_uv()

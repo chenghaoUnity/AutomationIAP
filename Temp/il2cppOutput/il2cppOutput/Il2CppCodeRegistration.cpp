@@ -29,7 +29,7 @@ extern const CustomAttributesCacheGenerator g_AttributeGenerators[];
 extern const Il2CppMethodPointer g_UnresolvedVirtualMethodPointers[];
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	21299,
+	21137,
 	g_MethodPointers,
 	37,
 	g_ReversePInvokeWrapperPointers,
@@ -41,9 +41,9 @@ const Il2CppCodeRegistration g_CodeRegistration =
 	g_CcwMarshalingFunctions,
 	8015,
 	g_Il2CppGenericMethodPointers,
-	2410,
+	2382,
 	g_Il2CppInvokerPointers,
-	3860,
+	3840,
 	g_AttributeGenerators,
 	0,
 	NULL,

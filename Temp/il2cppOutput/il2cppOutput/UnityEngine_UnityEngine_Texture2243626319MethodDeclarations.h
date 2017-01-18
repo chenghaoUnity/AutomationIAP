@@ -28,12 +28,8 @@ extern "C"  int32_t Texture_Internal_GetWidth_m56137242 (Il2CppObject * __this /
 extern "C"  int32_t Texture_Internal_GetHeight_m2775530157 (Il2CppObject * __this /* static, unused */, Texture_t2243626319 * ___t0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Texture::get_width()
 extern "C"  int32_t Texture_get_width_m2165436967 (Texture_t2243626319 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Texture::set_width(System.Int32)
-extern "C"  void Texture_set_width_m3075240330 (Texture_t2243626319 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Texture::get_height()
 extern "C"  int32_t Texture_get_height_m2890247816 (Texture_t2243626319 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Texture::set_height(System.Int32)
-extern "C"  void Texture_set_height_m1406712949 (Texture_t2243626319 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.TextureWrapMode UnityEngine.Texture::get_wrapMode()
 extern "C"  int32_t Texture_get_wrapMode_m3111235310 (Texture_t2243626319 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.Texture::get_texelSize()

@@ -17,8 +17,6 @@
 
 // System.Single UnityEngine.Time::get_time()
 extern "C"  float Time_get_time_m2216684562 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Single UnityEngine.Time::get_timeSinceLevelLoad()
-extern "C"  float Time_get_timeSinceLevelLoad_m1980066582 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Time::get_deltaTime()
 extern "C"  float Time_get_deltaTime_m2233168104 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Time::get_unscaledTime()

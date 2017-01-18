@@ -26,8 +26,6 @@ extern "C"  int64_t Math_Abs_m4060679202 (Il2CppObject * __this /* static, unuse
 extern "C"  double Math_Ceiling_m614624719 (Il2CppObject * __this /* static, unused */, double ___a0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Floor(System.Double)
 extern "C"  double Math_Floor_m4118366418 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Double System.Math::IEEERemainder(System.Double,System.Double)
-extern "C"  double Math_IEEERemainder_m340193149 (Il2CppObject * __this /* static, unused */, double ___x0, double ___y1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Log(System.Double,System.Double)
 extern "C"  double Math_Log_m3325929366 (Il2CppObject * __this /* static, unused */, double ___a0, double ___newBase1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Math::Max(System.Int32,System.Int32)

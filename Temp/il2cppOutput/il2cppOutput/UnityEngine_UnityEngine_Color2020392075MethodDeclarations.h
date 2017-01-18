@@ -52,8 +52,6 @@ extern "C"  Color_t2020392075  Color_get_white_m3987539815 (Il2CppObject * __thi
 extern "C"  Color_t2020392075  Color_get_black_m2650940523 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Color UnityEngine.Color::get_yellow()
 extern "C"  Color_t2020392075  Color_get_yellow_m3741935494 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Color UnityEngine.Color::get_grey()
-extern "C"  Color_t2020392075  Color_get_grey_m1961362537 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Color UnityEngine.Color::get_clear()
 extern "C"  Color_t2020392075  Color_get_clear_m1469108305 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector4 UnityEngine.Color::op_Implicit(UnityEngine.Color)

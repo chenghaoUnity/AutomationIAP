@@ -1004,7 +1004,7 @@ extern "C"  bool AlphaButtonClickMask_IsRaycastLocationValid_m964310473 (AlphaBu
 		NullCheck(L_41);
 		Texture2D_t3542995729 * L_42 = Sprite_get_texture_m2733552707(L_41, /*hidden argument*/NULL);
 		NullCheck(L_42);
-		int32_t L_43 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_42);
+		int32_t L_43 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_height() */, L_42);
 		L_38->set_y_1(((float)((float)L_39/(float)(((float)((float)L_43))))));
 		Image_t2042527209 * L_44 = __this->get__image_2();
 		NullCheck(L_44);
@@ -9104,7 +9104,7 @@ IL_0066:
 		Vector3_t2243707580  L_10 = Input_get_acceleration_m2886343410(NULL /*static, unused*/, /*hidden argument*/NULL);
 		V_3 = L_10;
 		float L_11 = (&V_3)->get_x_1();
-		__this->set_h_4(((float)((float)L_11*(float)(3.0f))));
+		__this->set_h_4(((float)((float)L_11*(float)(2.0f))));
 		goto IL_00b6;
 	}
 

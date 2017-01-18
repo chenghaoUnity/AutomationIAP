@@ -445,7 +445,6 @@ struct UnmanagedMarshal_t4270021860;
 #include "mscorlib_System_OverflowException1075868493MethodDeclarations.h"
 #include "mscorlib_System_OverflowException1075868493.h"
 #include "mscorlib_System_Double4078015681.h"
-#include "mscorlib_System_BitConverter3195628829MethodDeclarations.h"
 #include "mscorlib_System_Decimal724701077.h"
 #include "mscorlib_System_Decimal724701077MethodDeclarations.h"
 #include "mscorlib_System_MemberAccessException2005094827.h"
@@ -564,6 +563,7 @@ struct UnmanagedMarshal_t4270021860;
 #include "mscorlib_System_NumberFormatter2933946347.h"
 #include "mscorlib_System_NumberFormatter2933946347MethodDeclarations.h"
 #include "mscorlib_System_Threading_Thread241561612.h"
+#include "mscorlib_System_BitConverter3195628829MethodDeclarations.h"
 #include "mscorlib_System_Globalization_NumberFormatInfo104580544.h"
 #include "mscorlib_System_Globalization_NumberFormatInfo104580544MethodDeclarations.h"
 #include "mscorlib_System_Globalization_CultureInfo3500843524MethodDeclarations.h"
@@ -9898,74 +9898,6 @@ IL_001a:
 extern "C"  double Math_Floor_m4118366418 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method)
 {
 	return floor(___d0);
-}
-// System.Double System.Math::IEEERemainder(System.Double,System.Double)
-extern Il2CppClass* BitConverter_t3195628829_il2cpp_TypeInfo_var;
-extern const uint32_t Math_IEEERemainder_m340193149_MetadataUsageId;
-extern "C"  double Math_IEEERemainder_m340193149 (Il2CppObject * __this /* static, unused */, double ___x0, double ___y1, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Math_IEEERemainder_m340193149_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	double V_0 = 0.0;
-	double G_B7_0 = 0.0;
-	{
-		double L_0 = ___y1;
-		if ((!(((double)L_0) == ((double)(0.0)))))
-		{
-			goto IL_0019;
-		}
-	}
-	{
-		return (std::numeric_limits<double>::quiet_NaN());
-	}
-
-IL_0019:
-	{
-		double L_1 = ___x0;
-		double L_2 = ___y1;
-		double L_3 = ___x0;
-		double L_4 = ___y1;
-		double L_5 = bankers_round(((double)((double)L_3/(double)L_4)));
-		V_0 = ((double)((double)L_1-(double)((double)((double)L_2*(double)L_5))));
-		double L_6 = V_0;
-		if ((((double)L_6) == ((double)(0.0))))
-		{
-			goto IL_0037;
-		}
-	}
-	{
-		double L_7 = V_0;
-		return L_7;
-	}
-
-IL_0037:
-	{
-		double L_8 = ___x0;
-		if ((!(((double)L_8) > ((double)(0.0)))))
-		{
-			goto IL_0054;
-		}
-	}
-	{
-		G_B7_0 = (0.0);
-		goto IL_0062;
-	}
-
-IL_0054:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(BitConverter_t3195628829_il2cpp_TypeInfo_var);
-		double L_9 = BitConverter_Int64BitsToDouble_m3858788408(NULL /*static, unused*/, ((int64_t)std::numeric_limits<int64_t>::min()), /*hidden argument*/NULL);
-		G_B7_0 = L_9;
-	}
-
-IL_0062:
-	{
-		return G_B7_0;
-	}
 }
 // System.Double System.Math::Log(System.Double,System.Double)
 extern "C"  double Math_Log_m3325929366 (Il2CppObject * __this /* static, unused */, double ___a0, double ___newBase1, const MethodInfo* method)

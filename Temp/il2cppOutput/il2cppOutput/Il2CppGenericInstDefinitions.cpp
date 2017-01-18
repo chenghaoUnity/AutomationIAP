@@ -1973,20 +1973,6 @@ extern const Il2CppGenericInst GenInst_ParticleSystem_t3394631041_0_0_0 = { 1, G
 extern const Il2CppType Entry_t420114983_0_0_0;
 static const Il2CppType* GenInst_Entry_t420114983_0_0_0_Types[] = { &Entry_t420114983_0_0_0 };
 extern const Il2CppGenericInst GenInst_Entry_t420114983_0_0_0 = { 1, GenInst_Entry_t420114983_0_0_0_Types };
-static const Il2CppType* GenInst_Camera_t189460977_0_0_0_Boolean_t3825574718_0_0_0_Types[] = { &Camera_t189460977_0_0_0, &Boolean_t3825574718_0_0_0 };
-extern const Il2CppGenericInst GenInst_Camera_t189460977_0_0_0_Boolean_t3825574718_0_0_0 = { 2, GenInst_Camera_t189460977_0_0_0_Boolean_t3825574718_0_0_0_Types };
-static const Il2CppType* GenInst_Camera_t189460977_0_0_0_Boolean_t3825574718_0_0_0_DictionaryEntry_t3048875398_0_0_0_Types[] = { &Camera_t189460977_0_0_0, &Boolean_t3825574718_0_0_0, &DictionaryEntry_t3048875398_0_0_0 };
-extern const Il2CppGenericInst GenInst_Camera_t189460977_0_0_0_Boolean_t3825574718_0_0_0_DictionaryEntry_t3048875398_0_0_0 = { 3, GenInst_Camera_t189460977_0_0_0_Boolean_t3825574718_0_0_0_DictionaryEntry_t3048875398_0_0_0_Types };
-extern const Il2CppType KeyValuePair_2_t640110714_0_0_0;
-static const Il2CppType* GenInst_KeyValuePair_2_t640110714_0_0_0_Types[] = { &KeyValuePair_2_t640110714_0_0_0 };
-extern const Il2CppGenericInst GenInst_KeyValuePair_2_t640110714_0_0_0 = { 1, GenInst_KeyValuePair_2_t640110714_0_0_0_Types };
-static const Il2CppType* GenInst_Camera_t189460977_0_0_0_Camera_t189460977_0_0_0_Types[] = { &Camera_t189460977_0_0_0, &Camera_t189460977_0_0_0 };
-extern const Il2CppGenericInst GenInst_Camera_t189460977_0_0_0_Camera_t189460977_0_0_0 = { 2, GenInst_Camera_t189460977_0_0_0_Camera_t189460977_0_0_0_Types };
-static const Il2CppType* GenInst_Camera_t189460977_0_0_0_Camera_t189460977_0_0_0_DictionaryEntry_t3048875398_0_0_0_Types[] = { &Camera_t189460977_0_0_0, &Camera_t189460977_0_0_0, &DictionaryEntry_t3048875398_0_0_0 };
-extern const Il2CppGenericInst GenInst_Camera_t189460977_0_0_0_Camera_t189460977_0_0_0_DictionaryEntry_t3048875398_0_0_0 = { 3, GenInst_Camera_t189460977_0_0_0_Camera_t189460977_0_0_0_DictionaryEntry_t3048875398_0_0_0_Types };
-extern const Il2CppType KeyValuePair_2_t1298964269_0_0_0;
-static const Il2CppType* GenInst_KeyValuePair_2_t1298964269_0_0_0_Types[] = { &KeyValuePair_2_t1298964269_0_0_0 };
-extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1298964269_0_0_0 = { 1, GenInst_KeyValuePair_2_t1298964269_0_0_0_Types };
 extern const Il2CppType EState_t1114264637_0_0_0;
 static const Il2CppType* GenInst_EState_t1114264637_0_0_0_Types[] = { &EState_t1114264637_0_0_0 };
 extern const Il2CppGenericInst GenInst_EState_t1114264637_0_0_0 = { 1, GenInst_EState_t1114264637_0_0_0_Types };
@@ -3388,18 +3374,6 @@ extern const Il2CppGenericInst GenInst_Animal_t255569526_0_0_0 = { 1, GenInst_An
 extern const Il2CppType Object_Ladder_Collider_t2250306207_0_0_0;
 static const Il2CppType* GenInst_Object_Ladder_Collider_t2250306207_0_0_0_Types[] = { &Object_Ladder_Collider_t2250306207_0_0_0 };
 extern const Il2CppGenericInst GenInst_Object_Ladder_Collider_t2250306207_0_0_0 = { 1, GenInst_Object_Ladder_Collider_t2250306207_0_0_0_Types };
-extern const Il2CppType Skybox_t2033495038_0_0_0;
-static const Il2CppType* GenInst_Skybox_t2033495038_0_0_0_Types[] = { &Skybox_t2033495038_0_0_0 };
-extern const Il2CppGenericInst GenInst_Skybox_t2033495038_0_0_0 = { 1, GenInst_Skybox_t2033495038_0_0_0_Types };
-extern const Il2CppType FlareLayer_t1985082419_0_0_0;
-static const Il2CppType* GenInst_FlareLayer_t1985082419_0_0_0_Types[] = { &FlareLayer_t1985082419_0_0_0 };
-extern const Il2CppGenericInst GenInst_FlareLayer_t1985082419_0_0_0 = { 1, GenInst_FlareLayer_t1985082419_0_0_0_Types };
-extern const Il2CppType PlanarReflection_t2931543887_0_0_0;
-static const Il2CppType* GenInst_PlanarReflection_t2931543887_0_0_0_Types[] = { &PlanarReflection_t2931543887_0_0_0 };
-extern const Il2CppGenericInst GenInst_PlanarReflection_t2931543887_0_0_0 = { 1, GenInst_PlanarReflection_t2931543887_0_0_0_Types };
-extern const Il2CppType WaterBase_t4291487940_0_0_0;
-static const Il2CppType* GenInst_WaterBase_t4291487940_0_0_0_Types[] = { &WaterBase_t4291487940_0_0_0 };
-extern const Il2CppGenericInst GenInst_WaterBase_t4291487940_0_0_0 = { 1, GenInst_WaterBase_t4291487940_0_0_0_Types };
 extern const Il2CppType BoxCollider2D_t948534547_0_0_0;
 static const Il2CppType* GenInst_BoxCollider2D_t948534547_0_0_0_Types[] = { &BoxCollider2D_t948534547_0_0_0 };
 extern const Il2CppGenericInst GenInst_BoxCollider2D_t948534547_0_0_0 = { 1, GenInst_BoxCollider2D_t948534547_0_0_0_Types };
@@ -3516,7 +3490,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t566713506_0_0_0_Il2CppObject_0_
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t566713506_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t566713506_0_0_0_Il2CppObject_0_0_0_Types };
 static const Il2CppType* GenInst_AndroidStore_t3203055206_0_0_0_AndroidStore_t3203055206_0_0_0_Types[] = { &AndroidStore_t3203055206_0_0_0, &AndroidStore_t3203055206_0_0_0 };
 extern const Il2CppGenericInst GenInst_AndroidStore_t3203055206_0_0_0_AndroidStore_t3203055206_0_0_0 = { 2, GenInst_AndroidStore_t3203055206_0_0_0_AndroidStore_t3203055206_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1266] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1256] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2071877448_0_0_0,
@@ -4242,12 +4216,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1266] =
 	&GenInst_ReplacementDefinition_t4021787953_0_0_0,
 	&GenInst_ParticleSystem_t3394631041_0_0_0,
 	&GenInst_Entry_t420114983_0_0_0,
-	&GenInst_Camera_t189460977_0_0_0_Boolean_t3825574718_0_0_0,
-	&GenInst_Camera_t189460977_0_0_0_Boolean_t3825574718_0_0_0_DictionaryEntry_t3048875398_0_0_0,
-	&GenInst_KeyValuePair_2_t640110714_0_0_0,
-	&GenInst_Camera_t189460977_0_0_0_Camera_t189460977_0_0_0,
-	&GenInst_Camera_t189460977_0_0_0_Camera_t189460977_0_0_0_DictionaryEntry_t3048875398_0_0_0,
-	&GenInst_KeyValuePair_2_t1298964269_0_0_0,
 	&GenInst_EState_t1114264637_0_0_0,
 	&GenInst_Object_Ladder_t2797598778_0_0_0,
 	&GenInst_Mesh_t1356156583_0_0_0,
@@ -4725,10 +4693,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1266] =
 	&GenInst_ThirdPersonCharacter_t1725062811_0_0_0,
 	&GenInst_Animal_t255569526_0_0_0,
 	&GenInst_Object_Ladder_Collider_t2250306207_0_0_0,
-	&GenInst_Skybox_t2033495038_0_0_0,
-	&GenInst_FlareLayer_t1985082419_0_0_0,
-	&GenInst_PlanarReflection_t2931543887_0_0_0,
-	&GenInst_WaterBase_t4291487940_0_0_0,
 	&GenInst_BoxCollider2D_t948534547_0_0_0,
 	&GenInst_LineRenderer_t849157671_0_0_0,
 	&GenInst_MeshFilter_t3026937449_0_0_0,

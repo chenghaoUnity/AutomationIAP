@@ -468,8 +468,6 @@ struct IEnumerator_t1466026749;
 #include "mscorlib_System_Collections_Generic_KeyValuePair_22860462601.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_22363291999.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21829529306.h"
-#include "mscorlib_System_Collections_Generic_KeyValuePair_2_640110714.h"
-#include "mscorlib_System_Collections_Generic_KeyValuePair_21298964269.h"
 
 #pragma once
 // System.Object[]
@@ -9643,76 +9641,6 @@ public:
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, KeyValuePair_2_t1829529306  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// System.Collections.Generic.KeyValuePair`2<UnityEngine.Camera,System.Boolean>[]
-struct KeyValuePair_2U5BU5D_t1941113951  : public Il2CppArray
-{
-public:
-	ALIGN_FIELD (8) KeyValuePair_2_t640110714  m_Items[1];
-
-public:
-	inline KeyValuePair_2_t640110714  GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline KeyValuePair_2_t640110714 * GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t640110714  value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline KeyValuePair_2_t640110714  GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline KeyValuePair_2_t640110714 * GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, KeyValuePair_2_t640110714  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// System.Collections.Generic.KeyValuePair`2<UnityEngine.Camera,UnityEngine.Camera>[]
-struct KeyValuePair_2U5BU5D_t1452844416  : public Il2CppArray
-{
-public:
-	ALIGN_FIELD (8) KeyValuePair_2_t1298964269  m_Items[1];
-
-public:
-	inline KeyValuePair_2_t1298964269  GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline KeyValuePair_2_t1298964269 * GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1298964269  value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline KeyValuePair_2_t1298964269  GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline KeyValuePair_2_t1298964269 * GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, KeyValuePair_2_t1298964269  value)
 	{
 		m_Items[index] = value;
 	}

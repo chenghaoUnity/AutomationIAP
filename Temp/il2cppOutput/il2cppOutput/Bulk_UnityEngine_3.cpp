@@ -13,10 +13,6 @@
 #include <limits>
 #include <assert.h>
 
-// UnityEngine.SpaceAttribute
-struct SpaceAttribute_t952253354;
-// UnityEngine.SpringJoint
-struct SpringJoint_t4147555327;
 // UnityEngine.Sprite
 struct Sprite_t309593783;
 // UnityEngine.Texture2D
@@ -123,27 +119,11 @@ struct TypeInferenceRuleAttribute_t1390152093;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_TimeScope2583939667.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_TimeScope2583939667MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_UserScope3775842435.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_UserScope3775842435MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_UserState455716270.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_UserState455716270MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SortingLayer221838959.h"
-#include "UnityEngine_UnityEngine_SortingLayer221838959MethodDeclarations.h"
-#include "mscorlib_System_Int322071877448.h"
-#include "UnityEngine_UnityEngine_Space4278750806.h"
-#include "UnityEngine_UnityEngine_Space4278750806MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SpaceAttribute952253354.h"
-#include "UnityEngine_UnityEngine_SpaceAttribute952253354MethodDeclarations.h"
-#include "mscorlib_System_Void1841601450.h"
-#include "UnityEngine_UnityEngine_PropertyAttribute2606999759MethodDeclarations.h"
-#include "mscorlib_System_Single2076509932.h"
-#include "UnityEngine_UnityEngine_SpringJoint4147555327.h"
-#include "UnityEngine_UnityEngine_SpringJoint4147555327MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Sprite309593783.h"
 #include "UnityEngine_UnityEngine_Sprite309593783MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Rect3681755626.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "mscorlib_System_Single2076509932.h"
 #include "UnityEngine_UnityEngine_Texture2D3542995729.h"
 #include "mscorlib_System_Boolean3825574718.h"
 #include "UnityEngine_UnityEngine_Vector42243707581.h"
@@ -158,6 +138,7 @@ struct TypeInferenceRuleAttribute_t1390152093;
 #include "mscorlib_System_String2029220233MethodDeclarations.h"
 #include "mscorlib_System_Diagnostics_StackTrace2500644597MethodDeclarations.h"
 #include "mscorlib_System_Diagnostics_StackTrace2500644597.h"
+#include "mscorlib_System_Int322071877448.h"
 #include "mscorlib_System_Object2689449295MethodDeclarations.h"
 #include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_ArgumentException3259014390MethodDeclarations.h"
@@ -188,12 +169,12 @@ struct TypeInferenceRuleAttribute_t1390152093;
 #include "UnityEngine_UnityEngine_SystemInfo2353426895.h"
 #include "UnityEngine_UnityEngine_SystemInfo2353426895MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_OperatingSystemFamily1896948788.h"
-#include "UnityEngine_UnityEngine_RenderTextureFormat3360518468.h"
 #include "UnityEngine_UnityEngine_DeviceType2044541946.h"
 #include "UnityEngine_UnityEngine_TextAnchor112990806.h"
 #include "UnityEngine_UnityEngine_TextAnchor112990806MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_TextAreaAttribute2454598508.h"
 #include "UnityEngine_UnityEngine_TextAreaAttribute2454598508MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_PropertyAttribute2606999759MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_TextAsset3973159845.h"
 #include "UnityEngine_UnityEngine_TextAsset3973159845MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_TextClipping2573530411.h"
@@ -275,6 +256,7 @@ struct TypeInferenceRuleAttribute_t1390152093;
 #include "UnityEngine_UnityEngine_Vector32243707580MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RectTransform3349966182.h"
 #include "UnityEngine_UnityEngine_Matrix4x42933234003.h"
+#include "UnityEngine_UnityEngine_Space4278750806.h"
 #include "UnityEngine_UnityEngine_Transform_Enumerator1251553160MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform_Enumerator1251553160.h"
 #include "UnityEngine_UnityEngine_UICharInfo3056636800.h"
@@ -379,61 +361,6 @@ struct TypeInferenceRuleAttribute_t1390152093;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Int32 UnityEngine.SortingLayer::GetLayerValueFromID(System.Int32)
-extern "C"  int32_t SortingLayer_GetLayerValueFromID_m4029056996 (Il2CppObject * __this /* static, unused */, int32_t ___id0, const MethodInfo* method)
-{
-	typedef int32_t (*SortingLayer_GetLayerValueFromID_m4029056996_ftn) (int32_t);
-	static SortingLayer_GetLayerValueFromID_m4029056996_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (SortingLayer_GetLayerValueFromID_m4029056996_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SortingLayer::GetLayerValueFromID(System.Int32)");
-	return _il2cpp_icall_func(___id0);
-}
-// System.Void UnityEngine.SpaceAttribute::.ctor()
-extern "C"  void SpaceAttribute__ctor_m187290553 (SpaceAttribute_t952253354 * __this, const MethodInfo* method)
-{
-	{
-		PropertyAttribute__ctor_m3663555848(__this, /*hidden argument*/NULL);
-		__this->set_height_0((8.0f));
-		return;
-	}
-}
-// System.Void UnityEngine.SpaceAttribute::.ctor(System.Single)
-extern "C"  void SpaceAttribute__ctor_m1444406696 (SpaceAttribute_t952253354 * __this, float ___height0, const MethodInfo* method)
-{
-	{
-		PropertyAttribute__ctor_m3663555848(__this, /*hidden argument*/NULL);
-		float L_0 = ___height0;
-		__this->set_height_0(L_0);
-		return;
-	}
-}
-// System.Void UnityEngine.SpringJoint::set_spring(System.Single)
-extern "C"  void SpringJoint_set_spring_m4054062543 (SpringJoint_t4147555327 * __this, float ___value0, const MethodInfo* method)
-{
-	typedef void (*SpringJoint_set_spring_m4054062543_ftn) (SpringJoint_t4147555327 *, float);
-	static SpringJoint_set_spring_m4054062543_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (SpringJoint_set_spring_m4054062543_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SpringJoint::set_spring(System.Single)");
-	_il2cpp_icall_func(__this, ___value0);
-}
-// System.Void UnityEngine.SpringJoint::set_damper(System.Single)
-extern "C"  void SpringJoint_set_damper_m4151512681 (SpringJoint_t4147555327 * __this, float ___value0, const MethodInfo* method)
-{
-	typedef void (*SpringJoint_set_damper_m4151512681_ftn) (SpringJoint_t4147555327 *, float);
-	static SpringJoint_set_damper_m4151512681_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (SpringJoint_set_damper_m4151512681_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SpringJoint::set_damper(System.Single)");
-	_il2cpp_icall_func(__this, ___value0);
-}
-// System.Void UnityEngine.SpringJoint::set_maxDistance(System.Single)
-extern "C"  void SpringJoint_set_maxDistance_m978201305 (SpringJoint_t4147555327 * __this, float ___value0, const MethodInfo* method)
-{
-	typedef void (*SpringJoint_set_maxDistance_m978201305_ftn) (SpringJoint_t4147555327 *, float);
-	static SpringJoint_set_maxDistance_m978201305_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (SpringJoint_set_maxDistance_m978201305_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SpringJoint::set_maxDistance(System.Single)");
-	_il2cpp_icall_func(__this, ___value0);
-}
 // UnityEngine.Rect UnityEngine.Sprite::get_rect()
 extern "C"  Rect_t3681755626  Sprite_get_rect_m4043737881 (Sprite_t309593783 * __this, const MethodInfo* method)
 {
@@ -2133,15 +2060,6 @@ extern "C"  int32_t SystemInfo_get_operatingSystemFamily_m3467441443 (Il2CppObje
 	_il2cpp_icall_func = (SystemInfo_get_operatingSystemFamily_m3467441443_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SystemInfo::get_operatingSystemFamily()");
 	return _il2cpp_icall_func();
 }
-// System.Boolean UnityEngine.SystemInfo::SupportsRenderTextureFormat(UnityEngine.RenderTextureFormat)
-extern "C"  bool SystemInfo_SupportsRenderTextureFormat_m3185388893 (Il2CppObject * __this /* static, unused */, int32_t ___format0, const MethodInfo* method)
-{
-	typedef bool (*SystemInfo_SupportsRenderTextureFormat_m3185388893_ftn) (int32_t);
-	static SystemInfo_SupportsRenderTextureFormat_m3185388893_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (SystemInfo_SupportsRenderTextureFormat_m3185388893_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SystemInfo::SupportsRenderTextureFormat(UnityEngine.RenderTextureFormat)");
-	return _il2cpp_icall_func(___format0);
-}
 // System.String UnityEngine.SystemInfo::get_deviceName()
 extern "C"  String_t* SystemInfo_get_deviceName_m1285252113 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -3508,24 +3426,6 @@ IL_000d:
 		return L_1;
 	}
 }
-// System.Void UnityEngine.Texture::set_width(System.Int32)
-extern Il2CppClass* Exception_t1927440687_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1853122487;
-extern const uint32_t Texture_set_width_m3075240330_MetadataUsageId;
-extern "C"  void Texture_set_width_m3075240330 (Texture_t2243626319 * __this, int32_t ___value0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Texture_set_width_m3075240330_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Exception_t1927440687 * L_0 = (Exception_t1927440687 *)il2cpp_codegen_object_new(Exception_t1927440687_il2cpp_TypeInfo_var);
-		Exception__ctor_m485833136(L_0, _stringLiteral1853122487, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
 // System.Int32 UnityEngine.Texture::get_height()
 extern "C"  int32_t Texture_get_height_m2890247816 (Texture_t2243626319 * __this, const MethodInfo* method)
 {
@@ -3540,24 +3440,6 @@ IL_000d:
 	{
 		int32_t L_1 = V_0;
 		return L_1;
-	}
-}
-// System.Void UnityEngine.Texture::set_height(System.Int32)
-extern Il2CppClass* Exception_t1927440687_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1853122487;
-extern const uint32_t Texture_set_height_m1406712949_MetadataUsageId;
-extern "C"  void Texture_set_height_m1406712949 (Texture_t2243626319 * __this, int32_t ___value0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Texture_set_height_m1406712949_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Exception_t1927440687 * L_0 = (Exception_t1927440687 *)il2cpp_codegen_object_new(Exception_t1927440687_il2cpp_TypeInfo_var);
-		Exception__ctor_m485833136(L_0, _stringLiteral1853122487, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
 	}
 }
 // UnityEngine.TextureWrapMode UnityEngine.Texture::get_wrapMode()
@@ -3710,15 +3592,6 @@ extern "C"  float Time_get_time_m2216684562 (Il2CppObject * __this /* static, un
 	static Time_get_time_m2216684562_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Time_get_time_m2216684562_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_time()");
-	return _il2cpp_icall_func();
-}
-// System.Single UnityEngine.Time::get_timeSinceLevelLoad()
-extern "C"  float Time_get_timeSinceLevelLoad_m1980066582 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
-{
-	typedef float (*Time_get_timeSinceLevelLoad_m1980066582_ftn) ();
-	static Time_get_timeSinceLevelLoad_m1980066582_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Time_get_timeSinceLevelLoad_m1980066582_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_timeSinceLevelLoad()");
 	return _il2cpp_icall_func();
 }
 // System.Single UnityEngine.Time::get_deltaTime()
@@ -4547,16 +4420,6 @@ IL_0015:
 	{
 		Vector3_t2243707580  L_2 = V_1;
 		return L_2;
-	}
-}
-// System.Void UnityEngine.Transform::set_eulerAngles(UnityEngine.Vector3)
-extern "C"  void Transform_set_eulerAngles_m2881310872 (Transform_t3275118058 * __this, Vector3_t2243707580  ___value0, const MethodInfo* method)
-{
-	{
-		Vector3_t2243707580  L_0 = ___value0;
-		Quaternion_t4030073918  L_1 = Quaternion_Euler_m3586339259(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		Transform_set_rotation_m3411284563(__this, L_1, /*hidden argument*/NULL);
-		return;
 	}
 }
 // UnityEngine.Vector3 UnityEngine.Transform::get_localEulerAngles()
@@ -8249,33 +8112,6 @@ IL_0048:
 		return L_9;
 	}
 }
-// UnityEngine.Vector4 UnityEngine.Vector4::op_Multiply(UnityEngine.Vector4,System.Single)
-extern "C"  Vector4_t2243707581  Vector4_op_Multiply_m3204903356 (Il2CppObject * __this /* static, unused */, Vector4_t2243707581  ___a0, float ___d1, const MethodInfo* method)
-{
-	Vector4_t2243707581  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		float L_0 = (&___a0)->get_x_1();
-		float L_1 = ___d1;
-		float L_2 = (&___a0)->get_y_2();
-		float L_3 = ___d1;
-		float L_4 = (&___a0)->get_z_3();
-		float L_5 = ___d1;
-		float L_6 = (&___a0)->get_w_4();
-		float L_7 = ___d1;
-		Vector4_t2243707581  L_8;
-		memset(&L_8, 0, sizeof(L_8));
-		Vector4__ctor_m1222289168(&L_8, ((float)((float)L_0*(float)L_1)), ((float)((float)L_2*(float)L_3)), ((float)((float)L_4*(float)L_5)), ((float)((float)L_6*(float)L_7)), /*hidden argument*/NULL);
-		V_0 = L_8;
-		goto IL_0030;
-	}
-
-IL_0030:
-	{
-		Vector4_t2243707581  L_9 = V_0;
-		return L_9;
-	}
-}
 // UnityEngine.Vector4 UnityEngine.Vector4::op_Division(UnityEngine.Vector4,System.Single)
 extern "C"  Vector4_t2243707581  Vector4_op_Division_m130892763 (Il2CppObject * __this /* static, unused */, Vector4_t2243707581  ___a0, float ___d1, const MethodInfo* method)
 {
@@ -8319,28 +8155,6 @@ extern "C"  bool Vector4_op_Equality_m1825453464 (Il2CppObject * __this /* stati
 IL_001a:
 	{
 		bool L_4 = V_0;
-		return L_4;
-	}
-}
-// UnityEngine.Vector4 UnityEngine.Vector4::op_Implicit(UnityEngine.Vector3)
-extern "C"  Vector4_t2243707581  Vector4_op_Implicit_m1059320239 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___v0, const MethodInfo* method)
-{
-	Vector4_t2243707581  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		float L_0 = (&___v0)->get_x_1();
-		float L_1 = (&___v0)->get_y_2();
-		float L_2 = (&___v0)->get_z_3();
-		Vector4_t2243707581  L_3;
-		memset(&L_3, 0, sizeof(L_3));
-		Vector4__ctor_m1222289168(&L_3, L_0, L_1, L_2, (0.0f), /*hidden argument*/NULL);
-		V_0 = L_3;
-		goto IL_0026;
-	}
-
-IL_0026:
-	{
-		Vector4_t2243707581  L_4 = V_0;
 		return L_4;
 	}
 }

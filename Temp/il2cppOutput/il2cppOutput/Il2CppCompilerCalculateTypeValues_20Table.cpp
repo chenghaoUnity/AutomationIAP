@@ -78,7 +78,6 @@
 #include "UnityEngine_UnityEngine_Debug1368543263.h"
 #include "UnityEngine_UnityEngine_Display3666191348.h"
 #include "UnityEngine_UnityEngine_Display_DisplaysUpdatedDel3423469815.h"
-#include "UnityEngine_UnityEngine_FlareLayer1985082419.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter2156144444.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter1170095138.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter_453887929.h"
@@ -88,10 +87,11 @@
 #include "UnityEngine_UnityEngine_QualitySettings3238033062.h"
 #include "UnityEngine_UnityEngine_MeshFilter3026937449.h"
 #include "UnityEngine_UnityEngine_Renderer257310565.h"
-#include "UnityEngine_UnityEngine_Skybox2033495038.h"
 #include "UnityEngine_UnityEngine_LineRenderer849157671.h"
 #include "UnityEngine_UnityEngine_Graphics2412809155.h"
 #include "UnityEngine_UnityEngine_Screen786852042.h"
+#include "UnityEngine_UnityEngine_RectOffset3387826427.h"
+#include "UnityEngine_UnityEngine_GUIElement3381083099.h"
 
 
 
@@ -499,9 +499,8 @@ extern const int32_t g_FieldOffsetTable2084[4] =
 	Display_t3666191348_StaticFields::get_offset_of_onDisplaysUpdated_3(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2085 = { sizeof (DisplaysUpdatedDelegate_t3423469815), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2086 = { sizeof (FlareLayer_t1985082419), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2087 = { sizeof (GameCenterPlatform_t2156144444), -1, sizeof(GameCenterPlatform_t2156144444_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable2087[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2086 = { sizeof (GameCenterPlatform_t2156144444), -1, sizeof(GameCenterPlatform_t2156144444_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable2086[7] = 
 {
 	GameCenterPlatform_t2156144444_StaticFields::get_offset_of_s_AuthenticateCallback_0(),
 	GameCenterPlatform_t2156144444_StaticFields::get_offset_of_s_adCache_1(),
@@ -511,35 +510,41 @@ extern const int32_t g_FieldOffsetTable2087[7] =
 	GameCenterPlatform_t2156144444_StaticFields::get_offset_of_m_LocalUser_5(),
 	GameCenterPlatform_t2156144444_StaticFields::get_offset_of_m_GcBoards_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2088 = { sizeof (U3CUnityEngine_SocialPlatforms_ISocialPlatform_AuthenticateU3Ec__AnonStorey0_t1170095138), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable2088[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2087 = { sizeof (U3CUnityEngine_SocialPlatforms_ISocialPlatform_AuthenticateU3Ec__AnonStorey0_t1170095138), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable2087[1] = 
 {
 	U3CUnityEngine_SocialPlatforms_ISocialPlatform_AuthenticateU3Ec__AnonStorey0_t1170095138::get_offset_of_callback_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2089 = { sizeof (GcLeaderboard_t453887929), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable2089[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2088 = { sizeof (GcLeaderboard_t453887929), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable2088[2] = 
 {
 	GcLeaderboard_t453887929::get_offset_of_m_InternalLeaderboard_0(),
 	GcLeaderboard_t453887929::get_offset_of_m_GenericLeaderboard_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2090 = { sizeof (GameObject_t1756533147), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2091 = { sizeof (Gizmos_t2256232573), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2092 = { sizeof (Gradient_t3600583008), sizeof(Gradient_t3600583008_marshaled_pinvoke), 0, 0 };
-extern const int32_t g_FieldOffsetTable2092[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2089 = { sizeof (GameObject_t1756533147), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2090 = { sizeof (Gizmos_t2256232573), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2091 = { sizeof (Gradient_t3600583008), sizeof(Gradient_t3600583008_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable2091[1] = 
 {
 	Gradient_t3600583008::get_offset_of_m_Ptr_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2093 = { sizeof (QualitySettings_t3238033062), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2094 = { sizeof (MeshFilter_t3026937449), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2095 = { sizeof (Renderer_t257310565), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2096 = { sizeof (Skybox_t2033495038), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2097 = { sizeof (LineRenderer_t849157671), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2098 = { sizeof (Graphics_t2412809155), -1, sizeof(Graphics_t2412809155_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable2098[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2092 = { sizeof (QualitySettings_t3238033062), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2093 = { sizeof (MeshFilter_t3026937449), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2094 = { sizeof (Renderer_t257310565), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2095 = { sizeof (LineRenderer_t849157671), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2096 = { sizeof (Graphics_t2412809155), -1, sizeof(Graphics_t2412809155_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable2096[1] = 
 {
 	Graphics_t2412809155_StaticFields::get_offset_of_kMaxDrawMeshInstanceCount_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2099 = { sizeof (Screen_t786852042), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2097 = { sizeof (Screen_t786852042), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2098 = { sizeof (RectOffset_t3387826427), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable2098[2] = 
+{
+	RectOffset_t3387826427::get_offset_of_m_Ptr_0(),
+	RectOffset_t3387826427::get_offset_of_m_SourceStyle_1(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2099 = { sizeof (GUIElement_t3381083099), -1, 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
