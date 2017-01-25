@@ -41,3 +41,43 @@
 /Users/Shared/Unity/Codeless IAP TEST 2/Temp/bin/Debug/Firebase.Database.Unity.dll
 /Users/Shared/Unity/Codeless IAP TEST 2/Temp/bin/Debug/Google.Sharpen.dll
 /Users/Shared/Unity/Codeless IAP TEST 2/Temp/bin/Debug/Firebase.Database.dll
+/Users/chenghao/AutomationIAP/obj/Debug/Assembly-CSharp.dll
+/Users/chenghao/AutomationIAP/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEngine.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEditor.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Assembly-UnityScript-firstpass.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEngine.PlaymodeTestsRunner.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEngine.Analytics.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEngine.HoloLens.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEngine.Purchasing.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEngine.VR.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Firebase.App.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Firebase.Auth.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Firebase.Database.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Firebase.Database.Unity.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Google.MiniJson.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Google.Sharpen.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Unity.Compat.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Unity.Tasks.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Common.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Editor.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Security.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Stores.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Apple.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Tizen.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/winrt.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Mono.Cecil.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Unity.DataContract.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Assembly-CSharp.dll

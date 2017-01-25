@@ -20,7 +20,7 @@ public class EndGame : MonoBehaviour {
 
 	public void reduceGold(int number) {
 		if (UI != null) {
-			bool death = UI.GetComponent<Inventory> ().ReduceGold (number);
+			bool death = UI.GetComponent<Inventory> ().ReduceHealth (number);
 			if (death == true) {
 				// what happen while death
 				sentEvent ();
@@ -53,12 +53,10 @@ public class EndGame : MonoBehaviour {
 
 		canSend = false;
 
-		float gold = GameObject.Find ("IAPTestingUI").GetComponent<Inventory> ().gold;
 		float time = GameObject.Find ("IAPTestingUI").GetComponent<UIupdater> ().timer;
 
 		Analytics.CustomEvent("gameOver", new Dictionary<string, object>
 			{
-				{ "gold", gold },
 				{ "time", time }
 			});
 

@@ -7,6 +7,7 @@ using Firebase.Database;
 using Firebase.Unity.Editor;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class framework : MonoBehaviour {
 
@@ -23,12 +24,15 @@ public class framework : MonoBehaviour {
 	public string result;
 	private DatabaseReference reference;
 
+	string myLog;
+
 	void Awake () {
 		FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://robot-jump.firebaseio.com");
 		reference = FirebaseDatabase.DefaultInstance.RootReference;
 	}
 
 	public void Start() {
+
 		if (PlayerPrefs.GetString("QAstatus", "False").Equals("True")) {
 			testRun();
 		}
@@ -73,7 +77,7 @@ public class framework : MonoBehaviour {
 		yield return new WaitForSeconds (0.1f);
 		resultTable.Add(new TestCase(
 			"C2777-1",
-			compareInfo ("Attention", "Purchase Compelte"), 
+			compareInfo ("Purchase Compelte"), 
 			"Buy a consumable product, succeed event test",
 			System.DateTime.Now));
 
@@ -103,7 +107,7 @@ public class framework : MonoBehaviour {
 		yield return new WaitForSeconds (0.1f);
 		resultTable.Add(new TestCase(
 			"C2777-2",
-			compareInfo ("Attention", "Purchase Fail"), 
+			compareInfo ("Purchase Fail"), 
 			"Buy a consumable product, failed event test",
 			System.DateTime.Now));
 
@@ -132,7 +136,7 @@ public class framework : MonoBehaviour {
 		yield return new WaitForSeconds (0.1f);
 		resultTable.Add(new TestCase(
 			"C2778-1",
-			compareInfo ("Attention", "Purchase Compelte"), 
+			compareInfo ("Purchase Compelte"), 
 			"Buy a non-consumable product, succeed event test",
 			System.DateTime.Now));
 
@@ -161,7 +165,7 @@ public class framework : MonoBehaviour {
 		yield return new WaitForSeconds (0.1f);
 		resultTable.Add(new TestCase(
 			"C2778-2",
-			compareInfo ("Attention", "Purchase Fail"), 
+			compareInfo ("Purchase Fail"), 
 			"Buy a non-consumable product, failed event test",
 			System.DateTime.Now));
 
@@ -190,7 +194,7 @@ public class framework : MonoBehaviour {
 		yield return new WaitForSeconds (0.1f);
 		resultTable.Add(new TestCase(
 			"C2779-1",
-			compareInfo ("Attention", "Purchase Compelte"), 
+			compareInfo ("Purchase Compelte"), 
 			"Buy a subscription product, succeed event test",
 			System.DateTime.Now));
 
@@ -219,7 +223,7 @@ public class framework : MonoBehaviour {
 		yield return new WaitForSeconds (0.1f);
 		resultTable.Add(new TestCase(
 			"C2779-2",
-			compareInfo ("Attention", "Purchase Fail"), 
+			compareInfo ("Purchase Fail"), 
 			"Buy a subscription product, failed event test",
 			System.DateTime.Now));
 
@@ -238,7 +242,27 @@ public class framework : MonoBehaviour {
 		// Application.OpenURL("https://robot-jump.firebaseio.com/qaReport");
 
 	}
+		
+	public enum ExpectResult {
+		buySucessful, 
+		buyFail,
+		restoreSucessful, 
+		restoreFail
+	};
 
+	private void setExpectResult(ExpectResult e) {
+	
+		var text = Resources.Load ("expectResult") as TextAsset;
+
+
+
+		if (text != null) {
+			GameObject.Find ("Attention").GetComponent<Text> ().text = text.text;
+		} else {
+			GameObject.Find ("Attention").GetComponent<Text> ().text = "Cant find the file";
+		}
+	}
+		 
 	private void click(string name, string needed = null) {
 		StartCoroutine (click_ (name, needed));
 	}
@@ -256,9 +280,9 @@ public class framework : MonoBehaviour {
 		GameObject.Find (name).GetComponent<Button> ().onClick.Invoke ();
 	}
 
-	private bool compareInfo(string name, string expected) {
+	private bool compareInfo(string expected) {
 		// Get text from a text UI
-		return GameObject.Find (name).GetComponent<Text> ().text == expected;
+		return GameObject.Find ("Attention").GetComponent<Text> ().text == expected;
 	}
 
 	private void showProgess(int progress) {
@@ -292,9 +316,4 @@ public class framework : MonoBehaviour {
 		reference.UpdateChildrenAsync(childUpdates);
 	}
 		
-
-	private void getScreenContent() {
-		result = this.gameObject.GetComponent<WebCamTextureToCloudVision> ().result;
-	}
-
 }

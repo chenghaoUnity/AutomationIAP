@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UIupdater : MonoBehaviour {
 
-	public GameObject UItext;
+	public GameObject heathBar;
 	public GameObject attentionBar;
 	public GameObject timerUI;
 
@@ -22,9 +22,9 @@ public class UIupdater : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		if (UItext == null) 
+		if (heathBar == null) 
 		{
-			UItext = GameObject.Find ("GOLDS");
+			heathBar = GameObject.Find ("HealthBar");
 		}
 
 		if (attentionBar == null) 
@@ -36,9 +36,9 @@ public class UIupdater : MonoBehaviour {
 		{
 			timerUI = GameObject.Find ("Timer");
 		}
-
+			
 		attentionBar.GetComponent<Text> ().text = "Welcome, " + PlayerPrefs.GetString ("PlayerName");
-		UItext.GetComponent<Text> ().text = "GOLDS: " + this.gameObject.GetComponent<Inventory> ().gold.ToString();
+		heathBar.GetComponent<Slider> ().value = 1;
 
 		if (PlayerPrefs.GetString ("PreferController").Equals ("Vistual")) {
 			vistualController.SetActive (true);
@@ -48,14 +48,15 @@ public class UIupdater : MonoBehaviour {
 			vistualController.SetActive (true);                                                                                                       
 		}
 			
+		GameObject.Find ("DiamondAmount").GetComponent<Text> ().text = PlayerPrefs.GetInt ("Diamond", 0).ToString();
 	}
 
 	void FixedUpdate() {
 
 		// Add gold to user per second
 		timer = timer + Time.deltaTime;
-		if ((int)timer % 10 == 0) {
-			this.gameObject.GetComponent<Inventory> ().AddGold (1);
+		if ((int)timer % this.gameObject.GetComponent<Inventory>().recovSpeed == 0) {
+			this.gameObject.GetComponent<Inventory> ().RecoverHealth ();
 		}
 
 		sync ();
@@ -64,7 +65,16 @@ public class UIupdater : MonoBehaviour {
 	}
 
 	public void sync() {
-		UItext.GetComponent<Text> ().text = "GOLDS: " + this.gameObject.GetComponent<Inventory> ().gold.ToString();
+		float curValue = heathBar.GetComponent<Slider> ().value;
+		heathBar.GetComponent<Slider> ().value = Mathf.Lerp (
+			curValue, 
+			this.gameObject.GetComponent<Inventory> ().curHealth / this.gameObject.GetComponent<Inventory> ().maxHealth,
+			timer
+		);
+
+		GameObject.Find ("HealthBarInfo").GetComponent<Text> ().text = this.gameObject.GetComponent<Inventory> ().curHealth.ToString()
+			+ "/" + this.gameObject.GetComponent<Inventory> ().maxHealth.ToString();
+
 	}
 
 	public void syncWithWords(string str) {
@@ -112,6 +122,12 @@ public class UIupdater : MonoBehaviour {
 
 			GameObject.Find ("IAP").GetComponent<Button> ().interactable = false;
 			GameObject.Find ("Back").GetComponent<Button> ().interactable = false;
+
+			int diamond_increase = (int) ((timer * timer) / 700);
+
+			GameObject.Find ("DiamondAddedAmount").GetComponent<Text> ().text = "+ " + diamond_increase.ToString ();
+			PlayerPrefs.SetInt ("Diamond", PlayerPrefs.GetInt ("Diamond", 0) + diamond_increase);
+
 			Time.timeScale = 0f;
 		}
 	}

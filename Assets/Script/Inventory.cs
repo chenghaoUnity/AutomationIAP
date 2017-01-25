@@ -30,10 +30,63 @@ public class Inventory : MonoBehaviour
 
 	public GameObject hurt;
 
+	public int characterOrder;
+	public Sprite[] sprites;
+
 	private float zoomInTimer = 0;
 
+	public Dictionary<int, int> healthTable = new Dictionary<int, int>() {
+		// order - > MaxHealth
+		{0, 100},	// Archer
+		{1, 100},	// Barbarian
+		{2, 100},	// Dragon Slayer
+		{3, 100},	// Fire
+		{4, 100},	// Healer
+		{5, 200},	// Harbalist
+		{6, 200},	// Knight
+		{7, 200},	// Lancer
+		{8, 200},	// Light
+		{9, 200},	// Merchant
+		{10, 300},	// Ninja
+		{11, 300},	// Pet Caller
+		{12, 300},	// Poisoner
+		{13, 300},	// Ranger
+		{14, 300},	// Scout
+		{15, 300},	// Shadow Keeper
+		{16, 300},	// Summoner
+		{17, 500},	// The Black Harvester
+		{18, 500},	// The Frost Dragon
+		{19, 500},	// Water
+	};
 
-	public float gold { get { return m_GoldAmount; }}
+	public Dictionary<int, int> recovTable = new Dictionary<int, int>() {
+		// order - > recovSpeed
+		{0, 10},	// Archer
+		{1, 9},		// Barbarian
+		{2, 9},		// Dragon Slayer
+		{3, 9},		// Fire
+		{4, 9},		// Healer
+		{5, 9},		// Harbalist
+		{6, 9},		// Knight
+		{7, 8},		// Lancer
+		{8, 8},		// Light
+		{9, 8},		// Merchant
+		{10, 8},	// Ninja
+		{11, 8},	// Pet Caller
+		{12, 8},	// Poisoner
+		{13, 8},	// Ranger
+		{14, 8},	// Scout
+		{15, 7},	// Shadow Keeper
+		{16, 7},	// Summoner
+		{17, 5},	// The Black Harvester
+		{18, 5},	// The Frost Dragon
+		{19, 5},	// Water
+	};
+		
+	public float maxHealth; 
+	// smalelr, faster
+	public int recovSpeed = 10;
+	public float curHealth;
 
 	public void Awake() {
 
@@ -48,6 +101,12 @@ public class Inventory : MonoBehaviour
 		ifJumpfSelected = PlayerPrefs.GetInt ("ifJumpfSelected") != 0;
 
 		Application.targetFrameRate = 30;
+
+		characterOrder = PlayerPrefs.GetInt ("CharacterOrder", 0);
+		GameObject.Find ("CharacterBase").GetComponent<SpriteRenderer> ().sprite = sprites [characterOrder];
+
+		maxHealth = healthTable[characterOrder];
+		recovSpeed = recovTable[characterOrder];
 	}
 
 	private void updateIAPResult() {
@@ -94,21 +153,40 @@ public class Inventory : MonoBehaviour
 
 	void Start() {
 		updateIAPResult ();
+		curHealth = maxHealth;
 	}
 
 	public void Update() {
-
 		// Zoom in animation
 		if (zoomInTimer <= 1) {
 			zoomInTimer += Time.deltaTime * 0.7f;
 			GameObject.Find ("Main Camera").GetComponent<Camera> ().orthographicSize = Mathf.Lerp (5, 7, zoomInTimer);
 		}
-
 	}
 
-	public void AddGold (int amount)
+	public void AddDiamond(int amount) {
+		PlayerPrefs.SetInt ("Diamond", PlayerPrefs.GetInt ("Diamond", 0) + amount);
+		GameObject.Find ("DiamondAmount").GetComponent<Text> ().text = PlayerPrefs.GetInt ("Diamond", 0).ToString();
+	}
+
+
+	public void AddHealthLimit (int amount)
 	{
 		m_GoldAmount += amount;
+		this.gameObject.GetComponent<UIupdater> ().sync ();
+	}
+
+	public void RecoverHealth ()
+	{
+		float amount = 1;
+
+		if (curHealth < maxHealth) {
+			if (curHealth + amount >= maxHealth) {
+				curHealth = maxHealth;
+			} else {
+				curHealth += amount;
+			}
+		}
 		this.gameObject.GetComponent<UIupdater> ().sync ();
 	}
 
@@ -142,7 +220,7 @@ public class Inventory : MonoBehaviour
 
 	public void onVIP() 
 	{
-		AddGold (100);
+		AddHealthLimit (100);
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
 		player.GetComponent<PlatformerCharacter2D> ().AddPower ();
 		PlayerPrefs.SetInt ("ifVipSelected", 1);
@@ -159,7 +237,7 @@ public class Inventory : MonoBehaviour
 
 	public void onVIPf() 
 	{
-		AddGold (100);
+		AddHealthLimit (100);
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
 		player.GetComponent<PlatformerCharacter2D> ().AddPower ();
 		PlayerPrefs.SetInt ("ifVipfSelected", 1);
@@ -175,27 +253,20 @@ public class Inventory : MonoBehaviour
 	}
 
 	// return true if died
-	public bool ReduceGold(int number) {
+	public bool ReduceHealth(int number) {
 
 		if (number == int.MaxValue) {
 			return true;
 		}
 
-		if (hurt != null) {
-			GameObject newHurt = Instantiate(hurt) as GameObject; 
-			newHurt.transform.parent = this.gameObject.transform;
-			newHurt.GetComponent<HurtFX> ().m_Text = "-" + (number).ToString () + " GOLDS";
-			newHurt.transform.localPosition = new Vector3 (650f, -215f);
+		BleedBehavior.BloodAmount = 0.5f;
 
-			BleedBehavior.BloodAmount = 0.5f;
-		}
-
-		if (m_GoldAmount - number < 0) {
-			m_GoldAmount = 0;
+		if (curHealth - number <= 0) {
+			curHealth = 0;
 			this.gameObject.GetComponent<UIupdater> ().sync ();
 			return true;
 		} else {
-			m_GoldAmount = m_GoldAmount - number;
+			curHealth = curHealth - number;
 			this.gameObject.GetComponent<UIupdater> ().sync ();
 			return false;
 		}
