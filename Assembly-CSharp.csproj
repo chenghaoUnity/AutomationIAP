@@ -84,10 +84,16 @@
      <Compile Include="Assets\3rdParty\Water\Scripts\Clickspawn.cs" />
      <Compile Include="Assets\3rdParty\Water\Scripts\Water.cs" />
      <Compile Include="Assets\3rdParty\Water\Scripts\WaterDetector.cs" />
+     <Compile Include="Assets\Multi-Language Tool\Core\Scripts\CanvasTranslator.cs" />
+     <Compile Include="Assets\Multi-Language Tool\Core\Scripts\LanguageManager.cs" />
+     <Compile Include="Assets\Multi-Language Tool\Core\Scripts\XmlReader.cs" />
+     <Compile Include="Assets\Multi-Language Tool\Core\Scripts\XmlWriter.cs" />
+     <Compile Include="Assets\Multi-Language Tool\Demos\Old GUI System\Scripts\MenuManager.cs" />
      <Compile Include="Assets\NewBehaviourScript.cs" />
      <Compile Include="Assets\Script\DatabaseConnection.cs" />
      <Compile Include="Assets\Script\EndGame.cs" />
      <Compile Include="Assets\Script\FloorMoving.cs" />
+     <Compile Include="Assets\Script\HeroTable.cs" />
      <Compile Include="Assets\Script\HurtFX.cs" />
      <Compile Include="Assets\Script\Inventory.cs" />
      <Compile Include="Assets\Script\Loading.cs" />
@@ -101,6 +107,7 @@
      <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\firebase-common-10.0.1\AndroidManifest.xml" />
      <None Include="Assets\3rdParty\Ultimate Joystick Examples\Third Person Example\README_ThirdPerson.txt" />
+     <None Include="Assets\Resources\Languages.xml" />
      <None Include="Assets\Plugins\Ultimate Joystick\README.txt" />
      <None Include="Assets\3rdParty\Bleed\HowToUse.txt" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
@@ -118,9 +125,6 @@
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/chenghao/AutomationIAP/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Applications/Unity 5.5.0f3/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity 5.5.0f3/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

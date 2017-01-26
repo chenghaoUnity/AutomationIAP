@@ -82,7 +82,7 @@ public class UIupdater : MonoBehaviour {
 	}
 
 	public void syncWithTimer(float f) {
-		timerUI.GetComponent<Text> ().text = "TIME: " + ((int)f).ToString ();
+		timerUI.GetComponent<Text> ().text = ((int)f).ToString ();
 	}
 
 	public void openWindow(string name) {

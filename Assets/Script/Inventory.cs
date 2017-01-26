@@ -35,54 +35,8 @@ public class Inventory : MonoBehaviour
 
 	private float zoomInTimer = 0;
 
-	public Dictionary<int, int> healthTable = new Dictionary<int, int>() {
-		// order - > MaxHealth
-		{0, 100},	// Archer
-		{1, 100},	// Barbarian
-		{2, 100},	// Dragon Slayer
-		{3, 100},	// Fire
-		{4, 100},	// Healer
-		{5, 200},	// Harbalist
-		{6, 200},	// Knight
-		{7, 200},	// Lancer
-		{8, 200},	// Light
-		{9, 200},	// Merchant
-		{10, 300},	// Ninja
-		{11, 300},	// Pet Caller
-		{12, 300},	// Poisoner
-		{13, 300},	// Ranger
-		{14, 300},	// Scout
-		{15, 300},	// Shadow Keeper
-		{16, 300},	// Summoner
-		{17, 500},	// The Black Harvester
-		{18, 500},	// The Frost Dragon
-		{19, 500},	// Water
-	};
-
-	public Dictionary<int, int> recovTable = new Dictionary<int, int>() {
-		// order - > recovSpeed
-		{0, 10},	// Archer
-		{1, 9},		// Barbarian
-		{2, 9},		// Dragon Slayer
-		{3, 9},		// Fire
-		{4, 9},		// Healer
-		{5, 9},		// Harbalist
-		{6, 9},		// Knight
-		{7, 8},		// Lancer
-		{8, 8},		// Light
-		{9, 8},		// Merchant
-		{10, 8},	// Ninja
-		{11, 8},	// Pet Caller
-		{12, 8},	// Poisoner
-		{13, 8},	// Ranger
-		{14, 8},	// Scout
-		{15, 7},	// Shadow Keeper
-		{16, 7},	// Summoner
-		{17, 5},	// The Black Harvester
-		{18, 5},	// The Frost Dragon
-		{19, 5},	// Water
-	};
-		
+	private LanguageManager languageManager;
+			
 	public float maxHealth; 
 	// smalelr, faster
 	public int recovSpeed = 10;
@@ -105,8 +59,11 @@ public class Inventory : MonoBehaviour
 		characterOrder = PlayerPrefs.GetInt ("CharacterOrder", 0);
 		GameObject.Find ("CharacterBase").GetComponent<SpriteRenderer> ().sprite = sprites [characterOrder];
 
-		maxHealth = healthTable[characterOrder];
-		recovSpeed = recovTable[characterOrder];
+		maxHealth = HeroTable.HeroInfoTable [characterOrder] ["maxHealth"];
+		recovSpeed = HeroTable.HeroInfoTable [characterOrder] ["recovSpeed"];
+
+		languageManager = FindObjectOfType<LanguageManager> ();
+		languageManager.SetLanguage(PlayerPrefs.GetInt ("LanguagePrefer", 0));
 	}
 
 	private void updateIAPResult() {
@@ -302,25 +259,21 @@ public class Inventory : MonoBehaviour
 	
 		if (obj.name == "BuySuperPowerChecker") {
 			ifJumpSelected = obj.GetComponent<Toggle> ().isOn;
-			print (ifJumpSelected);
 			PlayerPrefs.SetInt ("ifJumpSelected", ifJumpSelected == true ? 1 : 0);
 		}
 
 		if (obj.name == "BuyVIPChecker") {
 			ifVipSelected = obj.GetComponent<Toggle> ().isOn;
-			print (ifVipSelected);
 			PlayerPrefs.SetInt ("ifVipSelected", ifVipSelected == true ? 1 : 0);
 		}
 
 		if (obj.name == "BuySuperPowerfChecker") {
 			ifJumpfSelected = obj.GetComponent<Toggle> ().isOn;
-			print (ifJumpfSelected);
 			PlayerPrefs.SetInt ("ifJumpfSelected", ifJumpfSelected == true ? 1 : 0);
 		}
 
 		if (obj.name == "BuyVIPfChecker") {
 			ifVipfSelected = obj.GetComponent<Toggle> ().isOn;
-			print (ifVipfSelected);
 			PlayerPrefs.SetInt ("ifVipfSelected", ifVipfSelected == true ? 1 : 0);
 		}
 	}

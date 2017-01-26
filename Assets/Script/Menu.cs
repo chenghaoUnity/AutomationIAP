@@ -10,6 +10,7 @@ using Firebase;
 using Firebase.Database;
 using Firebase.Unity.Editor;
 using UnityEngine.Events;
+using System.Xml;
 
 public class Menu : MonoBehaviour {
 
@@ -32,7 +33,6 @@ public class Menu : MonoBehaviour {
 
 	private float highScore;
 	private List<User> rankList = new List<User>();
-	private bool checkSameUsername = false;
 
 	public List<GameObject> rankListUI_username;
 	public List<GameObject> rankListUI_score;
@@ -50,54 +50,11 @@ public class Menu : MonoBehaviour {
 	public int characterOrder;
 	public Sprite[] sprites;
 
-	public Dictionary<int, int> priceTable = new Dictionary<int, int>() {
-		// order - > price
-		{0, 0},		// Archer
-		{1, 10},		// Barbarian
-		{2, 10},	// Dragon Slayer
-		{3, 10},	// Fire
-		{4, 10},	// Healer
-		{5, 20},	// Harbalist
-		{6, 20},	// Knight
-		{7, 30},	// Lancer
-		{8, 30},	// Light
-		{9, 30},	// Merchant
-		{10, 50},	// Ninja
-		{11, 50},	// Pet Caller
-		{12, 50},	// Poisoner
-		{13, 50},	// Ranger
-		{14, 50},	// Scout
-		{15, 80},	// Shadow Keeper
-		{16, 80},	// Summoner
-		{17, 120},	// The Black Harvester
-		{18, 120},	// The Frost Dragon
-		{19, 120},	// Water
-	};
+	private LanguageManager languageManager;
+	private XmlDocument xmlDocument;
 
-	public Dictionary<int, string> chineseTable = new Dictionary<int, string>() {
-		// order - > price
-		{0, "弓箭手"},		// Archer
-		{1, "野蛮人"},		// Barbarian
-		{2, "弑龙者"},		// Dragon Slayer
-		{3, "舞火者"},		// Fire
-		{4, "治疗师"},		// Healer
-		{5, "草药师"},		// Harbalist
-		{6, "骑士"},			// Knight
-		{7, "御林军"},		// Lancer
-		{8, "光明师"},		// Light
-		{9, "商人"},			// Merchant
-		{10, "忍者"},		// Ninja
-		{11, "猎人"},		// Pet Caller
-		{12, "毒药师"},		// Poisoner
-		{13, "神射手"},		// Ranger
-		{14, "斥候"},		// Scout
-		{15, "阴暗领主"},		// Shadow Keeper
-		{16, "召唤师"},		// Summoner
-		{17, "黑色镰刀手"},	// The Black Harvester
-		{18, "龙战骑士"},		// The Frost Dragon
-		{19, "大灵动家"},		// Water
-	};
 
+		
 	void Awake () {
 		Application.targetFrameRate = 30;
 
@@ -125,19 +82,9 @@ public class Menu : MonoBehaviour {
 		GameObject.Find ("CharacterBase").GetComponent<SpriteRenderer> ().sprite = sprites [characterOrder];
 		GameObject.Find ("DiamondAmount").GetComponent<Text> ().text = PlayerPrefs.GetInt ("Diamond", 0).ToString();
 
-
-		// if first time user, make the skin0 availible
-		if (PlayerPrefs.GetInt ("CharacterOwned0", 1) == 1) {
-			PlayerPrefs.SetInt ("CharacterOwned0", 0);
-		}
-
-		GameObject.Find ("SuggestPrice").GetComponent<Text> ().text = chineseTable [characterOrder] + Environment.NewLine;
-
-		// if for some reason the beginning skin is not 0, make sure cannot play
-		if (PlayerPrefs.GetInt("CharacterOwned" + characterOrder.ToString(), 1) == 1) {
-			GameObject.Find ("SuggestPrice").GetComponent<Text> ().text = chineseTable[characterOrder] + Environment.NewLine + "Diamond needed: " + priceTable [characterOrder].ToString ();
-			GameObject.Find("StartText").GetComponent<Text> ().text = "Buy";
-		}
+		languageManager = FindObjectOfType<LanguageManager> ();
+		languageManager.SetLanguage(PlayerPrefs.GetInt ("LanguagePrefer", 0));
+		xmlDocument = XmlReader.LoadXmlDocument();
 	}
 
 	void Start () {
@@ -151,14 +98,6 @@ public class Menu : MonoBehaviour {
 		this.onCompelete.AddListener (QAStatusHandler);
 		getQAstatus ();
 
-		// When first launch game, no previous highest score availible
-		if (PlayerPrefs.HasKey ("HighScore") == false || PlayerPrefs.GetFloat ("HighScore") == null || PlayerPrefs.GetFloat ("HighScore") == 0) {
-			highScoreButton.gameObject.GetComponent<Text> ().text = "";
-		} else {
-			highScore = PlayerPrefs.GetFloat ("HighScore");
-			highScoreButton.gameObject.GetComponent<Text> ().text = "HIGH SCORE: " + ((int)highScore).ToString ();
-		}
-
 		// When first launch game, no previous name availble
 		if (PlayerPrefs.HasKey ("PlayerName") == false) {
 			PlayerUI.SetActive (true);
@@ -171,8 +110,16 @@ public class Menu : MonoBehaviour {
 		if (PlayerPrefs.HasKey ("PreferController") == false) {
 			PlayerPrefs.SetString ("PreferController", controller.ToString());
 		}
-
+			
+		// if first time user, make the skin0 availible
+		if (PlayerPrefs.GetInt ("CharacterOwned0", 1) == 1) {
+			PlayerPrefs.SetInt ("CharacterOwned0", 0);
+		}
+	
+		updateUI ();
 	}
+
+
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -202,6 +149,7 @@ public class Menu : MonoBehaviour {
 		GameObject.Find ("SwtichCharacterRight").SetActive (false);
 
 		PlayerPrefs.SetInt ("CharacterOrder", characterOrder);
+		PlayerPrefs.Save ();
 	}
 
 	public void endGame() {
@@ -265,6 +213,7 @@ public class Menu : MonoBehaviour {
 		}
 
 		buyskinUI.SetActive (true);
+		GameObject.Find ("Reminder").GetComponent<Text> ().text = GetTranslation ("Text_BuySkin");
 	}
 
 	public void closeExitWindow() {
@@ -361,14 +310,7 @@ public class Menu : MonoBehaviour {
 
 		GameObject.Find ("CharacterBase").GetComponent<SpriteRenderer> ().sprite = sprites [characterOrder];
 
-		// if this skin has not purchased, cannot play
-		if (PlayerPrefs.GetInt ("CharacterOwned" + characterOrder.ToString (), 1) == 1) {
-			GameObject.Find("StartText").GetComponent<Text> ().text = "Buy";
-			GameObject.Find ("SuggestPrice").GetComponent<Text> ().text = chineseTable[characterOrder] + Environment.NewLine + "Diamond needed: " + priceTable [characterOrder].ToString ();
-		} else {
-			GameObject.Find("StartText").GetComponent<Text> ().text = "Start";
-			GameObject.Find ("SuggestPrice").GetComponent<Text> ().text = chineseTable [characterOrder] + Environment.NewLine;
-		}
+		updateUI ();
 	}
 
 	public void confirmBuySkin() {
@@ -376,18 +318,18 @@ public class Menu : MonoBehaviour {
 		int curDiamond = PlayerPrefs.GetInt ("Diamond", 0);
 
 		// User has enough diamond, and user does not own this skin
-		if (curDiamond >= priceTable [characterOrder] && PlayerPrefs.GetInt ("CharacterOwned" + characterOrder.ToString (), 1) == 1) {
-			curDiamond -= priceTable [characterOrder];
+		if (curDiamond >= HeroTable.HeroInfoTable [characterOrder]["price"] && PlayerPrefs.GetInt ("CharacterOwned" + characterOrder.ToString (), 1) == 1) {
+			curDiamond -=  HeroTable.HeroInfoTable [characterOrder]["price"];
 			PlayerPrefs.SetInt ("Diamond", curDiamond);
 			PlayerPrefs.SetInt ("CharacterOwned" + characterOrder.ToString (), 0);
 			GameObject.Find ("DiamondAmount").GetComponent<Text> ().text = PlayerPrefs.GetInt ("Diamond", 0).ToString ();
-			GameObject.Find ("StartText").GetComponent<Text> ().text = "Start";
+			GameObject.Find ("StartText").GetComponent<Text> ().text = GetTranslation ("Button_Start");
 			GameObject.Find ("SuggestPrice").GetComponent<Text> ().text = null;
 			closeBuySkinWindow ();
-		} else if (curDiamond < priceTable [characterOrder]) {
-			GameObject.Find ("Reminder").GetComponent<Text> ().text = "You don't have enough diamond...";
+		} else if (curDiamond <  HeroTable.HeroInfoTable [characterOrder]["price"]) {
+			GameObject.Find ("Reminder").GetComponent<Text> ().text = GetTranslation ("Text_NotEnoughDiamond");
 		} else {
-			GameObject.Find ("Reminder").GetComponent<Text> ().text = "You already own this character...";
+			GameObject.Find ("Reminder").GetComponent<Text> ().text = GetTranslation ("Text_AlreadyOwnedCharacter");
 		}
 	}
 
@@ -450,5 +392,40 @@ public class Menu : MonoBehaviour {
 			});
 	}
 
+	private string GetTranslation(string nameID) {
+		return XmlReader.GetInnerText(xmlDocument, languageManager.currentLanguage, nameID);
+	}
 
+	public void updateUI() {
+
+		// When first launch game, no previous highest score availible
+		if (PlayerPrefs.HasKey ("HighScore") == false) {
+			highScoreButton.gameObject.GetComponent<Text> ().text = "";
+		} else {
+			highScore = PlayerPrefs.GetFloat ("HighScore");
+			highScoreButton.gameObject.GetComponent<Text> ().text = GetTranslation("Text_HighScore") + ((int)highScore).ToString ();
+		}
+
+		// The character is not unlocked
+		if (PlayerPrefs.GetInt ("CharacterOwned" + characterOrder.ToString (), 1) == 1) {
+
+			GameObject.Find ("StartText").GetComponent<Text> ().text = GetTranslation ("Button_Buy");
+
+			if (languageManager.currentLanguage == 0) {
+				GameObject.Find ("SuggestPrice").GetComponent<Text> ().text = HeroTable.HeroNameinEnglish [characterOrder] + Environment.NewLine + GetTranslation ("Text_DiamondNeeds") + HeroTable.HeroInfoTable [characterOrder] ["price"].ToString ();
+			} else if (languageManager.currentLanguage == 1) {
+				GameObject.Find ("SuggestPrice").GetComponent<Text> ().text = HeroTable.HeroNameinChinese[characterOrder] + Environment.NewLine + GetTranslation ("Text_DiamondNeeds")  + HeroTable.HeroInfoTable [characterOrder] ["price"].ToString ();
+			}
+
+		} else {
+
+			GameObject.Find ("StartText").GetComponent<Text> ().text = GetTranslation ("Button_Start");
+
+			if (languageManager.currentLanguage == 0) {
+				GameObject.Find ("SuggestPrice").GetComponent<Text> ().text = HeroTable.HeroNameinEnglish[characterOrder] + Environment.NewLine;
+			} else if (languageManager.currentLanguage == 1) {
+				GameObject.Find ("SuggestPrice").GetComponent<Text> ().text = HeroTable.HeroNameinChinese[characterOrder] + Environment.NewLine;
+			}
+		}
+	}
 }
