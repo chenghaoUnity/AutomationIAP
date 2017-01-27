@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour 
 {
-	int m_GoldAmount = 0;
 
 	private bool ifVip = false;
 	private bool ifJump = false;
@@ -42,7 +41,15 @@ public class Inventory : MonoBehaviour
 	public int recovSpeed = 10;
 	public float curHealth;
 
+	//Super Power
+	private bool canReborn = false;
+	public GameObject doubleJumpButton;
+
 	public void Awake() {
+
+		GameObject.Find ("SimpleJoystick").GetComponent<UltimateJoystick> ().customSpacing_X = 50f;
+		GameObject.Find ("SimpleJoystick").GetComponent<UltimateJoystick> ().customSpacing_Y = 16f;
+		doubleJumpButton.SetActive (false);
 
 		ifVip = PlayerPrefs.GetInt ("ifVip") != 0;
 		ifJump = PlayerPrefs.GetInt ("ifJump") != 0;
@@ -59,11 +66,23 @@ public class Inventory : MonoBehaviour
 		characterOrder = PlayerPrefs.GetInt ("CharacterOrder", 0);
 		GameObject.Find ("CharacterBase").GetComponent<SpriteRenderer> ().sprite = sprites [characterOrder];
 
-		maxHealth = HeroTable.HeroInfoTable [characterOrder] ["maxHealth"];
-		recovSpeed = HeroTable.HeroInfoTable [characterOrder] ["recovSpeed"];
-
 		languageManager = FindObjectOfType<LanguageManager> ();
 		languageManager.SetLanguage(PlayerPrefs.GetInt ("LanguagePrefer", 0));
+
+		setUpCharacter (
+			(int)(HeroTable.HeroInfoTable [characterOrder] ["maxHealth"]),
+			(int)(HeroTable.HeroInfoTable [characterOrder] ["recovSpeed"]),
+			(float)(HeroTable.HeroInfoTable [characterOrder] ["moveSpeedTuning"]),
+			(float)(HeroTable.HeroInfoTable [characterOrder] ["jumpForceTuning"])
+		);
+
+		if (characterOrder == 17) {
+			canReborn = true;
+		} else if (characterOrder == 18) {
+			GameObject.Find ("SimpleJoystick").GetComponent<UltimateJoystick> ().customSpacing_X = 14.6f;
+			GameObject.Find ("SimpleJoystick").GetComponent<UltimateJoystick> ().customSpacing_Y = 16f;
+			doubleJumpButton.SetActive (true);
+		}
 	}
 
 	private void updateIAPResult() {
@@ -129,7 +148,7 @@ public class Inventory : MonoBehaviour
 
 	public void AddHealthLimit (int amount)
 	{
-		m_GoldAmount += amount;
+		maxHealth += amount;
 		this.gameObject.GetComponent<UIupdater> ().sync ();
 	}
 
@@ -177,9 +196,8 @@ public class Inventory : MonoBehaviour
 
 	public void onVIP() 
 	{
-		AddHealthLimit (100);
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
-		player.GetComponent<PlatformerCharacter2D> ().AddPower ();
+		// player.GetComponent<PlatformerCharacter2D> ().AddPower ();
 		PlayerPrefs.SetInt ("ifVipSelected", 1);
 		PlayerPrefs.Save ();
 	}
@@ -187,16 +205,15 @@ public class Inventory : MonoBehaviour
 	public void onJump() 
 	{
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
-		player.GetComponent<PlatformerCharacter2D> ().AddPower ();
+		// player.GetComponent<PlatformerCharacter2D> ().AddPower ();
 		PlayerPrefs.SetInt ("ifJumpSelected", 1);
 		PlayerPrefs.Save ();
 	}
 
 	public void onVIPf() 
 	{
-		AddHealthLimit (100);
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
-		player.GetComponent<PlatformerCharacter2D> ().AddPower ();
+		// player.GetComponent<PlatformerCharacter2D> ().AddPower ();
 		PlayerPrefs.SetInt ("ifVipfSelected", 1);
 		PlayerPrefs.Save ();
 	}
@@ -204,7 +221,7 @@ public class Inventory : MonoBehaviour
 	public void onJumpf() 
 	{
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
-		player.GetComponent<PlatformerCharacter2D> ().AddPower ();
+		// player.GetComponent<PlatformerCharacter2D> ().AddPower ();
 		PlayerPrefs.SetInt ("ifJumpfSelected", 1);
 		PlayerPrefs.Save ();
 	}
@@ -276,5 +293,27 @@ public class Inventory : MonoBehaviour
 			ifVipfSelected = obj.GetComponent<Toggle> ().isOn;
 			PlayerPrefs.SetInt ("ifVipfSelected", ifVipfSelected == true ? 1 : 0);
 		}
+	}
+
+	private void setUpCharacter(float maxHealth, int recovSpeed, float moveSpeedTuning = 0, float jumpForceTuning = 0) {
+		this.maxHealth = maxHealth;
+		this.recovSpeed = recovSpeed;
+		if (moveSpeedTuning < -1 || moveSpeedTuning > 1 || jumpForceTuning < -1 || jumpForceTuning > 1) {
+			return;
+		}
+		GameObject.Find ("Human").GetComponent<PlatformerCharacter2D> ().m_MaxSpeed *= (1 + moveSpeedTuning);
+		GameObject.Find ("Human").GetComponent<PlatformerCharacter2D> ().m_JumpForce *= (1 + jumpForceTuning);
+	}
+
+	public bool reborn() {
+		if (canReborn == false) {
+			return false;
+		}
+
+		GameObject.Find ("Human").transform.position = new Vector2 (-10.38f, 170f);
+		curHealth = maxHealth;
+		canReborn = false;
+
+		return true;
 	}
 }

@@ -76,3 +76,4 @@
 /Users/chenghao/AutomationIAP/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/chenghao/AutomationIAP/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/chenghao/AutomationIAP/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEngine.Advertisements.dll

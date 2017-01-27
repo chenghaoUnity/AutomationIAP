@@ -22,9 +22,12 @@ public class EndGame : MonoBehaviour {
 		if (UI != null) {
 			bool death = UI.GetComponent<Inventory> ().ReduceHealth (number);
 			if (death == true) {
-				// what happen while death
-				sentEvent ();
-				UI.GetComponent<UIupdater> ().openWindow ("Death");
+				bool reborn = UI.GetComponent<Inventory> ().reborn ();
+				if (reborn == false) {
+					// what happen while death
+					sentEvent ();
+					UI.GetComponent<UIupdater> ().openWindow ("Death");
+				}
 			}
 		}
 	}
@@ -38,8 +41,12 @@ public class EndGame : MonoBehaviour {
 			}
 
 			if (this.gameObject.name == "Killzone") {
-				sentEvent ();
-				UI.GetComponent<UIupdater> ().openWindow ("Death");
+				bool reborn = UI.GetComponent<Inventory> ().reborn ();
+				if (reborn == false) {
+					// what happen while death
+					sentEvent ();
+					UI.GetComponent<UIupdater> ().openWindow ("Death");
+				}
 			}
 
 		}

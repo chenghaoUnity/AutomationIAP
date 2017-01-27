@@ -123,7 +123,7 @@ public class UIupdater : MonoBehaviour {
 			GameObject.Find ("IAP").GetComponent<Button> ().interactable = false;
 			GameObject.Find ("Back").GetComponent<Button> ().interactable = false;
 
-			int diamond_increase = (int) ((timer * timer) / 700);
+			int diamond_increase = (int) ((timer * timer) / 1400);
 
 			GameObject.Find ("DiamondAddedAmount").GetComponent<Text> ().text = "+ " + diamond_increase.ToString ();
 			PlayerPrefs.SetInt ("Diamond", PlayerPrefs.GetInt ("Diamond", 0) + diamond_increase);

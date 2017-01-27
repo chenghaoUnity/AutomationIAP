@@ -4,193 +4,225 @@ using UnityEngine;
 
 public static class HeroTable  {
 
-	public static Dictionary<int, string> HeroNameinChinese = new Dictionary<int, string>() {
-		// order - > price
-		{0, "弓箭手"},		// Archer
-		{1, "野蛮人"},		// Barbarian
-		{2, "弑龙者"},		// Dragon Slayer
-		{3, "火焰领主"},		// Fire
-		{4, "牧师"},			// Healer
-		{5, "草药师"},		// Harbalist
-		{6, "铁骑士"},		// Knight
-		{7, "御林军"},		// Lancer
-		{8, "圣光骑士"},		// Light
-		{9, "商人"},			// Merchant
-		{10, "忍者"},		// Ninja
-		{11, "猎人"},		// Pet Caller
-		{12, "药剂师"},		// Poisoner
-		{13, "神射手"},		// Ranger
-		{14, "斥候"},		// Scout
-		{15, "阴暗领主"},		// Shadow Keeper
-		{16, "召唤师"},		// Summoner
-		{17, "破晓死神"},		// The Black Harvester
-		{18, "龙战骑士"},		// The Frost Dragon
-		{19, "大灵动家"},		// Water
-	};
-
-	public static Dictionary<int, string> HeroNameinEnglish = new Dictionary<int, string>() {
-		// order - > price
-		{0, "Archer"},			// Archer
-		{1, "Barbarian"},		// Barbarian
-		{2, "Dragon Slayer"},	// Dragon Slayer
-		{3, "Fire"},			// Fire
-		{4, "Healer"},			// Healer
-		{5, "Harbalist"},		// Harbalist
-		{6, "Knight"},			// Knight
-		{7, "Lancer"},			// Lancer
-		{8, "Light"},			// Light
-		{9, "Merchant"},		// Merchant
-		{10, "Ninja"},			// Ninja
-		{11, "Pet Caller"},		// Pet Caller
-		{12, "Poisoner"},		// Poisoner
-		{13, "Ranger"},			// Ranger
-		{14, "Scout"},			// Scout
-		{15, "Shadow Keeper"},	// Shadow Keeper
-		{16, "Summoner"},		// Summoner
-		{17, "The Black Harvester"},	// The Black Harvester
-		{18, "The Frost Dragon"},		// The Frost Dragon
-		{19, "Water"},			// Water
-	};
-
-	public static Dictionary<int, Dictionary<string, int>> HeroInfoTable = new Dictionary<int, Dictionary<string, int>>() {
+	public static Dictionary<int, Dictionary<string, object>> HeroInfoTable = new Dictionary<int, Dictionary<string, object>>() {
 		{0, 
-			new Dictionary<string, int>() {
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName0"},		//弓箭手
+				{"introduction", "Text_Hero0"},
 				{"price", 0},
 				{"maxHealth", 100},
-				{"recovSpeed", 10},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", 0f},
+				{"jumpForceTuning", 0f}, 	// 0 / 0 = 1
 			}
 		},
 		{1, 
-			new Dictionary<string, int>() {
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName1"},		//野蛮人
+				{"introduction", "Text_Hero1"},
 				{"price", 10},
-				{"maxHealth", 100},
-				{"recovSpeed", 9},
+				{"maxHealth", 250},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", -0.1f},
+				{"jumpForceTuning", -0.1f},		// 2 / 2 = 1
 			}
 		},
 		{2, 
-			new Dictionary<string, int>() {
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName2"},		//弑龙者
+				{"introduction", "Text_Hero2"},
 				{"price", 10},
 				{"maxHealth", 100},
-				{"recovSpeed", 9},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", -0.1f},
+				{"jumpForceTuning", +0.1f},		//1 / 1 = 1
 			}
 		},
 		{3, 
-			new Dictionary<string, int>() {
-				{"price", 10},
-				{"maxHealth", 100},
-				{"recovSpeed", 9},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName3"},		//火焰领主
+				{"introduction", "Text_Hero3"},
+				{"price", 20},
+				{"maxHealth", 250},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", -0.05f},
+				{"jumpForceTuning", -0.05f},		//2 / 1 = 2
 			}
 		},
 		{4, 
-			new Dictionary<string, int>() {
-				{"price", 10},
-				{"maxHealth", 100},
-				{"recovSpeed", 9},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName4"},		//牧师
+				{"introduction", "Text_Hero4"},
+				{"price", 20},
+				{"maxHealth", 150},
+				{"recovSpeed", 20},
+				{"moveSpeedTuning", 0f},
+				{"jumpForceTuning", 0f},		//2 / 0 = 2+
 			}
 		},
 		{5, 
-			new Dictionary<string, int>() {
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName5"},		//草药师
+				{"introduction", "Text_Hero5"},
 				{"price", 20},
-				{"maxHealth", 200},
-				{"recovSpeed", 9},
+				{"maxHealth", 150},
+				{"recovSpeed", 15},
+				{"moveSpeedTuning", -0.1f},
+				{"jumpForceTuning", -0.05f},		//3 / 1.5 = 2
 			}
 		},
 		{6, 
-			new Dictionary<string, int>() {
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName6"},		//铁骑士
+				{"introduction", "Text_Hero6"},
 				{"price", 20},
-				{"maxHealth", 200},
-				{"recovSpeed", 9},
+				{"maxHealth", 350},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", -0.05f},
+				{"jumpForceTuning", -0.1f},		//3 / 1.5 = 2
 			}
 		},
 		{7, 
-			new Dictionary<string, int>() {
-				{"price", 30},
-				{"maxHealth", 200},
-				{"recovSpeed", 8},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName7"},		//御林军
+				{"introduction", "Text_Hero7"},
+				{"price", 40},
+				{"maxHealth", 250},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", 0},
+				{"jumpForceTuning", +0.1f},			//3 / 0 = 3+
 			}
 		},
 		{8, 
-			new Dictionary<string, int>() {
-				{"price", 30},
-				{"maxHealth", 200},
-				{"recovSpeed", 8},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName8"},		//圣光骑士
+				{"introduction", "Text_Hero8"},
+				{"price", 40},
+				{"maxHealth", 250},
+				{"recovSpeed", 10},
+				{"moveSpeedTuning", -0.05f},
+				{"jumpForceTuning", -0.1f},		//4 / 1.5 ~ 2.7
 			}
 		},
 		{9, 
-			new Dictionary<string, int>() {
-				{"price", 30},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName9"},		//商人
+				{"introduction", "Text_Hero9"},
+				{"price", 40},
 				{"maxHealth", 200},
-				{"recovSpeed", 8},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", +0.1f},
+				{"jumpForceTuning", +0.1f},		//3 / 0 = 3+
 			}
 		},
 		{10, 
-			new Dictionary<string, int>() {
-				{"price", 50},
-				{"maxHealth", 300},
-				{"recovSpeed", 8},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName10"},	//忍者
+				{"introduction", "Text_Hero10"},
+				{"price", 60},
+				{"maxHealth", 100},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", +0.25f},
+				{"jumpForceTuning", +0.25f},		//5 / 0 = 5+
 			}
 		},
 		{11, 
-			new Dictionary<string, int>() {
-				{"price", 50},
-				{"maxHealth", 300},
-				{"recovSpeed", 8},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName11"},	//猎人
+				{"introduction", "Text_Hero11"},
+				{"price", 60},
+				{"maxHealth", 200},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", +0.15f},
+				{"jumpForceTuning", +0.15f},		//4 / 0 = 4+
 			}
 		},
 		{12, 
-			new Dictionary<string, int>() {
-				{"price", 50},
-				{"maxHealth", 300},
-				{"recovSpeed", 8},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName12"},	//药剂师
+				{"introduction", "Text_Hero12"},
+				{"price", 60},
+				{"maxHealth", 200},
+				{"recovSpeed", 5},
+				{"moveSpeedTuning", 0},
+				{"jumpForceTuning", 0},			//4 / 0 = 4+
 			}
 		},
 		{13, 
-			new Dictionary<string, int>() {
-				{"price", 50},
-				{"maxHealth", 300},
-				{"recovSpeed", 8},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName13"},	//神射手
+				{"introduction", "Text_Hero13"},
+				{"price", 60},
+				{"maxHealth", 250},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", 0.2f},
+				{"jumpForceTuning", 0},		//4 / 0 = 4+
 			}
 		},
 		{14, 
-			new Dictionary<string, int>() {
-				{"price", 50},
-				{"maxHealth", 300},
-				{"recovSpeed", 8},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName14"},	//斥候
+				{"introduction", "Text_Hero14"},
+				{"price", 60},
+				{"maxHealth", 250},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", 0f},
+				{"jumpForceTuning", 0.2f},			//4 / 0 = 4+
 			}
 		},
 		{15, 
-			new Dictionary<string, int>() {
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName15"},	//阴暗领主
+				{"introduction", "Text_Hero15"},
 				{"price", 80},
-				{"maxHealth", 300},
-				{"recovSpeed", 7},
+				{"maxHealth", 350},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", 0.1f},
+				{"jumpForceTuning", 0.2f},		//6 / 0 = 6+
 			}
 		},
 		{16, 
-			new Dictionary<string, int>() {
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName16"},	//召唤师
+				{"introduction", "Text_Hero16"},
 				{"price", 80},
-				{"maxHealth", 300},
-				{"recovSpeed", 7},
+				{"maxHealth", 250},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", +0.1f},
+				{"jumpForceTuning", +0.3f},		//6 / 0 = 6+
 			}
 		},
 		{17, 
-			new Dictionary<string, int>() {
-				{"price", 120},
+			new Dictionary<string, object> {
+				{"name", "Text_HeroName17"},	//破晓死神
+				{"introduction", "Text_Hero17"},
+				{"price", 150},
 				{"maxHealth", 500},
-				{"recovSpeed", 5},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", 0.1f},
+				{"jumpForceTuning", 0.1f},
 			}
 		},
 		{18, 
-			new Dictionary<string, int>() {
-				{"price", 120},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName18"},	//龙战骑士
+				{"introduction", "Text_Hero18"},
+				{"price", 150},
 				{"maxHealth", 500},
-				{"recovSpeed", 5},
+				{"recovSpeed", int.MaxValue},
+				{"moveSpeedTuning", 0.1f},
+				{"jumpForceTuning", 0.1f},
 			}
 		},
 		{19, 
-			new Dictionary<string, int>() {
-				{"price", 120},
-				{"maxHealth", 500},
-				{"recovSpeed", 5},
+			new Dictionary<string, object>() {
+				{"name", "Text_HeroName19"},	//大灵动家
+				{"introduction", "Text_Hero19"},
+				{"price", 150},
+				{"maxHealth", 200},
+				{"recovSpeed", 1},
+				{"moveSpeedTuning", 0.1f},
+				{"jumpForceTuning", 0.1f},
 			}
 		},
 	};

@@ -25,7 +25,7 @@ public class FloorMoving : MonoBehaviour {
 				newX = this.gameObject.transform.position.x + Random.Range (-1.1f, 1.1f);
 			}
 
-			this.gameObject.transform.position = new Vector3 (newX, 85f, this.gameObject.transform.position.z);
+			this.gameObject.transform.position = new Vector3 (newX, 170f, this.gameObject.transform.position.z);
 
 			if (this.gameObject.GetComponentInChildren<TripRandomer> () as TripRandomer != null) {
 				this.gameObject.GetComponentInChildren<TripRandomer> ().random ();

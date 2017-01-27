@@ -81,3 +81,4 @@
 /Users/chenghao/AutomationIAP/Temp/bin/Debug/Mono.Cecil.Mdb.dll
 /Users/chenghao/AutomationIAP/Temp/bin/Debug/Assembly-CSharp.dll.mdb
 /Users/chenghao/AutomationIAP/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEngine.Advertisements.dll
