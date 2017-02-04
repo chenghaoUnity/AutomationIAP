@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: 32622f57758e948c989e16d813da9a3d
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Brech.walk01
+    21300002: Brech.walk02
+    21300004: Brech.walk03
+    21300006: Brech.walk04
+    21300008: Brech.walk05
+    21300010: babyBrech.stand01
+    21300012: babyBrech.stand02
+    21300014: babyBrech.stand03
+    21300016: babyBrech.stand04
+    21300018: babyBrech.stand05
+    21300020: babyBrech.stand06
+    21300022: babyBrech.stand07
+    21300024: babyBrech.stand08
+    21300026: babyBrech.stand09
+    21300028: babyBrech.stand10
+    21300030: babyBrech.stand11
+    21300032: babyBrech.stand12
+    21300034: babyBrech.stand13
+    21300036: babyBrech.stand14
+    21300038: babyBrech.stand15
+    21300040: babyBrech.stand16
+    21300042: babyBrech.walk01
+    21300044: babyBrech.walk02
+    21300046: babyBrech.walk03
+    21300048: babyBrech.walk04
+    21300050: babyBrech.walk05
+    21300052: wildboard.walk01
+    21300054: wildboard.walk02
+    21300056: wildboard.walk03
+    21300058: wildboard.walk04
+    21300060: wildboard.walk05
+    21300062: bird.stand
+    21300064: bird.peck
+    21300066: bird.fly01
+    21300068: bird.fly02
+    21300070: bird.jump01
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

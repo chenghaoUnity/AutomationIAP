@@ -13,6 +13,7 @@ public class UIupdater : MonoBehaviour {
 	public GameObject exitUI;
 	public GameObject IAPUI;
 	public GameObject deathUI;
+	public GameObject winUI;
 
 	public GameObject vistualController;
 
@@ -20,8 +21,13 @@ public class UIupdater : MonoBehaviour {
 	public float timer = 0;
 
 	// Use this for initialization
-	void Start () {
-		
+	public void Awake () {
+
+		if (PlayerPrefs.GetInt ("GameMode", 0) == 1) {
+			Time.timeScale = 0f;
+			return;
+		}
+
 		if (heathBar == null) 
 		{
 			heathBar = GameObject.Find ("HealthBar");
@@ -52,6 +58,10 @@ public class UIupdater : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
+
+		if (PlayerPrefs.GetInt ("GameMode", 0) == 1) {
+			return;
+		}
 
 		// Add gold to user per second
 		timer = timer + Time.deltaTime;
@@ -123,11 +133,43 @@ public class UIupdater : MonoBehaviour {
 			GameObject.Find ("IAP").GetComponent<Button> ().interactable = false;
 			GameObject.Find ("Back").GetComponent<Button> ().interactable = false;
 
-			int diamond_increase = (int) ((timer * timer) / 1400);
+			int diamond_increase = 0;
 
-			GameObject.Find ("DiamondAddedAmount").GetComponent<Text> ().text = "+ " + diamond_increase.ToString ();
-			PlayerPrefs.SetInt ("Diamond", PlayerPrefs.GetInt ("Diamond", 0) + diamond_increase);
+			// SinglePlayer
+			if (SceneManagerHelper.ActiveSceneBuildIndex == 2) {
+				diamond_increase = (int) ((timer * timer) / 1400);
+				GameObject.Find ("DiamondAddedAmount").GetComponent<Text> ().text = "+ " + diamond_increase.ToString ();
+				PlayerPrefs.SetInt ("Diamond", PlayerPrefs.GetInt ("Diamond", 0) + diamond_increase);
+			}
+				
+			// MultiPlayer - lose
+			if (SceneManagerHelper.ActiveSceneBuildIndex == 3) {
+				diamond_increase = (int)20;
+				GameObject.Find ("DiamondAddedAmount").GetComponent<Text> ().text = "- " + diamond_increase.ToString ();
+				PlayerPrefs.SetInt ("Diamond", PlayerPrefs.GetInt ("Diamond", 0) - diamond_increase);
+			}
 
+
+			Time.timeScale = 0f;
+		}
+
+		if (name == "Win") {
+
+			winUI.SetActive (true);
+			exitUI.SetActive (false);
+			IAPUI.SetActive (false);
+
+			GameObject.Find ("IAP").GetComponent<Button> ().interactable = false;
+			GameObject.Find ("Back").GetComponent<Button> ().interactable = false;
+
+			int diamond_increase = 0;
+
+			// MultiPlayer - win
+			if (SceneManagerHelper.ActiveSceneBuildIndex == 3) {
+				diamond_increase = (int)30;
+				GameObject.Find ("DiamondAddedAmount").GetComponent<Text> ().text = "+ " + diamond_increase.ToString ();
+				PlayerPrefs.SetInt ("Diamond", PlayerPrefs.GetInt ("Diamond", 0) + diamond_increase);
+			}
 			Time.timeScale = 0f;
 		}
 	}
@@ -140,13 +182,22 @@ public class UIupdater : MonoBehaviour {
 	}
 
 	public void backToMenu() {
+		PhotonNetwork.Disconnect ();
 		Time.timeScale = 1f;
 		SceneManager.LoadScene(1);
 	}
 		
 	public void restart() {
+
+		if (SceneManager.GetActiveScene ().buildIndex == 2) {
+			PlayerPrefs.SetInt ("GameMode", 0);
+		} else if (SceneManager.GetActiveScene ().buildIndex == 3) {
+			PlayerPrefs.SetInt ("GameMode", 1);
+		}
+
+		PhotonNetwork.Disconnect ();
 		Time.timeScale = 1f;
-		SceneManager.LoadScene(2);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
 	private void attentionBarVanish() {

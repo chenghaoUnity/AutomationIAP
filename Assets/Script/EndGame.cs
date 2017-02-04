@@ -27,6 +27,7 @@ public class EndGame : MonoBehaviour {
 					// what happen while death
 					sentEvent ();
 					UI.GetComponent<UIupdater> ().openWindow ("Death");
+					PhotonNetwork.Disconnect ();
 				}
 			}
 		}
@@ -46,6 +47,7 @@ public class EndGame : MonoBehaviour {
 					// what happen while death
 					sentEvent ();
 					UI.GetComponent<UIupdater> ().openWindow ("Death");
+					PhotonNetwork.Disconnect ();
 				}
 			}
 

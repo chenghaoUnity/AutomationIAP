@@ -1,7 +1,70 @@
 fileFormatVersion: 2
 guid: 56371e9fe54b43d458014e66d893479c
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: building.wall.left01.top
+    21300002: building.wall.left02.top
+    21300004: building.wall.mid.top
+    21300006: building.wall.right02.top
+    21300008: building.wall.right01.top
+    21300010: building.columnBase
+    21300012: building.close.door
+    21300014: building.regular.wall01
+    21300016: building.regular.wall02
+    21300018: building.column05
+    21300020: building.wall.left01.bot
+    21300022: building.wall.left02.bot
+    21300024: building.wall.mid.bot
+    21300026: building.wall.right02.bot
+    21300028: building.wall.right01.bot
+    21300030: building.column04
+    21300032: building.dirtTrail01
+    21300034: building.dirtTrail02
+    21300036: building.dirtTrail03
+    21300038: building.smallPillar06
+    21300040: building.antenna02
+    21300042: building.column03
+    21300044: building.opening
+    21300046: building.column02
+    21300048: building.ornament01
+    21300050: building.woodBox.01
+    21300052: building.woodBox.02
+    21300054: building.banner.full
+    21300056: building.banner.part01
+    21300058: building.banner.part03
+    21300060: building.pillar
+    21300062: building.column01
+    21300064: building.ornament02
+    21300066: building.antenna01
+    21300068: pike.medium
+    21300070: bones.alienSkull
+    21300072: bones.humanSkull
+    21300074: building.banner.part02
+    21300076: Switch.unengaged
+    21300078: switch.engaged
+    21300080: switch.activated
+    21300082: building.banner.part04
+    21300084: building.smallPillar05
+    21300086: building.roof.left
+    21300088: building.roof.mid
+    21300090: building.roof.right
+    21300092: building.smallPillar01
+    21300094: building.smallPillar02
+    21300096: building.ornament04
+    21300098: building.stairs.left
+    21300100: building.stairs.mid
+    21300102: building.stairs.right
+    21300104: building.basePillar
+    21300106: building.smallPillar03
+    21300108: building.smallPillar04
+    21300110: pike.small
+    21300112: bloodTrail
+    21300114: bones.ribbing
+    21300116: bones.knee
+    21300118: bones.fibula
+    21300120: bones.shin
+    21300122: building.ornament03
+    21300124: pike.tall
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0

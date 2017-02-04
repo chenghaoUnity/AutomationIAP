@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class TripRandomer : MonoBehaviour {
 
-	void Start () {
+	void Awake () {
+		
 		if (this.gameObject.name == "spikes-md") {
 			random ();
 		}	

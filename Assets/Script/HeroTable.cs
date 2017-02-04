@@ -89,7 +89,7 @@ public static class HeroTable  {
 				{"price", 40},
 				{"maxHealth", 250},
 				{"recovSpeed", int.MaxValue},
-				{"moveSpeedTuning", 0},
+				{"moveSpeedTuning", 0.0f},
 				{"jumpForceTuning", +0.1f},			//3 / 0 = 3+
 			}
 		},
@@ -144,8 +144,8 @@ public static class HeroTable  {
 				{"price", 60},
 				{"maxHealth", 200},
 				{"recovSpeed", 5},
-				{"moveSpeedTuning", 0},
-				{"jumpForceTuning", 0},			//4 / 0 = 4+
+				{"moveSpeedTuning", 0.0f},
+				{"jumpForceTuning", 0.0f},			//4 / 0 = 4+
 			}
 		},
 		{13, 
@@ -156,7 +156,7 @@ public static class HeroTable  {
 				{"maxHealth", 250},
 				{"recovSpeed", int.MaxValue},
 				{"moveSpeedTuning", 0.2f},
-				{"jumpForceTuning", 0},		//4 / 0 = 4+
+				{"jumpForceTuning", 0.0f},		//4 / 0 = 4+
 			}
 		},
 		{14, 

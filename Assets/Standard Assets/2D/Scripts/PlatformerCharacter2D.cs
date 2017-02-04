@@ -51,6 +51,10 @@ namespace UnityStandardAssets._2D
 
         public void Move(float move, bool crouch, bool jump)
         {
+			if (this.gameObject.tag != "Player") {
+				return;
+			}
+
             //only control the player if grounded or airControl is turned on
             if (m_Grounded || m_AirControl)
             {

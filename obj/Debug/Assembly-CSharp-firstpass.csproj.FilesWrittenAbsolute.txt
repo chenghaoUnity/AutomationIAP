@@ -77,3 +77,5 @@
 /Users/chenghao/AutomationIAP/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/chenghao/AutomationIAP/Temp/bin/Debug/Mono.Cecil.Mdb.dll
 /Users/chenghao/AutomationIAP/Temp/bin/Debug/UnityEngine.Advertisements.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/Photon3Unity3D.dll
+/Users/chenghao/AutomationIAP/Temp/bin/Debug/websocket-sharp.dll

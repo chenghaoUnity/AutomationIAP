@@ -7,7 +7,8 @@
     <Button_Exit>Do you want to close the game?</Button_Exit>
     <Button_Yes>Yes</Button_Yes>
     <Button_Buy>Buy</Button_Buy>
-    <Button_Start>Start</Button_Start>
+    <Button_Start>Start Singleplayer</Button_Start>
+    <Button_StartMP>Start Multiplayer</Button_StartMP>
     <Button_Replay>Restart</Button_Replay>
     <Button_Control_Vistual>Vistual</Button_Control_Vistual>
     <Button_Control_Gravity>Gravity</Button_Control_Gravity>
@@ -27,6 +28,12 @@
     <Text_AlreadyOwnedCharacter>You already own this character...</Text_AlreadyOwnedCharacter>
     <Text_BackToMenu>Do you want to back to menu?</Text_BackToMenu>
     <Text_Death>You died...</Text_Death>
+    <Text_SwitchMode>Click Here to Switch Mode</Text_SwitchMode>
+    <Text_YouWin>You Win!</Text_YouWin>
+    <Text_YouLose>You Lose!</Text_YouLose>
+    <Text_Back>Back Menu</Text_Back>
+    <Text_Loading>Connecting with server...</Text_Loading>
+    <Text_Finding>Finding opponents...</Text_Finding>
     <Text_IAP_01>Buy Super Jump</Text_IAP_01>
     <Text_IAP_02>Buy 50 Diamond</Text_IAP_02>
     <Text_IAP_03>Buy VIP</Text_IAP_03>
@@ -78,7 +85,8 @@
     <Button_Buy>购买</Button_Buy>
     <Button_Exit>你想要退出游戏吗？</Button_Exit>
     <Button_Yes>好</Button_Yes>
-    <Button_Start>开始</Button_Start>
+    <Button_Start>开始单人游戏</Button_Start>
+    <Button_StartMP>开始多人游戏</Button_StartMP>
     <Button_Replay>重新开始</Button_Replay>
     <Button_Control_Vistual>虚拟键盘</Button_Control_Vistual>
     <Button_Control_Gravity>重力感应</Button_Control_Gravity>
@@ -98,6 +106,12 @@
     <Text_AlreadyOwnedCharacter>你已经拥有了这个角色...</Text_AlreadyOwnedCharacter>
     <Text_BackToMenu>你想要返回主菜单吗?</Text_BackToMenu>
     <Text_Death>你死了...</Text_Death>
+    <Text_SwitchMode>点击此处更换游戏模式</Text_SwitchMode>
+    <Text_YouWin>你赢了!</Text_YouWin>
+    <Text_Back>返回主页</Text_Back>
+    <Text_YouLose>你输了...</Text_YouLose>
+    <Text_Loading>正在连接服务器...</Text_Loading>
+    <Text_Finding>正在寻找对手...</Text_Finding>
     <Text_IAP_01>购买超级跳跃</Text_IAP_01>
     <Text_IAP_02>购买50颗钻石</Text_IAP_02>
     <Text_IAP_03>加入VIP</Text_IAP_03>

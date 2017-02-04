@@ -54,6 +54,7 @@
      <Compile Include="Assets\Plugins\UnityPurchasing\script\IAPDemo.cs" />
      <Compile Include="Assets\Plugins\UnityPurchasing\script\PurchasingCheck.cs" />
      <Compile Include="Assets\Plugins\UnityPurchasing\script\UnibillDemo.cs" />
+     <Compile Include="Assets\Plugins\WebSocket\WebSocket.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
@@ -98,22 +99,32 @@
      <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\firebase-common-10.0.1\AndroidManifest.xml" />
      <None Include="Assets\3rdParty\Ultimate Joystick Examples\Third Person Example\README_ThirdPerson.txt" />
+     <None Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\marcopolo-readme.txt" />
+     <None Include="Assets\Photon Unity Networking\link.xml" />
+     <None Include="Assets\3rdParty\SwipeManager\Readme.txt" />
      <None Include="Assets\Resources\Languages.xml" />
      <None Include="Assets\Plugins\Ultimate Joystick\README.txt" />
      <None Include="Assets\3rdParty\Bleed\HowToUse.txt" />
+     <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
+     <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\Plugins\UnityPurchasing\Resources\expectResult.txt" />
      <None Include="Assets\3rdParty\RainMaker\Prefab\RainShader.shader" />
      <None Include="Assets\Plugins\Android\firebase-common-10.0.1\proguard.txt" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\3rdParty\Bleed\ImageBlendEffect.shader" />
+     <None Include="Assets\Photon Unity Networking\Demos\DemoBoxes\Resources\eurof_tt.txt" />
      <None Include="Assets\3rdParty\Ultimate Joystick Examples\Spaceship Example\README_Spaceship.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Firebase\Plugins\link.xml" />
+     <None Include="Assets\Photon Unity Networking\Demos\DemoPickup\Assets\3dFont\3dText.shader" />
      <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver.txt" />
+     <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\Plugins\Android\Firebase\res\values\google-services.xml" />
      <None Include="Assets\3rdParty\RainMaker\Readme.txt" />
+     <None Include="Assets\Photon Unity Networking\Demos\DemoRockPaperScissors\Assets\OpenSans\Apache License.txt" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
+     <None Include="Assets\Photon Unity Networking\changelog.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity 5.5.0f3/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -159,6 +170,9 @@
  <Reference Include="Unity.Tasks">
  <HintPath>/Users/chenghao/AutomationIAP/Assets/Firebase/Plugins/Unity.Tasks.dll</HintPath>
  </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ </Reference>
  <Reference Include="Common">
  <HintPath>/Users/chenghao/AutomationIAP/Assets/Plugins/UnityPurchasing/Bin/Common.dll</HintPath>
  </Reference>
@@ -179,6 +193,9 @@
  </Reference>
  <Reference Include="winrt">
  <HintPath>/Users/chenghao/AutomationIAP/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>/Users/chenghao/AutomationIAP/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

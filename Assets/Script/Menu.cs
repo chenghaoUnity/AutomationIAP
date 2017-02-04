@@ -54,8 +54,9 @@ public class Menu : MonoBehaviour {
 	private LanguageManager languageManager;
 	private XmlDocument xmlDocument;
 
+	public int multiplayer;
+	private bool canSwitch;
 
-		
 	void Awake () {
 		Application.targetFrameRate = 30;
 
@@ -86,6 +87,9 @@ public class Menu : MonoBehaviour {
 		languageManager = FindObjectOfType<LanguageManager> ();
 		languageManager.SetLanguage(PlayerPrefs.GetInt ("LanguagePrefer", 0));
 		xmlDocument = XmlReader.LoadXmlDocument();
+
+		multiplayer = PlayerPrefs.GetInt ("GameMode", 0);
+		canSwitch = true;
 	}
 
 	void Start () {
@@ -129,7 +133,19 @@ public class Menu : MonoBehaviour {
 		}
 
 		if (GameObject.Find ("Human").transform.position.y < -5.6f) {
-			SceneManager.LoadScene (2);
+			if (PlayerPrefs.GetInt ("GameMode", 0) == 0) {
+				SceneManager.LoadScene (2);
+			} else {
+				SceneManager.LoadScene (3);
+			}
+		}
+
+		if (canSwitch && (SwipeManager.GetSwipe (SwipeManager.SwipeList.Left) || SwipeManager.GetSwipe (SwipeManager.SwipeList.DownLeft) || SwipeManager.GetSwipe (SwipeManager.SwipeList.UpLeft))) {
+			switchCharacter (true);
+		}
+
+		if (canSwitch && (SwipeManager.GetSwipe (SwipeManager.SwipeList.Right) || SwipeManager.GetSwipe(SwipeManager.SwipeList.DownRight) || SwipeManager.GetSwipe(SwipeManager.SwipeList.UpRight))) {
+			switchCharacter (false);
 		}
 
 	}
@@ -142,12 +158,12 @@ public class Menu : MonoBehaviour {
 			openBuySkinWindow();
 			return;
 		}
-			
+
+		canSwitch = false;
 		Destroy (brick);
 		Destroy (botton);
 
-		GameObject.Find ("SwtichCharacterLeft").SetActive (false);
-		GameObject.Find ("SwtichCharacterRight").SetActive (false);
+		GameObject.Find ("SwtichMode").SetActive (false);
 
 		PlayerPrefs.SetInt ("CharacterOrder", characterOrder);
 		PlayerPrefs.Save ();
@@ -310,26 +326,26 @@ public class Menu : MonoBehaviour {
 	public void switchCharacter(bool right) {
 
 		if (right == true) {
-			if (characterOrder != 19) {
-				GameObject.Find ("SwtichCharacterRight").GetComponent<Button> ().interactable = true;
-				GameObject.Find ("SwtichCharacterLeft").GetComponent<Button> ().interactable = true;
-
+			if (characterOrder < 19) {
 				characterOrder++;
-			} else {
-				GameObject.Find ("SwtichCharacterRight").GetComponent<Button> ().interactable = false;
 			}
 		} else {
-			if (characterOrder != 0) {
-				GameObject.Find ("SwtichCharacterRight").GetComponent<Button> ().interactable = true;
-				GameObject.Find ("SwtichCharacterLeft").GetComponent<Button> ().interactable = true;
-
+			if (characterOrder > 0) {
 				characterOrder--;
-			} else {
-				GameObject.Find ("SwtichCharacterLeft").GetComponent<Button> ().interactable = false;
 			}
 		}
 
 		GameObject.Find ("CharacterBase").GetComponent<SpriteRenderer> ().sprite = sprites [characterOrder];
+
+		updateUI ();
+	}
+
+	public void switchMode() {
+		if (PlayerPrefs.GetInt ("GameMode", 0) == 0) {
+			PlayerPrefs.SetInt ("GameMode", 1);
+		} else {
+			PlayerPrefs.SetInt ("GameMode", 0);
+		}
 
 		updateUI ();
 	}
@@ -439,7 +455,12 @@ public class Menu : MonoBehaviour {
 
 		} else {
 
-			GameObject.Find ("StartText").GetComponent<Text> ().text = GetTranslation ("Button_Start");
+			if (PlayerPrefs.GetInt ("GameMode", 0) == 0) {
+				GameObject.Find ("StartText").GetComponent<Text> ().text = GetTranslation ("Button_Start");
+			} else {
+				GameObject.Find("StartText").GetComponent<Text>().text = GetTranslation ("Button_StartMP");
+			}
+
 
 			GameObject.Find ("SuggestPrice").GetComponent<Text> ().text = 
 				GetTranslation (HeroTable.HeroInfoTable [characterOrder] ["name"].ToString ()) + Environment.NewLine;

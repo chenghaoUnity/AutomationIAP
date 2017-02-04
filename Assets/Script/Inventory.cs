@@ -47,6 +47,10 @@ public class Inventory : MonoBehaviour
 
 	public void Awake() {
 
+		if (PlayerPrefs.GetInt ("GameMode", 0) == 1) {
+			return;
+		}
+
 		GameObject.Find ("SimpleJoystick").GetComponent<UltimateJoystick> ().customSpacing_X = 50f;
 		GameObject.Find ("SimpleJoystick").GetComponent<UltimateJoystick> ().customSpacing_Y = 16f;
 		doubleJumpButton.SetActive (false);
@@ -64,10 +68,12 @@ public class Inventory : MonoBehaviour
 		Application.targetFrameRate = 30;
 
 		characterOrder = PlayerPrefs.GetInt ("CharacterOrder", 0);
-		GameObject.Find ("CharacterBase").GetComponent<SpriteRenderer> ().sprite = sprites [characterOrder];
+
 
 		languageManager = FindObjectOfType<LanguageManager> ();
 		languageManager.SetLanguage(PlayerPrefs.GetInt ("LanguagePrefer", 0));
+
+		GameObject.Find ("CharacterBase").GetComponent<SpriteRenderer> ().sprite = sprites [characterOrder];
 
 		setUpCharacter (
 			(int)(HeroTable.HeroInfoTable [characterOrder] ["maxHealth"]),
@@ -76,6 +82,7 @@ public class Inventory : MonoBehaviour
 			(float)(HeroTable.HeroInfoTable [characterOrder] ["jumpForceTuning"])
 		);
 
+
 		if (characterOrder == 17) {
 			canReborn = true;
 		} else if (characterOrder == 18) {
@@ -83,6 +90,13 @@ public class Inventory : MonoBehaviour
 			GameObject.Find ("SimpleJoystick").GetComponent<UltimateJoystick> ().customSpacing_Y = 16f;
 			doubleJumpButton.SetActive (true);
 		}
+
+		if (PlayerPrefs.GetInt ("GameMode", 0) == 1) {
+			return;
+		}
+
+		updateIAPResult ();
+		curHealth = maxHealth;
 	}
 
 	private void updateIAPResult() {
@@ -128,11 +142,16 @@ public class Inventory : MonoBehaviour
 	}
 
 	void Start() {
-		updateIAPResult ();
-		curHealth = maxHealth;
+		
+
 	}
 
 	public void Update() {
+		
+		if (PlayerPrefs.GetInt ("GameMode", 0) == 1) {
+			return;
+		}
+
 		// Zoom in animation
 		if (zoomInTimer <= 1) {
 			zoomInTimer += Time.deltaTime * 0.7f;
@@ -301,8 +320,13 @@ public class Inventory : MonoBehaviour
 		if (moveSpeedTuning < -1 || moveSpeedTuning > 1 || jumpForceTuning < -1 || jumpForceTuning > 1) {
 			return;
 		}
-		GameObject.Find ("Human").GetComponent<PlatformerCharacter2D> ().m_MaxSpeed *= (1 + moveSpeedTuning);
-		GameObject.Find ("Human").GetComponent<PlatformerCharacter2D> ().m_JumpForce *= (1 + jumpForceTuning);
+		if (SceneManagerHelper.ActiveSceneBuildIndex == 2) {
+			GameObject.Find ("Human").GetComponent<PlatformerCharacter2D> ().m_MaxSpeed *= (1 + moveSpeedTuning);
+			GameObject.Find ("Human").GetComponent<PlatformerCharacter2D> ().m_JumpForce *= (1 + jumpForceTuning);
+		} else if (SceneManagerHelper.ActiveSceneBuildIndex == 3) {
+			GameObject.Find ("Human(Clone)").GetComponent<PlatformerCharacter2D> ().m_MaxSpeed *= (1 + moveSpeedTuning);
+			GameObject.Find ("Human(Clone)").GetComponent<PlatformerCharacter2D> ().m_JumpForce *= (1 + jumpForceTuning);
+		}
 	}
 
 	public bool reborn() {
