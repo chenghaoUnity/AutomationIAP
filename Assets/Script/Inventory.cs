@@ -73,7 +73,7 @@ public class Inventory : MonoBehaviour
 		languageManager = FindObjectOfType<LanguageManager> ();
 		languageManager.SetLanguage(PlayerPrefs.GetInt ("LanguagePrefer", 0));
 
-		GameObject.Find ("CharacterBase").GetComponent<SpriteRenderer> ().sprite = sprites [characterOrder];
+		GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<SpriteRenderer> ().sprite = sprites [characterOrder];
 
 		setUpCharacter (
 			(int)(HeroTable.HeroInfoTable [characterOrder] ["maxHealth"]),
@@ -320,13 +320,8 @@ public class Inventory : MonoBehaviour
 		if (moveSpeedTuning < -1 || moveSpeedTuning > 1 || jumpForceTuning < -1 || jumpForceTuning > 1) {
 			return;
 		}
-		if (SceneManagerHelper.ActiveSceneBuildIndex == 2) {
-			GameObject.Find ("Human").GetComponent<PlatformerCharacter2D> ().m_MaxSpeed *= (1 + moveSpeedTuning);
-			GameObject.Find ("Human").GetComponent<PlatformerCharacter2D> ().m_JumpForce *= (1 + jumpForceTuning);
-		} else if (SceneManagerHelper.ActiveSceneBuildIndex == 3) {
-			GameObject.Find ("Human(Clone)").GetComponent<PlatformerCharacter2D> ().m_MaxSpeed *= (1 + moveSpeedTuning);
-			GameObject.Find ("Human(Clone)").GetComponent<PlatformerCharacter2D> ().m_JumpForce *= (1 + jumpForceTuning);
-		}
+		GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerCharacter2D> ().m_MaxSpeed *= (1 + moveSpeedTuning);
+		GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerCharacter2D> ().m_JumpForce *= (1 + jumpForceTuning);
 	}
 
 	public bool reborn() {

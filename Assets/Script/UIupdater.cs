@@ -72,6 +72,7 @@ public class UIupdater : MonoBehaviour {
 		sync ();
 		syncWithTimer (timer);
 		attentionBarVanish ();
+		DrawLineWithOppo ();
 	}
 
 	public void sync() {
@@ -144,9 +145,11 @@ public class UIupdater : MonoBehaviour {
 				
 			// MultiPlayer - lose
 			if (SceneManagerHelper.ActiveSceneBuildIndex == 3) {
-				diamond_increase = (int)20;
+				PhotonNetwork.Disconnect ();
+				diamond_increase = (int) ((timer * timer) / 300);
 				GameObject.Find ("DiamondAddedAmount").GetComponent<Text> ().text = "- " + diamond_increase.ToString ();
-				PlayerPrefs.SetInt ("Diamond", PlayerPrefs.GetInt ("Diamond", 0) - diamond_increase);
+				int final = PlayerPrefs.GetInt ("Diamond", 0) - diamond_increase > 0 ? PlayerPrefs.GetInt ("Diamond", 0) - diamond_increase : 0;
+				PlayerPrefs.SetInt ("Diamond", final);
 			}
 
 
@@ -166,7 +169,8 @@ public class UIupdater : MonoBehaviour {
 
 			// MultiPlayer - win
 			if (SceneManagerHelper.ActiveSceneBuildIndex == 3) {
-				diamond_increase = (int)30;
+				PhotonNetwork.Disconnect ();
+				diamond_increase = (int) ((timer * timer) / 300);
 				GameObject.Find ("DiamondAddedAmount").GetComponent<Text> ().text = "+ " + diamond_increase.ToString ();
 				PlayerPrefs.SetInt ("Diamond", PlayerPrefs.GetInt ("Diamond", 0) + diamond_increase);
 			}
@@ -182,7 +186,15 @@ public class UIupdater : MonoBehaviour {
 	}
 
 	public void backToMenu() {
-		PhotonNetwork.Disconnect ();
+
+		if (SceneManagerHelper.ActiveSceneBuildIndex == 3) {
+			int diamond_increase = PhotonNetwork.connectedAndReady == true ? 50 : 0;
+			PhotonNetwork.Disconnect ();
+			
+			int final = PlayerPrefs.GetInt ("Diamond", 0) - diamond_increase > 0 ? PlayerPrefs.GetInt ("Diamond", 0) - diamond_increase : 0;
+			PlayerPrefs.SetInt ("Diamond", final);
+		}
+			
 		Time.timeScale = 1f;
 		SceneManager.LoadScene(1);
 	}
@@ -201,6 +213,12 @@ public class UIupdater : MonoBehaviour {
 	}
 
 	private void attentionBarVanish() {
+
+		// MP
+		if (SceneManager.GetActiveScene().buildIndex == 3) {
+			return;
+		}
+			
 		if (PlayerPrefs.GetString("QAstatus", "False").Equals("False")) {
 			if (attentionBar.GetComponent<Text> ().text != "") {
 				attentionBarTimer = attentionBarTimer + Time.deltaTime;
@@ -210,5 +228,33 @@ public class UIupdater : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	public void DrawLineWithOppo() {
+
+		if (SceneManager.GetActiveScene ().buildIndex != 3) {
+			return;
+		}
+
+		GameObject me = GameObject.FindGameObjectWithTag ("Player");
+		GameObject he = GameObject.FindGameObjectWithTag ("otherPlayer");
+
+		if (me != null && he != null) {
+			DrawLine (me.transform.position, he.transform.position, Color.red, 0.01f);
+		}
+	}
+
+	private void DrawLine(Vector3 start, Vector3 end, Color color, float duration = 0.2f)
+	{
+		GameObject myLine = new GameObject();
+		myLine.transform.position = start;
+		myLine.AddComponent<LineRenderer>();
+		LineRenderer lr = myLine.GetComponent<LineRenderer>();
+		lr.material = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
+		lr.SetColors(color, color);
+		lr.SetWidth(0.1f, 0.1f);
+		lr.SetPosition(0, start);
+		lr.SetPosition(1, end);
+		GameObject.Destroy(myLine, duration);
 	}
 }

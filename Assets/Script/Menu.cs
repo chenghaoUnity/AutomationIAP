@@ -54,7 +54,6 @@ public class Menu : MonoBehaviour {
 	private LanguageManager languageManager;
 	private XmlDocument xmlDocument;
 
-	public int multiplayer;
 	private bool canSwitch;
 
 	void Awake () {
@@ -88,7 +87,7 @@ public class Menu : MonoBehaviour {
 		languageManager.SetLanguage(PlayerPrefs.GetInt ("LanguagePrefer", 0));
 		xmlDocument = XmlReader.LoadXmlDocument();
 
-		multiplayer = PlayerPrefs.GetInt ("GameMode", 0);
+		PlayerPrefs.GetInt ("GameMode", 0);
 		canSwitch = true;
 	}
 

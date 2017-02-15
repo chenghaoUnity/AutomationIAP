@@ -78,6 +78,7 @@ public class GameRoomManager : Photon.MonoBehaviour
 	{
 		Debug.Log("OnJoinedRoom() called by PUN. Now this client is in a room. From here on, your game would be running. For reference, all callbacks are listed in enum: PhotonNetworkingMessage");
 		GameObject.Find("loadingText").GetComponent<Text>().text = XmlReader.GetInnerText(xmlDocument, languageManager.currentLanguage, "Text_Finding");
+		PhotonNetwork.playerName = PlayerPrefs.GetString ("PlayerName", "guest") + ":" + PlayerPrefs.GetInt ("CharacterOrder", 0);
 	}
 
 
